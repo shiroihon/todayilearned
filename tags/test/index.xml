@@ -15,12 +15,5 @@
       <guid>https://shiro-mpdm.github.io/todayilearnd/post/my_second_post/</guid>
       <description>🔍 I&amp;rsquo;m going to write about BigQuery.</description>
     </item>
-    <item>
-      <title>My First Post</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/post/my_first_post/</link>
-      <pubDate>Sun, 07 Jul 2024 16:37:01 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/post/my_first_post/</guid>
-      <description>A brief summary of the article.</description>
-    </item>
   </channel>
 </rss>
