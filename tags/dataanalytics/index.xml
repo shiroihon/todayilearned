@@ -6,17 +6,24 @@
     <description>Recent content in DataAnalytics on Today I Learned.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Jul 2024 17:09:50 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jul 2024 16:13:42 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/todayilearnd/tags/dataanalytics/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Law of Refined Preprocessing Programming : Polars edition</title>
+      <title>BigQuery CTEs in Data Analyisis</title>
+      <link>http://localhost:1313/todayilearnd/post/bigquery_ctes_in_data_analyisis/</link>
+      <pubDate>Sat, 20 Jul 2024 16:13:42 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/post/bigquery_ctes_in_data_analyisis/</guid>
+      <description>🔍 Things to keep in mind when analyzing data using SQL.</description>
+    </item>
+    <item>
+      <title>Law of Refined Preprocessing Programming: Polars ed.</title>
       <link>http://localhost:1313/todayilearnd/post/bookread_law_of_refined_preprocessing_programming_polars_edition/</link>
       <pubDate>Thu, 18 Jul 2024 17:09:50 +0900</pubDate>
       <guid>http://localhost:1313/todayilearnd/post/bookread_law_of_refined_preprocessing_programming_polars_edition/</guid>
       <description>🐻‍❄️ [改訂新版]前処理大全実践テクニックを読んでみる(Polars編)</description>
     </item>
     <item>
-      <title>Law of Refined Preprocessing Programming : SQL edition</title>
+      <title>Law of Refined Preprocessing Programming: SQL ed.</title>
       <link>http://localhost:1313/todayilearnd/post/bookread_law_of_refined_preprocessing_programming_sql_edition/</link>
       <pubDate>Thu, 18 Jul 2024 17:01:23 +0900</pubDate>
       <guid>http://localhost:1313/todayilearnd/post/bookread_law_of_refined_preprocessing_programming_sql_edition/</guid>

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GitHub on Today I Learned.</title>
-    <link>http://localhost:1313/todayilearnd/tags/github/</link>
+    <link>https://shiro-mpdm.github.io/todayilearnd/tags/github/</link>
     <description>Recent content in GitHub on Today I Learned.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Jul 2024 18:30:01 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/todayilearnd/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://shiro-mpdm.github.io/todayilearnd/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>GitHub How to Use Issues</title>
-      <link>http://localhost:1313/todayilearnd/post/github_how_to_use_issues/</link>
+      <title>GitHub How to use issues</title>
+      <link>https://shiro-mpdm.github.io/todayilearnd/post/github_how_to_use_issues/</link>
       <pubDate>Thu, 18 Jul 2024 18:30:01 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearnd/post/github_how_to_use_issues/</guid>
-      <description></description>
+      <guid>https://shiro-mpdm.github.io/todayilearnd/post/github_how_to_use_issues/</guid>
+      <description>📍 How to effectively use &amp;lsquo;Issues&amp;rsquo; in GitHub repository.</description>
     </item>
   </channel>
 </rss>
