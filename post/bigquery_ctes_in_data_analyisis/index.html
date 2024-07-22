@@ -174,7 +174,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      166 Words
+                      808 Words
                     
 
                   </div>
@@ -224,9 +224,95 @@
 
 
               <div class="Box-body px-5 pb-5" style="z-index: 1">
-                <article class="markdown-body entry-content container-lg"><p><img src="../../images/post_images/pngaaa.com-2395836.png" alt="img"></p>
-<h2 id="ctes">CTEs</h2>
+                <article class="markdown-body entry-content container-lg"><h2 id="cteの定義">CTEの定義</h2>
+<p>文脈によって若干の違いがあるのものの<code>CTE</code>と<code>CTEs</code>は基本的に同じ概念を指している(細かいｶﾖ!)。</p>
+<ol>
+<li><strong>CTE（Common Table Expression）</strong></li>
+</ol>
+<ul>
+<li>定義: 一時的に名前を付けて結果セットを定義し、それを後続のクエリで参照するSQL構文。単一のCTEを使用する場合、単数形のCTEという用語が使用される。</li>
+<li>使用例:
+<ul>
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-SQL" data-lang="SQL"><span class="line"><span class="cl"><span class="o">#</span><span class="w"> </span><span class="err">単一の</span><span class="n">CTE</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">with</span><span class="w"> </span><span class="n">SingleCTE</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">select</span><span class="w"> </span><span class="n">column1</span><span class="p">,</span><span class="w"> </span><span class="n">column2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">from</span><span class="w">  </span><span class="o">`</span><span class="n">dataset</span><span class="p">.</span><span class="k">table</span><span class="o">`</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">where</span><span class="w"> </span><span class="n">condition</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">select</span><span class="w"> </span><span class="n">column1</span><span class="p">,</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">count</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="n">SingleCTE</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">column1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div></li>
+</ul>
+</li>
+</ul>
+<ol start="2">
+<li><strong>CTEs（Common Table Expressions）</strong></li>
+</ol>
+<ul>
+<li>定義: 複数のCTEを組み合わせて使用する場合、それらを総称してCTEsと言う。</li>
+<li>使用例:
+<ul>
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-SQL" data-lang="SQL"><span class="line"><span class="cl"><span class="o">#</span><span class="w"> </span><span class="err">複数の</span><span class="n">CTE</span><span class="err">（</span><span class="n">CTEs</span><span class="err">）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">with</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">FirstCTE</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">select</span><span class="w"> </span><span class="n">column1</span><span class="p">,</span><span class="w"> </span><span class="n">column2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">from</span><span class="w"> </span><span class="n">dataset</span><span class="p">.</span><span class="k">table</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">where</span><span class="w"> </span><span class="n">condition1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">,</span><span class="w">　</span><span class="n">SecondCTE</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">select</span><span class="w"> </span><span class="n">column1</span><span class="p">,</span><span class="w"> </span><span class="k">sum</span><span class="p">(</span><span class="n">column3</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">sum_column3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">from</span><span class="w"> </span><span class="n">FirstCTE</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">where</span><span class="w"> </span><span class="n">condition2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">column1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">,</span><span class="w">　</span><span class="n">ThirdCTE</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">select</span><span class="w"> </span><span class="n">column1</span><span class="p">,</span><span class="w"> </span><span class="n">sum_column3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">from</span><span class="w"> </span><span class="n">SecondCTE</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">where</span><span class="w"> </span><span class="n">condition3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">select</span><span class="w"> </span><span class="n">column1</span><span class="p">,</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">count</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="n">ThirdCTE</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">column1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div></li>
+</ul>
+</li>
+</ul>
 <h2 id="dataanalyticsにおけるctes">DataAnalyticsにおけるCTEs</h2>
+<pre tabindex="0"><code>※ 一般論ではなく、業務を通じて個人的に心掛けたことをまとめる。
+</code></pre><h3 id="ファネルを意識した記述方法">ファネルを意識した記述方法</h3>
+<h3 id="ctes書くと記述がばらつく問題">CTEs書くと記述がばらつく問題</h3>
+<p>「十人十色、多様性の時代ではあるが記述を統一したいよなぁ〜」と悩み出す。
+個人的に気を遣って書いている事をまとめてみる。</p>
+<h4 id="避けたい記述">避けたい記述</h4>
+<ol>
+<li>オ◯ニークエリ
+<ul>
+<li>意味：自分だけしか解読できないようなクエリのこと</li>
+<li>対処：
+<ul>
+<li>誰が読んでも分かるような記述を心掛ける。(認知コストを奪ことはしたくない意図)</li>
+<li><code>e.g.</code> サブクエリのネストは２段まで&hellip;etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>毒親クエリ
+<ul>
+<li>意味：過保護すぎるコメント記述でゴチャつくクエリのこと</li>
+<li>対処：
+<ul>
+<li>クエリを読んで理解できる自明に対しては説明を控える。</li>
+<li>一方、<code>where pref_flag = '3' --3:福岡県</code>のようなクエリに対してはコメントする。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
 <h2 id="色々な場面でもctes">色々な場面でもCTEs</h2>
 <h2 id="ref">REF</h2>
 <ul>
