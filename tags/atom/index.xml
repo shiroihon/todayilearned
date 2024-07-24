@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ATOM on Today I Learned.</title>
-    <link>http://localhost:1313/todayilearnd/tags/atom/</link>
+    <link>https://shiro-mpdm.github.io/todayilearnd/tags/atom/</link>
     <description>Recent content in ATOM on Today I Learned.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 24 Jul 2024 17:20:33 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/todayilearnd/tags/atom/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://shiro-mpdm.github.io/todayilearnd/tags/atom/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Editor Tools Neighborhood and Derivatives</title>
-      <link>http://localhost:1313/todayilearnd/post/editor_tools_neighborhood_and_derivatives/</link>
+      <link>https://shiro-mpdm.github.io/todayilearnd/post/editor_tools_neighborhood_and_derivatives/</link>
       <pubDate>Wed, 24 Jul 2024 17:20:33 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearnd/post/editor_tools_neighborhood_and_derivatives/</guid>
+      <guid>https://shiro-mpdm.github.io/todayilearnd/post/editor_tools_neighborhood_and_derivatives/</guid>
       <description>🖊️ Derived from &amp;lsquo;ATOM&amp;rsquo;, a former GitHub, Inc. product. Learn about TextEditor/IDE.</description>
     </item>
   </channel>
