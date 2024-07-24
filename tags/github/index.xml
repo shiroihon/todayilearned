@@ -2,24 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GitHub on Today I Learned.</title>
-    <link>https://shiro-mpdm.github.io/todayilearnd/tags/github/</link>
+    <link>http://localhost:1313/todayilearnd/tags/github/</link>
     <description>Recent content in GitHub on Today I Learned.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jul 2024 12:10:51 +0900</lastBuildDate>
-    <atom:link href="https://shiro-mpdm.github.io/todayilearnd/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Jul 2024 15:08:13 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/todayilearnd/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub One thing or another</title>
+      <link>http://localhost:1313/todayilearnd/post/github_one_thing_or_another/</link>
+      <pubDate>Wed, 24 Jul 2024 15:08:13 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/post/github_one_thing_or_another/</guid>
+      <description>📍 Various things to make your GitHub life more enjoyable.</description>
+    </item>
+    <item>
+      <title>GitHub How to check difference</title>
+      <link>http://localhost:1313/todayilearnd/post/github_how_to_check_difference/</link>
+      <pubDate>Tue, 23 Jul 2024 04:13:21 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/post/github_how_to_check_difference/</guid>
+      <description>📍 Methods and tools to capture code fixes faster and more accurately.</description>
+    </item>
     <item>
       <title>GitHub What are these licenses</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/post/github_what_are_these_licenses/</link>
+      <link>http://localhost:1313/todayilearnd/post/github_what_are_these_licenses/</link>
       <pubDate>Fri, 19 Jul 2024 12:10:51 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/post/github_what_are_these_licenses/</guid>
+      <guid>http://localhost:1313/todayilearnd/post/github_what_are_these_licenses/</guid>
       <description>📍 Here is a brief summary of these licenses that are commonly seen on GitHub.</description>
     </item>
     <item>
       <title>GitHub How to use issues</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/post/github_how_to_use_issues/</link>
+      <link>http://localhost:1313/todayilearnd/post/github_how_to_use_issues/</link>
       <pubDate>Thu, 18 Jul 2024 18:30:01 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/post/github_how_to_use_issues/</guid>
+      <guid>http://localhost:1313/todayilearnd/post/github_how_to_use_issues/</guid>
       <description>📍 How to effectively use &amp;lsquo;Issues&amp;rsquo; in GitHub repository.</description>
     </item>
   </channel>

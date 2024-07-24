@@ -2,52 +2,143 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Today I Learned.</title>
-    <link>https://shiro-mpdm.github.io/todayilearnd/tags/</link>
+    <link>http://localhost:1313/todayilearnd/tags/</link>
     <description>Recent content in Tags on Today I Learned.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jul 2024 12:10:51 +0900</lastBuildDate>
-    <atom:link href="https://shiro-mpdm.github.io/todayilearnd/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Jul 2024 17:20:33 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/todayilearnd/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ATOM</title>
+      <link>http://localhost:1313/todayilearnd/tags/atom/</link>
+      <pubDate>Wed, 24 Jul 2024 17:20:33 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/atom/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IDE</title>
+      <link>http://localhost:1313/todayilearnd/tags/ide/</link>
+      <pubDate>Wed, 24 Jul 2024 17:20:33 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/ide/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TextEditor</title>
+      <link>http://localhost:1313/todayilearnd/tags/texteditor/</link>
+      <pubDate>Wed, 24 Jul 2024 17:20:33 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/texteditor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vim</title>
+      <link>http://localhost:1313/todayilearnd/tags/vim/</link>
+      <pubDate>Wed, 24 Jul 2024 17:20:33 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/vim/</guid>
+      <description></description>
+    </item>
     <item>
       <title>GitHub</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/tags/github/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/tags/github/</guid>
+      <link>http://localhost:1313/todayilearnd/tags/github/</link>
+      <pubDate>Wed, 24 Jul 2024 15:08:13 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/github/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GFM</title>
+      <link>http://localhost:1313/todayilearnd/tags/gfm/</link>
+      <pubDate>Tue, 23 Jul 2024 18:17:17 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/gfm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Markdown</title>
+      <link>http://localhost:1313/todayilearnd/tags/markdown/</link>
+      <pubDate>Tue, 23 Jul 2024 18:17:17 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/markdown/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Slack</title>
+      <link>http://localhost:1313/todayilearnd/tags/slack/</link>
+      <pubDate>Tue, 23 Jul 2024 18:17:17 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/slack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Git</title>
+      <link>http://localhost:1313/todayilearnd/tags/git/</link>
+      <pubDate>Tue, 23 Jul 2024 04:13:21 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>Know-How</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/tags/know-how/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/tags/know-how/</guid>
+      <link>http://localhost:1313/todayilearnd/tags/know-how/</link>
+      <pubDate>Tue, 23 Jul 2024 04:13:21 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/know-how/</guid>
       <description></description>
     </item>
     <item>
-      <title>DataAnalytics</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/tags/dataanalytics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/tags/dataanalytics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Statistic</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/tags/statistic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/tags/statistic/</guid>
+      <title>SourceGraph</title>
+      <link>http://localhost:1313/todayilearnd/tags/sourcegraph/</link>
+      <pubDate>Tue, 23 Jul 2024 04:13:21 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/sourcegraph/</guid>
       <description></description>
     </item>
     <item>
       <title>BigQuery</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/tags/bigquery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/tags/bigquery/</guid>
+      <link>http://localhost:1313/todayilearnd/tags/bigquery/</link>
+      <pubDate>Sat, 20 Jul 2024 16:13:42 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/bigquery/</guid>
       <description></description>
     </item>
     <item>
-      <title>Test</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/tags/test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/tags/test/</guid>
+      <title>DataAnalytics</title>
+      <link>http://localhost:1313/todayilearnd/tags/dataanalytics/</link>
+      <pubDate>Sat, 20 Jul 2024 16:13:42 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/dataanalytics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQL</title>
+      <link>http://localhost:1313/todayilearnd/tags/sql/</link>
+      <pubDate>Sat, 20 Jul 2024 16:13:42 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/sql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OSS</title>
+      <link>http://localhost:1313/todayilearnd/tags/oss/</link>
+      <pubDate>Fri, 19 Jul 2024 12:10:51 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/oss/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hands-On</title>
+      <link>http://localhost:1313/todayilearnd/tags/hands-on/</link>
+      <pubDate>Thu, 18 Jul 2024 17:09:50 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/hands-on/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Polars</title>
+      <link>http://localhost:1313/todayilearnd/tags/polars/</link>
+      <pubDate>Thu, 18 Jul 2024 17:09:50 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/polars/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/todayilearnd/tags/python/</link>
+      <pubDate>Thu, 18 Jul 2024 17:09:50 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Statistic</title>
+      <link>http://localhost:1313/todayilearnd/tags/statistic/</link>
+      <pubDate>Wed, 17 Jul 2024 23:14:44 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/tags/statistic/</guid>
       <description></description>
     </item>
   </channel>

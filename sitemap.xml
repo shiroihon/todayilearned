@@ -2,55 +2,115 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/post/</loc>
+    <loc>http://localhost:1313/todayilearnd/tags/atom/</loc>
+    <lastmod>2024-07-24T17:20:33+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/post/editor_tools_neighborhood_and_derivatives/</loc>
+    <lastmod>2024-07-24T17:20:33+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/tags/ide/</loc>
+    <lastmod>2024-07-24T17:20:33+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/post/</loc>
+    <lastmod>2024-07-24T17:20:33+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/tags/</loc>
+    <lastmod>2024-07-24T17:20:33+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/tags/texteditor/</loc>
+    <lastmod>2024-07-24T17:20:33+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/</loc>
+    <lastmod>2024-07-24T17:20:33+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/tags/vim/</loc>
+    <lastmod>2024-07-24T17:20:33+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/tags/github/</loc>
+    <lastmod>2024-07-24T15:08:13+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/post/github_one_thing_or_another/</loc>
+    <lastmod>2024-07-24T15:08:13+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/tags/gfm/</loc>
+    <lastmod>2024-07-23T18:17:17+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/tags/markdown/</loc>
+    <lastmod>2024-07-23T18:17:17+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/tags/slack/</loc>
+    <lastmod>2024-07-23T18:17:17+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/post/slack_writing_etiquette/</loc>
+    <lastmod>2024-07-23T18:17:17+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/tags/git/</loc>
+    <lastmod>2024-07-23T04:13:21+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/post/github_how_to_check_difference/</loc>
+    <lastmod>2024-07-23T04:13:21+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/tags/know-how/</loc>
+    <lastmod>2024-07-23T04:13:21+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/tags/sourcegraph/</loc>
+    <lastmod>2024-07-23T04:13:21+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/tags/bigquery/</loc>
     <lastmod>2024-07-20T16:13:42+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/</loc>
-    <lastmod>2024-07-22T01:47:28+09:00</lastmod>
+    <loc>http://localhost:1313/todayilearnd/post/bigquery_ctes_in_data_analyisis/</loc>
+    <lastmod>2024-07-20T16:13:42+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/tags/github/</loc>
+    <loc>http://localhost:1313/todayilearnd/tags/dataanalytics/</loc>
+    <lastmod>2024-07-20T16:13:42+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/tags/sql/</loc>
+    <lastmod>2024-07-20T16:13:42+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/post/github_what_are_these_licenses/</loc>
     <lastmod>2024-07-19T12:10:51+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/post/github_what_are_these_licenses/</loc>
+    <loc>http://localhost:1313/todayilearnd/tags/oss/</loc>
     <lastmod>2024-07-19T12:10:51+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/tags/know-how/</loc>
-    <lastmod>2024-07-19T12:10:51+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/tags/</loc>
-    <lastmod>2024-07-19T12:10:51+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/post/github_how_to_use_issues/</loc>
+    <loc>http://localhost:1313/todayilearnd/post/github_how_to_use_issues/</loc>
     <lastmod>2024-07-18T18:30:01+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/tags/dataanalytics/</loc>
+    <loc>http://localhost:1313/todayilearnd/categories/%E6%94%B9%E8%A8%82%E6%96%B0%E7%89%88%E5%89%8D%E5%87%A6%E7%90%86%E5%A4%A7%E5%85%A8%E5%AE%9F%E8%B7%B5%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF/</loc>
+    <lastmod>2024-07-18T17:09:50+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/categories/</loc>
+    <lastmod>2024-07-18T17:09:50+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/tags/hands-on/</loc>
+    <lastmod>2024-07-18T17:09:50+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/post/bookread_law_of_refined_preprocessing_programming_polars_edition/</loc>
+    <lastmod>2024-07-18T17:09:50+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/tags/polars/</loc>
+    <lastmod>2024-07-18T17:09:50+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/tags/python/</loc>
+    <lastmod>2024-07-18T17:09:50+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/post/bookread_law_of_refined_preprocessing_programming_sql_edition/</loc>
+    <lastmod>2024-07-18T17:01:23+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/todayilearnd/post/static_data_online_free/</loc>
     <lastmod>2024-07-17T23:14:44+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/post/static_data_online_free/</loc>
+    <loc>http://localhost:1313/todayilearnd/tags/statistic/</loc>
     <lastmod>2024-07-17T23:14:44+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/tags/statistic/</loc>
-    <lastmod>2024-07-17T23:14:44+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/tags/bigquery/</loc>
+    <loc>http://localhost:1313/todayilearnd/post/my_second_post/</loc>
     <lastmod>2024-07-12T01:30:51+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/post/my_second_post/</loc>
-    <lastmod>2024-07-12T01:30:51+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/tags/test/</loc>
-    <lastmod>2024-07-12T01:30:51+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/categories/</loc>
+    <loc>http://localhost:1313/todayilearnd/post/my_first_post/</loc>
     <lastmod>2024-07-07T16:37:01+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/post/my_first_post/</loc>
-    <lastmod>2024-07-07T16:37:01+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/categories/test/</loc>
-    <lastmod>2024-07-07T16:37:01+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/readme/</loc>
+    <loc>http://localhost:1313/todayilearnd/readme/</loc>
     <lastmod>2024-07-22T01:47:28+09:00</lastmod>
   </url>
 </urlset>

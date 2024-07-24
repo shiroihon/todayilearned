@@ -2,52 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Today I Learned.</title>
-    <link>https://shiro-mpdm.github.io/todayilearnd/</link>
+    <link>http://localhost:1313/todayilearnd/</link>
     <description>Recent content on Today I Learned.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jul 2024 01:47:28 +0900</lastBuildDate>
-    <atom:link href="https://shiro-mpdm.github.io/todayilearnd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Jul 2024 17:20:33 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/todayilearnd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Editor Tools Neighborhood and Derivatives</title>
+      <link>http://localhost:1313/todayilearnd/post/editor_tools_neighborhood_and_derivatives/</link>
+      <pubDate>Wed, 24 Jul 2024 17:20:33 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/post/editor_tools_neighborhood_and_derivatives/</guid>
+      <description>🖊️ Derived from &amp;lsquo;ATOM&amp;rsquo;, a former GitHub, Inc. product. Learn about TextEditor/IDE.</description>
+    </item>
+    <item>
+      <title>GitHub One thing or another</title>
+      <link>http://localhost:1313/todayilearnd/post/github_one_thing_or_another/</link>
+      <pubDate>Wed, 24 Jul 2024 15:08:13 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/post/github_one_thing_or_another/</guid>
+      <description>📍 Various things to make your GitHub life more enjoyable.</description>
+    </item>
+    <item>
+      <title>Slack Writing Etiquette</title>
+      <link>http://localhost:1313/todayilearnd/post/slack_writing_etiquette/</link>
+      <pubDate>Tue, 23 Jul 2024 18:17:17 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/post/slack_writing_etiquette/</guid>
+      <description>💬 Learn writing etiquette using Slack&amp;rsquo;s unique notation.</description>
+    </item>
+    <item>
+      <title>GitHub How to check difference</title>
+      <link>http://localhost:1313/todayilearnd/post/github_how_to_check_difference/</link>
+      <pubDate>Tue, 23 Jul 2024 04:13:21 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/post/github_how_to_check_difference/</guid>
+      <description>📍 Methods and tools to capture code fixes faster and more accurately.</description>
+    </item>
+    <item>
+      <title>BigQuery CTEs in data analyisis</title>
+      <link>http://localhost:1313/todayilearnd/post/bigquery_ctes_in_data_analyisis/</link>
+      <pubDate>Sat, 20 Jul 2024 16:13:42 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/post/bigquery_ctes_in_data_analyisis/</guid>
+      <description>🔍 Things to keep in mind when analyzing data using SQL.</description>
+    </item>
     <item>
       <title>GitHub What are these licenses</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/post/github_what_are_these_licenses/</link>
+      <link>http://localhost:1313/todayilearnd/post/github_what_are_these_licenses/</link>
       <pubDate>Fri, 19 Jul 2024 12:10:51 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/post/github_what_are_these_licenses/</guid>
+      <guid>http://localhost:1313/todayilearnd/post/github_what_are_these_licenses/</guid>
       <description>📍 Here is a brief summary of these licenses that are commonly seen on GitHub.</description>
     </item>
     <item>
       <title>GitHub How to use issues</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/post/github_how_to_use_issues/</link>
+      <link>http://localhost:1313/todayilearnd/post/github_how_to_use_issues/</link>
       <pubDate>Thu, 18 Jul 2024 18:30:01 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/post/github_how_to_use_issues/</guid>
+      <guid>http://localhost:1313/todayilearnd/post/github_how_to_use_issues/</guid>
       <description>📍 How to effectively use &amp;lsquo;Issues&amp;rsquo; in GitHub repository.</description>
     </item>
     <item>
+      <title>Law of Refined Preprocessing Programming: Polars ed.</title>
+      <link>http://localhost:1313/todayilearnd/post/bookread_law_of_refined_preprocessing_programming_polars_edition/</link>
+      <pubDate>Thu, 18 Jul 2024 17:09:50 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/post/bookread_law_of_refined_preprocessing_programming_polars_edition/</guid>
+      <description>🐻‍❄️ [改訂新版]前処理大全実践テクニックを読んでみる(Polars編)</description>
+    </item>
+    <item>
+      <title>Law of Refined Preprocessing Programming: SQL ed.</title>
+      <link>http://localhost:1313/todayilearnd/post/bookread_law_of_refined_preprocessing_programming_sql_edition/</link>
+      <pubDate>Thu, 18 Jul 2024 17:01:23 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/post/bookread_law_of_refined_preprocessing_programming_sql_edition/</guid>
+      <description>🔍 [改訂新版]前処理大全実践テクニックを読んでみる(SQL編)</description>
+    </item>
+    <item>
       <title>Static Data Online Free</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/post/static_data_online_free/</link>
+      <link>http://localhost:1313/todayilearnd/post/static_data_online_free/</link>
       <pubDate>Wed, 17 Jul 2024 23:14:44 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/post/static_data_online_free/</guid>
+      <guid>http://localhost:1313/todayilearnd/post/static_data_online_free/</guid>
       <description>📊 An article summarizing various statistical data that can be viewed and used for free.</description>
     </item>
     <item>
       <title>My Second Post</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/post/my_second_post/</link>
+      <link>http://localhost:1313/todayilearnd/post/my_second_post/</link>
       <pubDate>Tue, 09 Jul 2024 15:23:51 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/post/my_second_post/</guid>
+      <guid>http://localhost:1313/todayilearnd/post/my_second_post/</guid>
       <description>🔍 I&amp;rsquo;m going to write about BigQuery.</description>
     </item>
     <item>
       <title>My First Post</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/post/my_first_post/</link>
+      <link>http://localhost:1313/todayilearnd/post/my_first_post/</link>
       <pubDate>Sun, 07 Jul 2024 16:37:01 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/post/my_first_post/</guid>
+      <guid>http://localhost:1313/todayilearnd/post/my_first_post/</guid>
       <description>A brief summary of the article.</description>
     </item>
     <item>
       <title></title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/readme/</link>
+      <link>http://localhost:1313/todayilearnd/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/readme/</guid>
+      <guid>http://localhost:1313/todayilearnd/readme/</guid>
       <description>Hello World!&#xA;summary title </description>
     </item>
   </channel>
