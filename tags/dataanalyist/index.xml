@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DataAnalyist on Today I Learned</title>
+    <link>http://localhost:1313/todayilearnd/tags/dataanalyist/</link>
+    <description>Recent content in DataAnalyist on Today I Learned</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 26 Jul 2024 04:23:38 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/todayilearnd/tags/dataanalyist/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bigquery Structured Data Processing 100 Ball Drill</title>
+      <link>http://localhost:1313/todayilearnd/post/bigquery_structured_data_processing_100_ball_drill/</link>
+      <pubDate>Fri, 26 Jul 2024 04:23:38 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/post/bigquery_structured_data_processing_100_ball_drill/</guid>
+      <description>🔍</description>
+    </item>
+  </channel>
+</rss>

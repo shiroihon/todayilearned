@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='https://shiro-mpdm.github.io/todayilearnd/css/light.css' />
     <link rel="stylesheet" href='https://shiro-mpdm.github.io/todayilearnd/css/dark.css' />
     <link rel="stylesheet" href='https://shiro-mpdm.github.io/todayilearnd/css/syntax.css' />
-    <title>GitHub How to check difference - Today I Learned.</title>
+    <title>GitHub How to check difference - Today I Learned</title>
     
     <link rel="icon" type="image/x-icon" href='../../images/github-mark.png'>
     
@@ -26,7 +26,7 @@
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="GitHub How to check difference - Today I Learned." />
+<meta name="twitter:title" content="GitHub How to check difference - Today I Learned" />
 <meta name="twitter:description"
   content="📍 Methods and tools to capture code fixes faster and more accurately." />
 <meta name="twitter:site" content="https://shiro-mpdm.github.io/todayilearnd/" />
@@ -36,7 +36,7 @@
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="GitHub How to check difference - Today I Learned.">
+<meta property="og:title" content="GitHub How to check difference - Today I Learned">
 <meta property="og:description"
   content="📍 Methods and tools to capture code fixes faster and more accurately." />
 <meta property="og:url" content="https://shiro-mpdm.github.io/todayilearnd/post/github_how_to_check_difference/" />
@@ -174,7 +174,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      793 Words
+                      942 Words
                     
 
                   </div>
@@ -290,14 +290,24 @@
 </li>
 </ol>
 <h2 id="advance">ADVANCE</h2>
-<h3 id="link">Link</h3>
-<p>GitHubのWebUI上で、コードやページに対して共有リンクを発行することができる。</p>
+<h3 id="link-share">Link Share</h3>
+<p>GitHubのWebUI上で、コードやページに対して共有リンクを発行することができる。
+直したい箇所に対して、右クリックで発行してシェアすることができる。</p>
 <h3 id="sourcegraph">SourceGraph</h3>
 <p>いち早く問題特定するためには、何といってもコード理解が必須である。<!-- raw HTML omitted -->
 いちいち差分を手作業で見たり、そもそも修正箇所を特定してから差分比較するというときにはやはり、リポジトリ内での検索力が問われる。<!-- raw HTML omitted -->
 そこで、「<a href="https://sourcegraph.com/">SourceGraph</a>」なるツールがあることを知った。<!-- raw HTML omitted -->
 詳細は、<a href="https://qiita.com/YusukeIzawa/items/b50f19fdc59b9ef50884">こちらの記事</a>が有用だ。</p>
 <p>cf. <a href="https://www.software.com/reports/code-time-report">Global Code Time Report</a> Software</p>
+<h3 id="cli-1">CLI</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># GitHub CLI や Git コマンドで対象レポをローカルにクローン</span>
+</span></span><span class="line"><span class="cl">$ gh clone https://github.com/username/repository.git <span class="p">|</span> <span class="nb">cd</span> repository
+</span></span><span class="line"><span class="cl">$ git clone https://github.com/username/repository.git <span class="p">|</span> <span class="nb">cd</span> repository
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ grep -r <span class="s2">&#34;特定の文字列&#34;</span> .
+</span></span></code></pre></div><h3 id="github-code-search-β版">GitHub Code Search (β版)</h3>
+<ul>
+<li><a href="https://github.com/features/code-search/">https://github.com/features/code-search/</a></li>
+</ul>
 <h2 id="ref">REF</h2>
 <ul>
 <li><a href="https://docs.github.com/ja/pull-requests/committing-changes-to-your-project/viewing-and-comparing-commits/comparing-commits">コミットを比較する</a> GitHub Doc</li>
@@ -306,6 +316,8 @@
 <li><a href="https://qiita.com/shibukk/items/8c9362a5bd399b9c56be">忘れやすい人のための git diff チートシート</a> Qiita</li>
 <li><a href="https://qiita.com/yuya_presto/items/ef199e08021dea777715">gitのdiff, status, logを極限までコンパクト化＋便利化する</a> Qiita</li>
 <li><a href="https://qiita.com/YusukeIzawa/items/b50f19fdc59b9ef50884">ソースコードgrep地獄を助けるSourceGraph</a> Qiita</li>
+<li><a href="https://qiita.com/Gro/items/aa0f5147d9e912ee6aea">GitHubのプルリクエストで差分が更新されない時</a> Qiita</li>
+<li><a href="https://ja.stackoverflow.com/questions/96725/git%E3%81%A7merge%E3%81%97%E3%81%A6%E3%82%82%E5%B7%AE%E5%88%86%E3%81%8C%E5%8F%8D%E6%98%A0%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84">gitでmergeしても差分が反映されない</a> Stackoverflow</li>
 </ul>
 </article>
               </div>
