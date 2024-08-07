@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on Today I Learned</title><link>https://shiro-mpdm.github.io/todayilearnd/tags/git/</link><description>Recent content in Git on Today I Learned</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 23 Jul 2024 04:13:21 +0900</lastBuildDate><atom:link href="https://shiro-mpdm.github.io/todayilearnd/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>GitHub How to check difference</title><link>https://shiro-mpdm.github.io/todayilearnd/post/github_how_to_check_difference/</link><pubDate>Tue, 23 Jul 2024 04:13:21 +0900</pubDate><guid>https://shiro-mpdm.github.io/todayilearnd/post/github_how_to_check_difference/</guid><description>📍 Methods and tools to capture code fixes faster and more accurately.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on Today I Learned</title>
+    <link>https://shiro-mpdm.github.io/todayilearnd/tags/git/</link>
+    <description>Recent content in Git on Today I Learned</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 23 Jul 2024 04:13:21 +0900</lastBuildDate>
+    <atom:link href="https://shiro-mpdm.github.io/todayilearnd/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub How to check difference</title>
+      <link>https://shiro-mpdm.github.io/todayilearnd/post/github_how_to_check_difference/</link>
+      <pubDate>Tue, 23 Jul 2024 04:13:21 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearnd/post/github_how_to_check_difference/</guid>
+      <description>📍 Methods and tools to capture code fixes faster and more accurately.</description>
+    </item>
+  </channel>
+</rss>

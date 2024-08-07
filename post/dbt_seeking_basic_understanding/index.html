@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/todayilearnd/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=todayilearnd/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='http://localhost:1313/todayilearnd/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='http://localhost:1313/todayilearnd/css/frameworks.min.css' />
+    <link rel="stylesheet" href='http://localhost:1313/todayilearnd/css/github.min.css' />
+    <link rel="stylesheet" href='http://localhost:1313/todayilearnd/css/github-style.css' />
+    <link rel="stylesheet" href='http://localhost:1313/todayilearnd/css/light.css' />
+    <link rel="stylesheet" href='http://localhost:1313/todayilearnd/css/dark.css' />
+    <link rel="stylesheet" href='http://localhost:1313/todayilearnd/css/syntax.css' />
+    <title>dbt Seeking Basic-understanding - Today I Learned</title>
+    
+    <link rel="icon" type="image/x-icon" href='../../images/github-mark.png'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    <meta name="description"
+  content="✴️ Wanna deepen my understanding by using my hands and referring to reference books." />
+<meta name="keywords"
+  content='blog, google analytics' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="http://localhost:1313/todayilearnd/post/dbt_seeking_basic_understanding/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="dbt Seeking Basic-understanding - Today I Learned" />
+<meta name="twitter:description"
+  content="✴️ Wanna deepen my understanding by using my hands and referring to reference books." />
+<meta name="twitter:site" content="http://localhost:1313/todayilearnd/" />
+<meta name="twitter:creator" content="shiro" />
+<meta name="twitter:image"
+  content="http://localhost:1313/todayilearnd/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="dbt Seeking Basic-understanding - Today I Learned">
+<meta property="og:description"
+  content="✴️ Wanna deepen my understanding by using my hands and referring to reference books." />
+<meta property="og:url" content="http://localhost:1313/todayilearnd/post/dbt_seeking_basic_understanding/" />
+<meta property="og:site_name" content="dbt Seeking Basic-understanding" />
+<meta property="og:image"
+  content="http://localhost:1313/todayilearnd/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2024-07-30 02:30:55 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="http://localhost:1313/todayilearnd/">
+        <img class="octicon" height="32" width="32" src="../../images/github-mark-white.png">
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <img height="24" class="octicon octicon-three-bars" width="24" src="../../images/github-mark-white.png">
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+              <input type="hidden" name="q" value="site:http://localhost:1313/todayilearnd/">
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="http://localhost:1313/todayilearnd/">
+        <img class="octicon octicon-mark-github v-align-middle" height="32" width="32" src="../../images/github-mark-white.png">
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+
+  
+<div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="http://localhost:1313/todayilearnd/">
+                  <img class=" avatar-user"
+                    src="../../images/avatar.png"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="http://localhost:1313/todayilearnd/">shiro</a>
+                  </span>
+                  <span class="path-divider">/</span>
+                  <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px">
+                    <a href="http://localhost:1313/todayilearnd/post/dbt_seeking_basic_understanding/">dbt Seeking Basic-understanding</a>
+                  </strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Tue, 30 Jul 2024 02:30:55 &#43;0900"
+                    class="no-wrap">
+                    Tue, 30 Jul 2024 02:30:55 &#43;0900</relative-time>
+
+                  
+                  <span class="file-info-divider"></span>
+                  Modified <relative-time datetime="Tue, 30 Jul 2024 02:30:55 &#43;0900"
+                    class="no-wrap">
+                    Tue, 30 Jul 2024 02:30:55 &#43;0900</relative-time>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      3607 Words
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                    
+                    <a class="muted-link mr-3" href="../../tags/dbt">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      dbt
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="../../tags/elt">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      ELT
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="../../tags/dre">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      DRE
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="../../tags/hands-on">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      Hands-on
+                    </a>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
+                <article class="markdown-body entry-content container-lg"><p><img src="https://github.com/sh16ma/gitpress/assets/150888300/d3b2fdbc-417f-4145-8f6b-d9e2ab58c483" alt="image"></p>
+<h2 id="dbt-とは">dbt とは</h2>
+<p><a href="https://docs.getdbt.com/docs/introduction">What is dbt?</a> dbt</p>
+<blockquote>
+<p>dbtとは <code>data build tool</code> の略で、データ統合を行う際のプロセスであるELT(抽出, 変換, 格納)のうち <code>Transform(変換)</code> の役割を担うツールです。
+Transformのプロセスでは一般的にデータウェアハウスなどに抽出したデータを下流の分析ツールやデータベースで利用できる形式に変換・加工する処理を行います。
+dbtはこの工程で役に立つ様々な機能を提供してくれます。 <a href="https://www.isoroot.jp/blog/6054/">ref</a></p>
+</blockquote>
+<ul>
+<li><code>cf.</code>
+<ul>
+<li>Official
+<ul>
+<li><a href="https://www.getdbt.com/">https://www.getdbt.com/</a></li>
+<li><a href="https://docs.getdbt.com/">https://docs.getdbt.com/</a> (Document)</li>
+<li><a href="https://github.com/dbt-labs/">https://github.com/dbt-labs/</a> (GitHub)</li>
+</ul>
+</li>
+<li>Community
+<ul>
+<li>dbt tokyo - Japan dbt User Group
+<ul>
+<li><a href="https://dbt-ug.tokyo/">https://dbt-ug.tokyo/</a></li>
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">dbt-tokyoはdbtの日本におけるdbtの普及と,
+</span></span><span class="line"><span class="cl">dbtプロダクトへの貢献を目的に活動をしています.
+</span></span></code></pre></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Production
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">dbt
+</span></span><span class="line"><span class="cl">  ┗ 1. dbt-core            (Free)
+</span></span><span class="line"><span class="cl">  ┗ 2. dbt Cloud
+</span></span><span class="line"><span class="cl">            ┗ 1. Developer (Free)
+</span></span><span class="line"><span class="cl">            ┗ 2. Team      
+</span></span><span class="line"><span class="cl">            ┗ 3. Enterprise
+</span></span></code></pre></div><ul>
+<li>cf. <a href="https://www.getdbt.com/pricing">dbt Pricing Plans</a></li>
+</ul>
+<ol>
+<li>dbt-core
+<ul>
+<li>cf.</li>
+</ul>
+</li>
+<li>dbt Cloud
+<ul>
+<li>
+<pre tabindex="0"><code>WebUIを用いて開発ができる！
+</code></pre><ul>
+<li><code>cf.</code>
+<ul>
+<li><a href="https://zenn.dev/dbt_tokyo/books/537de43829f3a0/viewer/setup">Chapter 02 dbt Cloudのセットアップ</a> Zenn</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="hands-ondbt-core">Hands On（dbt-core）</h2>
+<pre tabindex="0"><code>詳細なとは参考に乗っているので、この辺を読んで手を動かした部分を掻い摘む。
+</code></pre><ul>
+<li><a href="https://zenn.dev/foursue/books/31456a86de5bb4">dbt 入門</a> Zenn</li>
+<li><a href="https://zenn.dev/dbt_tokyo/books/537de43829f3a0">dbtで始めるデータパイプライン構築〜入門から実践〜</a> Zenn</li>
+<li><a href="https://zenn.dev/chameleon/books/6c85cfeab9f271">dbtハンズオン</a> Zenn</li>
+</ul>
+<h3 id="導入から実行まで">導入から実行まで</h3>
+<h4 id="step1--dbt-導入">[STEP1] ✴️ dbt 導入</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 作業場用意</span>
+</span></span><span class="line"><span class="cl">$ mkdir -p sandbox/dbt_training <span class="p">|</span> <span class="nb">cd</span> dbt_training
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># venv仮想環境を用意</span>
+</span></span><span class="line"><span class="cl">$ python3 -m venv venv
+</span></span><span class="line"><span class="cl">$ <span class="nb">source</span> venv/bin/activate          <span class="c1"># 仮想環境実行</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>$ pip install --upgrade pip   <span class="c1"># pip更新</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>$ pip install dbt-postgres    <span class="c1"># dbtインストール</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>$ deactivate                  <span class="c1"># 仮想環境停止</span>
+</span></span><span class="line"><span class="cl">$                                   <span class="c1"># ローカル環境に戻る</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># dbtに必要なものを準備</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">source</span> venv/bin/activate          <span class="c1"># 再度仮想環境実行</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>$ dbt --version               <span class="c1"># dbt環境が手元にあるか確認</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>$ mkdir <span class="se">\ </span>                    <span class="c1"># 必要なディレクトリを準備</span>
+</span></span><span class="line"><span class="cl">        models analysis tests seeds macros snapshots target　
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>$ touch dbt_project.yml　     <span class="c1"># dbt設定ファイルを作成（＊１: 後述のYAMLファイル）</span>
+</span></span></code></pre></div><ul>
+<li><code>*1</code>: <code>/touch dbt_project.yml</code>.
+<ul>
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;dbt_training&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">config-version</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;1.0.0&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">profile</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;dbt_training_dw&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">model-paths</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;models&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">analysis-paths</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;analysis&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">test-paths</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;tests&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">seed-paths</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;seeds&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">macro-paths</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;macros&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">snapshot-paths</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;snapshots&#34;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">target-path</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;target&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">clean-targets</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="l">target, dbt_packages]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">models</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">dbt_training</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">         </span><span class="nt">example</span><span class="p">:</span><span class="w">
+</span></span></span></code></pre></div><ul>
+<li>YAMLファイルの中身の詳細説明は<a href="https://zenn.dev/foursue/books/31456a86de5bb4/viewer/7fce02#%E5%90%84%E3%82%BF%E3%82%B0%E3%81%AE%E8%AA%AC%E6%98%8E">ここ</a>がわかりやすい.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 上位階層に不可視ディレクトリ作成</span>
+</span></span><span class="line"><span class="cl">$ mkdir .dbt <span class="p">|</span> <span class="nb">cd</span> .dbt
+</span></span><span class="line"><span class="cl">$ touch profiles.yml             <span class="c1"># DWH接続ファイルを作成（＊２: 後述のYAMLファイル）</span>
+</span></span></code></pre></div><ul>
+<li><code>*2</code>: <code>~/.dbt/profiles.yml</code>
+<ul>
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">dbt_training_dw</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l">dev</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">outputs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">dev</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">postgres</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l">localhost</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">user</span><span class="p">:</span><span class="w"> </span><span class="l">admin</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l">admin</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="m">5432</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">dbname</span><span class="p">:</span><span class="w"> </span><span class="l">postgres</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">schema</span><span class="p">:</span><span class="w"> </span><span class="l">public</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">threads</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">keepalives_idle</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">connect_timeout</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span></span></span></code></pre></div><ul>
+<li>上記は「PostgreSQL」に接続させる設定ファイル（cf.<a href="https://docs.getdbt.com/docs/core/connect-data-platform/postgres-setup">公式</a>）。</li>
+<li>dbt は DWH の接続設定を <code>~/.dbt/profiles.yml</code> に書く。</li>
+<li><code>~/.dbt/profiles.yml</code> は各DWH毎にプロファイルを書く。
+<ul>
+<li>選定するDWHの種類(PostgreSQL, BigQuery, Snowflake &hellip;etc.) 毎にアダプターがあり、プロファイルはアダプターごとに設定の書き方が異なる.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="step2--データベースpostgresql設定">[STEP2] 🐘 データベース（PostgreSQL）設定</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 再び仮装環境内に入ってDB（今回はPostgreSQL）を用意</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>$ touch docker-compose.yml <span class="p">|</span> vi docker-compose.yml
+</span></span></code></pre></div><ul>
+<li><code>docker-compose.yml</code>
+<ul>
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;3&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">services</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">postgres</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">postgres:latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l">always</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ports</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="m">5432</span><span class="p">:</span><span class="m">5432</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">POSTGRES_USER</span><span class="p">:</span><span class="w"> </span><span class="l">admin</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">POSTGRES_PASSWORD</span><span class="p">:</span><span class="w"> </span><span class="l">admin</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span>- <span class="l">./postgres:/var/lib/postgresql/data</span><span class="w">
+</span></span></span></code></pre></div></li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Dockerインストールされているか確認</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>$　docker --version
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># gemを新規で導入するときには、まず以下のコマンドを実行</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># cf. https://qiita.com/KenAra/items/f1976caa69468323c29d Qiita</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>$ docker-compose build
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>$ docker-compose up -d d    <span class="c1"># Docker起動</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>$ docker-compose stop       <span class="c1"># Docker停止</span>
+</span></span></code></pre></div><ul>
+<li>もしここで<code>Docker</code>でつまいづいたら🐋 <a href="https://gitpress.io/c/docker_/mw_docker">コマンド参照</a></li>
+</ul>
+<h4 id="step3--dbt-実行">[STEP3] ✴️ dbt 実行</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>$ dbt run
+</span></span></code></pre></div><ul>
+<li>※モデル作成していないから, 「<code>WARNING</code>」出ているが気にせず◎</li>
+<li>逆に実行後 <code>logs/</code> ディレクトリができていることを確認。</li>
+</ul>
+<h3 id="モデリング">モデリング</h3>
+<h4 id="step1--データソースの準備">[Step1] 🐘 データソースの準備</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># PostgreSQLログイン</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>$ psql -U postgres
+</span></span><span class="line"><span class="cl"><span class="nv">postgres</span><span class="o">=</span><span class="c1">#</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># データベース作成</span>
+</span></span><span class="line"><span class="cl"><span class="nv">postgres</span><span class="o">=</span><span class="c1"># \d                             # DB一覧確認</span>
+</span></span><span class="line"><span class="cl"><span class="nv">postgres</span><span class="o">=</span><span class="c1"># CREATE DATABASE dbt_training;  #</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># テーブル作成</span>
+</span></span><span class="line"><span class="cl"><span class="nv">postgres</span><span class="o">=</span><span class="c1"># \cd dbt_training               # 作成したDBに移動</span>
+</span></span><span class="line"><span class="cl"><span class="nv">dbt_training</span><span class="o">=</span><span class="c1"># CREATE SCHEMA raw;         # スキーマ作成</span>
+</span></span><span class="line"><span class="cl"><span class="nv">dbt_training</span><span class="o">=</span><span class="c1"># \du                        # ロール一覧確認</span>
+</span></span><span class="line"><span class="cl">    List of schemas　
+</span></span><span class="line"><span class="cl">　Name      <span class="p">|</span>  Owner
+</span></span><span class="line"><span class="cl">------------+----------
+</span></span><span class="line"><span class="cl">　public    <span class="p">|</span> postgres
+</span></span><span class="line"><span class="cl">　raw       <span class="p">|</span> postgres
+</span></span><span class="line"><span class="cl">    <span class="o">(</span><span class="m">2</span> rows<span class="o">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 各種テーブル作成</span>
+</span></span><span class="line"><span class="cl"><span class="nv">dbt_training</span><span class="o">=</span><span class="c1">#</span>
+</span></span><span class="line"><span class="cl">-- 従業員テーブル
+</span></span><span class="line"><span class="cl">CREATE TABLE <span class="s2">&#34;dbt_training&#34;</span>.<span class="s2">&#34;raw&#34;</span>.<span class="s2">&#34;employees&#34;</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;employee_id&#34;</span> varchar<span class="o">(</span>256<span class="o">)</span>,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;first_name&#34;</span> varchar<span class="o">(</span>256<span class="o">)</span>,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;last_name&#34;</span> varchar<span class="o">(</span>256<span class="o">)</span>,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;email&#34;</span> varchar<span class="o">(</span>256<span class="o">)</span>,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;job_id&#34;</span> varchar<span class="o">(</span>256<span class="o">)</span>,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;loaded_at&#34;</span> timestamp
+</span></span><span class="line"><span class="cl"><span class="o">)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">dbt_training</span><span class="o">=</span><span class="c1">#</span>
+</span></span><span class="line"><span class="cl">-- お仕事テーブル
+</span></span><span class="line"><span class="cl">CREATE TABLE <span class="s2">&#34;dbt_training&#34;</span>.<span class="s2">&#34;raw&#34;</span>.<span class="s2">&#34;jobs&#34;</span> <span class="o">(</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;job_id&#34;</span> varchar<span class="o">(</span>256<span class="o">)</span>,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;job_title&#34;</span> varchar<span class="o">(</span>256<span class="o">)</span>,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;min_salary&#34;</span> INTEGER,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;max_salary&#34;</span> INTEGER,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;loaded_at&#34;</span> timestamp
+</span></span><span class="line"><span class="cl"><span class="o">)</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">dbt_training</span><span class="o">=</span><span class="c1"># \dt myschema.* 　　　　　　　# スキーマ内テーブル一覧確認</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># データ格納</span>
+</span></span><span class="line"><span class="cl"><span class="nv">dbt_training</span><span class="o">=</span><span class="c1">#</span>
+</span></span><span class="line"><span class="cl">-- 従業員テーブルへデータをINSERT
+</span></span><span class="line"><span class="cl">INSERT INTO <span class="s2">&#34;dbt_training&#34;</span>.<span class="s2">&#34;raw&#34;</span>.<span class="s2">&#34;employees&#34;</span> VALUES
+</span></span><span class="line"><span class="cl">  <span class="o">(</span><span class="s1">&#39;101&#39;</span>,<span class="s1">&#39;taro&#39;</span>,<span class="s1">&#39;yamada&#39;</span>,<span class="s1">&#39;yamada@example.com&#39;</span>,<span class="s1">&#39;11&#39;</span>,<span class="s1">&#39;2022-03-16&#39;</span><span class="o">)</span>,
+</span></span><span class="line"><span class="cl">  <span class="o">(</span><span class="s1">&#39;102&#39;</span>,<span class="s1">&#39;ziro&#39;</span>,<span class="s1">&#39;sato&#39;</span>,<span class="s1">&#39;satou@example.com&#39;</span>,<span class="s1">&#39;11&#39;</span>,<span class="s1">&#39;2022-03-16&#39;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">dbt_training</span><span class="o">=</span><span class="c1">#</span>
+</span></span><span class="line"><span class="cl">-- お仕事テーブルへデータをINSERT
+</span></span><span class="line"><span class="cl">INSERT INTO <span class="s2">&#34;dbt_training&#34;</span>.<span class="s2">&#34;raw&#34;</span>.<span class="s2">&#34;jobs&#34;</span> VALUES
+</span></span><span class="line"><span class="cl">  <span class="o">(</span><span class="s1">&#39;11&#39;</span>,<span class="s1">&#39;datascientist&#39;</span>,6000000,12000000,<span class="s1">&#39;2022-03-16&#39;</span><span class="o">)</span>,
+</span></span><span class="line"><span class="cl">  <span class="o">(</span><span class="s1">&#39;12&#39;</span>,<span class="s1">&#39;dataengineer&#39;</span>,5000000,10000000,<span class="s1">&#39;2022-03-16&#39;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># PostgreSQLログアウト</span>
+</span></span><span class="line"><span class="cl"><span class="nv">dbt_training</span><span class="o">=</span><span class="c1"># \q</span>
+</span></span><span class="line"><span class="cl"><span class="nv">postgres</span><span class="o">=</span><span class="c1"># \q</span>
+</span></span></code></pre></div><ul>
+<li>cf. 🐘 <a href="https://gitpress.io/c/postgresql/sql_postgre">PostgreSQL</a>(コマンドリファレンス)</li>
+</ul>
+<h4 id="step2--dbt-モデル作成">[Step2] ✴️ dbt モデル作成</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>$ touch models/employee_names.sql
+</span></span></code></pre></div><ul>
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- employee_names.sql
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">select</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="s2">&#34;employee_id&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="p">,</span><span class="w"> </span><span class="n">concat</span><span class="p">(</span><span class="s2">&#34;first_name&#34;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;last_name&#34;</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">full_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="s2">&#34;dbt_training&#34;</span><span class="p">.</span><span class="s2">&#34;raw&#34;</span><span class="p">.</span><span class="s2">&#34;employees&#34;</span><span class="w">
+</span></span></span></code></pre></div><ul>
+<li>cf. <a href="https://docs.getdbt.com/docs/build/sql-models">SQL models</a> dbt</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># モデルを作成後に、dbt実行</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>$ dbt run
+</span></span><span class="line"><span class="cl">…省略…
+</span></span><span class="line"><span class="cl"><span class="m">1</span> of <span class="m">1</span> OK created view model public.employee_names.............................. <span class="o">[</span>CREATE VIEW in 0.08s<span class="o">]</span>
+</span></span></code></pre></div><ul>
+<li>最終的に <code>1 of 1 OK created view model</code> と表示されればOK。</li>
+<li>ココでは、デフォの<code>view</code>のモデルが作成される。</li>
+<li>PostgreSQL の中に <code>employee_names</code> ビューが生成されているはず。</li>
+</ul>
+<h4 id="step3--dbt-モデル作成様々なモデルマテリアライゼーション編">[Step3] ✴️ dbt モデル作成（様々なモデル：マテリアライゼーション編）</h4>
+<p><a href="https://docs.getdbt.com/docs/build/materializations">Materializations</a> dbt</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">種類</th>
+<th style="text-align:left">モデル</th>
+<th style="text-align:left">データ規模</th>
+<th style="text-align:left">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>view</code></td>
+<td style="text-align:left">Viewで作成</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left"><code>未指定だとデフォ</code>。高速モデル構築（データ移動が発生しないから）。 でも <strong>view &lt; table</strong> でクエリが遅い。初期構築に向いている。</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>table</code></td>
+<td style="text-align:left">Tableで作成</td>
+<td style="text-align:left">小規模</td>
+<td style="text-align:left">実行(<code>$ dbt run</code>)の度にデータ入れ直す. その為小規模データに向いている（大規模データだと都度入れ直しはコストや処理時間面で問題）。参照回数の多い、アドホックな分析や集計後のモデリングに適している( <strong>view &lt; tablea</strong> でクエリ速い為)</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>incremental</code></td>
+<td style="text-align:left">Tableで作成</td>
+<td style="text-align:left">大規模</td>
+<td style="text-align:left">実行(<code>$ dbt run</code>)の度にデータ入れ直す(新しいデータをInsertまたはUpdateで反映)。<strong>table &lt; incremental</strong>で速い。ただし、差分反映するための設定を追加で行う必要があり面倒。</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>ephemeral</code></td>
+<td style="text-align:left"><strong>CTE</strong> 変換</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">DWH上では構築されず, ephemeralモデルは他のモデルから参照可. 再利用可能なモデルを作る場合に有効.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>速い順：<code>view &lt; table &lt; incremental</code></li>
+<li>マテリアライゼーション(=Materializations)は、<code>dbt_project.yml</code> か、個別のモデル定義に直接書くことで設定できる。</li>
+<li>一般的には <code>dbt_project.yml</code> で書くほうが個別のモデルに書くよりも管理の面で有利。</li>
+<li>DWH によってはパフォーマンスのチューニングや特殊な設定を行いたい場合に、個別のモデルに定義するほうが良い場合もある。（メルペイはこれ）</li>
+</ul>
+<ol>
+<li><code>Table</code> のモデル作成
+<ul>
+<li>YAMLファイルを修正</li>
+<li><code>dbt_project.yml</code>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">…省略…</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">models</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">dbt_training</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">materialized_dwh</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">+materialized</span><span class="p">:</span><span class="w"> </span><span class="l">table</span><span class="w">
+</span></span></span></code></pre></div></li>
+<li>SQLファイル移動
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>$ mkdir models/materialized_dwh
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>$ mv models/employee_names.sql models/materialized_dwh/employee_names.sql
+</span></span><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>$ dbt run
+</span></span><span class="line"><span class="cl">…省略…
+</span></span><span class="line"><span class="cl">15:39:34  Finished running <span class="m">1</span> table model in 0.34s.
+</span></span><span class="line"><span class="cl">15:39:34
+</span></span><span class="line"><span class="cl">15:39:34  Completed successfully
+</span></span><span class="line"><span class="cl">15:39:34
+</span></span><span class="line"><span class="cl">15:39:34  Done. <span class="nv">PASS</span><span class="o">=</span><span class="m">1</span> <span class="nv">WARN</span><span class="o">=</span><span class="m">0</span> <span class="nv">ERROR</span><span class="o">=</span><span class="m">0</span> <span class="nv">SKIP</span><span class="o">=</span><span class="m">0</span> <span class="nv">TOTAL</span><span class="o">=</span><span class="m">1</span>
+</span></span></code></pre></div><ul>
+<li><del>View</del> ではなく <strong>Table</strong> のモデルが作成されている。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>incremental</code> のモデル作成
+<ul>
+<li>SQLファイルに直書き
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- models/materialized_dwh/employee_names.sql
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">{{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">config</span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">materialized</span><span class="o">=</span><span class="s1">&#39;incremental&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">}}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">select</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s2">&#34;employee_id&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">,</span><span class="w"> </span><span class="n">concat</span><span class="p">(</span><span class="s2">&#34;first_name&#34;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39; &#39;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;last_name&#34;</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">full_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s2">&#34;dbt_training&#34;</span><span class="p">.</span><span class="s2">&#34;raw&#34;</span><span class="p">.</span><span class="s2">&#34;employees&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">{</span><span class="o">%</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">is_incremental</span><span class="p">()</span><span class="w"> </span><span class="o">%</span><span class="err">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">where</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="s2">&#34;employee_id&#34;</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="s2">&#34;employee_id&#34;</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="err">{{</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="err">}}</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">{</span><span class="o">%</span><span class="w"> </span><span class="n">endif</span><span class="w"> </span><span class="o">%</span><span class="err">}</span><span class="w">
+</span></span></span></code></pre></div><ul>
+<li>cf. <a href="https://docs.getdbt.com/docs/build/incremental-models">Incremental models</a> dbt</li>
+</ul>
+</li>
+<li>dbt 実行
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="o">(</span>venv<span class="o">)</span>dbt_training % dbt run
+</span></span><span class="line"><span class="cl">…省略…
+</span></span><span class="line"><span class="cl">15:51:02  <span class="m">1</span> of <span class="m">1</span> OK created incremental model public.employee_names....................... <span class="o">[</span>INSERT <span class="m">0</span> <span class="m">2</span> in 0.17s<span class="o">]</span>
+</span></span><span class="line"><span class="cl">15:51:02
+</span></span><span class="line"><span class="cl">15:51:02  Finished running <span class="m">1</span> incremental model in 0.34s.
+</span></span><span class="line"><span class="cl">15:51:02
+</span></span><span class="line"><span class="cl">15:51:02  Completed successfully
+</span></span><span class="line"><span class="cl">15:51:02
+</span></span><span class="line"><span class="cl">15:51:02  Done. <span class="nv">PASS</span><span class="o">=</span><span class="m">1</span> <span class="nv">WARN</span><span class="o">=</span><span class="m">0</span> <span class="nv">ERROR</span><span class="o">=</span><span class="m">0</span> <span class="nv">SKIP</span><span class="o">=</span><span class="m">0</span> <span class="nv">TOTAL</span><span class="o">=</span><span class="m">1</span>
+</span></span></code></pre></div><ul>
+<li>incremental モデルによって、INSERT が2行発生.</li>
+<li>※ <code>where句</code> では, 既に追加済みの &ldquo;employee_id&rdquo; は含まれないようにフィルタリング(コレをしないと実行の度に差分更新で都度追加(=重複発生)させてしまう危険あり.)</li>
+<li>※ <code>is_incremental()</code>はマクロで, モデルのマテリアライゼーションが <strong>incremental</strong> の場合に <strong>true</strong> 返す。</li>
+<li>※ <code>{% if 条件 %} ~ {% endif %}</code> は、<strong>jinja</strong> のテンプレート機能で演算子を使える。</li>
+<li>※ <code>{{ this }}</code>は、<strong>jinja</strong> のテンプレート機能で変数を使える(モデル自身のテーブル名または、ビュー名)。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="カスタムモデリング">カスタムモデリング</h3>
+<h4 id="エイリアス機能">エイリアス機能</h4>
+<p>cf. <a href="https://docs.getdbt.com/docs/build/custom-aliases">Custom aliases</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- hogehoge.sql
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">{{</span><span class="w"> </span><span class="n">config</span><span class="p">(</span><span class="k">alias</span><span class="o">=</span><span class="s1">&#39;fugafuga&#39;</span><span class="p">)</span><span class="w"> </span><span class="err">}}</span><span class="w">
+</span></span></span></code></pre></div><p>モデル名(ビュー名)は<code>hogehoge</code>. 一方DBに作成されるテーブル名は<code>fugafuga</code>.</p>
+<h4 id="カスタムスキーマ機能">カスタムスキーマ機能</h4>
+<p>cf. <a href="https://docs.getdbt.com/docs/build/custom-schemas">Custom schemas</a></p>
+<ol>
+<li>利用シーン</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- hogehoge.sql
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">{{</span><span class="w"> </span><span class="n">config</span><span class="p">(</span><span class="k">schema</span><span class="o">=</span><span class="s1">&#39;piyopiyo&#39;</span><span class="p">)</span><span class="w"> </span><span class="err">}}</span><span class="w">
+</span></span></span></code></pre></div><p>このように作られる=&gt; <code>public_piyopiyo</code></p>
+<ol start="2">
+<li>利用シーン</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- hogehoge.sql
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">{{</span><span class="w"> </span><span class="n">config</span><span class="p">(</span><span class="k">alias</span><span class="o">=</span><span class="s1">&#39;fugafuga&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">schema</span><span class="o">=</span><span class="s1">&#39;piyopiyo&#39;</span><span class="p">)</span><span class="w"> </span><span class="err">}}</span><span class="w">
+</span></span></span></code></pre></div><p>このように作られる=&gt; <code>public_piyopiyo.fugafuga</code></p>
+<ol start="3">
+<li>利用シーン</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">models</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">hoge_project</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">piyo</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">+schema</span><span class="p">:</span><span class="w"> </span><span class="l">piyopiyo</span><span class="w">
+</span></span></span></code></pre></div><p><code>models/piyo</code> ディレクトリ配下のモデルは <code>&lt;target_shema&gt;_piyopiyo</code> スキーマに保存できる.</p>
+<h4 id="カスタムデータベース機能">カスタムデータベース機能</h4>
+<p>cf. <a href="https://docs.getdbt.com/docs/build/custom-databases">Custom databases</a></p>
+<h4 id="変数機能">変数機能</h4>
+<p>cf. <a href="https://docs.getdbt.com/docs/build/project-variables">Project variables</a></p>
+<h3 id="テスト">テスト</h3>
+<p>e.g.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ dbt <span class="nb">test</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --profiles-dir ./profiles <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --vars <span class="s1">&#39;$(cat ./config/local/vars.yml)&#39;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --select <span class="s1">&#39;company_hoge_jp__bigquery_resource__jobs_url_daily_extract_of_connectedsheet&#39;</span>
+</span></span></code></pre></div><p>実務では、上記のよに単に <code>test</code> を実施するのではなく、Optionsを付して慎重に行っていた。</p>
+<h3 id="テスト手法">テスト手法</h3>
+<ol>
+<li>Singular data tests（単一テスト）<a href="https://docs.getdbt.com/docs/build/data-tests#singular-data-tests">cf.</a></li>
+<li>Generic data tests （汎用テスト）<a href="https://docs.getdbt.com/docs/build/data-tests#generic-data-tests">cf.</a></li>
+</ol>
+<h4 id="手法1-singular-data-tests単一テスト">[手法1] Singular data tests（単一テスト）</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- tests/always_fail_test.sql
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">select</span><span class="w"> </span><span class="n">id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="n">hoge</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">where</span><span class="w"> </span><span class="k">true</span><span class="w">
+</span></span></span></code></pre></div><h4 id="手法2-generic-data-tests汎用テスト">[手法2] Generic data tests（汎用テスト）</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># models/schema.yml</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">models</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">model_name_hoge</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">columns</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">fuga</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;fuga is fuga.&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">tests</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="l">unique</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="l">not_null</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="nt">accepted_values</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">values</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;hoge&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;fuga&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;piyo&#39;</span><span class="p">]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="nt">relationships</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">to</span><span class="p">:</span><span class="w"> </span><span class="l">ref(&#39;other_model_name&#39;)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">field</span><span class="p">:</span><span class="w"> </span><span class="l">id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">fuga2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;fuga2 is fuga2...&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">tests</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="l">my_not_null</span><span class="w">
+</span></span></span></code></pre></div><p>cf. <a href="https://docs.getdbt.com/reference/model-properties">Model properties</a> dbt</p>
+<h5 id="2-1-dbt-が用意してくれているテスト">2-1. dbt が用意してくれているテスト</h5>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">ﾃｽﾄ項目</th>
+<th style="text-align:left">指定されたｶﾗﾑに対して</th>
+<th style="text-align:left">query</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>- unique</code></td>
+<td style="text-align:left">データが全てユニーク値であることをﾃｽﾄ</td>
+<td style="text-align:left">distinct</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>- not_null</code></td>
+<td style="text-align:left">null を含まないことをﾃｽﾄ</td>
+<td style="text-align:left">is not null</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>- accepted_values</code></td>
+<td style="text-align:left">指定された値以外を含まないことをﾃｽﾄ</td>
+<td style="text-align:left">not in</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>- relationships</code></td>
+<td style="text-align:left">「to:」 に指定されたモデルの field に指定されたカラムに含まれていることをﾃｽﾄ</td>
+<td style="text-align:left">exsits</td>
+</tr>
+</tbody>
+</table>
+<h5 id="2-2-独自に組み込めるテストcostumgeneric">2-2. 独自に組み込めるテスト(CostumGeneric)</h5>
+<ol>
+<li>テストを記述</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- tests/generic/hoge.sql
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">{</span><span class="o">%</span><span class="w"> </span><span class="n">test</span><span class="w"> </span><span class="n">my_not_null</span><span class="p">(</span><span class="n">model</span><span class="p">,</span><span class="w"> </span><span class="k">column_name</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="err">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">from</span><span class="w"> </span><span class="err">{{</span><span class="w"> </span><span class="n">model</span><span class="w"> </span><span class="err">}}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">where</span><span class="w"> </span><span class="err">{{</span><span class="w"> </span><span class="k">column_name</span><span class="w"> </span><span class="err">}}</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">null</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">{</span><span class="o">%</span><span class="w"> </span><span class="n">endtest</span><span class="w"> </span><span class="o">%</span><span class="err">}</span><span class="w">
+</span></span></span></code></pre></div><ol start="2">
+<li><code>$ dbt test</code></li>
+<li><code>target/compiled/</code> にコンパイルされたSQLが抽出されている。</li>
+</ol>
+<p>cf. <a href="https://docs.getdbt.com/best-practices/writing-custom-generic-tests">Writing custom generic data tests</a> dbt</p>
+<h3 id="テスト手法小技">テスト手法（小技）</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ dbt <span class="nb">test</span> --store-failures
+</span></span></code></pre></div><p>テスト実行したときに失敗したテストによって条件を満たさなかった行を保存する事が出来る。</p>
+<h3 id="ドキュメント機能">ドキュメント機能</h3>
+<h3 id="ソース機能">ソース機能</h3>
+<h2 id="oss活動">OSS活動</h2>
+<pre tabindex="0"><code>貢献したい人はより学習して、世のため人のため、OSS活動に参加してみる（てか、参加したい！）
+</code></pre><ul>
+<li><code>cf.</code>
+<ul>
+<li><a href="https://zenn.dev/daizamurai/books/87f9727b0f7ee1">dbt-coreのOSS活動ことはじめ</a> Zeen</li>
+</ul>
+</li>
+</ul>
+<h2 id="ref">REF.</h2>
+<ul>
+<li>
+<p><a href="https://www.isoroot.jp/blog/6054/">はじめて理解するdbt</a> isoroot</p>
+</li>
+<li>
+<p><a href="https://docs.getdbt.com/docs/introduction">What is dbt?</a> dbt</p>
+</li>
+<li>
+<p><a href="https://zenn.dev/foursue/books/31456a86de5bb4">dbt 入門</a> Zenn</p>
+</li>
+<li>
+<p><a href="https://zenn.dev/dbt_tokyo/books/537de43829f3a0">dbtで始めるデータパイプライン構築〜入門から実践〜</a> Zenn</p>
+</li>
+<li>
+<p><a href="https://www.isoroot.jp/blog/6054/">はじめて理解するdbt</a> isoroot</p>
+</li>
+<li>
+<p><a href="https://zenn.dev/foursue/books/31456a86de5bb4/viewer/6037e5">モデルを作ろう</a> Zenn</p>
+</li>
+<li>
+<p><a href="https://zenn.dev/foursue/books/31456a86de5bb4/viewer/4201af#%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%99%E3%82%8B%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%A0%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E6%A9%9F%E8%83%BD">モデルをもう少し深く使おう</a> Zenn</p>
+</li>
+<li>
+<p><a href="https://dev.classmethod.jp/articles/dbt-core-run-via-github-actions/">dbt-coreで開発したModelをGitHub Actionsで定期実行してみた</a> DevelopersIO</p>
+</li>
+<li>
+<p><a href="https://dev.classmethod.jp/articles/20220223-dbt-cloud-cli-diff/">dbt Cloudとdbt-core (CLI)の違いを整理してみた</a> DevelopersIO</p>
+</li>
+<li>
+<p><a href="https://dev.classmethod.jp/articles/differences-between-dbt-core-and-dbt-cloud/">dbt Coreとdbt Cloudの関係性・違いなどについてまとめてみた #dbt</a> DevelopersIO</p>
+</li>
+<li>
+<p><a href="https://docs.getdbt.com/reference/commands/test">About dbt test command</a> dbt</p>
+</li>
+<li>
+<p><a href="https://docs.getdbt.com/docs/build/data-tests#generic-data-tests">Add data tests to your DAG</a> dbt</p>
+</li>
+<li>
+<p><a href="https://docs.getdbt.com/reference/data-test-configs">Data test configurations</a> -dbt</p>
+</li>
+<li>
+<p><a href="https://zenn.dev/foursue/books/31456a86de5bb4/viewer/5efa91">テスト(test)を行おう</a> Zenn</p>
+</li>
+<li>
+<p><a href="https://qiita.com/manabian/items/67af7e4476d436aded77">データエンジニア界隈で話題のdbt（data build tool）のまとめ</a> Qiita</p>
+</li>
+<li>
+<p><a href="https://zenn.dev/dbt_tokyo/books/537de43829f3a0/viewer/what_dbt">dbtとは？</a> Zenn</p>
+</li>
+<li>
+<p><a href="https://zenn.dev/foursue/books/31456a86de5bb4/viewer/04bca4">dbt プロジェクトの始め方</a> - Zenn (村長)</p>
+</li>
+<li>
+<p><a href="https://www.aggua.io/blog/what-is-dbt-why-use-it">What Is DBT and Why You Should Use It?</a> aggua</p>
+</li>
+<li>
+<p><a href="https://techblog.zozo.com/entry/dbt-adoption">dbt導入によるデータマート整備</a> zozo</p>
+</li>
+</ul>
+</article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="application/javascript" src='http://localhost:1313/todayilearnd/js/toc.js'></script>
+<link rel="stylesheet" href='http://localhost:1313/todayilearnd/css/toc.css' />
+
+
+<div id="gitalk-container" class="gitalk-container"></div>
+<link rel="stylesheet" href='http://localhost:1313/todayilearnd/css/gitalk.css'>
+<script src='http://localhost:1313/todayilearnd/js/gitalk.min.js'></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: 'Ov23liEFoBzgkYuZCPpt',
+    clientSecret: 'cd6b4e0b965327f649b508667055c7ea44135167',
+    repo: 'todayilearnd',
+    owner: 'shiro',
+    admin: ['shiro'],
+    id: eval("location.pathname"), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    gitalk.render('gitalk-container');
+  })();
+</script>
+
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="http://localhost:1313/todayilearnd/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+</body>
+
+<script type="application/javascript" src="http://localhost:1313/todayilearnd/js/github-style.js"></script>
+
+
+
+
+
+</html>
