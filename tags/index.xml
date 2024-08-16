@@ -6,8 +6,29 @@
     <description>Recent content in Tags on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Aug 2024 18:41:57 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 17 Aug 2024 01:02:03 +0900</lastBuildDate>
     <atom:link href="https://shiro-mpdm.github.io/todayilearnd/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IDE</title>
+      <link>https://shiro-mpdm.github.io/todayilearnd/tags/ide/</link>
+      <pubDate>Sat, 17 Aug 2024 01:02:03 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearnd/tags/ide/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TextEditor</title>
+      <link>https://shiro-mpdm.github.io/todayilearnd/tags/texteditor/</link>
+      <pubDate>Sat, 17 Aug 2024 01:02:03 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearnd/tags/texteditor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vim</title>
+      <link>https://shiro-mpdm.github.io/todayilearnd/tags/vim/</link>
+      <pubDate>Sat, 17 Aug 2024 01:02:03 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearnd/tags/vim/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Know-How</title>
       <link>https://shiro-mpdm.github.io/todayilearnd/tags/know-how/</link>
