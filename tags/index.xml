@@ -6,8 +6,15 @@
     <description>Recent content in Tags on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Jul 2024 04:23:38 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 16 Aug 2024 18:41:57 +0900</lastBuildDate>
     <atom:link href="https://shiro-mpdm.github.io/todayilearnd/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Know-How</title>
+      <link>https://shiro-mpdm.github.io/todayilearnd/tags/know-how/</link>
+      <pubDate>Fri, 16 Aug 2024 18:41:57 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearnd/tags/know-how/</guid>
+      <description></description>
+    </item>
     <item>
       <title>BigQuery</title>
       <link>https://shiro-mpdm.github.io/todayilearnd/tags/bigquery/</link>
@@ -34,34 +41,6 @@
       <link>https://shiro-mpdm.github.io/todayilearnd/tags/sql/</link>
       <pubDate>Fri, 26 Jul 2024 04:23:38 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearnd/tags/sql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ATOM</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/tags/atom/</link>
-      <pubDate>Wed, 24 Jul 2024 17:20:33 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/tags/atom/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>IDE</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/tags/ide/</link>
-      <pubDate>Wed, 24 Jul 2024 17:20:33 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/tags/ide/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>TextEditor</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/tags/texteditor/</link>
-      <pubDate>Wed, 24 Jul 2024 17:20:33 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/tags/texteditor/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Vim</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/tags/vim/</link>
-      <pubDate>Wed, 24 Jul 2024 17:20:33 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/tags/vim/</guid>
       <description></description>
     </item>
     <item>
@@ -97,13 +76,6 @@
       <link>https://shiro-mpdm.github.io/todayilearnd/tags/github/</link>
       <pubDate>Tue, 23 Jul 2024 04:13:21 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearnd/tags/github/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Know-How</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/tags/know-how/</link>
-      <pubDate>Tue, 23 Jul 2024 04:13:21 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/tags/know-how/</guid>
       <description></description>
     </item>
     <item>
