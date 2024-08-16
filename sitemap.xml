@@ -2,23 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://shiro-mpdm.github.io/todayilearnd/post/</loc>
+    <lastmod>2024-08-17T01:02:03+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearnd/</loc>
+    <lastmod>2024-08-17T01:02:03+09:00</lastmod>
+  </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearnd/post/bookread_how_to_jisui/</loc>
     <lastmod>2024-08-16T18:41:57+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearnd/tags/know-how/</loc>
     <lastmod>2024-08-16T18:41:57+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/post/</loc>
-    <lastmod>2024-08-16T18:41:57+09:00</lastmod>
-  </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearnd/tags/</loc>
-    <lastmod>2024-08-16T18:41:57+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/</loc>
     <lastmod>2024-08-16T18:41:57+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearnd/post/macbook_looks_like_native_applivcation/</loc>
     <lastmod>2024-08-03T16:04:18+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearnd/tags/dbt/</loc>
+    <lastmod>2024-07-30T02:30:55+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearnd/post/dbt_seeking_basic_understanding/</loc>
+    <lastmod>2024-07-30T02:30:55+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearnd/tags/dre/</loc>
+    <lastmod>2024-07-30T02:30:55+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearnd/tags/elt/</loc>
+    <lastmod>2024-07-30T02:30:55+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearnd/tags/hands-on/</loc>
+    <lastmod>2024-07-30T02:30:55+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearnd/tags/bigquery/</loc>
     <lastmod>2024-07-26T04:23:38+09:00</lastmod>
@@ -27,9 +42,6 @@
     <lastmod>2024-07-26T04:23:38+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearnd/tags/dataanalytics/</loc>
-    <lastmod>2024-07-26T04:23:38+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/tags/hands-on/</loc>
     <lastmod>2024-07-26T04:23:38+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearnd/tags/sql/</loc>
