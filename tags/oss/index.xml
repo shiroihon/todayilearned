@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OSS on Today I Learned</title>
-    <link>https://shiro-mpdm.github.io/todayilearnd/tags/oss/</link>
+    <link>http://localhost:1313/todayilearnd/tags/oss/</link>
     <description>Recent content in OSS on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Jul 2024 12:10:51 +0900</lastBuildDate>
-    <atom:link href="https://shiro-mpdm.github.io/todayilearnd/tags/oss/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/todayilearnd/tags/oss/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitHub What are these licenses</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/post/github_what_are_these_licenses/</link>
+      <link>http://localhost:1313/todayilearnd/post/github_what_are_these_licenses/</link>
       <pubDate>Fri, 19 Jul 2024 12:10:51 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/post/github_what_are_these_licenses/</guid>
+      <guid>http://localhost:1313/todayilearnd/post/github_what_are_these_licenses/</guid>
       <description>📍 Here is a brief summary of these licenses that are commonly seen on GitHub.</description>
     </item>
   </channel>

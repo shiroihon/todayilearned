@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DataAnalytics on Today I Learned</title>
-    <link>https://shiro-mpdm.github.io/todayilearnd/tags/dataanalytics/</link>
+    <link>http://localhost:1313/todayilearnd/tags/dataanalytics/</link>
     <description>Recent content in DataAnalytics on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Jul 2024 04:23:38 +0900</lastBuildDate>
-    <atom:link href="https://shiro-mpdm.github.io/todayilearnd/tags/dataanalytics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/todayilearnd/tags/dataanalytics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BigQuery Structured Data Processing 100 knock</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/post/bigquery_structured_data_processing_100_ball_drill/</link>
+      <link>http://localhost:1313/todayilearnd/post/bigquery_structured_data_processing_100_ball_drill/</link>
       <pubDate>Fri, 26 Jul 2024 04:23:38 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/post/bigquery_structured_data_processing_100_ball_drill/</guid>
+      <guid>http://localhost:1313/todayilearnd/post/bigquery_structured_data_processing_100_ball_drill/</guid>
       <description>🔍 I tried using SQL to learn the basics of data science.</description>
     </item>
     <item>
       <title>Static Data Online Free</title>
-      <link>https://shiro-mpdm.github.io/todayilearnd/post/stats_data_free_online/</link>
+      <link>http://localhost:1313/todayilearnd/post/stats_data_free_online/</link>
       <pubDate>Wed, 17 Jul 2024 23:14:44 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearnd/post/stats_data_free_online/</guid>
+      <guid>http://localhost:1313/todayilearnd/post/stats_data_free_online/</guid>
       <description>📊 An article summarizing various statistical data that can be viewed and used for free.</description>
     </item>
   </channel>
