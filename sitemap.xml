@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://shiro-mpdm.github.io/todayilearnd/post/</loc>
+    <lastmod>2024-08-18T04:39:19+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearnd/</loc>
+    <lastmod>2024-08-18T04:39:19+09:00</lastmod>
+  </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearnd/post/editor_vim_commands/</loc>
     <lastmod>2024-08-17T01:02:03+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearnd/tags/ide/</loc>
     <lastmod>2024-08-17T01:02:03+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/post/</loc>
-    <lastmod>2024-08-17T01:02:03+09:00</lastmod>
-  </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearnd/tags/</loc>
     <lastmod>2024-08-17T01:02:03+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearnd/tags/texteditor/</loc>
-    <lastmod>2024-08-17T01:02:03+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearnd/</loc>
     <lastmod>2024-08-17T01:02:03+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearnd/tags/vim/</loc>
@@ -111,7 +111,7 @@
     <lastmod>2024-07-07T16:37:01+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearnd/readme/</loc>
-    <lastmod>2024-08-08T00:27:50+09:00</lastmod>
+    <lastmod>2024-08-18T03:18:40+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearnd/categories/</loc>
   </url>

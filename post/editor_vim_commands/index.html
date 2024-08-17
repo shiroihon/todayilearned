@@ -174,7 +174,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      1295 Words
+                      1173 Words
                     
 
                   </div>
@@ -224,26 +224,29 @@
 <li>
 <p>エディタ起動</p>
 <ul>
-<li><code>$ vim</code>:</li>
-<li><code>$ view</code>:（Viewモード）vimの機能を使って、ファイルの書き換えミスの保存やアクシデントなどを防ぎたい時に利用できる。</li>
-</ul>
-</li>
-<li>
-<p>ビジュアルモード</p>
+<li><code>$ vim</code>
 <ul>
-<li><code>v</code>: 複数文字や行を選択できる</li>
+<li>( <code>$ view</code> : Viewモードを使って、ファイルの書き換えミスの保存やアクシデントなどを防ぎたい時に便利！）</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
-<p>インサートモード</p>
+<p><strong>ビジュアルモード</strong></p>
+<ul>
+<li><code>v</code> : 複数文字や行を選択できるモード</li>
+</ul>
+</li>
+<li>
+<p><strong>インサートモード</strong></p>
 <ul>
 <li><details>
   <summary><code>i</code>: ファイルに書き込むためのモード</summary>
   <p></p>
   <ul>
-<li><code>a</code>: 次の文字からインサートモードに切替え</li>
-<li><code>o</code>: カーソルの下に空白を入れ、インサートモードに切替え</li>
-<li><code>0</code>: カーソル行に空白を入れ、インサートモードに切替え</li>
+<li><code>a</code> : 次の文字からインサートモードに切替え</li>
+<li><code>o</code> : カーソルの下に空白を入れ、インサートモードに切替え</li>
+<li><code>0</code> : カーソル行に空白を入れ、インサートモードに切替え</li>
 </ul>
 
   <p></p>
@@ -252,21 +255,99 @@
 </ul>
 </li>
 <li>
-<p>コマンドモード</p>
+<p><strong>コマンドモード</strong></p>
 <ul>
 <li><details>
   <summary><code>:</code></summary>
   <p></p>
   <ul>
-<li>保存 / 終了
+<li>
+<p>保存 / 終了</p>
 <ul>
-<li><code>w</code> : 上書き保存</li>
-<li><code>wq</code>: 保存して終了</li>
-<li><code>q</code> : 編集終了</li>
-<li><code>q!</code>: 保存をせずに終了</li>
+<li><code>:w</code> : 上書き保存</li>
+<li><code>:wq</code>: 保存して終了</li>
+<li><code>:q</code> : 編集終了</li>
+<li><code>:q!</code>: 保存をせずに終了</li>
 </ul>
 </li>
-<li>削除
+<li>
+<p>削除</p>
+<ul>
+<li><code>:%d</code>: 一括削除（ファイルの中身を空の状態にする）</li>
+</ul>
+</li>
+<li>
+<p>ジャンプ（移動）</p>
+<ul>
+<li><code>:${数字}</code> : 指定した行数に移動
+<ul>
+<li>e.g.</li>
+<li><code>:5</code> : 5行目に移動</li>
+<li><code>:10</code> : 10行目に移動</li>
+</ul>
+</li>
+<li><code>:set number</code> : 行数を表示</li>
+<li><code>:set nonumber</code> : 行数を非表示</li>
+</ul>
+</li>
+<li>
+<p>コマンドを実行</p>
+<ul>
+<li><code>:!{$コマンド}</code> :</li>
+<li>e.g.
+<ul>
+<li><code>:!ls</code> : lsコマンド（一覧表示）</li>
+<li><code>:!python3 test.py</code> : Pythonファイルを実行</li>
+<li><code>:!ruby test.rb</code> : Rubyファイルを実行</li>
+</ul>
+</li>
+<li><code>:!!</code> : 前のコマンドを実行</li>
+</ul>
+</li>
+</ul>
+
+  <p></p>
+</details>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>ノーマルモード</strong></p>
+<ul>
+<li><details>
+  <summary><code>[esc]</code>:</summary>
+  <p></p>
+  <ul>
+<li>
+<p>基本移動（カーソル移動）</p>
+<ul>
+<li><code>k</code>: ↑ 上に移動</li>
+<li><code>j</code>: ↓ 下に移動</li>
+<li><code>h</code>: ← 左に移動</li>
+<li><code>l</code>: → 右に移動</li>
+</ul>
+</li>
+<li>
+<p>特殊移動</p>
+<ul>
+<li><code>0</code> : 行頭に移動</li>
+<li><code>^</code> / <code>$</code> : インデントの先頭/行末に移動</li>
+<li><code>{</code> / <code>}</code> : ひとつ上/下の段落に移動</li>
+<li><code>[[</code> / <code>]]</code> : ひとつ上/下の空白行に移動</li>
+<li><code>gg</code> / <code>G</code> : ファイルの先頭/最後に移動</li>
+<li><code>Ctrl + o</code>: 移動前に戻る</li>
+</ul>
+</li>
+<li>
+<p>戻る(undo) &amp; 進む(redo)</p>
+<ul>
+<li><code>u</code> : ひとつ前の状態に戻す</li>
+<li><code>=</code> : その行でインデント位置を自動修正</li>
+<li><code>Ctrl + r</code> : 直前の操作に進む</li>
+</ul>
+</li>
+<li>
+<p>削除</p>
 <ul>
 <li><code>x</code>  : 1文字削除</li>
 <li><code>dd</code> : 1行削除</li>
@@ -275,87 +356,12 @@
 <li><code>dw</code> : 単語ごとに削除</li>
 </ul>
 </li>
-<li>移動
-<ul>
-<li><code>:set number</code>  : 行数を表示</li>
-<li><code>:set nonumber</code>: 行数を非表示</li>
-<li><code>:${数字}</code>      : 指定した行数に移動
-<ul>
-<li>e.g.
-<ul>
-<li><code>:5</code>: 5行目に移動</li>
-<li><code>:10</code>: 10行目に移動</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-  <p></p>
-</details>
-</li>
-</ul>
-</li>
 <li>
-<p>ノーマルモード</p>
+<p>コピー(ヤンク) &amp; ペースト(プット)</p>
 <ul>
-<li><details>
-  <summary><code>[esc]</code></summary>
-  <p></p>
-  <ul>
-<li>基本移動（カーソル移動）
+<li><code>yy</code>     :（ヤンク）1行コピー
 <ul>
-<li><code>k</code>: ↑ 上に移動</li>
-<li><code>j</code>: ↓ 下に移動</li>
-<li><code>h</code>: ← 左に移動</li>
-<li><code>l</code>: → 右に移動</li>
-</ul>
-</li>
-<li>特殊移動
-<ul>
-<li><code>0</code> : 行頭に移動</li>
-<li><code>^</code> : インデントの先頭に移動</li>
-<li><code>$</code> : インデントの行末に移動</li>
-<li><code>{</code> : ひとつ上の段落に移動</li>
-<li><code>}</code> : ひとつ下の段落に移動</li>
-<li><code>[[</code>: ひとつ上の空白行に移動</li>
-<li><code>]]</code>: ひとつ下の空白行に移動</li>
-<li><code>gg</code>: ファイルの先頭に移動</li>
-<li><code>G</code> : ファイルの最後に移動</li>
-<li><code>Ctrl + o</code>: 移動前に戻る</li>
-</ul>
-</li>
-</ul>
-
-  <p></p>
-</details>
-</li>
-</ul>
-</li>
-<li>
-<details>
-  <summary>戻る(undo) &amp; 進む(redo)</summary>
-  <p></p>
-  <ul>
-<li><code>u</code>: ひとつ前の状態に戻す（作業と元に戻す）</li>
-<li><code>=</code>: その行でインデント位置を自動修正</li>
-<li><code>Ctrl + r</code>: 直前の操作に進む</li>
-</ul>
-
-  <p></p>
-</details>
-
-</li>
-<li>
-<details>
-  <summary>コピー(ヤンク)&amp;ペースト(プット)</summary>
-  <p></p>
-  <ul>
-<li><code>yy</code>     :（ヤンク）1行コピー</li>
-<li><code>{数字}yy</code>:（ヤンク）複数行コピー
-<ul>
+<li><code>{数字}yy</code>:（ヤンク）複数行コピー</li>
 <li>e.g.
 <ul>
 <li><code>2yy</code>: 2行コピー</li>
@@ -369,73 +375,22 @@
 <li><code>ddp</code>: カット＆ペースト</li>
 <li><code>J</code>  : カーソル行と下の行を連結する</li>
 </ul>
-
-  <p></p>
-</details>
-
 </li>
 <li>
-<details>
-  <summary>実行</summary>
-  <p></p>
-  <ul>
-<li><code>:!${コマンド}</code>: コマンドを実行
+<p>検索 &amp; 置換</p>
 <ul>
-<li>e.g.
-<ul>
-<li><code>:!python3 test.py</code>: Pythonファイルを実行</li>
-<li><code>:!ruby test.rb</code>: Rubyファイルを実行</li>
-<li><code>:!ls</code>: lsコマンド（一覧表示）</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><code>:!!</code>: 前のコマンドを実行</li>
-</ul>
-
-  <p></p>
-</details>
-
-</li>
-<li>
-<details>
-  <summary>削除</summary>
-  <p></p>
-  <ul>
-<li><code>:%d</code>: 一括削除（ファイルの中身を空の状態にする）</li>
-</ul>
-
-  <p></p>
-</details>
-
-</li>
-<li>
-<details>
-  <summary>検索&amp;置換</summary>
-  <p></p>
-  <ul>
-<li><code>\${ワード}</code>: 検索</li>
-<li><code>n</code>: 次の検索結果に移動</li>
-<li><code>N</code>: 前の検索結果に移動</li>
-<li><code>R</code>: 置換</li>
-<li><code>:%s/${検索ワード}/${置換ワード}/g</code>: 一括置換
-<ul>
-<li>e.g. <code>:%s/dev/prod/g</code>: devのワードをprodへ全て置換する</li>
-</ul>
-</li>
-<li><code>:%s/${検索ワード}/${置換ワード}/gc</code>: 確認しながら置換
-<ul>
-<li>e.g. <code>:%s/dev/prod/gc</code>: devのワードをprodへ、1ワードずつ確認しながら置換が可能。コマンド実行後に、確認オプションが出力される。</li>
+<li><code>\${ワード}</code> : 検索</li>
+<li><code>n</code> : 次の検索結果に移動</li>
+<li><code>N</code> : 前の検索結果に移動</li>
+<li><code>R</code> : 置換</li>
 </ul>
 </li>
 </ul>
 
   <p></p>
 </details>
-
 </li>
-<li>
-<p><code>:norm I#</code>: 複数行コメントアウト</p>
+</ul>
 </li>
 </ul>
 <h3 id="convenience">Convenience</h3>
@@ -443,20 +398,20 @@
 <li>
 <p>置換</p>
 <ul>
-<li>一括置換</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># ファイル内一括置換</span>
+<li>一括置換
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># ファイル内 一括置換</span>
 </span></span><span class="line"><span class="cl">:%s/<span class="o">{</span>old<span class="o">}</span>/<span class="o">{</span>new<span class="o">}</span>/g
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 行内一括置換</span>
-</span></span><span class="line"><span class="cl">:s/<span class="o">{</span>old<span class="o">}</span>/<span class="o">{</span>new<span class="o">}</span>/g
 </span></span></code></pre></div><ul>
-<li>範囲内指定</li>
+<li><code>:%s/${検索ワード}/${置換ワード}/g</code> : 一括置換</li>
+<li><code>:%s/${検索ワード}/${置換ワード}/gc</code>: 確認しながら置換</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 10~20行の内一括置換</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 行内 一括置換</span>
+</span></span><span class="line"><span class="cl">:s/<span class="o">{</span>old<span class="o">}</span>/<span class="o">{</span>new<span class="o">}</span>/g
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 10~20行の内 一括置換</span>
 </span></span><span class="line"><span class="cl">:10,20/<span class="o">{</span>old<span class="o">}</span>/<span class="o">{</span>new<span class="o">}</span>/g
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># [V] visual-mode で選択内一括置換</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># [V] visual-modeで選択内 一括置換</span>
 </span></span><span class="line"><span class="cl">:<span class="s1">&#39;&lt;,&#39;</span>&gt;s/<span class="o">{</span>old<span class="o">}</span>/<span class="o">{</span>new<span class="o">}</span>/g
-</span></span></code></pre></div><ul>
+</span></span></code></pre></div></li>
 <li>cf.
 <ul>
 <li><a href="https://motw.mods.jp/Vim/substitution.html">Vimの置換コマンドの使い方</a> Memo on the web</li>
@@ -470,11 +425,21 @@
 <ul>
 <li>一括コメントアウト
 <ol>
-<li><code>Ctrl + v</code>：<a href="https://kotobank.jp/word/%E7%9F%A9%E5%BD%A2-482930">矩形（くけい）</a>選択</li>
-<li>一括でやりたい行をバッと選択</li>
-<li><code>Shift + i</code>：</li>
+<li><code>Ctrl + v</code>：
+<ul>
+<li><a href="https://kotobank.jp/word/%E7%9F%A9%E5%BD%A2-482930">矩形（くけい）</a>選択モードで行をバッと選択</li>
+</ul>
+</li>
+<li><code>Shift + i</code>：
+<ul>
 <li>コメントアウト文字を入力（e.g. <code>#</code>、<code>--</code>、<code>//</code>&hellip;etc.）</li>
-<li><code>Esc</code>　押下後にバッと入力されるっよ！</li>
+</ul>
+</li>
+<li><code>Esc</code>　
+<ul>
+<li>押下後にバッと入力されるっよ！</li>
+</ul>
+</li>
 </ol>
 </li>
 <li>cf.
