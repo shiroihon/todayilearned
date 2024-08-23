@@ -6,8 +6,15 @@
     <description>Recent content in Docker on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Jul 2024 03:42:04 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 21 Aug 2024 00:00:34 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/todayilearnd/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker Commands</title>
+      <link>http://localhost:1313/todayilearnd/post/docker_commands/</link>
+      <pubDate>Wed, 21 Aug 2024 00:00:34 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearnd/post/docker_commands/</guid>
+      <description>🐋</description>
+    </item>
     <item>
       <title>Terraform Trying to Build the Environment</title>
       <link>http://localhost:1313/todayilearnd/post/terraform_trying_to_build_the_environment/</link>

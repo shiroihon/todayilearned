@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/todayilearnd/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=todayilearnd/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="application/javascript" src='http://localhost:1313/todayilearnd/js/theme-mode.js'></script>
+    <link rel="stylesheet" href='http://localhost:1313/todayilearnd/css/frameworks.min.css' />
+    <link rel="stylesheet" href='http://localhost:1313/todayilearnd/css/github.min.css' />
+    <link rel="stylesheet" href='http://localhost:1313/todayilearnd/css/github-style.css' />
+    <link rel="stylesheet" href='http://localhost:1313/todayilearnd/css/light.css' />
+    <link rel="stylesheet" href='http://localhost:1313/todayilearnd/css/dark.css' />
+    <link rel="stylesheet" href='http://localhost:1313/todayilearnd/css/syntax.css' />
+    <title>Docker Commands - Today I Learned</title>
+    
+    <link rel="icon" type="image/x-icon" href='../../images/github-mark.png'>
+    
+    <meta name="theme-color" content="#1e2327">
+
+    
+    <meta name="description"
+  content="🐋" />
+<meta name="keywords"
+  content='blog, google analytics' />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="http://localhost:1313/todayilearnd/post/docker_commands/" />
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Docker Commands - Today I Learned" />
+<meta name="twitter:description"
+  content="🐋" />
+<meta name="twitter:site" content="http://localhost:1313/todayilearnd/" />
+<meta name="twitter:creator" content="shiro" />
+<meta name="twitter:image"
+  content="http://localhost:1313/todayilearnd/">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Docker Commands - Today I Learned">
+<meta property="og:description"
+  content="🐋" />
+<meta property="og:url" content="http://localhost:1313/todayilearnd/post/docker_commands/" />
+<meta property="og:site_name" content="Docker Commands" />
+<meta property="og:image"
+  content="http://localhost:1313/todayilearnd/">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2024-08-21 00:00:34 &#43;0900 JST" />
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <div style="position: relative">
+  <header class="Header js-details-container Details px-3 px-md-4 px-lg-5 flex-wrap flex-md-nowrap open Details--on">
+    <div class="Header-item mobile-none" style="margin-top: -4px; margin-bottom: -4px;">
+      <a class="Header-link" href="http://localhost:1313/todayilearnd/">
+        <img class="octicon" height="32" width="32" src="../../images/github-mark-white.png">
+      </a>
+    </div>
+    <div class="Header-item d-md-none">
+      <button class="Header-link btn-link js-details-target" type="button"
+        onclick="document.querySelector('#header-search').style.display = document.querySelector('#header-search').style.display == 'none'? 'block': 'none'">
+        <img height="24" class="octicon octicon-three-bars" width="24" src="../../images/github-mark-white.png">
+      </button>
+    </div>
+    <div style="display: none;" id="header-search"
+      class="Header-item Header-item--full flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+      <div
+        class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
+        <div class="position-relative">
+          <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get"
+            autocomplete="off">
+            <label
+              class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
+              <input type="text"
+                class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+                name="q" value="" placeholder="Search" autocomplete="off">
+              <input type="hidden" name="q" value="site:http://localhost:1313/todayilearnd/">
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+      <a class="Header-link " href="http://localhost:1313/todayilearnd/">
+        <img class="octicon octicon-mark-github v-align-middle" height="32" width="32" src="../../images/github-mark-white.png">
+      </a>
+    </div>
+    <div class="Header-item" style="margin-right: 0;">
+      <a href="javascript:void(0)" class="Header-link no-select" onclick="switchTheme()">
+        <svg style="fill: var(--color-profile-color-modes-toggle-moon);" class="no-select" viewBox="0 0 16 16"
+          version="1.1" width="16" height="16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M4.52208 7.71754C7.5782 7.71754 10.0557 5.24006 10.0557 2.18394C10.0557 1.93498 10.0392 1.68986 10.0074 1.44961C9.95801 1.07727 10.3495 0.771159 10.6474 0.99992C12.1153 2.12716 13.0615 3.89999 13.0615 5.89383C13.0615 9.29958 10.3006 12.0605 6.89485 12.0605C3.95334 12.0605 1.49286 10.001 0.876728 7.24527C0.794841 6.87902 1.23668 6.65289 1.55321 6.85451C2.41106 7.40095 3.4296 7.71754 4.52208 7.71754Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+  </header>
+</div>
+
+  
+<div>
+  <main>
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+      <div class="px-0">
+        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+          <div class="flex-auto min-width-0 width-fit mr-3">
+            <div class="d-flex">
+              <div class="d-none d-md-block">
+                <a class="avatar mr-2 flex-shrink-0" href="http://localhost:1313/todayilearnd/">
+                  <img class=" avatar-user"
+                    src="../../images/avatar.png"
+                    width="32" height="32"></a>
+              </div>
+              <div class="d-flex flex-column">
+                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                  <span class="author">
+                    <a href="http://localhost:1313/todayilearnd/">shiro</a>
+                  </span>
+                  <span class="path-divider">/</span>
+                  <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px">
+                    <a href="http://localhost:1313/todayilearnd/post/docker_commands/">Docker Commands</a>
+                  </strong>
+                </h1>
+                <div class="note m-0">
+                  Created <relative-time datetime="Wed, 21 Aug 2024 00:00:34 &#43;0900"
+                    class="no-wrap">
+                    Wed, 21 Aug 2024 00:00:34 &#43;0900</relative-time>
+
+                  
+                  <span class="file-info-divider"></span>
+                  Modified <relative-time datetime="Wed, 21 Aug 2024 00:00:34 &#43;0900"
+                    class="no-wrap">
+                    Wed, 21 Aug 2024 00:00:34 &#43;0900</relative-time>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-lg px-3 new-discussion-timeline">
+      <div class="repository-content gist-content">
+        <div>
+          <div class="js-gist-file-update-container js-task-list-container file-box">
+            <div id="file-pytest" class="file my-2">
+              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
+                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                    
+                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
+                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                      </svg>
+                    </summary>
+                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
+                        </div>
+                      </div>
+                    </details-menu>
+                      1424 Words
+                    
+
+                  </div>
+                  <div class="file-actions flex-order-2 pt-0">
+                    
+                    
+                    <a class="muted-link mr-3" href="../../tags/docker">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      Docker
+                    </a>
+                    
+                    <a class="muted-link mr-3" href="../../tags/cli">
+                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd"
+                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                        </path>
+                      </svg>
+                      CLI
+                    </a>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Box-body px-5 pb-5" style="z-index: 1">
+                <article class="markdown-body entry-content container-lg"><p><img src="https://img.shields.io/badge/-Docker-EEE.svg?logo=docker&amp;style=flat&amp;color=F0F8FF&amp;logoColor=" alt="Docker"></p>
+<p><a href="https://publicdomainq.net/container-ship-0020603/"><img src="https://user-images.githubusercontent.com/28585421/194487142-42f7189e-b156-453c-b4e2-e39c9445f75a.jpg" alt="publicdomainq-0020603gmd"></a></p>
+<h2 id="-docker-コマンド一覧">|| Docker コマンド一覧</h2>
+<ul>
+<li>基本
+<ul>
+<li><code>brew install docker </code>: インストール</li>
+<li><code>docker --version</code>: バージョン確認</li>
+<li><code>docker login</code>: ログイン</li>
+<li><code>docker logout</code>: ログアウト</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li><details>
+  <summary>Docker File</summary>
+  <p></p>
+  <ul>
+<li><code>docker build .</code>: Dockerfileの格納されているディレクトリ上で実行（<code>.</code> はcdの意）</li>
+<li><code>docker build -t {name} {directory}</code>名前指定してビルド</li>
+</ul>
+
+  <p></p>
+</details>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li><details>
+  <summary>Docker Image</summary>
+  <p></p>
+  <ul>
+<li><code>docker images</code>: イメージ一覧</li>
+<li><code>docker pull {image}</code>: イメージ取得(Dockerhub → Dockerimage)</li>
+<li><code>docker build {directory}</code>: イメージ化 (Dockerfile → Dockerimage)
+<ul>
+<li><code>docker build .</code> Dockerfile格納上のディレクトリ上で実行（.=cdの意）</li>
+<li><code>docker build -t {name} {directory}</code>: 名前指定してビルド</li>
+</ul>
+</li>
+<li><code>docker run -it {image} bash</code>: コンテナ起動(イメージ実行)　※内部的に「pull」「start」をW実行している。</li>
+<li><code>docker run -it --rm {image} bash</code>: コンテナ起動後に削除</li>
+<li><code>docker run -it -v {host}:{container} {imege}</code>: ホストのファイルシステムをコンテナにマウント
+<ul>
+<li>e.g. <code>docker run -it -v ~/host/mounted_folder:/new_dir {image} bash</code></li>
+</ul>
+</li>
+<li><code>docker run -u {UserId}:{UserGroup}</code>: ユーザーID、名前を指定してコンテナ作成
+<ul>
+<li>e.g. <code>docker run -it -u $(id -u):$(id -g) -v ~/host/mounted_folder:/new_dir {image} bash</code></li>
+<li>PC userid  : <code>$ id -u</code></li>
+<li>PC groupid : <code>$ id -g</code></li>
+</ul>
+</li>
+<li><code>docker run -p {host_port}:{container_port}</code>: ホストのポートをコンテナポートに繋げる
+<ul>
+<li>e.g. <code>docker run -it -p 8888:8888 --rm jupyter/datascience-notebook bash</code></li>
+</ul>
+</li>
+<li><code>docker --cpus {# of CPUs}</code>: コンテナがアクセスできるCPUI上限</li>
+<li><code>docker --memory {byte}</code>
+<ul>
+<li><code>$ sysctl -n hw.physicalcpu_max</code>: 物理コア数</li>
+<li><code>$ sysctl -n hw.logicalcpu_max</code>: 論理コア数</li>
+<li><code>$ sysctl hw.memsize</code> : メモリ(byte)</li>
+<li>e.g.  <code>docker run -it --rm --cpus 2 --memory 2g ubuntu bash</code></li>
+</ul>
+</li>
+<li><code>docker rmi {image}</code>: イメージ削除</li>
+<li><code>docker rmi $(docker images -q)</code>: 全イメージ削除</li>
+</ul>
+
+  <p></p>
+</details>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<ul>
+<li><details>
+  <summary>Docker Container</summary>
+  <p></p>
+  <ul>
+<li><code>docker ps -a</code>: コンテナ一覧 (ps=process status)</li>
+<li><code>docker inspect {container}</code>: コンテナのあらゆる情報確認
+<ul>
+<li>e.g.) <code>docker inspect 5f90be76cd31 | grep -i cpu </code>: CPU数やメモリ量等確認時 ([|grep]=抽出 ,[-i]=ignore大文字小文字問わず {検索語句} )</li>
+</ul>
+</li>
+<li><code>docker restart {container} </code>: コンテナ再起動
+<ul>
+<li><code>docker exec -it {container} bash</code>: コンテナ実行</li>
+</ul>
+</li>
+<li><code>docker stop {container}</code>: コンテナ停止</li>
+<li><code>docker stop $(docker ps -q)</code>: 全コンテナ停止</li>
+<li><code>docker rm {container}</code> : コンテナ削除
+<ul>
+<li><code>docker system prune</code>、<code>docker rm $(docker ps -q -a)</code>: 全コンテナ削除</li>
+</ul>
+</li>
+<li><code>docker run --name {name}{imagename}</code>コンテナ名付け</li>
+<li><code>docker run -d {imagename}</code>: detached mode コンテナ起動後にdetachする（バックグラウンドで動かす）</li>
+<li><code>docker run --rm {imagename}</code>: foreground mode コンテナをExit後に削除する（使い捨てコンテナ用）</li>
+<li><code>docker commit {imageid/name} {new_imagename(:tag)}</code>: コンテナ更新</li>
+<li><code>docker tag {new_imagename(:tag)} {target}</code>: コンテナ名変更</li>
+<li><code>docker push {imagename}</code>: コンテナをDockerhubへ</li>
+</ul>
+
+  <p></p>
+</details>
+</li>
+</ul>
+<h3 id="-実践">| 実践</h3>
+<p>Dockerfileを作成後に</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ docker run -p 8888:8888 -v ~/docker/ds_python/:/work --name my-lab 511a925b20aa
+</span></span></code></pre></div><ul>
+<li><code>-p</code>: publishしてコンテナとホストのポートを設定</li>
+<li><code>-v</code>: ホストとコンテナ内部のディレクトリを共有
+<ul>
+<li><code>~/docker/ds_python/:/work</code> :  <code>{ホスト内}:{コンテナ内}</code></li>
+</ul>
+</li>
+<li><code>--name</code>: dockerimage に名前を作成</li>
+</ul>
+<h2 id="-dockerfile">|| Dockerfile</h2>
+<h2 id="-書き方">|| 書き方</h2>
+<h3 id="-instraction-基本">| instraction (基本)</h3>
+<ol>
+<li><strong>FROM</strong> : <code>FROM {dockerimage} # OS等々指定</code></li>
+<li><strong>RUN</strong> : <code>RUN {linux comand} # やりたいこと</code></li>
+<li><strong>CMD</strong> :</li>
+</ol>
+<h4 id="1-from">1. FROM</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">FROM <span class="o">{</span>dockerimage<span class="o">}</span> <span class="c1"># OS等々指定する。</span>
+</span></span></code></pre></div><h4 id="2-run">2. RUN</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">RUN <span class="o">{</span>linux comand<span class="o">}</span> <span class="c1"># やりたいこと</span>
+</span></span></code></pre></div><ul>
+<li>ig.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">RUN touch <span class="nb">test</span>
+</span></span><span class="line"><span class="cl">RUN <span class="nb">echo</span> <span class="sb">`</span>hello world<span class="sb">`</span> &gt; <span class="nb">test</span>
+</span></span></code></pre></div><p>(注意) RUN を複数書きすぎてファイルが重くなる問題　→ Dockerimageのレイヤー数は最小に！</p>
+<ul>
+<li><code>RUN</code>の他に、<code>COPY</code>、<code>ADD</code>がレイヤーを作成するインストラクション</li>
+<li><code>&amp;&amp;</code>: コマンド結合</li>
+<li><code>\</code>: 改行</li>
+<li><code>apt</code>: ubuntuのパッケージ管理(パッケージインストール)
+<ul>
+<li><code>RUN apt-get install {package}</code></li>
+</ul>
+</li>
+<li><code>RUN apt-get update</code>: 最新版取得</li>
+<li>レイヤー数削減（<code>n.b.</code> ４→２→１と削減）</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># (Layer数:4)</span>
+</span></span><span class="line"><span class="cl">FROM ubuntu:latest
+</span></span><span class="line"><span class="cl">RUN apt-get update
+</span></span><span class="line"><span class="cl">RUN apt-get install XXX
+</span></span><span class="line"><span class="cl">RUN apt-get install YYY
+</span></span><span class="line"><span class="cl">RUN apt-get install ZZZ
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># (Layer数:2)</span>
+</span></span><span class="line"><span class="cl">FROM ubuntu:latest
+</span></span><span class="line"><span class="cl">RUN apt-get update
+</span></span><span class="line"><span class="cl">RUN apt-get install XXX YYY ZZZ
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># (Layer:1)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># コマンドをまとめ、改行で見やすく</span>
+</span></span><span class="line"><span class="cl">FROM ubuntu:latest
+</span></span><span class="line"><span class="cl">RUN  apt-get update <span class="o">&amp;&amp;</span> apt-get install <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>     XXX <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>     YYY <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>     ZZZ
+</span></span></code></pre></div><h4 id="3-cmd">3. CMD</h4>
+<ul>
+<li>コンテナのデフォルトコマンドを指定。</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Dockerfileの最後に記述（原則）</span>
+</span></span><span class="line"><span class="cl">CMD <span class="o">[</span><span class="s2">&#34;executable&#34;</span>, <span class="s2">&#34;param1&#34;</span>, <span class="s2">&#34;param2&#34;</span><span class="o">]</span>
+</span></span></code></pre></div><h2 id="-実践-1">|| 実践</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">FROM ubuntu:latest
+</span></span><span class="line"><span class="cl">RUN  apt-get update
+</span></span><span class="line"><span class="cl">RUN  apt-get install -y <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>     curl <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>     cvs <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>     nginx
+</span></span></code></pre></div><h3 id="-実践---dockerfile分析基盤用">| 実践 - Dockerfile(分析基盤用)</h3>
+<p><a href="https://github.com/sh16ma/my_docker">https://github.com/sh16ma/my_docker</a></p>
+<h2 id="ref">Ref.</h2>
+<ul>
+<li><a href="https://www.creationline.com/lab/29979">Docker Hubでパーソナルアクセストークンが利用可能になりました！</a> - CL LAB</li>
+<li><a href="https://qiita.com/shisama/items/48e2eaf1dc356568b0d7">コマンドでDockerコンテナを停止・削除、イメージの削除をする</a> - Qiita</li>
+<li><a href="https://docs.docker.jp/config/pruning.html">使用していない Docker オブジェクトの削除（prune）</a> - Docker-docs-ja</li>
+</ul>
+<ul>
+<li><a href="https://www.sbbit.jp/article/cont1/57184">コンテナとは何か解説、従来の仮想化と何が違う？DockerやKubernetesとは？</a> - ビジネス＋IT</li>
+<li><a href="https://avinton.com/academy/%E4%BB%AE%E6%83%B3%E5%8C%96%E3%81%A8%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A/">Virtualisation and Container (仮想化とコンテナ) – Ansible, Docker and Kubernetes</a> - Avinton</li>
+</ul>
+</article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script type="application/javascript" src='http://localhost:1313/todayilearnd/js/toc.js'></script>
+<link rel="stylesheet" href='http://localhost:1313/todayilearnd/css/toc.css' />
+
+
+<div id="gitalk-container" class="gitalk-container"></div>
+<link rel="stylesheet" href='http://localhost:1313/todayilearnd/css/gitalk.css'>
+<script src='http://localhost:1313/todayilearnd/js/gitalk.min.js'></script>
+<script>
+  const gitalk = new Gitalk({
+    clientID: 'Ov23liEFoBzgkYuZCPpt',
+    clientSecret: 'cd6b4e0b965327f649b508667055c7ea44135167',
+    repo: 'todayilearnd',
+    owner: 'shiro',
+    admin: ['shiro'],
+    id: eval("location.pathname"), 
+    distractionFreeMode: false 
+  });
+  (function() {
+    gitalk.render('gitalk-container');
+  })();
+</script>
+
+
+  <div class="footer container-xl width-full p-responsive">
+  <div
+    class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="http://localhost:1313/todayilearnd/">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24">
+        <path fill-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+        </path>
+      </svg>
+    </a>
+    <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      
+      <li class="mr-3 mr-lg-0">Theme by <a href='https://github.com/MeiK2333/github-style'>github-style</a></li>
+      
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+
+
+</div>
+</body>
+
+<script type="application/javascript" src="http://localhost:1313/todayilearnd/js/github-style.js"></script>
+
+
+
+
+
+</html>
