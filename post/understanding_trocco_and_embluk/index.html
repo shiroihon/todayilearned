@@ -18,7 +18,7 @@
 
     
     <meta name="description"
-  content="🛤️" />
+  content="🛤️ Summarizing Trocco and Embluk to deepen understanding." />
 <meta name="keywords"
   content='blog, google analytics' />
 <meta name="robots" content="noodp" />
@@ -28,7 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="Understanding Trocco and Embluk - Today I Learned" />
 <meta name="twitter:description"
-  content="🛤️" />
+  content="🛤️ Summarizing Trocco and Embluk to deepen understanding." />
 <meta name="twitter:site" content="http://localhost:1313/todayilearnd/" />
 <meta name="twitter:creator" content="shiro" />
 <meta name="twitter:image"
@@ -38,7 +38,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Understanding Trocco and Embluk - Today I Learned">
 <meta property="og:description"
-  content="🛤️" />
+  content="🛤️ Summarizing Trocco and Embluk to deepen understanding." />
 <meta property="og:url" content="http://localhost:1313/todayilearnd/post/understanding_trocco_and_embluk/" />
 <meta property="og:site_name" content="Understanding Trocco and Embluk" />
 <meta property="og:image"
@@ -174,7 +174,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      1474 Words
+                      1533 Words
                     
 
                   </div>
@@ -233,21 +233,18 @@
 
 
               <div class="Box-body px-5 pb-5" style="z-index: 1">
-                <article class="markdown-body entry-content container-lg"><h2 id="why">Why</h2>
+                <article class="markdown-body entry-content container-lg"><p><img src="https://img.shields.io/badge/-YAML-CB171E.svg?logo=yaml&amp;style=flat&amp;color=F0F8FF&amp;logoColor=CB171E" alt="YAML">
+<img src="https://img.shields.io/badge/-Docker-EEE.svg?logo=docker&amp;style=flat&amp;color=F0F8FF&amp;logoColor=" alt="Docker"></p>
+<h2 id="why">Why</h2>
 <h2 id="what">What</h2>
-<h3 id="trocco">Trocco</h3>
+<h3 id="trocco-とは">Trocco とは</h3>
 <ul>
 <li>Official: <a href="https://trocco.io/lp/index.html">https://trocco.io/lp/index.html</a></li>
 <li>Production: <a href="https://trocco.io/">https://trocco.io/</a></li>
 <li>GitHub: <a href="https://github.com/trocco-io">https://github.com/trocco-io</a></li>
 </ul>
-<h3 id="embluk">Embluk</h3>
-<ul>
-<li>Official: <a href="https://www.embulk.org/">https://www.embulk.org/</a></li>
-<li>GitHub: <a href="https://github.com/embulk/embulk">https://github.com/embulk/embulk</a></li>
-</ul>
-<h3 id="heading"></h3>
-<p>eg. Trocco 転送ログ</p>
+<h3 id="trocco-転送ログ">Trocco 転送ログ</h3>
+<p>eg.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">2024-08-20 15:06:00.298 +0000 Preparing your trocco environment...
 </span></span><span class="line"><span class="cl">2024-08-20 15:06:00.347 +0000 <span class="nv">cpu_request</span><span class="o">=</span>3.5, <span class="nv">memory_request</span><span class="o">=</span>15.0Gi, <span class="nv">cpu_limit</span><span class="o">=</span>3.5, <span class="nv">memory_limit</span><span class="o">=</span>15.0Gi, <span class="nv">disk</span><span class="o">=</span>200.0Gi
 </span></span><span class="line"><span class="cl">Successfully created your environment
@@ -288,68 +285,67 @@
 </span></span><span class="line"><span class="cl">2024-08-20 15:07:56.744 +0000 <span class="o">[</span>INFO<span class="o">]</span> <span class="o">(</span>0001:transaction<span class="o">)</span>: embulk-output-bigquery: delete /tmp/bigquery_output_option_20240820-1-exorlf.16.2000.jsonl.gz
 </span></span><span class="line"><span class="cl">2024-08-20 15:07:56.757 +0000 <span class="o">[</span>INFO<span class="o">]</span> <span class="o">(</span>main<span class="o">)</span>: Committed.
 </span></span><span class="line"><span class="cl">2024-08-20 15:07:56.757 +0000 <span class="o">[</span>INFO<span class="o">]</span> <span class="o">(</span>main<span class="o">)</span>: Next config diff: <span class="o">{</span><span class="s2">&#34;in&#34;</span>:<span class="o">{</span><span class="s2">&#34;last_path&#34;</span>:<span class="s2">&#34;dev1/act_present_item.csv&#34;</span><span class="o">}</span>,<span class="s2">&#34;out&#34;</span>:<span class="o">{}}</span>
-</span></span></code></pre></div><p>このログから、Troccoが裏側で使用している技術についていくつかのことがわかる。</p>
+</span></span></code></pre></div><p>このログから、Troccoが裏側で使用している技術についていくつかのことがわかる。
+Embulkはデータ処理やETLに特化したツールであり、特にプラグインを通じてさまざまなデータソースやデータターゲットに対応できることから、TroccoがETL処理を行うためにEmbulkを利用していることが明確。
+TroccoはEmbulkをコアとして使用し、その上で独自のプラグインや設定を加えてETL処理を行っていることが確認できた。</p>
 <ul>
-<li>Embulkの使用
-<ul>
-<li>Embulk <code>v0.9.26</code></li>
-<li>Embulkはデータ処理やETLに特化したツールであり、特にプラグインを通じてさまざまなデータソースやデータターゲットに対応できることから、TroccoがETL処理を行うためにEmbulkを利用していることが明確。</li>
-<li>TroccoはEmbulkをコアとして使用し、その上で独自のプラグインや設定を加えてETL処理を行っていることが確認できた。</li>
-</ul>
-</li>
 <li><details>
   <summary>データ処理の流れ</summary>
   <p></p>
   <ol>
 <li>ステップ 1: 環境の準備
 <ul>
-<li>15:06:00: Troccoの実行環境準備。</li>
+<li><code>15:06:00</code>: Troccoの実行環境準備。</li>
 <li>割り当てられたリソースは、CPU 3.5コア、メモリ15.0Gi、ディスク200.0Gi。</li>
 </ul>
 </li>
 <li>ステップ 2: Embulkの起動
 <ul>
-<li>15:07:27: Embulk v0.9.26が起動。</li>
-<li>15:07:29: EmbulkのGemfileが設定され、プラグインをロードする準備が整う。</li>
+<li><code>15:07:27</code>: Embulk <strong>v0.9.26</strong> が起動。</li>
+<li><code>15:07:29</code>: EmbulkのGemfileが設定され、プラグインをロードする準備が整う。</li>
 </ul>
 </li>
 <li>ステップ 3: プラグインのロード
 <ul>
-<li>15:07:30 - 15:07:32: 以下のEmbulkプラグインがロード:
+<li><code>15:07:30</code> ~ <code>15:07:32</code>: 以下のEmbulkプラグインがロード:
 <ul>
-<li><a href="">embulk-input-gcs</a>: GCSからのデータ入力用</li>
-<li><a href="">embulk-output-bigquery</a>: BigQueryへのデータ出力用: Trocco独自の修正が加えられたバージョン（0.6.9.trocco.0.1.0）が使用</li>
-<li><a href="">embulk-filter-speedometer</a>: 処理速度の計測(モニタリングする)</li>
-<li><a href="">embulk-filter-column</a>: カラム操作(追加、削除、リネームなどを行う)</li>
-<li><a href="">embulk-filter-typecast</a>: データ型のキャスト</li>
+<li><a href="https://github.com/embulk/embulk-input-gcs">embulk-input-gcs</a>: GCSからのデータ入力用</li>
+<li><a href="https://github.com/embulk/embulk-output-bigquery">embulk-output-bigquery</a>: BigQueryへのデータ出力用
+<ul>
+<li>Trocco独自の修正が加えられたバージョン（0.6.9.trocco.0.1.0）が使用</li>
+</ul>
+</li>
+<li><a href="https://github.com/hata/embulk-filter-speedometer">embulk-filter-speedometer</a>: 処理速度の計測(モニタリングする)</li>
+<li><a href="https://github.com/embulk/embulk-filter-column">embulk-filter-column</a>: カラム操作(追加、削除、リネームなどを行う)</li>
+<li><a href="https://github.com/medjed/embulk-filter-typecast">embulk-filter-typecast</a>: データ型のキャスト</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>ステップ 4: データ処理の開始
 <ul>
-<li>15:07:33: BigQueryのデータセットとテーブルを取得・作成。</li>
-<li>15:07:34: GCSからデータを読み込み、BigQueryの一時テーブルにデータをロード。</li>
+<li><code>15:07:33</code>: BigQueryのデータセットとテーブルを取得・作成。</li>
+<li><code>15:07:34</code>: GCSからデータを読み込み、BigQueryの一時テーブルにデータをロード。</li>
 </ul>
 </li>
 <li>ステップ 5: データのBigQueryへのロード
 <ul>
-<li>15:07:35 - 15:07:45: データのロードジョブが開始され、完了します。ロードされたデータは、一時テーブルに保存。</li>
+<li><code>15:07:35</code> ~ <code>15:07:45</code>: データのロードジョブが開始され、完了します。ロードされたデータは、一時テーブルに保存。</li>
 </ul>
 </li>
 <li>ステップ 6: 一時テーブルからターゲットテーブルへのコピー
 <ul>
-<li>15:07:46 - 15:07:56: 一時テーブルからターゲットテーブルにデータをコピーします。この間、コピーの進捗状況がチェック。</li>
+<li><code>15:07:46</code> ~ <code>15:07:56</code>: 一時テーブルからターゲットテーブルにデータをコピーします。この間、コピーの進捗状況がチェック。</li>
 </ul>
 </li>
 <li>ステップ 7: 一時ファイルと一時テーブルの削除
 <ul>
-<li>15:07:56: データ処理が完了後、一時ファイルおよび一時テーブルが削除。</li>
+<li><code>15:07:56</code>: データ処理が完了後、一時ファイルおよび一時テーブルが削除。</li>
 </ul>
 </li>
 <li>ステップ 8: 処理の完了
 <ul>
-<li>15:07:56: Embulkのトランザクションがコミットされ、処理完了。</li>
+<li><code>15:07:56</code>: Embulkのトランザクションがコミットされ、処理完了。</li>
 </ul>
 </li>
 </ol>
@@ -358,12 +354,25 @@
 </details>
 </li>
 <li>⚠︎ 警告メッセージ
-<code>timeout_sec</code>が非推奨であるという警告が出ているが、これはgoogle-api-ruby-clientのバージョンに関連したものらしい。
-この設定は、<code>read_timeout_sec</code>に変更する必要があるということ。</li>
+<ul>
+<li><code>timeout_sec</code>が非推奨であるという警告が出ているが、これはgoogle-api-ruby-clientのバージョンに関連したものらしい。</li>
+<li>この設定は、<code>read_timeout_sec</code>に変更する必要があるということ。</li>
 </ul>
+</li>
+</ul>
+<h3 id="embluk-とは">Embluk とは</h3>
+<ul>
+<li>Official: <a href="https://www.embulk.org/">https://www.embulk.org/</a></li>
+<li>GitHub: <a href="https://github.com/embulk/embulk">https://github.com/embulk/embulk</a></li>
+<li><a href="https://plugins.embulk.org/">Embulk plugins</a></li>
+</ul>
+<h3 id="embluk-いじってみる">Embluk いじってみる</h3>
+<p>cf. <a href="https://masatakashiwagi.github.io/portfolio/post/integrate-spreadsheets-to-bigquery-with-digdag/">スプレッドシートから BigQuery へ Digdag を使ったデータ連携</a>
+<img src="https://masatakashiwagi.github.io/portfolio/img/teamaya-data-workflow.png" alt="img"></p>
 <h2 id="ref">Ref.</h2>
 <ul>
 <li><a href="https://blog.trocco.io/glossary/embulk">Embulkとは？オープンソースのETLツールについて紹介</a></li>
+<li><a href="https://blog.trocco.io/case-study/data-mart-bigquery">TROCCO®の設定だけでGoogle BigQuery上にデータマートを作ってみる</a></li>
 <li><a href="https://zenn.dev/dencyu/scraps/2ae8739092f736">Embulk備忘録</a> Zenn</li>
 <li><a href="https://qiita.com/gak_t12/items/f7fa0f1a99c759d947a7">Embulkについてまとめてみた　2017/08</a> Qiita</li>
 </ul>
