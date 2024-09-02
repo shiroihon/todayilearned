@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='http://localhost:1313/todayilearned/css/light.css' />
     <link rel="stylesheet" href='http://localhost:1313/todayilearned/css/dark.css' />
     <link rel="stylesheet" href='http://localhost:1313/todayilearned/css/syntax.css' />
-    <title>Terraform Trying to Build the Environment - Today I Learned</title>
+    <title>Bigquery Howto Table Flatten - Today I Learned</title>
     
     <link rel="icon" type="image/x-icon" href='../../images/github-mark.png'>
     
@@ -18,17 +18,17 @@
 
     
     <meta name="description"
-  content="✝️ I wll try setting up an environment to gain an initial understanding of IaC (Infrastructure as Code) provisioning." />
+  content="A brief summary of the article." />
 <meta name="keywords"
   content='blog, google analytics' />
 <meta name="robots" content="noodp" />
-<link rel="canonical" href="http://localhost:1313/todayilearned/post/terraform_trying_to_build_the_environment/" />
+<link rel="canonical" href="http://localhost:1313/todayilearned/post/bigquery_howto_table_flatten/" />
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Terraform Trying to Build the Environment - Today I Learned" />
+<meta name="twitter:title" content="Bigquery Howto Table Flatten - Today I Learned" />
 <meta name="twitter:description"
-  content="✝️ I wll try setting up an environment to gain an initial understanding of IaC (Infrastructure as Code) provisioning." />
+  content="A brief summary of the article." />
 <meta name="twitter:site" content="http://localhost:1313/todayilearned/" />
 <meta name="twitter:creator" content="shiro" />
 <meta name="twitter:image"
@@ -36,17 +36,17 @@
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Terraform Trying to Build the Environment - Today I Learned">
+<meta property="og:title" content="Bigquery Howto Table Flatten - Today I Learned">
 <meta property="og:description"
-  content="✝️ I wll try setting up an environment to gain an initial understanding of IaC (Infrastructure as Code) provisioning." />
-<meta property="og:url" content="http://localhost:1313/todayilearned/post/terraform_trying_to_build_the_environment/" />
-<meta property="og:site_name" content="Terraform Trying to Build the Environment" />
+  content="A brief summary of the article." />
+<meta property="og:url" content="http://localhost:1313/todayilearned/post/bigquery_howto_table_flatten/" />
+<meta property="og:site_name" content="Bigquery Howto Table Flatten" />
 <meta property="og:image"
   content="http://localhost:1313/todayilearned/">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2024-07-26 03:42:04 &#43;0900 JST" />
+<meta property="article:published_time" content="2024-08-29 19:47:44 &#43;0900 JST" />
 
 
 
@@ -132,19 +132,19 @@
                   </span>
                   <span class="path-divider">/</span>
                   <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px">
-                    <a href="http://localhost:1313/todayilearned/post/terraform_trying_to_build_the_environment/">Terraform Trying to Build the Environment</a>
+                    <a href="http://localhost:1313/todayilearned/post/bigquery_howto_table_flatten/">Bigquery Howto Table Flatten</a>
                   </strong>
                 </h1>
                 <div class="note m-0">
-                  Created <relative-time datetime="Fri, 26 Jul 2024 03:42:04 &#43;0900"
+                  Created <relative-time datetime="Thu, 29 Aug 2024 19:47:44 &#43;0900"
                     class="no-wrap">
-                    Fri, 26 Jul 2024 03:42:04 &#43;0900</relative-time>
+                    Thu, 29 Aug 2024 19:47:44 &#43;0900</relative-time>
 
                   
                   <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Fri, 26 Jul 2024 03:42:04 &#43;0900"
+                  Modified <relative-time datetime="Thu, 29 Aug 2024 19:47:44 &#43;0900"
                     class="no-wrap">
-                    Fri, 26 Jul 2024 03:42:04 &#43;0900</relative-time>
+                    Thu, 29 Aug 2024 19:47:44 &#43;0900</relative-time>
                   
                 </div>
               </div>
@@ -174,56 +174,20 @@
                         </div>
                       </div>
                     </details-menu>
-                      1321 Words
+                      3 Words
                     
 
                   </div>
                   <div class="file-actions flex-order-2 pt-0">
                     
                     
-                    <a class="muted-link mr-3" href="../../tags/terraform">
+                    <a class="muted-link mr-3" href="../../tags/default-tag">
                       <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                         <path fill-rule="evenodd"
                           d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
                         </path>
                       </svg>
-                      Terraform
-                    </a>
-                    
-                    <a class="muted-link mr-3" href="../../tags/gke">
-                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                        <path fill-rule="evenodd"
-                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-                        </path>
-                      </svg>
-                      GKE
-                    </a>
-                    
-                    <a class="muted-link mr-3" href="../../tags/kubernetes">
-                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                        <path fill-rule="evenodd"
-                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-                        </path>
-                      </svg>
-                      Kubernetes
-                    </a>
-                    
-                    <a class="muted-link mr-3" href="../../tags/docker">
-                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                        <path fill-rule="evenodd"
-                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-                        </path>
-                      </svg>
-                      Docker
-                    </a>
-                    
-                    <a class="muted-link mr-3" href="../../tags/hands-on">
-                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                        <path fill-rule="evenodd"
-                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-                        </path>
-                      </svg>
-                      Hands-on
+                      Default Tag
                     </a>
                     
                     
@@ -233,127 +197,9 @@
 
 
               <div class="Box-body px-5 pb-5" style="z-index: 1">
-                <article class="markdown-body entry-content container-lg"><p><img src="https://img.shields.io/badge/-Terraform-844FBA.svg?logo=terraform&amp;style=flat&amp;color=F0F8FF" alt="Terraform">
-<img src="https://img.shields.io/badge/-K8s%20Engine-326CE5.svg?logo=kubernetes&amp;style=flat&amp;color=F0F8FF" alt="GKE"></p>
-<h2 id="terraform">Terraform</h2>
-<p>Terraformはインフラストラクチャのプロビジョニングと管理を自動化するためのツール。
-管理を効率化し、エラーの削減と一貫性の向上に寄与します。</p>
-<ol>
-<li>インフラストラクチャのコード化（Infrastructure as Code, IaC）
-<ul>
-<li>コード化:
-<ul>
-<li>インフラストラクチャをコードとして記述できるため、設定が明確で再利用可能。</li>
-</ul>
-</li>
-<li>バージョン管理:
-<ul>
-<li>Gitなどのバージョン管理システムでインフラのコードを管理でき、変更履歴を追跡できる。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>プロバイダの多様性
-<ul>
-<li>マルチクラウド対応:
-<ul>
-<li>AWS、GCP、Azureなど、複数のクラウドプロバイダをサポートしており、異なるプロバイダ間のインフラを一元管理できる。</li>
-</ul>
-</li>
-<li>プラグイン:
-<ul>
-<li>プラグインを使って、新しいサービスやAPIを簡単に追加できる。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>宣言的な構成
-<ul>
-<li>宣言的構成: 望む最終状態を宣言するだけで、Terraformがその状態を実現するために必要な手順を自動的に計算して実行。</li>
-</ul>
-</li>
-<li>依存関係の管理
-<ul>
-<li>依存関係の自動解決: リソース間の依存関係を自動的に解析し、正しい順序でリソースを作成・削除。</li>
-</ul>
-</li>
-<li>一貫性と再現性
-<ul>
-<li>再現可能な環境:
-<ul>
-<li>同じコードを使えば、異なる環境でも一貫したインフラを構築できる。</li>
-</ul>
-</li>
-<li>DRY原則:
-<ul>
-<li>一度記述したインフラ構成を複数の環境で再利用することができる。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>プラン機能
-<ul>
-<li>事前確認: <code>terraform plan</code> コマンドを使用して、変更がインフラに与える影響を事前に確認できるため、意図しない変更を防ぐことができる。</li>
-</ul>
-</li>
-<li>コミュニティとエコシステム
-<ul>
-<li>豊富なリソース:
-<ul>
-<li>豊富なドキュメントと活発なコミュニティがあり、問題解決やベストプラクティスの学習が容易。</li>
-</ul>
-</li>
-<li>モジュール:
-<ul>
-<li>既成のモジュールを利用して、インフラの構築を迅速化。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<ul>
-<li>ごちゃごちゃ書いてあるけど小学生にも分かるように<code>ChatGPTﾆｷ</code>に要約依頼&hellip;
-<ul>
-<li><details>
-  <summary>ChatGPTﾆｷ</summary>
-  <p></p>
-  <pre><code>もちろん、小学生でも分かりやすいように簡単に説明しますね！
-
-### Terraformの便利なポイント
-1. おもちゃの説明書みたい
-    - インフラの設計図を作れるから、何をどう作るか一目でわかるよ。
-2. いろんなお店で使える
-    - AWSとかGCPとかAzureっていうお店（クラウドサービス）で使えるよ。どこのお店でも同じ道具（Terraform）が使えるんだ。
-3. 最終形を決めるだけでOK
-    - 何を作りたいか（ゴール）を言うだけで、Terraformがどうやって作るか考えてくれるよ。
-4. 作る順番を守ってくれる
-    - 家を作る時に壁を先に作らずに土台から作るみたいに、ちゃんと順番を考えて作ってくれるよ。
-5. 何度でも同じものが作れる
-    - 1回作った設計図を使えば、同じものが何度でも作れるよ。
-6. 何が変わるか教えてくれる
-    - 実際に作る前に、何がどう変わるか教えてくれるから安心だよ。
-7. みんなで使える
-    - たくさんの人が使っていて、困った時に助けてくれる情報がいっぱいあるよ。
-
-このように、Terraformはインフラを作るのをすごく簡単にしてくれる道具なんだ。
-</code></pre>
-
-  <p></p>
-</details>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="hands-on">Hands On</h2>
-<pre tabindex="0"><code>記事参考に自分でも手を動かしてみた。
-詳細はREFにまとめてある。
-</code></pre><h3 id="terraform-gke-k8s">Terraform ×GKE (k8s)</h3>
-<h3 id="terraform-docker-compose">Terraform ×Docker Compose</h3>
-<h2 id="ref">REF.</h2>
-<ul>
-<li><a href="https://laboratory.kiyono-co.jp/1032/gcp/">【GKE】GKE × Terraformで基本的なk8s環境を構築する</a> KIYONO Engineer Blog</li>
-<li><a href="https://laboratory.kiyono-co.jp/547/gcp/">Docker ComposeでTerraformを使用しGoogle Cloud開発環境を構築</a> KIYONO Engineer Blog</li>
-</ul>
+                <article class="markdown-body entry-content container-lg"><h2 id="why">Why</h2>
+<h2 id="what">What</h2>
+<h2 id="ref">Ref.</h2>
 </article>
               </div>
             </div>

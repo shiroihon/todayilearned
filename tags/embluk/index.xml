@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Embluk on Today I Learned</title>
-    <link>http://localhost:1313/todayilearnd/tags/embluk/</link>
+    <link>http://localhost:1313/todayilearned/tags/embluk/</link>
     <description>Recent content in Embluk on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Aug 2024 15:30:46 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/todayilearnd/tags/embluk/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/todayilearned/tags/embluk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understanding Trocco and Embluk</title>
-      <link>http://localhost:1313/todayilearnd/post/understanding_trocco_and_embluk/</link>
+      <link>http://localhost:1313/todayilearned/post/understanding_trocco_and_embluk/</link>
       <pubDate>Wed, 21 Aug 2024 15:30:46 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearnd/post/understanding_trocco_and_embluk/</guid>
+      <guid>http://localhost:1313/todayilearned/post/understanding_trocco_and_embluk/</guid>
       <description>🛤️ Summarizing Trocco and Embluk to deepen understanding.</description>
     </item>
   </channel>

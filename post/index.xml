@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Aug 2024 01:02:03 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 21 Aug 2024 00:00:34 +0900</lastBuildDate>
     <atom:link href="https://shiro-mpdm.github.io/todayilearned/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker Commands</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/docker_commands/</link>
+      <pubDate>Wed, 21 Aug 2024 00:00:34 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/docker_commands/</guid>
+      <description>🐋 Deepen my understanding of Docker&amp;rsquo;s basic commands and mechanisms.</description>
+    </item>
     <item>
       <title>Editor Vim Commands</title>
       <link>https://shiro-mpdm.github.io/todayilearned/post/editor_vim_commands/</link>

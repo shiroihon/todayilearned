@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Default Tag on Today I Learned</title>
-    <link>http://localhost:1313/todayilearnd/tags/default-tag/</link>
+    <link>http://localhost:1313/todayilearned/tags/default-tag/</link>
     <description>Recent content in Default Tag on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Aug 2024 11:14:37 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/todayilearnd/tags/default-tag/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Aug 2024 19:47:44 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/todayilearned/tags/default-tag/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bigquery Howto Table Flatten</title>
+      <link>http://localhost:1313/todayilearned/post/bigquery_howto_table_flatten/</link>
+      <pubDate>Thu, 29 Aug 2024 19:47:44 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearned/post/bigquery_howto_table_flatten/</guid>
+      <description>A brief summary of the article.</description>
+    </item>
     <item>
       <title>Editor Setup Wezterm</title>
-      <link>http://localhost:1313/todayilearnd/post/editor_setup_wezterm/</link>
+      <link>http://localhost:1313/todayilearned/post/editor_setup_wezterm/</link>
       <pubDate>Mon, 19 Aug 2024 11:14:37 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearnd/post/editor_setup_wezterm/</guid>
+      <guid>http://localhost:1313/todayilearned/post/editor_setup_wezterm/</guid>
       <description>A brief summary of the article.</description>
     </item>
   </channel>

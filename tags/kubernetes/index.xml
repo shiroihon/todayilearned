@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kubernetes on Today I Learned</title>
-    <link>http://localhost:1313/todayilearnd/tags/kubernetes/</link>
+    <link>http://localhost:1313/todayilearned/tags/kubernetes/</link>
     <description>Recent content in Kubernetes on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 26 Jul 2024 03:42:04 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/todayilearnd/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/todayilearned/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Terraform Trying to Build the Environment</title>
-      <link>http://localhost:1313/todayilearnd/post/terraform_trying_to_build_the_environment/</link>
+      <link>http://localhost:1313/todayilearned/post/terraform_trying_to_build_the_environment/</link>
       <pubDate>Fri, 26 Jul 2024 03:42:04 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearnd/post/terraform_trying_to_build_the_environment/</guid>
+      <guid>http://localhost:1313/todayilearned/post/terraform_trying_to_build_the_environment/</guid>
       <description>✝️ I wll try setting up an environment to gain an initial understanding of IaC (Infrastructure as Code) provisioning.</description>
     </item>
   </channel>

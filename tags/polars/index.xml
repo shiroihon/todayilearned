@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Polars on Today I Learned</title>
-    <link>http://localhost:1313/todayilearnd/tags/polars/</link>
+    <link>http://localhost:1313/todayilearned/tags/polars/</link>
     <description>Recent content in Polars on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Jul 2024 17:09:50 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/todayilearnd/tags/polars/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/todayilearned/tags/polars/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Law of Refined Preprocessing Programming: Polars ed.</title>
-      <link>http://localhost:1313/todayilearnd/post/bookread_law_of_refined_preprocessing_programming_polars_edition/</link>
+      <link>http://localhost:1313/todayilearned/post/bookread_law_of_refined_preprocessing_programming_polars_edition/</link>
       <pubDate>Thu, 18 Jul 2024 17:09:50 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearnd/post/bookread_law_of_refined_preprocessing_programming_polars_edition/</guid>
+      <guid>http://localhost:1313/todayilearned/post/bookread_law_of_refined_preprocessing_programming_polars_edition/</guid>
       <description>🐻‍❄️ [改訂新版]前処理大全実践テクニックを読んでみる(Polars編)</description>
     </item>
   </channel>
