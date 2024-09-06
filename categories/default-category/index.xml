@@ -15,12 +15,5 @@
       <guid>http://localhost:1313/todayilearned/post/bigquery_howto_table_flatten/</guid>
       <description>A brief summary of the article.</description>
     </item>
-    <item>
-      <title>Editor Setup Wezterm</title>
-      <link>http://localhost:1313/todayilearned/post/editor_setup_wezterm/</link>
-      <pubDate>Mon, 19 Aug 2024 11:14:37 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearned/post/editor_setup_wezterm/</guid>
-      <description>A brief summary of the article.</description>
-    </item>
   </channel>
 </rss>
