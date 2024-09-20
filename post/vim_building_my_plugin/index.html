@@ -116,107 +116,95 @@
 
   
 <div>
-    <main>
+<main>
+    
+    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+    <div class="px-0">
+    <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+    <div class="flex-auto min-width-0 width-fit mr-3">
+    <div class="d-flex">
         
-        <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
-        <div class="px-0">
-        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
-        <div class="flex-auto min-width-0 width-fit mr-3">
-        <div class="d-flex">
-            
-            <div class="d-none d-md-block">
-                <a class="avatar mr-2 flex-shrink-0" href="http://localhost:1313/todayilearned/">
-                    <img class=" avatar-user"
-                      src="../../images/avatar.png"
-                      width="32" height="32"></a>
-            </div>
-
-            
-            <div class="d-flex flex-column">
-                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
-                    <span class="author">
-                        <a href="http://localhost:1313/todayilearned/">shiro</a>
-                    </span>
-
-                    <span class="path-divider">/</span>
-
-                    <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px">
-                        <a href="http://localhost:1313/todayilearned/post/vim_building_my_plugin/">Vim Building My Plugin</a>
-                    </strong>
-                </h1>
-                <div class="note m-0">
-                    Created <relative-time datetime="Wed, 11 Sep 2024 19:39:49 &#43;0900"
-                      class="no-wrap">
-                      Wed, 11 Sep 2024 19:39:49 &#43;0900</relative-time>
-
-                    
-                    <span class="path-divider">|</span>
-                    Modified <relative-time datetime="Wed, 11 Sep 2024 19:39:49 &#43;0900"
-                      class="no-wrap">
-                      Wed, 11 Sep 2024 19:39:49 &#43;0900</relative-time>
-                    
-                </div>
+        <div class="d-none d-md-block">
+            <a class="avatar mr-2 flex-shrink-0" href="http://localhost:1313/todayilearned/">
+                <img class=" avatar-user"
+                  src="../../images/avatar.png"
+                  width="32" height="32"></a>
+        </div>
+        
+        <div class="d-flex flex-column">
+            <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+                <span class="author"><a href="http://localhost:1313/todayilearned/">shiro</a></span>
+                <span class="path-divider">/</span>
+                <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px"><a href="http://localhost:1313/todayilearned/post/vim_building_my_plugin/">Vim Building My Plugin</a></strong>
+            </h1>
+            <div class="note m-0">
+                Created <relative-time datetime="Wed, 11 Sep 2024 19:39:49 &#43;0900" class="no-wrap">Wed, 11 Sep 2024 19:39:49 &#43;0900</relative-time>
+                
+                <span class="path-divider">|</span>
+                Modified <relative-time datetime="Wed, 11 Sep 2024 19:39:49 &#43;0900" class="no-wrap">Wed, 11 Sep 2024 19:39:49 &#43;0900</relative-time>
+                
             </div>
         </div>
-        </div>
-        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    
+    <div class="container-lg px-3 new-discussion-timeline">
+    <div class="repository-content gist-content">
+    <div>
+    <div class="js-gist-file-update-container js-task-list-container file-box">
+    <div id="file-pytest" class="file my-2">
+        
+        <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
+        <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+            <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
+                
+                <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
+                    <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
+                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                    </svg>
+                </summary>
+                <details-menu class="SelectMenu" id="toc-details" style="display: none;">
+                    <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
+                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
+                    </div>
+                </details-menu>
+                751 Words
+                <span class="path-divider">|</span>
+                1 min
+            </div>
+            <div class="file-actions flex-order-2 pt-0">
+                
+                
+                <a class="muted-link mr-3" href="../../tags/vim">
+                    <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
+                    </svg>
+                    Vim</a>
+                
+                <a class="muted-link mr-3" href="../../tags/howto">
+                    <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
+                    </svg>
+                    Howto</a>
+                
+                <a class="muted-link mr-3" href="../../tags/vimscript">
+                    <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                        <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
+                    </svg>
+                    VimScript</a>
+                
+                
+            </div>
         </div>
         </div>
 
         
-        <div class="container-lg px-3 new-discussion-timeline">
-        <div class="repository-content gist-content">
-        <div>
-        <div class="js-gist-file-update-container js-task-list-container file-box">
-        <div id="file-pytest" class="file my-2">
-            
-            <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
-            <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
-                <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
-                    
-                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
-                        <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
-                            <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
-                        </svg>
-                    </summary>
-                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
-                        <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
-                            <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
-                        </div>
-                    </details-menu>
-                    751 Words
-                    <span class="path-divider">|</span>
-                    1 min
-                </div>
-                <div class="file-actions flex-order-2 pt-0">
-                    
-                    
-                    <a class="muted-link mr-3" href="../../tags/vim">
-                        <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                            <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
-                        </svg>
-                        Vim</a>
-                    
-                    <a class="muted-link mr-3" href="../../tags/howto">
-                        <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                            <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
-                        </svg>
-                        Howto</a>
-                    
-                    <a class="muted-link mr-3" href="../../tags/vimscript">
-                        <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                            <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
-                        </svg>
-                        VimScript</a>
-                    
-                    
-                </div>
-            </div>
-            </div>
-
-            
-            <div class="Box-body px-5 pb-5" style="z-index: 1">
-                <article class="markdown-body entry-content container-lg"><!-- raw HTML omitted -->
+        <div class="Box-body px-5 pb-5" style="z-index: 1">
+            <article class="markdown-body entry-content container-lg"><!-- raw HTML omitted -->
 <p><img src="https://img.shields.io/badge/-VimScript-6E9F18.svg?logo=vim&amp;style=flat&amp;color=F0F8FF&amp;logoColor=6E9F18" alt="VimScript">
 <img src="https://img.shields.io/badge/-vim-019733.svg?logo=vim&amp;style=flat&amp;color=F0F8FF&amp;logoColor=019733" alt="Vim">
 <img src="https://img.shields.io/badge/-Neovim-57A143.svg?logo=neovim&amp;style=flat&amp;color=F0F8FF&amp;logoColor=57A143" alt="Neovim"></p>
@@ -322,13 +310,47 @@ Vimプラグインの作成は、最初はシンプルな機能から始めて�
 <li><a href=""></a></li>
 </ul>
 </article>
+        </div>
+    </div>
+    </div>
+    </div>
+        
+        
+        
+            <div class="Box mt-3 position-relative">
+            <div class="Box-body instapaper_body js-code-block-container">
+                <article class="markdown-body entry-content p-3 p-md-6" itemprop="text">
+                    <h2>See Also</h2>
+                        <ul class="mt-2">
+                            
+                            <li class="p-1">
+                                <div>
+                                    <a href="../../post/vim_commands/">Vim Commands</a>
+                                    <time datetime="2024-08-17 01:02" class="no-wrap text-small ml-1">(2024-08-17 01:02)</time>
+                                </div>
+                                <div class="text-small text-gray mb-1 mt-1">
+                                    A list of vim commands for the TextEditor tool, along with various tips.
+                                </div>
+                            </li>
+                            
+                            <li class="p-1">
+                                <div>
+                                    <a href="../../post/editor_tools_neighborhood_and_derivatives/">Editor Tools Neighborhood and Derivatives</a>
+                                    <time datetime="2024-07-24 17:20" class="no-wrap text-small ml-1">(2024-07-24 17:20)</time>
+                                </div>
+                                <div class="text-small text-gray mb-1 mt-1">
+                                    Derived from &#39;ATOM&#39;, a former GitHub, Inc. product. Learn about TextEditor/IDE.
+                                </div>
+                            </li>
+                            
+                        </ul>
+                </article>
             </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-    </main>
+            </div>
+        
+    </div>
+    </div>
+</main>
 </div>
 
 <script type="application/javascript" src='http://localhost:1313/todayilearned/js/toc.js'></script>
