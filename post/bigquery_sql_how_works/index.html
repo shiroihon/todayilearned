@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='http://localhost:1313/todayilearned/css/light.css' />
     <link rel="stylesheet" href='http://localhost:1313/todayilearned/css/dark.css' />
     <link rel="stylesheet" href='http://localhost:1313/todayilearned/css/syntax.css' />
-    <title>Bigquery SLQ how works - Today I Learned</title>
+    <title>BiQquery SQL how works - Today I Learned</title>
     
     <link rel="icon" type="image/x-icon" href='../../images/github-mark.png'>
     
@@ -26,7 +26,7 @@
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Bigquery SLQ how works - Today I Learned" />
+<meta name="twitter:title" content="BiQquery SQL how works - Today I Learned" />
 <meta name="twitter:description"
   content="🔍" />
 <meta name="twitter:site" content="http://localhost:1313/todayilearned/" />
@@ -36,11 +36,11 @@
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Bigquery SLQ how works - Today I Learned">
+<meta property="og:title" content="BiQquery SQL how works - Today I Learned">
 <meta property="og:description"
   content="🔍" />
 <meta property="og:url" content="http://localhost:1313/todayilearned/post/bigquery_sql_how_works/" />
-<meta property="og:site_name" content="Bigquery SLQ how works" />
+<meta property="og:site_name" content="BiQquery SQL how works" />
 <meta property="og:image"
   content="http://localhost:1313/todayilearned/">
 <meta property="og:image:width" content="2048">
@@ -135,7 +135,7 @@
                   </span>
                   <span class="path-divider">/</span>
                   <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px">
-                    <a href="http://localhost:1313/todayilearned/post/bigquery_sql_how_works/">Bigquery SLQ how works</a>
+                    <a href="http://localhost:1313/todayilearned/post/bigquery_sql_how_works/">BiQquery SQL how works</a>
                   </strong>
                 </h1>
                 <div class="note m-0">
@@ -177,7 +177,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      42 Words
+                      172 Words
                     
 
                   </div>
@@ -211,45 +211,50 @@
               <div class="Box-body px-5 pb-5" style="z-index: 1">
                 <article class="markdown-body entry-content container-lg"><p><img src="https://img.shields.io/badge/-BigQuery-669DF6.svg?logo=googlebigquery&amp;style=flat&amp;color=F0F8FF" alt="BigQuery"></p>
 <h2 id="why">Why</h2>
+<p>分析関係でお仕事をしていたり、最近では営業担当や、マーケティング担当の方々も容易にBigQueryで用いるのが<code>DQL</code>。
+そんなBigQueryには様々なコマンドが存在して、また分類区分がある。
+この辺を一覧的に理解できたら嬉しいなぁ〜と。</p>
 <h2 id="what">What</h2>
-<h3 id="sql-command-types">SQL Command Types</h3>
+<h3 id="sql-commands-classification">SQL Commands Classification</h3>
 <ul>
 <li><strong>DDL</strong>: Data <code>Define</code> Language
 <ul>
-<li>CREAT</li>
-<li>ALTER</li>
-<li>DROP</li>
-<li>RENAME</li>
-<li>TRUNCATE</li>
+<li><code>CREAT</code></li>
+<li><code>ALTER</code></li>
+<li><code>DROP</code></li>
+<li><code>RENAME</code></li>
+<li><code>TRUNCATE</code></li>
 </ul>
 </li>
 <li><strong>DML</strong>: Data <code>Manipulation</code> Language
 <ul>
-<li>INSERT</li>
-<li>UPDATE</li>
-<li>DEFELR</li>
-<li>MERGE</li>
+<li><code>INSERT</code></li>
+<li><code>UPDATE</code></li>
+<li><code>DEFELR</code></li>
+<li><code>MERGE</code></li>
 </ul>
 </li>
 <li><strong>DCL</strong>: Data <code>Control</code> Language
 <ul>
-<li>GRANT</li>
-<li>REVOKE</li>
+<li><code>GRANT</code></li>
+<li><code>REVOKE</code></li>
 </ul>
 </li>
 <li><strong>TCL</strong>: Transaction <code>Control</code> Language
 <ul>
-<li>COMMIT</li>
-<li>ROLLBACK</li>
-<li>SAVE POINT</li>
+<li><code>COMMIT</code></li>
+<li><code>ROLLBACK</code></li>
+<li><code>SAVE POINT</code></li>
 </ul>
 </li>
 <li><strong>DQL</strong>: Data <code>Query</code> Language
 <ul>
-<li>SELECT</li>
+<li><code>SELECT</code></li>
 </ul>
 </li>
 </ul>
+<h4 id="types">Types</h4>
+<p>「文」「句」「式」の違い</p>
 <h2 id="ref">Ref.</h2>
 </article>
               </div>
@@ -260,8 +265,22 @@
     </div>
   </main>
 </div>
+
 <script type="application/javascript" src='http://localhost:1313/todayilearned/js/toc.js'></script>
 <link rel="stylesheet" href='http://localhost:1313/todayilearned/css/toc.css' />
+
+
+<script
+    src='http://localhost:1313/todayilearned/js/syntax-highlight-title.js'
+    crossorigin="anonymous"
+    type="application/javascript">
+</script>
+
+
+
+
+
+
 
 
 <div id="gitalk-container" class="gitalk-container"></div>

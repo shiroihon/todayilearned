@@ -177,7 +177,7 @@
                         </div>
                       </div>
                     </details-menu>
-                      1217 Words
+                      1658 Words
                     
 
                   </div>
@@ -286,11 +286,11 @@
 <li><code>:${数字}</code> 指定した行数に移動
 <ul>
 <li><strong>eg.</strong></li>
-<li><code>:5</code> 5行目に移動</li>
-<li><code>:10</code> 10行目に移動</li>
+<li><code>:5</code>          5行目に移動</li>
+<li><code>:10</code>         10行目に移動</li>
 </ul>
 </li>
-<li><code>:set number</code> 行数を表示</li>
+<li><code>:set number</code>   行数を表示</li>
 <li><code>:set nonumber</code> 行数を非表示</li>
 </ul>
 </li>
@@ -306,6 +306,27 @@
 <li><code>:!!</code>               前のコマンドを実行</li>
 </ul>
 </li>
+</ul>
+</li>
+<li>
+<p>複数ファイルオープン
+-<code>:e ファイルパス</code> 指定したファイルを開く。<code>:edit</code>の略。（eg.<code>:e ~/.vimrc</code>）</p>
+</li>
+<li>
+<p>バッファ（=開いたファイルのこと）の一覧から、オープン</p>
+<ul>
+<li><code>:ls</code>   バッファの一覧表示。</li>
+<li><code>:bn</code>   次のバッファを表示。<code>:bnext</code>の略</li>
+<li><code>:bp</code>   次のバッファを表示。<code>:bprevious</code>の略</li>
+<li><code>:b#</code>   直前まで開いていたバッファを表示。</li>
+<li><code>:b[N]</code> 該当の番号のバッファを表示。番号はファイルを開いた順に振られる。（eg. <code>:b2</code>）</li>
+</ul>
+</li>
+<li>
+<p>画面分割</p>
+<ul>
+<li>:sp 画面を上下に分割する。:splitの略</li>
+<li>:vs 画面を左右に分割する。:vsplitの略</li>
 </ul>
 </li>
 </ul>
@@ -339,7 +360,17 @@
 <li><code>{</code> / <code>}</code>   ひとつ上/下の段落に移動</li>
 <li><code>[[</code> / <code>]]</code> ひとつ上/下の空白行に移動</li>
 <li><code>gg</code> / <code>G</code>  ファイルの先頭/最後に移動</li>
-<li><code>Ctrl + o</code>  移動前に戻る</li>
+<li><code>ctrl + o</code>  移動前に戻る</li>
+</ul>
+</li>
+<li>
+<p>ウィンドゥ間の移動</p>
+<ul>
+<li><code>&lt;C-w&gt;h</code> カーソルを1つ左のwindowに移動</li>
+<li><code>&lt;C-w&gt;j</code> カーソルを1つ下のwindowに移動</li>
+<li><code>&lt;C-w&gt;k</code> カーソルを1つ上のwindowに移動</li>
+<li><code>&lt;C-w&gt;l</code> カーソルを1つ右のwindowに移動</li>
+<li><code>&lt;C-w&gt;w</code> カーソルを1つ前のwindowに移動</li>
 </ul>
 </li>
 <li>
@@ -347,7 +378,7 @@
 <ul>
 <li><code>u</code>        ひとつ前の状態に戻す</li>
 <li><code>=</code>        その行でインデント位置を自動修正</li>
-<li><code>Ctrl + r</code> 直前の操作に進む</li>
+<li><code>ctrl + r</code> 直前の操作に進む</li>
 </ul>
 </li>
 <li>
@@ -387,8 +418,15 @@
 <li><code>n</code> / <code>N</code> 次/前の検索結果に移動</li>
 <li><code>R</code> 置換</li>
 <li><code>?</code> 逆方向検索</li>
-<li><code>:set is</code> 部分マッチ検索</li>
+<li><code>:set is</code>  部分マッチ検索</li>
 <li><code>:set hls</code> 検索マッチする文字強調表示</li>
+</ul>
+</li>
+<li>
+<p>画面分割</p>
+<ul>
+<li><code>&lt;C-w&gt;s</code> 画面を上下に分割。ctrlを押しながらwと入力し、その後にsを入力、の意味</li>
+<li><code>&lt;C-w&gt;v</code> 画面を上下に分割。ctrlを押しながらwと入力し、その後にvを入力、の意味</li>
 </ul>
 </li>
 </ul>
@@ -462,7 +500,8 @@
 <li><a href="https://knowledge.sakura.ad.jp/21687/">はじめてのVim 〜 Vimはいいぞ！ゴリラと学ぶVim講座(1)</a> さくらのナレッジ</li>
 <li><a href="https://zenn.dev/yuucu/articles/vim-plugin-vimq">テキストファイルに対してSQLを発行できるツール「q」&amp; vimから使う「vimq.vim」の紹介</a> Zenn</li>
 <li><a href="https://dev.classmethod.jp/articles/vim-quickstart-with-vimtutor/">vimtutorで速習Vim</a></li>
-<li><a href="https://qiita.com/hkuno/items/4557f3f8d6b27d2884f2">今更ながらvimチートシート</a></li>
+<li><a href="https://qiita.com/hkuno/items/4557f3f8d6b27d2884f2">今更ながらvimチートシート</a> Qiita</li>
+<li><a href="https://zenn.dev/sun_asterisk/articles/6b2bf762a7e510#quickfix">慣れてきた頃に知りたいVimの便利機能</a> Zenn</li>
 </ul>
 </article>
               </div>
@@ -473,8 +512,22 @@
     </div>
   </main>
 </div>
+
 <script type="application/javascript" src='https://shiro-mpdm.github.io/todayilearned/js/toc.js'></script>
 <link rel="stylesheet" href='https://shiro-mpdm.github.io/todayilearned/css/toc.css' />
+
+
+<script
+    src='https://shiro-mpdm.github.io/todayilearned/js/syntax-highlight-title.js'
+    crossorigin="anonymous"
+    type="application/javascript">
+</script>
+
+
+
+
+
+
 
 
 <div id="gitalk-container" class="gitalk-container"></div>
