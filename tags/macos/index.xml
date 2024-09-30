@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MacOS on Today I Learned</title>
+    <link>https://shiro-mpdm.github.io/todayilearned/tags/macos/</link>
+    <description>Recent content in MacOS on Today I Learned</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 03 Aug 2024 16:04:18 +0900</lastBuildDate>
+    <atom:link href="https://shiro-mpdm.github.io/todayilearned/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MacBook Looks Like Native-applivcation</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/macbook_looks_like_native_applivcation/</link>
+      <pubDate>Sat, 03 Aug 2024 16:04:18 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/macbook_looks_like_native_applivcation/</guid>
+      <description>🍏 A little trick to use it like a native laptop application.</description>
+    </item>
+  </channel>
+</rss>

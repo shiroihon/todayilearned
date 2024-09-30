@@ -172,7 +172,7 @@
                         <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                     </div>
                 </details-menu>
-                751 Words
+                736 Words
                 <span class="path-divider">|</span>
                 1 min
             </div>
@@ -199,8 +199,7 @@
                 
                 
             </div>
-            <div>
-            </div>
+            
         </div>
         </div>
 
@@ -239,21 +238,22 @@ Vimスクリプトを使えば、Vimの機能を拡張したり、自分好み�
 </span></span><span class="line"><span class="cl">├── doc/       &lt;-プラグインのメイン機能を定義するスクリプト
 </span></span><span class="line"><span class="cl">├── plugin/    &lt;-プラグインのメイン機能を定義するスクリプト
 </span></span><span class="line"><span class="cl">├── syntax/    &lt;-プラグインのメイン機能を定義するスクリプト
-</span></span><span class="line"><span class="cl">└── README.md
+</span></span><span class="line"><span class="cl">├── README.md
 </span></span><span class="line"><span class="cl">└── LICENSE
 </span></span></code></pre></div></li>
 </ul>
 </li>
 <li>プラグインの機能定義
 <ul>
-<li><code>plugin/myplugin.vim</code> で基本的な設定やコマンドを定義。
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vim:plugin/myplugin.vim" data-lang="vim:plugin/myplugin.vim"><span class="line"><span class="cl"><span class="k">function</span><span class="p">!</span> <span class="nx">MyPluginFunction</span><span class="p">()</span>
+<li>基本的な設定やコマンドを定義。
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-vim:plugin/myplugin.vim" data-lang="vim:plugin/myplugin.vim"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">function</span><span class="p">!</span> <span class="nx">MyPluginFunction</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">echo</span> <span class="s2">&#34;Hello from my plugin!&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="k">endfunction</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nx">command</span><span class="p">!</span> <span class="nx">MyPlugin</span> <span class="nx">call</span> <span class="nx">MyPluginFunction</span><span class="p">()</span>
 </span></span></code></pre></div><ul>
-<li>この場合、<code>:MyPlugin</code> と入力することで、関数が実行され「Hello from my plugin!」と表示される。</li>
+<li><code>:MyPlugin</code> と入力することで関数が実行され、「<code>Hello from my plugin!</code>」と表示される。</li>
 </ul>
 </li>
 </ul>
@@ -335,7 +335,7 @@ Vimプラグインの作成は、最初はシンプルな機能から始めて�
                             
                             <li class="p-1">
                                 <div>
-                                    <a href="../../post/editor_tools_neighborhood_and_derivatives/">Editor Tools Neighborhood and Derivatives</a>
+                                    <a href="../../post/vim_editor_tools_neighborhood_derivatives/">Editor Tools Neighborhood and Derivatives</a>
                                     <time datetime="2024-07-24 17:20" class="no-wrap text-small ml-1">(2024-07-24 17:20)</time>
                                 </div>
                                 <div class="text-small text-gray mb-1 mt-1">Derived from &#39;ATOM&#39;, a former GitHub, Inc. product. Learn about TextEditor/IDE.</div>

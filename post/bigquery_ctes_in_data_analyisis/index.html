@@ -172,7 +172,7 @@
                         <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                     </div>
                 </details-menu>
-                808 Words
+                803 Words
                 <span class="path-divider">|</span>
                 1 min
             </div>
@@ -197,34 +197,36 @@
                     </svg>
                     DataAnalytics</a>
                 
-                <a class="muted-link mr-3" href="../../tags/know-how">
+                <a class="muted-link mr-3" href="../../tags/knowhow">
                     <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                         <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
                     </svg>
-                    Know-how</a>
+                    KnowHow</a>
                 
                 
             </div>
-            <div>
-            </div>
+            
         </div>
         </div>
 
         
         <div class="Box-body px-5 pb-5" style="z-index: 1">
-            <article class="markdown-body entry-content container-lg"><p><img src="https://img.shields.io/badge/-BigQuery-669DF6.svg?logo=googlebigquery&amp;style=flat&amp;color=F0F8FF" alt="BigQuery"></p>
+            <article class="markdown-body entry-content container-lg"><!-- raw HTML omitted -->
+<p><img src="https://img.shields.io/badge/-BigQuery-669DF6.svg?logo=googlebigquery&amp;style=flat&amp;color=F0F8FF" alt="BigQuery"></p>
 <h2 id="cteの定義">CTEの定義<a class="anchor" aria-hidden="true" href="#cteの定義"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
-<p>文脈によって若干の違いがあるのものの<code>CTE</code>と<code>CTEs</code>は基本的に同じ概念を指している(細かいｶﾖ!)。</p>
+<p>文脈によって若干の違いがあるのものの <code>CTE</code> と <code>CTEs</code> は基本的に同じ概念を指している（細かいｶﾖ!）。</p>
 <ol>
-<li><strong>CTE（Common Table Expression）</strong></li>
-</ol>
+<li><strong>CTE（Common Table Expression）</strong>
 <ul>
-<li>定義: 一時的に名前を付けて結果セットを定義し、それを後続のクエリで参照するSQL構文。単一のCTEを使用する場合、単数形のCTEという用語が使用される。</li>
+<li>定義:
+<ul>
+<li>一時的に名前を付けて結果セットを定義し、それを後続のクエリで参照するSQL構文。</li>
+<li>単一のCTEを使用する場合、単数形のCTEという用語が使用される。</li>
+</ul>
+</li>
 <li>使用例:
-<ul>
-<li>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-SQL" data-lang="SQL"><span class="line"><span class="cl"><span class="o">#</span><span class="w"> </span><span class="err">単一の</span><span class="n">CTE</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">with</span><span class="w"> </span><span class="n">SingleCTE</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="p">(</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-SQL" data-lang="SQL"><span class="line"><span class="cl"><span class="c1">-- 単一のCTE
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">with</span><span class="w"> </span><span class="n">SingleCTE</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="p">(</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">select</span><span class="w"> </span><span class="n">column1</span><span class="p">,</span><span class="w"> </span><span class="n">column2</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">from</span><span class="w">  </span><span class="o">`</span><span class="n">dataset</span><span class="p">.</span><span class="k">table</span><span class="o">`</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">where</span><span class="w"> </span><span class="n">condition</span><span class="w">
@@ -236,29 +238,24 @@
 </span></span></span></code></pre></div></li>
 </ul>
 </li>
-</ul>
-<ol start="2">
-<li><strong>CTEs（Common Table Expressions）</strong></li>
-</ol>
+<li><strong>CTEs（Common Table Expressions）</strong>
 <ul>
 <li>定義: 複数のCTEを組み合わせて使用する場合、それらを総称してCTEsと言う。</li>
 <li>使用例:
-<ul>
-<li>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-SQL" data-lang="SQL"><span class="line"><span class="cl"><span class="o">#</span><span class="w"> </span><span class="err">複数の</span><span class="n">CTE</span><span class="err">（</span><span class="n">CTEs</span><span class="err">）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">with</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-SQL" data-lang="SQL"><span class="line"><span class="cl"><span class="c1">-- 複数のCTE（CTEs）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">with</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">FirstCTE</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="p">(</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">select</span><span class="w"> </span><span class="n">column1</span><span class="p">,</span><span class="w"> </span><span class="n">column2</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">from</span><span class="w"> </span><span class="n">dataset</span><span class="p">.</span><span class="k">table</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">where</span><span class="w"> </span><span class="n">condition1</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">,</span><span class="w">　</span><span class="n">SecondCTE</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">,</span><span class="w"> </span><span class="n">SecondCTE</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="p">(</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">select</span><span class="w"> </span><span class="n">column1</span><span class="p">,</span><span class="w"> </span><span class="k">sum</span><span class="p">(</span><span class="n">column3</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">sum_column3</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">from</span><span class="w"> </span><span class="n">FirstCTE</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">where</span><span class="w"> </span><span class="n">condition2</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">column1</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">,</span><span class="w">　</span><span class="n">ThirdCTE</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">,</span><span class="w"> </span><span class="n">ThirdCTE</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="p">(</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">select</span><span class="w"> </span><span class="n">column1</span><span class="p">,</span><span class="w"> </span><span class="n">sum_column3</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">from</span><span class="w"> </span><span class="n">SecondCTE</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">where</span><span class="w"> </span><span class="n">condition3</span><span class="w">
@@ -270,10 +267,11 @@
 </span></span></span></code></pre></div></li>
 </ul>
 </li>
-</ul>
+</ol>
 <h2 id="dataanalyticsにおけるctes">DataAnalyticsにおけるCTEs<a class="anchor" aria-hidden="true" href="#dataanalyticsにおけるctes"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
-<pre tabindex="0"><code>※ 一般論ではなく、業務を通じて個人的に心掛けたことをまとめる。
-</code></pre><h3 id="ファネルを意識した記述方法">ファネルを意識した記述方法<a class="anchor" aria-hidden="true" href="#ファネルを意識した記述方法"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<pre><code>※ 一般論ではなく、業務を通じて個人的に心掛けたことをまとめる。
+</code></pre>
+<h3 id="ファネルを意識した記述方法">ファネルを意識した記述方法<a class="anchor" aria-hidden="true" href="#ファネルを意識した記述方法"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <h3 id="ctes書くと記述がばらつく問題">CTEs書くと記述がばらつく問題<a class="anchor" aria-hidden="true" href="#ctes書くと記述がばらつく問題"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <p>「十人十色、多様性の時代ではあるが記述を統一したいよなぁ〜」と悩み出す。
 個人的に気を遣って書いている事をまとめてみる。</p>
@@ -285,7 +283,7 @@
 <li>対処：
 <ul>
 <li>誰が読んでも分かるような記述を心掛ける。(認知コストを奪ことはしたくない意図)</li>
-<li><code>e.g.</code> サブクエリのネストは２段まで&hellip;etc.</li>
+<li>eg. サブクエリのネストは２段まで&hellip;etc.</li>
 </ul>
 </li>
 </ul>
@@ -303,7 +301,7 @@
 </li>
 </ol>
 <h2 id="色々な場面でもctes">色々な場面でもCTEs<a class="anchor" aria-hidden="true" href="#色々な場面でもctes"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
-<h2 id="ref">REF.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
+<h2 id="ref">Ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 <ul>
 <li>
 <p><a href="https://zenn.dev/kazuya_araki/articles/20221217_relearning_common-table-expressions">CTEs(Common Table Expressions)について学び直す</a> Zenn</p>

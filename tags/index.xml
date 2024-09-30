@@ -44,10 +44,31 @@
       <description></description>
     </item>
     <item>
-      <title>Know-How</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/know-how/</link>
+      <title>KnowHow</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/knowhow/</link>
       <pubDate>Fri, 16 Aug 2024 18:41:57 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/know-how/</guid>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/knowhow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Browser</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/browser/</link>
+      <pubDate>Sat, 03 Aug 2024 16:04:18 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/browser/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chrome</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/chrome/</link>
+      <pubDate>Sat, 03 Aug 2024 16:04:18 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/chrome/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MacOS</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/macos/</link>
+      <pubDate>Sat, 03 Aug 2024 16:04:18 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/macos/</guid>
       <description></description>
     </item>
     <item>
@@ -86,17 +107,17 @@
       <description></description>
     </item>
     <item>
-      <title>ELT</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/elt/</link>
+      <title>ETL/ELT</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/etl/elt/</link>
       <pubDate>Tue, 30 Jul 2024 02:30:55 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/elt/</guid>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/etl/elt/</guid>
       <description></description>
     </item>
     <item>
-      <title>Hands-On</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/hands-on/</link>
+      <title>HandsOn</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/handson/</link>
       <pubDate>Tue, 30 Jul 2024 02:30:55 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/hands-on/</guid>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/handson/</guid>
       <description></description>
     </item>
     <item>

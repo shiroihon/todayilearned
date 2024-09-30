@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Default on Today I Learned</title>
+    <link>http://localhost:1313/todayilearned/categories/default/</link>
+    <description>Recent content in Default on Today I Learned</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Sep 2024 23:28:04 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/todayilearned/categories/default/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unix</title>
+      <link>http://localhost:1313/todayilearned/post/unix/</link>
+      <pubDate>Mon, 30 Sep 2024 23:28:04 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearned/post/unix/</guid>
+      <description>A brief summary of the article.</description>
+    </item>
+  </channel>
+</rss>

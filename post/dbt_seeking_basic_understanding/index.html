@@ -172,7 +172,7 @@
                         <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                     </div>
                 </details-menu>
-                3601 Words
+                3585 Words
                 <span class="path-divider">|</span>
                 5 min
             </div>
@@ -185,11 +185,11 @@
                     </svg>
                     dbt</a>
                 
-                <a class="muted-link mr-3" href="../../tags/elt">
+                <a class="muted-link mr-3" href="../../tags/etl/elt">
                     <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                         <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
                     </svg>
-                    ELT</a>
+                    ETL/ELT</a>
                 
                 <a class="muted-link mr-3" href="../../tags/dre">
                     <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
@@ -197,11 +197,11 @@
                     </svg>
                     DRE</a>
                 
-                <a class="muted-link mr-3" href="../../tags/hands-on">
+                <a class="muted-link mr-3" href="../../tags/handson">
                     <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                         <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
                     </svg>
-                    Hands-on</a>
+                    HandsOn</a>
                 
                 
             </div>
@@ -228,53 +228,45 @@ dbtはこの工程で役に立つ様々な機能を提供してくれます。 <
 <li>Official
 <ul>
 <li><a href="https://www.getdbt.com/">https://www.getdbt.com/</a></li>
-<li><a href="https://docs.getdbt.com/">https://docs.getdbt.com/</a> (Document)</li>
-<li><a href="https://github.com/dbt-labs/">https://github.com/dbt-labs/</a> (GitHub)</li>
+<li><a href="https://docs.getdbt.com/">https://docs.getdbt.com/</a></li>
+<li><a href="https://github.com/dbt-labs/">https://github.com/dbt-labs/</a></li>
 </ul>
 </li>
 <li>Community
 <ul>
-<li>🇯🇵 dbt Developer Group(DDG) Tokyo - Japan dbt User Group
-<ul>
+<li>🇯🇵 dbt Developer Group(DDG) Tokyo - Japan dbt User Group</li>
 <li><a href="https://dbt-ug.tokyo/">https://dbt-ug.tokyo/</a></li>
-<li>
+</ul>
 <pre tabindex="0"><code>dbt-tokyoはdbtの日本におけるdbtの普及と、
 dbtプロダクトへの貢献を目的に活動をしています。
 </code></pre></li>
-</ul>
-</li>
-</ul>
-</li>
 <li>Production
-<pre tabindex="0"><code>dbt
-  ┗ 1. dbt-core            (Free)
-  ┗ 2. dbt Cloud
-            ┗ 1. Developer (Free)
-            ┗ 2. Team
-            ┗ 3. Enterprise
-</code></pre><ul>
-<li>cf. <a href="https://www.getdbt.com/pricing">dbt Pricing Plans</a></li>
-</ul>
-<ol>
-<li><strong>dbt-core</strong>
-<ul>
-<li>cf.</li>
-</ul>
-</li>
-<li><strong>dbt Cloud</strong>
-<ul>
-<li>
+<pre tabindex="0"><code>[dbt]
+└ 1.[dbt-core]       &lt;-Free
+└ 2.[dbt Cloud]
+    └ 1.[Developer]  &lt;-Free
+    └ 2.[Team]
+    └ 3.[Enterprise]
+</code></pre><ol>
+<li>dbt-core</li>
+<li>dbt Cloud
 <pre tabindex="0"><code>WebUIを用いて開発ができる！
 </code></pre></li>
-<li>cf. <a href="https://zenn.dev/dbt_tokyo/books/537de43829f3a0/viewer/setup">Chapter 02 dbt Cloudのセットアップ</a> Zenn</li>
+</ol>
+<ul>
+<li>cf.
+<ul>
+<li><a href="https://www.getdbt.com/pricing">dbt Pricing Plans</a> dbt</li>
+<li><a href="https://zenn.dev/dbt_tokyo/books/537de43829f3a0/viewer/setup">Chapter 02 dbt Cloudのセットアップ</a> Zenn</li>
 </ul>
 </li>
-</ol>
+</ul>
 </li>
 </ul>
 <h2 id="hands-ondbt-core">Hands On（dbt-core）<a class="anchor" aria-hidden="true" href="#hands-ondbt-core"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
-<pre tabindex="0"><code>詳細なとは参考に乗っているので、この辺を読んで手を動かした部分を掻い摘む。
-</code></pre><ul>
+<pre><code>詳細なとは参考に乗っているので、この辺を読んで手を動かした部分を掻い摘む。
+</code></pre>
+<ul>
 <li><a href="https://zenn.dev/foursue/books/31456a86de5bb4">dbt 入門</a> Zenn</li>
 <li><a href="https://zenn.dev/dbt_tokyo/books/537de43829f3a0">dbtで始めるデータパイプライン構築〜入門から実践〜</a> Zenn</li>
 <li><a href="https://zenn.dev/chameleon/books/6c85cfeab9f271">dbtハンズオン</a> Zenn</li>
@@ -334,19 +326,19 @@ dbtプロダクトへの貢献を目的に活動をしています。
 <li><code>*2</code>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml:~/.dbt/profiles.yml" data-lang="yaml:~/.dbt/profiles.yml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">dbt_training_dw</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l">dev</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">outputs</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">dev</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">postgres</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l">localhost</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">user</span><span class="p">:</span><span class="w"> </span><span class="l">admin</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l">admin</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="m">5432</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">dbname</span><span class="p">:</span><span class="w"> </span><span class="l">postgres</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">schema</span><span class="p">:</span><span class="w"> </span><span class="l">public</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">threads</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">keepalives_idle</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">connect_timeout</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l">dev</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">outputs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">dev</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">postgres</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="l">localhost</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">user</span><span class="p">:</span><span class="w"> </span><span class="l">admin</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l">admin</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="m">5432</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">dbname</span><span class="p">:</span><span class="w"> </span><span class="l">postgres</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">schema</span><span class="p">:</span><span class="w"> </span><span class="l">public</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">threads</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">keepalives_idle</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">connect_timeout</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
 </span></span></span></code></pre></div><ul>
 <li>上記は「PostgreSQL」に接続させる設定ファイル（cf.<a href="https://docs.getdbt.com/docs/core/connect-data-platform/postgres-setup">公式</a>）。</li>
 <li>dbt は DWH の接続設定を <code>~/.dbt/profiles.yml</code> に書く。</li>
@@ -609,41 +601,37 @@ dbtプロダクトへの貢献を目的に活動をしています。
 <h4 id="カスタムスキーマ機能">カスタムスキーマ機能<a class="anchor" aria-hidden="true" href="#カスタムスキーマ機能"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
 <p>cf. <a href="https://docs.getdbt.com/docs/build/custom-schemas">Custom schemas</a></p>
 <ol>
-<li>利用シーン</li>
-</ol>
+<li>利用シーン
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- hogehoge.sql
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">{{</span><span class="w"> </span><span class="n">config</span><span class="p">(</span><span class="k">schema</span><span class="o">=</span><span class="s1">&#39;piyopiyo&#39;</span><span class="p">)</span><span class="w"> </span><span class="err">}}</span><span class="w">
-</span></span></span></code></pre></div><p>このように作られる=&gt; <code>public_piyopiyo</code></p>
-<ol start="2">
-<li>利用シーン</li>
-</ol>
+</span></span></span></code></pre></div>このように作られる=&gt; <code>public_piyopiyo</code></li>
+<li>利用シーン
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- hogehoge.sql
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">{{</span><span class="w"> </span><span class="n">config</span><span class="p">(</span><span class="k">alias</span><span class="o">=</span><span class="s1">&#39;fugafuga&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">schema</span><span class="o">=</span><span class="s1">&#39;piyopiyo&#39;</span><span class="p">)</span><span class="w"> </span><span class="err">}}</span><span class="w">
-</span></span></span></code></pre></div><p>このように作られる=&gt; <code>public_piyopiyo.fugafuga</code></p>
-<ol start="3">
-<li>利用シーン</li>
-</ol>
+</span></span></span></code></pre></div>このように作られる=&gt; <code>public_piyopiyo.fugafuga</code></li>
+<li>利用シーン
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">models</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">hoge_project</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">piyo</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">+schema</span><span class="p">:</span><span class="w"> </span><span class="l">piyopiyo</span><span class="w">
-</span></span></span></code></pre></div><p><code>models/piyo</code> ディレクトリ配下のモデルは <code>&lt;target_shema&gt;_piyopiyo</code> スキーマに保存できる.</p>
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">piyo</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">+schema</span><span class="p">:</span><span class="w"> </span><span class="l">piyopiyo</span><span class="w">
+</span></span></span></code></pre></div><code>models/piyo</code> ディレクトリ配下のモデルは <code>&lt;target_shema&gt;_piyopiyo</code> スキーマに保存できる.</li>
+</ol>
 <h4 id="カスタムデータベース機能">カスタムデータベース機能<a class="anchor" aria-hidden="true" href="#カスタムデータベース機能"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
 <p>cf. <a href="https://docs.getdbt.com/docs/build/custom-databases">Custom databases</a></p>
 <h4 id="変数機能">変数機能<a class="anchor" aria-hidden="true" href="#変数機能"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
 <p>cf. <a href="https://docs.getdbt.com/docs/build/project-variables">Project variables</a></p>
 <h3 id="テスト">テスト<a class="anchor" aria-hidden="true" href="#テスト"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
-<p>e.g.</p>
+<p>eg.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ dbt <span class="nb">test</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>    --profiles-dir ./profiles <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span>    --vars <span class="s1">&#39;$(cat ./config/local/vars.yml)&#39;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --select <span class="s1">&#39;company_hoge_jp__bigquery_resource__jobs_url_daily_extract_of_connectedsheet&#39;</span>
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --select company_hoge_jp__bigquery_resource__jobs_url_daily_extract_of_connectedsheet
 </span></span></code></pre></div><p>実務では、上記のよに単に <code>test</code> を実施するのではなく、Optionsを付して慎重に行っていた。</p>
 <h3 id="テスト手法">テスト手法<a class="anchor" aria-hidden="true" href="#テスト手法"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <ol>
-<li>Singular data tests（単一テスト）<a href="https://docs.getdbt.com/docs/build/data-tests#singular-data-tests">cf.</a></li>
-<li>Generic data tests （汎用テスト）<a href="https://docs.getdbt.com/docs/build/data-tests#generic-data-tests">cf.</a></li>
+<li>Singular data tests <a href="https://docs.getdbt.com/docs/build/data-tests#singular-data-tests">cf.</a> (単一テスト)</li>
+<li>Generic data tests <a href="https://docs.getdbt.com/docs/build/data-tests#generic-data-tests">cf.</a> (汎用テスト)</li>
 </ol>
 <h4 id="手法1-singular-data-tests単一テスト">[手法1] Singular data tests（単一テスト）<a class="anchor" aria-hidden="true" href="#手法1-singular-data-tests単一テスト"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql:tests/always_fail_test.sql" data-lang="sql:tests/always_fail_test.sql"><span class="line"><span class="cl"><span class="k">select</span><span class="w"> </span><span class="n">id</span><span class="w">
@@ -705,8 +693,8 @@ dbtプロダクトへの貢献を目的に活動をしています。
 </table>
 <h5 id="2-2-独自に組み込めるテストcostumgeneric">2-2. 独自に組み込めるテスト(CostumGeneric)<a class="anchor" aria-hidden="true" href="#2-2-独自に組み込めるテストcostumgeneric"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h5>
 <ol>
-<li>テストを記述</li>
-</ol>
+<li>
+<p>テストを記述</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql:tests/generic/hoge.sql" data-lang="sql:tests/generic/hoge.sql"><span class="line"><span class="cl"><span class="err">{</span><span class="o">%</span><span class="w"> </span><span class="n">test</span><span class="w"> </span><span class="nf">my_not_null</span><span class="p">(</span><span class="n">model</span><span class="p">,</span><span class="w"> </span><span class="n">column_name</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="err">}</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w">
@@ -714,11 +702,15 @@ dbtプロダクトへの貢献を目的に活動をしています。
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">where</span><span class="w"> </span><span class="err">{{</span><span class="w"> </span><span class="n">column_name</span><span class="w"> </span><span class="err">}}</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="no">null</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">{</span><span class="o">%</span><span class="w"> </span><span class="n">endtest</span><span class="w"> </span><span class="o">%</span><span class="err">}</span><span class="w">
-</span></span></span></code></pre></div><ol start="2">
-<li><code>$ dbt test</code></li>
-<li><code>target/compiled/</code> にコンパイルされたSQLが抽出されている。</li>
-</ol>
+</span></span></span></code></pre></div></li>
+<li>
+<p><code>$ dbt test</code></p>
+</li>
+<li>
+<p><code>target/compiled/</code> にコンパイルされたSQLが抽出されている。</p>
 <p>cf. <a href="https://docs.getdbt.com/best-practices/writing-custom-generic-tests">Writing custom generic data tests</a> dbt</p>
+</li>
+</ol>
 <h3 id="テスト手法小技">テスト手法（小技）<a class="anchor" aria-hidden="true" href="#テスト手法小技"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ dbt <span class="nb">test</span> --store-failures
 </span></span></code></pre></div><p>テスト実行したときに失敗したテストによって条件を満たさなかった行を保存する事が出来る。</p>
@@ -727,13 +719,13 @@ dbtプロダクトへの貢献を目的に活動をしています。
 <h2 id="oss活動">OSS活動<a class="anchor" aria-hidden="true" href="#oss活動"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 <pre tabindex="0"><code>貢献したい人はより学習して、世のため人のため、OSS活動に参加してみる（てか、参加したい！）
 </code></pre><ul>
-<li><code>cf.</code>
+<li>cf.
 <ul>
 <li><a href="https://zenn.dev/daizamurai/books/87f9727b0f7ee1">dbt-coreのOSS活動ことはじめ</a> Zeen</li>
 </ul>
 </li>
 </ul>
-<h2 id="ref">REF.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
+<h2 id="ref">Ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 <ul>
 <li>
 <p><a href="https://www.isoroot.jp/blog/6054/">はじめて理解するdbt</a> isoroot</p>

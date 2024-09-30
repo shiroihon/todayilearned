@@ -172,7 +172,7 @@
                         <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                     </div>
                 </details-menu>
-                1658 Words
+                1652 Words
                 <span class="path-divider">|</span>
                 2 min
             </div>
@@ -212,8 +212,7 @@
 <h2 id="what">What<a class="anchor" aria-hidden="true" href="#what"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 <h3 id="command">Command<a class="anchor" aria-hidden="true" href="#command"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <ul>
-<li>
-<p>エディタ起動</p>
+<li>エディタ起動
 <ul>
 <li><code>$ vim</code>
 <ul>
@@ -222,14 +221,18 @@
 </li>
 </ul>
 </li>
-<li>
-<p><strong>[V] ビジュアルモード</strong></p>
+</ul>
+<hr>
+<ul>
+<li><strong>[V] ビジュアルモード</strong>
 <ul>
 <li><code>v</code> 複数文字や行を選択できるモード</li>
 </ul>
 </li>
-<li>
-<p><strong>[I] インサートモード</strong></p>
+</ul>
+<hr>
+<ul>
+<li><strong>[I] インサートモード</strong>
 <ul>
 <li><details>
   <summary><code>i</code>: ファイルに書き込むためのモード</summary>
@@ -245,8 +248,10 @@
 </li>
 </ul>
 </li>
-<li>
-<p><strong>[:] コマンドモード</strong></p>
+</ul>
+<hr>
+<ul>
+<li><strong>[:] コマンドモード</strong>
 <ul>
 <li><details>
   <summary><code>:</code></summary>
@@ -312,8 +317,29 @@
 <li>
 <p>画面分割</p>
 <ul>
-<li>:sp 画面を上下に分割する。:splitの略</li>
-<li>:vs 画面を左右に分割する。:vsplitの略</li>
+<li><code>:sp</code> 画面を上下に分割する。:splitの略</li>
+<li><code>:vs</code> 画面を左右に分割する。:vsplitの略</li>
+</ul>
+</li>
+<li>
+<p>置換</p>
+<ul>
+<li><code>:s/old/new</code> 該当行の最初の一致箇所を置換</li>
+<li><code>:s/old/new/g</code> 該当行の一致箇所を全置換</li>
+<li><code>:1,10s/old/new/g</code> 1〜10行目の一致箇所を全置換</li>
+<li><code>:%s/old/new/g</code> ファイル全体の一致箇所を全置換
+<ul>
+<li><code>:%s/${検索ワード}/${置換ワード}/g</code> : 一括置換</li>
+<li><code>:%s/${検索ワード}/${置換ワード}/gc</code>: 確認しながら置換</li>
+</ul>
+</li>
+<li><code>:'&lt;,'&gt;s/{old}/{new}/g</code> [V] visual-modeで選択内 一括置換</li>
+<li>cf.
+<ul>
+<li><a href="https://motw.mods.jp/Vim/substitution.html">Vimの置換コマンドの使い方</a> Memo on the web</li>
+<li><a href="https://qiita.com/shirochan/items/a16487d0739f455b5e8a">vim 文字列置換 基本的な事</a> Qiita</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -323,8 +349,10 @@
 </li>
 </ul>
 </li>
-<li>
-<p><strong>[ ] ノーマルモード</strong></p>
+</ul>
+<hr>
+<ul>
+<li><strong>[ ] ノーマルモード</strong>
 <ul>
 <li><details>
   <summary><code>[esc]</code>:</summary>
@@ -426,50 +454,13 @@
 </ul>
 <h3 id="convenience">Convenience<a class="anchor" aria-hidden="true" href="#convenience"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <ul>
-<li>置換
-<ul>
-<li><code>:s/old/new</code> 該当行の最初の一致箇所を置換</li>
-<li><code>:s/old/new/g</code> 該当行の一致箇所を全置換</li>
-<li><code>:1,10s/old/new/g</code> 1〜10行目の一致箇所を全置換</li>
-<li><code>:%s/old/new/g</code> ファイル全体の一致箇所を全置換
-<ul>
-<li><code>:%s/${検索ワード}/${置換ワード}/g</code> : 一括置換</li>
-<li><code>:%s/${検索ワード}/${置換ワード}/gc</code>: 確認しながら置換</li>
-</ul>
-</li>
-<li><code>:'&lt;,'&gt;s/{old}/{new}/g</code> [V] visual-modeで選択内 一括置換</li>
-<li><strong>cf.</strong>
-<ul>
-<li><a href="https://motw.mods.jp/Vim/substitution.html">Vimの置換コマンドの使い方</a> Memo on the web</li>
-<li><a href="https://qiita.com/shirochan/items/a16487d0739f455b5e8a">vim 文字列置換 基本的な事</a> Qiita</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<!-- raw HTML omitted -->
-<ul>
-<li>コメントアウト
-<ul>
-<li>一括コメントアウト
+<li>一括操作（コメントアウト）
 <ol>
-<li><code>Ctrl + v</code>：
-<ul>
-<li><a href="https://kotobank.jp/word/%E7%9F%A9%E5%BD%A2-482930">矩形（くけい）</a>選択モードで行をバッと選択</li>
-</ul>
-</li>
-<li><code>Shift + i</code>：
-<ul>
-<li>コメントアウト文字を入力（e.g. <code>#</code>、<code>--</code>、<code>//</code>&hellip;etc.）</li>
-</ul>
-</li>
-<li><code>Esc</code>　
-<ul>
-<li>押下後にバッと入力されるっよ！</li>
-</ul>
-</li>
+<li><code>Ctrl + v</code> <a href="https://kotobank.jp/word/%E7%9F%A9%E5%BD%A2-482930">矩形（くけい）</a>選択モードで行をバッと選択</li>
+<li><code>Shift + i</code> コメントアウト文字を入力（e.g. <code>#</code>、<code>--</code>、<code>//</code>&hellip;etc.）</li>
+<li><code>Esc</code> 押下後にバッと入力されるっ！</li>
 </ol>
-</li>
+<ul>
 <li>cf.
 <ul>
 <li><a href="https://qiita.com/r-kubo/items/4bc902d3d323e7936a5d">vimを使わないviで一括コメントアウト</a> Qiita</li>
@@ -479,7 +470,6 @@
 </ul>
 </li>
 </ul>
-<h3 id="heading"><a class="anchor" aria-hidden="true" href="#heading"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <h2 id="ref">Ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 <ul>
 <li><a href="https://qiita.com/moko_Swallows/items/be918efda9cfebcbf6b6">Vimの基本的なコマンドリスト</a> Qiita</li>
