@@ -3,10 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/</loc>
-    <lastmod>2024-09-30T23:28:04+09:00</lastmod>
+    <lastmod>2024-10-01T15:10:50+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/</loc>
-    <lastmod>2024-09-30T23:31:58+09:00</lastmod>
+    <lastmod>2024-10-01T15:37:44+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/git/</loc>
+    <lastmod>2024-09-24T18:08:08+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/github/</loc>
+    <lastmod>2024-09-24T18:08:08+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/github_branches_pruning/</loc>
+    <lastmod>2024-09-24T18:08:08+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/</loc>
+    <lastmod>2024-09-24T18:08:08+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/cli/</loc>
     <lastmod>2024-08-21T00:00:34+09:00</lastmod>
@@ -17,7 +29,7 @@
     <loc>https://shiro-mpdm.github.io/todayilearned/post/docker_commands/</loc>
     <lastmod>2024-08-21T00:00:34+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/handson/</loc>
     <lastmod>2024-08-21T00:00:34+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/ide/</loc>
@@ -56,9 +68,6 @@
     <loc>https://shiro-mpdm.github.io/todayilearned/post/english_abbreviations/</loc>
     <lastmod>2024-07-30T12:48:55+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/github/</loc>
-    <lastmod>2024-07-30T12:48:55+09:00</lastmod>
-  </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/slack/</loc>
     <lastmod>2024-07-30T12:48:55+09:00</lastmod>
   </url><url>
@@ -72,9 +81,6 @@
     <lastmod>2024-07-30T02:30:55+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/etl/elt/</loc>
-    <lastmod>2024-07-30T02:30:55+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/handson/</loc>
     <lastmod>2024-07-30T02:30:55+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/bigquery/</loc>
@@ -97,9 +103,6 @@
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/slack_writing_etiquette/</loc>
     <lastmod>2024-07-23T18:17:17+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/git/</loc>
-    <lastmod>2024-07-23T04:13:21+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/github_how_to_check_difference/</loc>
     <lastmod>2024-07-23T04:13:21+09:00</lastmod>
@@ -129,7 +132,7 @@
     <lastmod>2024-07-07T16:37:01+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/readme/</loc>
-    <lastmod>2024-09-30T23:31:58+09:00</lastmod>
+    <lastmod>2024-10-01T15:37:44+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/categories/</loc>
   </url>

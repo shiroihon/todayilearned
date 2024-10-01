@@ -6,8 +6,15 @@
     <description>Recent content in HandsOn on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Jul 2024 02:30:55 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 21 Aug 2024 00:00:34 +0900</lastBuildDate>
     <atom:link href="https://shiro-mpdm.github.io/todayilearned/tags/handson/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker Commands</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/docker_commands/</link>
+      <pubDate>Wed, 21 Aug 2024 00:00:34 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/docker_commands/</guid>
+      <description>🐋 Deepen my understanding of Docker&amp;rsquo;s basic commands and mechanisms.</description>
+    </item>
     <item>
       <title>dbt Seeking out Basic-understanding</title>
       <link>https://shiro-mpdm.github.io/todayilearned/post/dbt_seeking_basic_understanding/</link>
