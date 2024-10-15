@@ -2335,7 +2335,7 @@ LIMIT 10
     repo: 'todayilearned',
     owner: 'shiro-mpdm',
     admin: ['shiro-mpdm'],
-    id: eval("location.pathname"), 
+    id: eval("{{ .Params.gitalk_id }}"), 
     distractionFreeMode: false 
   });
   (function() {
