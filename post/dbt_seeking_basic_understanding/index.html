@@ -849,7 +849,7 @@ cf. <a href="https://docs.getdbt.com/docs/build/project-variables">Project varia
     repo: 'todayilearned',
     owner: 'shiro-mpdm',
     admin: ['shiro-mpdm'],
-    id: eval("location.pathname"), 
+    id: eval("{{ .Permalink | md5 }}"), 
     distractionFreeMode: false 
   });
   (function() {

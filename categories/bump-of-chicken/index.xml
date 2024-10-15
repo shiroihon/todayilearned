@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BUMP of CHICKEN on Today I Learned</title>
-    <link>https://shiro-mpdm.github.io/todayilearned/categories/bump-of-chicken/</link>
+    <link>http://localhost:1313/todayilearned/categories/bump-of-chicken/</link>
     <description>Recent content in BUMP of CHICKEN on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Oct 2024 15:10:50 +0900</lastBuildDate>
-    <atom:link href="https://shiro-mpdm.github.io/todayilearned/categories/bump-of-chicken/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/todayilearned/categories/bump-of-chicken/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BOC. &#39;Title&#39; lyrics analysis.</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/other/boc/</link>
+      <link>http://localhost:1313/todayilearned/post/other/boc/</link>
       <pubDate>Tue, 01 Oct 2024 15:10:50 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/other/boc/</guid>
+      <guid>http://localhost:1313/todayilearned/post/other/boc/</guid>
       <description>🛰️</description>
     </item>
   </channel>

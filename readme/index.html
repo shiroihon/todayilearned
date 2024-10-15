@@ -142,7 +142,7 @@
                 Created <relative-time datetime="Mon, 01 Jan 0001 00:00:00 &#43;0000" class="no-wrap">Mon, 01 Jan 0001 00:00:00 &#43;0000</relative-time>
                 
                 <span class="path-divider">|</span>
-                Modified <relative-time datetime="Fri, 11 Oct 2024 23:22:04 &#43;0900" class="no-wrap">Fri, 11 Oct 2024 23:22:04 &#43;0900</relative-time>
+                Modified <relative-time datetime="Tue, 15 Oct 2024 13:02:18 &#43;0900" class="no-wrap">Tue, 15 Oct 2024 13:02:18 &#43;0900</relative-time>
                 
             </div>
         </div>
@@ -199,17 +199,15 @@
 <img src="https://img.shields.io/badge/-Looker%20Studio-4285F4.svg?logo=looker&amp;style=flat&amp;color=F0F8FF&amp;logoColor=" alt="Looker Studio">
 <img src="https://img.shields.io/badge/-Redash-FF7964.svg?logo=redash&amp;style=flat&amp;color=F0F8FF&amp;logoColor=FF7964" alt="Redash"></li>
 <li><img src="https://img.shields.io/badge/-Docker-EEE.svg?logo=docker&amp;style=flat&amp;color=F0F8FF&amp;logoColor=" alt="Docker">
-<img src="https://img.shields.io/badge/-GitHub%20Actions-2088FF.svg?logo=githubactions&amp;style=flat&amp;color=F0F8FF&amp;logoColor=" alt="GitHub Actions"></li>
-<li><img src="https://img.shields.io/badge/-Slack-4A154B.svg?logo=slack&amp;style=flat&amp;color=F0F8FF&amp;logoColor=4A154B" alt="Slack">
+<img src="https://img.shields.io/badge/-GitHub%20Actions-2088FF.svg?logo=githubactions&amp;style=flat&amp;color=F0F8FF&amp;logoColor=" alt="GitHub Actions">
 <img src="https://img.shields.io/badge/-GitHub%20Pages-222222.svg?logo=githubpages&amp;style=flat&amp;color=F0F8FF&amp;logoColor=222222" alt="GitHub Pages"></li>
-<li><img src="https://img.shields.io/badge/-macOS-000000.svg?logo=apple&amp;style=flat&amp;color=F0F8FF&amp;logoColor=000" alt="macOS"></li>
+<li><img src="https://img.shields.io/badge/-Slack-4A154B.svg?logo=slack&amp;style=flat&amp;color=F0F8FF&amp;logoColor=4A154B" alt="Slack">
+<img src="https://img.shields.io/badge/-macOS-000000.svg?logo=apple&amp;style=flat&amp;color=F0F8FF&amp;logoColor=000" alt="macOS"></li>
 </ul>
 
   <p></p>
 </details>
 
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
 </article>
         </div>
     </div>
@@ -251,7 +249,7 @@
     repo: 'todayilearned',
     owner: 'shiro-mpdm',
     admin: ['shiro-mpdm'],
-    id: eval("location.pathname"), 
+    id: eval("{{ .Permalink | md5 }}"), 
     distractionFreeMode: false 
   });
   (function() {
