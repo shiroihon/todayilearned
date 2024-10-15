@@ -385,10 +385,10 @@
   const gitalk = new Gitalk({
     clientID: 'Ov23li4bh2st9tQoquIu',
     clientSecret: 'a7f9702fcb30947b9359d89046ada17fadbca6b9',
-    repo: 'TODAYILEARNED',
-    owner: 'SHIRO-MPDM',
-    admin: ['SHIRO-MPDM'],
-    id: eval("{{ .Params.gitalk_id }}"), 
+    repo: 'todayilearned',
+    owner: 'shiro-mpdm',
+    admin: ['shiro-mpdm'],
+    id: eval("location.pathname"), 
     distractionFreeMode: false 
   });
   (function() {
