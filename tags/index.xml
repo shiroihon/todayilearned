@@ -37,10 +37,10 @@
       <description></description>
     </item>
     <item>
-      <title>VimScript</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/vimscript/</link>
+      <title>Vim Script</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/vim-script/</link>
       <pubDate>Wed, 11 Sep 2024 19:39:49 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/vimscript/</guid>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/vim-script/</guid>
       <description></description>
     </item>
     <item>
@@ -51,10 +51,10 @@
       <description></description>
     </item>
     <item>
-      <title>ArgoWorkflows</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/argoworkflows/</link>
+      <title>Argo Workflows</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/argo-workflows/</link>
       <pubDate>Mon, 09 Sep 2024 12:40:59 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/argoworkflows/</guid>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/argo-workflows/</guid>
       <description></description>
     </item>
     <item>
@@ -163,17 +163,17 @@
       <description></description>
     </item>
     <item>
+      <title>Data Reliability Engineering</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/data-reliability-engineering/</link>
+      <pubDate>Tue, 30 Jul 2024 02:30:55 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/data-reliability-engineering/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Dbt</title>
       <link>https://shiro-mpdm.github.io/todayilearned/tags/dbt/</link>
       <pubDate>Tue, 30 Jul 2024 02:30:55 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/tags/dbt/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DRE</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/dre/</link>
-      <pubDate>Tue, 30 Jul 2024 02:30:55 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/dre/</guid>
       <description></description>
     </item>
     <item>
@@ -191,10 +191,10 @@
       <description></description>
     </item>
     <item>
-      <title>DataAnalytics</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/dataanalytics/</link>
+      <title>Data Analytics</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/data-analytics/</link>
       <pubDate>Fri, 26 Jul 2024 04:23:38 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/dataanalytics/</guid>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/data-analytics/</guid>
       <description></description>
     </item>
     <item>
