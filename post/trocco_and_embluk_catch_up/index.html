@@ -426,7 +426,7 @@ TroccoはEmbulkをコアとして使用し、その上で独自のプラグイ�
     repo: 'todayilearned',
     owner: 'shiro-mpdm',
     admin: ['shiro-mpdm'],
-    id: eval("{{ .Params.gitalk_id }}"), 
+    id: eval("location.pathname"), 
     distractionFreeMode: false 
   });
   (function() {

@@ -854,7 +854,7 @@ cf. <a href="https://docs.getdbt.com/docs/build/project-variables">Project varia
     repo: 'todayilearned',
     owner: 'shiro-mpdm',
     admin: ['shiro-mpdm'],
-    id: eval("{{ .Params.gitalk_id }}"), 
+    id: eval("location.pathname"), 
     distractionFreeMode: false 
   });
   (function() {
