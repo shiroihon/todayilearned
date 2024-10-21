@@ -434,7 +434,7 @@ Gitでは、コミットを分割したり並べ替えたりして、新しいPR
     repo: 'todayilearned',
     owner: 'shiro-mpdm',
     admin: ['shiro-mpdm'],
-    id: eval("{{ .Params.gitalk_id }}"), 
+    id: eval("location.pathname"), 
     distractionFreeMode: false 
   });
   (function() {

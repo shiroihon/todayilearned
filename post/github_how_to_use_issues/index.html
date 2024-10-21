@@ -452,7 +452,7 @@ GitHubのIssuesを正しく使うことで、プロジェクトの管理が効�
     repo: 'todayilearned',
     owner: 'shiro-mpdm',
     admin: ['shiro-mpdm'],
-    id: eval("{{ .Params.gitalk_id }}"), 
+    id: eval("location.pathname"), 
     distractionFreeMode: false 
   });
   (function() {

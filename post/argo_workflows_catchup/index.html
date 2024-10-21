@@ -172,7 +172,7 @@
                         <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                     </div>
                 </details-menu>
-                1743 Words
+                1786 Words
                 <span class="path-divider">|</span>
                 3 min
             </div>
@@ -234,7 +234,7 @@ Tektonのトリガーで受けた git push の イベントから、Argo CDに�
 この活動は複数あるが、主要な4つのグループをまとめる。
 </code></pre><ul>
 <li><details>
-  <summary>Argo Workflow（アルゴ ワークフロー）</summary>
+  <summary>Argo Workflows</summary>
   <p></p>
   <ul>
 <li><a href="https://argo-workflows.readthedocs.io/en/latest/">https://argo-workflows.readthedocs.io/en/latest/</a></li>
@@ -243,8 +243,7 @@ Tektonのトリガーで受けた git push の イベントから、Argo CDに�
 <li>cf.
 <ul>
 <li><a href="https://argo-workflows.readthedocs.io/en/latest/">https://argo-workflows.readthedocs.io/en/latest/</a></li>
-<li><a href="https://blog.argoproj.io/artifacts-management-in-container-native-workflows-part-1-f6efa838666b">Artifacts Management in Container-Native Workflows (Part 1)
-</a></li>
+<li><a href="https://blog.argoproj.io/artifacts-management-in-container-native-workflows-part-1-f6efa838666b">Artifacts Management in Container-Native Workflows (Part 1)</a></li>
 <li><a href="https://github.com/argoproj/argo-workflows/blob/main/docs/quick-start.md">Quick Start</a></li>
 </ul>
 </li>
@@ -256,7 +255,7 @@ Tektonのトリガーで受けた git push の イベントから、Argo CDに�
 <!-- raw HTML omitted -->
 </li>
 <li><details>
-  <summary>Argo CD(Continuous Development)（アルゴ CD）</summary>
+  <summary>Argo CD(Continuous Development)</summary>
   <p></p>
   <ul>
 <li><a href="https://github.com/argoproj/argo-cd">https://github.com/argoproj/argo-cd</a></li>
@@ -273,7 +272,7 @@ Tektonのトリガーで受けた git push の イベントから、Argo CDに�
 <!-- raw HTML omitted -->
 </li>
 <li><details>
-  <summary>Argo Rollouts（アルゴ ロールアウト）</summary>
+  <summary>Argo Rollouts</summary>
   <p></p>
   <ul>
 <li><a href="https://github.com/argoproj/argo-rollouts">https://github.com/argoproj/argo-rollouts</a></li>
@@ -291,7 +290,7 @@ Tektonのトリガーで受けた git push の イベントから、Argo CDに�
 <!-- raw HTML omitted -->
 </li>
 <li><details>
-  <summary>Argo Events（アルゴ イベント）</summary>
+  <summary>Argo Events</summary>
   <p></p>
   <ul>
 <li><a href="https://github.com/argoproj/argo-events">https://github.com/argoproj/argo-events</a></li>
@@ -304,28 +303,40 @@ Tektonのトリガーで受けた git push の イベントから、Argo CDに�
 
   <p></p>
 </details>
-
+</li>
+</ul>
+<p>cf.</p>
 <ul>
-<li>cf. IBMの方がより簡潔にまとめられている。
-<ul>
+<li>IBMの方がより簡潔にまとめられている。</li>
 <li><a href="https://qiita.com/MahoTakara/items/ca34c90cbf7e737efb03">Argo とはなんだ？</a> Qiita</li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 <h3 id="local-hans-on">Local Hans-on<a class="anchor" aria-hidden="true" href="#local-hans-on"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <ul>
-<li>goal image
+<li>Goal
 <ul>
 <li>「embulkでローカルにあるcsvファイルを読み取って、内容をフィルターして標準出力に出すところまで」</li>
 </ul>
 </li>
-<li>prep
+<li>Prep
 <ul>
 <li>kubernetesクラスタのセットアップ(ローカル)
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"></code></pre></div></li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ brew install kubectl
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ kubectl version --client
+</span></span><span class="line"><span class="cl">Client Version: v1.29.2
+</span></span><span class="line"><span class="cl">Kustomize Version: v5.0.4-0.20230601165947-6ce0bf390ce3
+</span></span></code></pre></div><ul>
+<li>cf. <a href="https://qiita.com/KentaroYoshizumi/items/f61c5e20b3949cfdcf0d">kubectlの基本操作をまとめてみた。</a> Qiita</li>
+</ul>
+</li>
 <li>Argo Workflowsのインストール <a href="https://github.com/argoproj/argo-workflows/releases">ref</a>
+
+    
+    <div>
+        <div class="github-card" data-github="argoproj/argo-workflows" data-theme="default"></div>
+        <script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+    </div>
+    
+
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Namespaceの作成</span>
 </span></span><span class="line"><span class="cl">$ kubectl create ns argo
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 作成したNamespaceにArgoをインストールする</span>
@@ -350,7 +361,7 @@ Tektonのトリガーで受けた git push の イベントから、Argo CDに�
 </span></span></code></pre></div></li>
 </ul>
 </li>
-<li>実装
+<li>Implementation（実装）
 <ul>
 <li>Overview
 <pre tabindex="0"><code>.
@@ -401,7 +412,7 @@ Tektonのトリガーで受けた git push の イベントから、Argo CDに�
 </span></span></span></code></pre></div><ul>
 <li>embulkを実行する本体の処理は以下。embulkのconfigはとりあえずartifactsとして渡す。</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml:workflow.yml" data-lang="yaml:workflow.yml"><span class="line"><span class="cl"><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l">argoproj.io/v1alpha1</span><span class="w">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml:workflow.yaml" data-lang="yaml:workflow.yaml"><span class="line"><span class="cl"><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l">argoproj.io/v1alpha1</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">Workflow</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">metadata</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">csv-to-stdout-sample</span><span class="w">
@@ -491,6 +502,21 @@ Tektonのトリガーで受けた git push の イベントから、Argo CDに�
 </ul>
 <h3 id="global-hans-on">Global Hans-on<a class="anchor" aria-hidden="true" href="#global-hans-on"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <ul>
+<li>Goal</li>
+<li>Prep</li>
+<li>Implementation（実装）
+<ul>
+<li>Overview
+<pre tabindex="0"><code>.
+├── Dockerfile
+├── argo/
+│   ├── workflow.yaml
+│   └── workflow_template.yaml
+└── data/
+    └── customer.csv.gz
+</code></pre></li>
+</ul>
+</li>
 <li>cf. <a href="https://zenn.dev/sasakky/articles/datapipeline_argo_embulk">Argo WorkflowsとEmbulkでBigQueryにデータ転送する</a> Zenn</li>
 </ul>
 <h2 id="ref">Ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
@@ -499,6 +525,7 @@ Tektonのトリガーで受けた git push の イベントから、Argo CDに�
 <li><a href="https://qiita.com/MahoTakara/items/ca34c90cbf7e737efb03">Argo とはなんだ？</a> Qiita</li>
 <li><a href="https://techblog.zozo.com/entry/faans-argo-workflows#%E4%BB%A3%E8%A1%A8%E7%9A%84%E3%81%AA%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%95%E3%83%AD%E3%83%BC%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3%E3%81%AE%E7%B4%B9%E4%BB%8B">Kubernetesネイティブなワークフローエンジンとは！FAANSでArgo Workflowsを導入した話</a> ZOZO</li>
 <li><a href="https://engineering.mercari.com/blog/entry/20220127-kubernetes-configuration-management-with-cue/">CUEを使用したKubernetesマニフェスト管理</a> mercari engineering</li>
+<li><a href="https://zenn.dev/nameless_gyoza/articles/argo-wf-20200220">Argo Workflow入門</a> Zenn</li>
 <li>[Hands-on]
 <ul>
 <li><a href="https://zenn.dev/sasakky/articles/argo_workflow_embulk">Argo WorkflowsでEmbulkを動かしてみる</a> Zenn</li>
@@ -549,7 +576,7 @@ Tektonのトリガーで受けた git push の イベントから、Argo CDに�
     repo: 'todayilearned',
     owner: 'shiro-mpdm',
     admin: ['shiro-mpdm'],
-    id: eval("{{ .Params.gitalk_id }}"), 
+    id: eval("location.pathname"), 
     distractionFreeMode: false 
   });
   (function() {

@@ -371,7 +371,7 @@ Vimプラグインの作成は、最初はシンプルな機能から始めて�
     repo: 'todayilearned',
     owner: 'shiro-mpdm',
     admin: ['shiro-mpdm'],
-    id: eval("{{ .Params.gitalk_id }}"), 
+    id: eval("location.pathname"), 
     distractionFreeMode: false 
   });
   (function() {
