@@ -2,10 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Today I Learned</title>
-    <link>https://shiro-mpdm.github.io/todayilearned/categories/</link>
+    <link>http://localhost:1313/todayilearned/categories/</link>
     <description>Recent content in Categories on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://shiro-mpdm.github.io/todayilearned/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Oct 2024 15:10:50 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/todayilearned/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BUMP of CHICKEN</title>
+      <link>http://localhost:1313/todayilearned/categories/bump-of-chicken/</link>
+      <pubDate>Tue, 01 Oct 2024 15:10:50 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearned/categories/bump-of-chicken/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>[改訂新版]前処理大全実践テクニック</title>
+      <link>http://localhost:1313/todayilearned/categories/%E6%94%B9%E8%A8%82%E6%96%B0%E7%89%88%E5%89%8D%E5%87%A6%E7%90%86%E5%A4%A7%E5%85%A8%E5%AE%9F%E8%B7%B5%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF/</link>
+      <pubDate>Thu, 18 Jul 2024 17:09:50 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearned/categories/%E6%94%B9%E8%A8%82%E6%96%B0%E7%89%88%E5%89%8D%E5%87%A6%E7%90%86%E5%A4%A7%E5%85%A8%E5%AE%9F%E8%B7%B5%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

@@ -82,16 +82,17 @@
       <div
         class="Header-search header-search flex-auto js-site-search position-relative flex-self-stretch flex-md-self-auto mb-3 mb-md-0 mr-0 mr-md-3 scoped-search site-scoped-search js-jump-to">
         <div class="position-relative">
-          <form target="_blank" action="https://www.google.com/search" accept-charset="UTF-8" method="get"
+          
+          <form target="_blank" id="search-form" action="" accept-charset="UTF-8" method="get"
             autocomplete="off">
             <label
               class="Header-search-label form-control input-sm header-search-wrapper p-0 js-chromeless-input-container header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center">
               <input type="text"
                 class="Header-search-input form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
                 name="q" value="" placeholder="Search" autocomplete="off">
-              <input type="hidden" name="q" value="site:http://localhost:1313/todayilearned/">
             </label>
           </form>
+          
         </div>
       </div>
     </div>
@@ -112,6 +113,9 @@
       </a>
     </div>
   </header>
+</div>
+
+  <div id="search-result" class="container-lg px-3 new-discussion-timeline" style="display: none;">
 </div>
 
   
@@ -138,7 +142,7 @@
               </svg>
               Overview
             </a>
-            <a class="UnderlineNav-item " href="http://localhost:1313/todayilearned//post/">
+            <a class="UnderlineNav-item " href="http://localhost:1313/todayilearned/post">
               <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" height="16" viewBox="0 0 16 16"
                 version="1.1" width="16">
                 <path fill-rule="evenodd"
@@ -347,7 +351,7 @@
                     d="M1.75 2A1.75 1.75 0 000 3.75v.736a.75.75 0 000 .027v7.737C0 13.216.784 14 1.75 14h12.5A1.75 1.75 0 0016 12.25v-8.5A1.75 1.75 0 0014.25 2H1.75zM14.5 4.07v-.32a.25.25 0 00-.25-.25H1.75a.25.25 0 00-.25.25v.32L8 7.88l6.5-3.81zm-13 1.74v6.441c0 .138.112.25.25.25h12.5a.25.25 0 00.25-.25V5.809L8.38 9.397a.75.75 0 01-.76 0L1.5 5.809z">
                   </path>
                 </svg>
-                <a class="u-email link-gray-dark " href="mailto:shiro-mpdm@gmail.com">shiro-mpdm@gmail.com</a>
+                <a class="u-email link-gray-dark " href="mailto:shiro-mpdm@">shiro-mpdm@</a>
               </li>
               
 
@@ -358,7 +362,7 @@
                   </path>
                 </svg>
                 
-                <a rel="nofollow me" class="link-gray-dark" href="https://www.cloudskillsboost.google/profile/paths">https://www.cloudskillsboost.google/profile/paths</a>
+                <a rel="nofollow me" class="link-gray-dark" href="http://localhost:1313/todayilearned/">http://localhost:1313/todayilearned/</a>
                 
               </li>
             </ul>
@@ -392,16 +396,12 @@
           
 
           
-          <a style="margin: 0 10px 10px 0;" href="https://stackoverflow.com/u/shiro">
-            <img alt="@stackoverflow" width="32" height="32" src="http://localhost:1313/todayilearned/images/stackoverflow.png" class="avatar">
-          </a>
-          
 
           
           
           
-          <a style="margin: 0 10px 10px 0;" href="https://www.hackerrank.com/">
-            <img alt="@Hacker Rank" width="32" height="32" src="../../images/hackerrank.png" class="avatar">
+          <a style="margin: 0 10px 10px 0;" href="https://www.coursera.org/">
+            <img alt="@coursera" width="32" height="32" src='http://localhost:1313/todayilearned/images/link.png' class="avatar">
           </a>
           
           
@@ -439,7 +439,7 @@
       Overview
     </a>
     <a class='UnderlineNav-item  '
-      href="http://localhost:1313/todayilearned//post/">
+      href="http://localhost:1313/todayilearned/post">
       <svg class="octicon octicon-repo UnderlineNav-octicon hide-sm" height="16" viewBox="0 0 16 16" version="1.1"
         width="16">
         <path fill-rule="evenodd"
@@ -1153,6 +1153,11 @@ else {
 <script type="application/javascript" src="http://localhost:1313/todayilearned/js/github-style.js"></script>
 
 
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+<script type="application/javascript" src='http://localhost:1313/todayilearned/js/search.js'></script>
 
 
 
