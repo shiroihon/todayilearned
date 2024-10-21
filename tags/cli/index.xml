@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CLI on Today I Learned</title>
-    <link>http://localhost:1313/todayilearned/tags/cli/</link>
+    <link>https://shiro-mpdm.github.io/todayilearned/tags/cli/</link>
     <description>Recent content in CLI on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Aug 2024 00:00:34 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/todayilearned/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://shiro-mpdm.github.io/todayilearned/tags/cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker Commands</title>
-      <link>http://localhost:1313/todayilearned/post/docker_commands/</link>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/docker_commands/</link>
       <pubDate>Wed, 21 Aug 2024 00:00:34 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearned/post/docker_commands/</guid>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/docker_commands/</guid>
       <description>🐋 Deepen my understanding of Docker&amp;rsquo;s basic commands and mechanisms.</description>
     </item>
   </channel>

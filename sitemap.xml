@@ -2,280 +2,171 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/todayilearned/tags/bigquery/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/</loc>
     <lastmod>2024-10-16T13:49:54+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/bigquery_about_data_quality/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/</loc>
     <lastmod>2024-10-16T13:49:54+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/data-reliability-engineering/</loc>
-    <lastmod>2024-10-16T13:49:54+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/post/</loc>
-    <lastmod>2024-10-16T13:49:54+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/</loc>
-    <lastmod>2024-10-16T13:49:54+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/</loc>
-    <lastmod>2024-10-16T13:49:54+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/amazon/</loc>
-    <lastmod>2024-10-09T22:22:47+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/amazon-primeday/</loc>
-    <lastmod>2024-10-09T22:22:47+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/post/other/amazon_search_parameters/</loc>
-    <lastmod>2024-10-09T22:22:47+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/git/</loc>
-    <lastmod>2024-10-08T02:01:14+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/github/</loc>
-    <lastmod>2024-10-08T02:01:14+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/post/github_commitment/</loc>
-    <lastmod>2024-10-08T02:01:14+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/post/other/boc/</loc>
-    <lastmod>2024-10-01T15:10:50+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/categories/bump-of-chicken/</loc>
-    <lastmod>2024-10-01T15:10:50+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/categories/</loc>
-    <lastmod>2024-10-01T15:10:50+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/lyrics-analysis/</loc>
-    <lastmod>2024-10-01T15:10:50+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/linux/</loc>
-    <lastmod>2024-09-30T23:28:04+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/macos/</loc>
-    <lastmod>2024-09-30T23:28:04+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/os/</loc>
-    <lastmod>2024-09-30T23:28:04+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/unix/</loc>
-    <lastmod>2024-09-30T23:28:04+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/post/macos_unix_is_ancestor/</loc>
-    <lastmod>2024-09-30T23:28:04+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/post/github_branches_pruning/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/git/</loc>
     <lastmod>2024-09-24T18:08:08+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/howto/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/github/</loc>
+    <lastmod>2024-09-24T18:08:08+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/github_branches_pruning/</loc>
+    <lastmod>2024-09-24T18:08:08+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/</loc>
+    <lastmod>2024-09-24T18:08:08+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/howto/</loc>
     <lastmod>2024-09-11T19:39:49+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/vim/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/vim/</loc>
     <lastmod>2024-09-11T19:39:49+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/vim_building_my_plugin/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/vim_building_my_plugin/</loc>
     <lastmod>2024-09-11T19:39:49+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/vim-script/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/vim-script/</loc>
     <lastmod>2024-09-11T19:39:49+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/argo/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/argo/</loc>
     <lastmod>2024-09-09T12:40:59+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/argo-workflows/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/argo-workflows/</loc>
     <lastmod>2024-09-09T12:40:59+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/argo_workflows_catchup/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/argo_workflows_catchup/</loc>
     <lastmod>2024-09-09T12:40:59+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/dag/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/dag/</loc>
     <lastmod>2024-09-09T12:40:59+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/kubernetes/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/kubernetes/</loc>
     <lastmod>2024-09-09T12:40:59+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/bigquery_howto_table_flatten/</loc>
-    <lastmod>2024-08-29T19:47:44+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/data-analytics/</loc>
-    <lastmod>2024-08-29T19:47:44+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/sql/</loc>
-    <lastmod>2024-08-29T19:47:44+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/knowhow/</loc>
-    <lastmod>2024-08-27T13:29:05+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/post/macbook_machine_performance/</loc>
-    <lastmod>2024-08-27T13:29:05+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/elt/etl/</loc>
-    <lastmod>2024-08-21T15:30:46+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/embluk/</loc>
-    <lastmod>2024-08-21T15:30:46+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/oss/</loc>
-    <lastmod>2024-08-21T15:30:46+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/saas/</loc>
-    <lastmod>2024-08-21T15:30:46+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/trocco/</loc>
-    <lastmod>2024-08-21T15:30:46+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/post/trocco_and_embluk_catch_up/</loc>
-    <lastmod>2024-08-21T15:30:46+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/english/</loc>
-    <lastmod>2024-08-21T00:06:32+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/post/bookread_english_basic_grammar/</loc>
-    <lastmod>2024-08-21T00:06:32+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/cli/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/cli/</loc>
     <lastmod>2024-08-21T00:00:34+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/docker/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/docker/</loc>
     <lastmod>2024-08-21T00:00:34+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/docker_commands/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/docker_commands/</loc>
     <lastmod>2024-08-21T00:00:34+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/handson/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/handson/</loc>
     <lastmod>2024-08-21T00:00:34+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/bigquery_sql_how_works/</loc>
-    <lastmod>2024-08-18T04:39:19+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/ide/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/ide/</loc>
     <lastmod>2024-08-17T01:02:03+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/texteditor/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/texteditor/</loc>
     <lastmod>2024-08-17T01:02:03+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/vim_commands/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/vim_commands/</loc>
     <lastmod>2024-08-17T01:02:03+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/bigquery_billing_how_works/</loc>
-    <lastmod>2024-08-16T20:35:07+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/post/bookread_how_to_jisui/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/bookread_how_to_jisui/</loc>
     <lastmod>2024-08-16T18:41:57+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/jisui/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/jisui/</loc>
     <lastmod>2024-08-16T18:41:57+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/recycle/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/knowhow/</loc>
     <lastmod>2024-08-16T18:41:57+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/browser/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/recycle/</loc>
+    <lastmod>2024-08-16T18:41:57+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/browser/</loc>
     <lastmod>2024-08-03T16:04:18+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/chrome/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/chrome/</loc>
     <lastmod>2024-08-03T16:04:18+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/macbook_looks_like_native_applivcation/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/macbook_looks_like_native_applivcation/</loc>
     <lastmod>2024-08-03T16:04:18+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/english_abbreviations/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/macos/</loc>
+    <lastmod>2024-08-03T16:04:18+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/english/</loc>
     <lastmod>2024-07-30T12:48:55+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/slack/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/english_abbreviations/</loc>
     <lastmod>2024-07-30T12:48:55+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/dbt/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/slack/</loc>
+    <lastmod>2024-07-30T12:48:55+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/data-reliability-engineering/</loc>
     <lastmod>2024-07-30T02:30:55+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/dbt_seeking_basic_understanding/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/dbt/</loc>
     <lastmod>2024-07-30T02:30:55+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/etl/elt/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/dbt_seeking_basic_understanding/</loc>
     <lastmod>2024-07-30T02:30:55+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/github_comment_communication/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/etl/elt/</loc>
+    <lastmod>2024-07-30T02:30:55+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/github_comment_communication/</loc>
     <lastmod>2024-07-26T12:40:18+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/bigquery_structured_data_processing_100_ball_drill/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/bigquery/</loc>
     <lastmod>2024-07-26T04:23:38+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/gke/</loc>
-    <lastmod>2024-07-26T03:42:04+09:00</lastmod>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/bigquery_structured_data_processing_100_ball_drill/</loc>
+    <lastmod>2024-07-26T04:23:38+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/terraform/</loc>
-    <lastmod>2024-07-26T03:42:04+09:00</lastmod>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/data-analytics/</loc>
+    <lastmod>2024-07-26T04:23:38+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/terraform_trying_to_build_the_environment/</loc>
-    <lastmod>2024-07-26T03:42:04+09:00</lastmod>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/sql/</loc>
+    <lastmod>2024-07-26T04:23:38+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/philos_input_output_learning_patterns/</loc>
-    <lastmod>2024-07-26T02:31:25+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/philosophy/</loc>
-    <lastmod>2024-07-26T02:31:25+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/atom/</loc>
-    <lastmod>2024-07-24T17:20:33+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/post/vim_editor_tools_neighborhood_derivatives/</loc>
-    <lastmod>2024-07-24T17:20:33+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/post/github_one_thing_or_another/</loc>
-    <lastmod>2024-07-24T15:08:13+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/gfm/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/gfm/</loc>
     <lastmod>2024-07-23T18:17:17+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/markdown/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/markdown/</loc>
     <lastmod>2024-07-23T18:17:17+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/slack_writing_etiquette/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/slack_writing_etiquette/</loc>
     <lastmod>2024-07-23T18:17:17+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/github_how_to_check_difference/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/github_how_to_check_difference/</loc>
     <lastmod>2024-07-23T04:13:21+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/sourcegraph/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/sourcegraph/</loc>
     <lastmod>2024-07-23T04:13:21+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/bigquery_ctes_in_data_analyisis/</loc>
-    <lastmod>2024-07-20T16:13:42+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/post/github_what_are_these_licenses/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/github_what_are_these_licenses/</loc>
     <lastmod>2024-07-19T12:10:51+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/github_how_to_use_issues/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/oss/</loc>
+    <lastmod>2024-07-19T12:10:51+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/github_how_to_use_issues/</loc>
     <lastmod>2024-07-18T18:30:01+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/categories/%E6%94%B9%E8%A8%82%E6%96%B0%E7%89%88%E5%89%8D%E5%87%A6%E7%90%86%E5%A4%A7%E5%85%A8%E5%AE%9F%E8%B7%B5%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF/</loc>
-    <lastmod>2024-07-18T17:09:50+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/post/bookread_law_of_refined_preprocessing_programming_polars_edition/</loc>
-    <lastmod>2024-07-18T17:09:50+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/polars/</loc>
-    <lastmod>2024-07-18T17:09:50+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/python/</loc>
-    <lastmod>2024-07-18T17:09:50+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/post/bookread_law_of_refined_preprocessing_programming_sql_edition/</loc>
-    <lastmod>2024-07-18T17:01:23+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/todayilearned/post/stats_data_free_online/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/stats_data_free_online/</loc>
     <lastmod>2024-07-17T23:14:44+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/tags/statistic/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/statistic/</loc>
     <lastmod>2024-07-17T23:14:44+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/my_second_post/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/my_second_post/</loc>
     <lastmod>2024-07-12T01:30:51+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/post/my_first_post/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/my_first_post/</loc>
     <lastmod>2024-07-07T16:37:01+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/todayilearned/readme/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/readme/</loc>
     <lastmod>2024-10-15T13:02:18+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/categories/</loc>
   </url>
 </urlset>

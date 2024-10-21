@@ -2,66 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BigQuery on Today I Learned</title>
-    <link>http://localhost:1313/todayilearned/tags/bigquery/</link>
+    <link>https://shiro-mpdm.github.io/todayilearned/tags/bigquery/</link>
     <description>Recent content in BigQuery on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Oct 2024 13:49:54 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/todayilearned/tags/bigquery/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>BigQuery About Data Quality</title>
-      <link>http://localhost:1313/todayilearned/post/bigquery_about_data_quality/</link>
-      <pubDate>Wed, 16 Oct 2024 13:49:54 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearned/post/bigquery_about_data_quality/</guid>
-      <description>🔍 Different perspective from data analysis. About data quality.</description>
-    </item>
-    <item>
-      <title>BigQuery Howto Table Flatten</title>
-      <link>http://localhost:1313/todayilearned/post/bigquery_howto_table_flatten/</link>
-      <pubDate>Thu, 29 Aug 2024 19:47:44 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearned/post/bigquery_howto_table_flatten/</guid>
-      <description>🔍</description>
-    </item>
-    <item>
-      <title>BiQquery SQL how works</title>
-      <link>http://localhost:1313/todayilearned/post/bigquery_sql_how_works/</link>
-      <pubDate>Sun, 18 Aug 2024 04:39:19 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearned/post/bigquery_sql_how_works/</guid>
-      <description>🔍</description>
-    </item>
-    <item>
-      <title>BigQuery Billing how works</title>
-      <link>http://localhost:1313/todayilearned/post/bigquery_billing_how_works/</link>
-      <pubDate>Fri, 16 Aug 2024 20:35:07 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearned/post/bigquery_billing_how_works/</guid>
-      <description>🔍  Summarize billing mechanism, fee structure, and money-saving tips.</description>
-    </item>
+    <lastBuildDate>Fri, 26 Jul 2024 04:23:38 +0900</lastBuildDate>
+    <atom:link href="https://shiro-mpdm.github.io/todayilearned/tags/bigquery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BigQuery Structured Data Processing 100 knock</title>
-      <link>http://localhost:1313/todayilearned/post/bigquery_structured_data_processing_100_ball_drill/</link>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/bigquery_structured_data_processing_100_ball_drill/</link>
       <pubDate>Fri, 26 Jul 2024 04:23:38 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearned/post/bigquery_structured_data_processing_100_ball_drill/</guid>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_structured_data_processing_100_ball_drill/</guid>
       <description>🔍 I tried using SQL to learn the basics of data science.</description>
     </item>
     <item>
-      <title>BigQuery CTEs in Data Analyisis</title>
-      <link>http://localhost:1313/todayilearned/post/bigquery_ctes_in_data_analyisis/</link>
-      <pubDate>Sat, 20 Jul 2024 16:13:42 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearned/post/bigquery_ctes_in_data_analyisis/</guid>
-      <description>🔍 Things to keep in mind when analyzing data using SQL.</description>
-    </item>
-    <item>
-      <title>Law of Refined Preprocessing Programming: SQL ed.</title>
-      <link>http://localhost:1313/todayilearned/post/bookread_law_of_refined_preprocessing_programming_sql_edition/</link>
-      <pubDate>Thu, 18 Jul 2024 17:01:23 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearned/post/bookread_law_of_refined_preprocessing_programming_sql_edition/</guid>
-      <description>🔍 [改訂新版]前処理大全実践テクニックを読んでみる(SQL編)</description>
-    </item>
-    <item>
       <title>My Second Post</title>
-      <link>http://localhost:1313/todayilearned/post/my_second_post/</link>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/my_second_post/</link>
       <pubDate>Tue, 09 Jul 2024 15:23:51 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearned/post/my_second_post/</guid>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/my_second_post/</guid>
       <description>🔍 I&amp;rsquo;m going to write about BigQuery.</description>
     </item>
   </channel>
