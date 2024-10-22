@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='http://localhost:1313/todayilearned/css/light.css' />
     <link rel="stylesheet" href='http://localhost:1313/todayilearned/css/dark.css' />
     <link rel="stylesheet" href='http://localhost:1313/todayilearned/css/syntax.css' />
-    <title>BigQuery Howto Table Flatten - Today I Learned</title>
+    <title>BigQuery used in functions - Today I Learned</title>
     
     <link rel="icon" type="image/x-icon" href='../../images/github-mark.png'>
     
@@ -26,7 +26,7 @@
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="BigQuery Howto Table Flatten - Today I Learned" />
+<meta name="twitter:title" content="BigQuery used in functions - Today I Learned" />
 <meta name="twitter:description"
   content="🔍" />
 <meta name="twitter:site" content="http://localhost:1313/todayilearned/" />
@@ -36,11 +36,11 @@
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="BigQuery Howto Table Flatten - Today I Learned">
+<meta property="og:title" content="BigQuery used in functions - Today I Learned">
 <meta property="og:description"
   content="🔍" />
 <meta property="og:url" content="http://localhost:1313/todayilearned/post/bigquery_howto_table_flatten/" />
-<meta property="og:site_name" content="BigQuery Howto Table Flatten" />
+<meta property="og:site_name" content="BigQuery used in functions" />
 <meta property="og:image"
   content="http://localhost:1313/todayilearned/">
 <meta property="og:image:width" content="2048">
@@ -140,7 +140,7 @@
             <h1 class="break-word f3 text-normal mb-md-0 mb-1">
                 <span class="author"><a href="http://localhost:1313/todayilearned/">shiro</a></span>
                 <span class="path-divider">/</span>
-                <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px"><a href="http://localhost:1313/todayilearned/post/bigquery_howto_table_flatten/">BigQuery Howto Table Flatten</a></strong>
+                <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px"><a href="http://localhost:1313/todayilearned/post/bigquery_howto_table_flatten/">BigQuery used in functions</a></strong>
             </h1>
             <div class="note m-0">
                 Created <relative-time datetime="Thu, 29 Aug 2024 19:47:44 &#43;0900" class="no-wrap">Thu, 29 Aug 2024 19:47:44 &#43;0900</relative-time>
@@ -177,7 +177,7 @@
                         <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                     </div>
                 </details-menu>
-                3 Words
+                158 Words
                 <span class="path-divider">|</span>
                 1 min
             </div>
@@ -213,8 +213,51 @@
             <article class="markdown-body entry-content container-lg"><!-- raw HTML omitted -->
 <p><img src="https://img.shields.io/badge/-BigQuery-669DF6.svg?logo=googlebigquery&amp;style=flat&amp;color=F0F8FF" alt="BigQuery"></p>
 <h2 id="why">Why<a class="anchor" aria-hidden="true" href="#why"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
+<p>分析関係でお仕事をしていたり、最近では営業担当や、マーケティング担当の方々も容易にBigQueryで用いるのが<code>DQL</code>。
+そんなBigQueryには様々なコマンドが存在して、また分類区分がある。</p>
 <h2 id="what">What<a class="anchor" aria-hidden="true" href="#what"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
-<h2 id="ref">Ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
+<h3 id="sql-commands-classification">SQL Commands Classification<a class="anchor" aria-hidden="true" href="#sql-commands-classification"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<ul>
+<li><strong>DDL</strong>: Data <code>Define</code> Language
+<ul>
+<li><code>CREAT</code></li>
+<li><code>ALTER</code></li>
+<li><code>DROP</code></li>
+<li><code>RENAME</code></li>
+<li><code>TRUNCATE</code></li>
+</ul>
+</li>
+<li><strong>DML</strong>: Data <code>Manipulation</code> Language
+<ul>
+<li><code>INSERT</code></li>
+<li><code>UPDATE</code></li>
+<li><code>DEFELR</code></li>
+<li><code>MERGE</code></li>
+</ul>
+</li>
+<li><strong>DCL</strong>: Data <code>Control</code> Language
+<ul>
+<li><code>GRANT</code></li>
+<li><code>REVOKE</code></li>
+</ul>
+</li>
+<li><strong>TCL</strong>: Transaction <code>Control</code> Language
+<ul>
+<li><code>COMMIT</code></li>
+<li><code>ROLLBACK</code></li>
+</ul>
+</li>
+<li><strong>DQL</strong>: Data <code>Query</code> Language
+<ul>
+<li><code>SELECT</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="types">Types<a class="anchor" aria-hidden="true" href="#types"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<p>「文」「句」「式」の違い</p>
+<h3 id="heading"><a class="anchor" aria-hidden="true" href="#heading"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<h3 id="dql-テーブルフラット化">[DQL] テーブルフラット化<a class="anchor" aria-hidden="true" href="#dql-テーブルフラット化"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"></code></pre></div><h2 id="ref">Ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 </article>
         </div>
     </div>
@@ -228,6 +271,14 @@
                 <article class="markdown-body entry-content p-3 p-md-6" itemprop="text">
                     <h2>See Also</h2>
                         <ul class="mt-2">
+                            
+                            <li class="p-1">
+                                <div>
+                                    <a href="../../post/bigquery_used_functions/">BigQuery Howto Table Flatten</a>
+                                    <time datetime="2024-08-29 19:47" class="no-wrap text-small ml-1">(2024-08-29 19:47)</time>
+                                </div>
+                                <div class="text-small text-gray mb-1 mt-1"></div>
+                            </li>
                             
                             <li class="p-1">
                                 <div>
@@ -251,14 +302,6 @@
                                     <time datetime="2024-07-18 17:01" class="no-wrap text-small ml-1">(2024-07-18 17:01)</time>
                                 </div>
                                 <div class="text-small text-gray mb-1 mt-1">[改訂新版]前処理大全実践テクニックを読んでみる(SQL編)</div>
-                            </li>
-                            
-                            <li class="p-1">
-                                <div>
-                                    <a href="../../post/bigquery_sql_how_works/">BiQquery SQL how works</a>
-                                    <time datetime="2024-08-18 04:39" class="no-wrap text-small ml-1">(2024-08-18 04:39)</time>
-                                </div>
-                                <div class="text-small text-gray mb-1 mt-1"></div>
                             </li>
                             
                             <li class="p-1">

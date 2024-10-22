@@ -30,6 +30,13 @@
       <description>🐙 Understanding and implementing Argo projects and workflows.</description>
     </item>
     <item>
+      <title>BigQuery used in functions</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/bigquery_used_functions/</link>
+      <pubDate>Thu, 29 Aug 2024 19:47:44 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_used_functions/</guid>
+      <description>🔍</description>
+    </item>
+    <item>
       <title>Docker Commands</title>
       <link>https://shiro-mpdm.github.io/todayilearned/post/docker_commands/</link>
       <pubDate>Wed, 21 Aug 2024 00:00:34 +0900</pubDate>
@@ -79,7 +86,7 @@
       <description>📍 The importance of taking care to ensure smooth and easy-to　understand communication through documents.</description>
     </item>
     <item>
-      <title>BigQuery Structured Data Processing 100 knock</title>
+      <title>BigQuery structured Data Processing 100 knock</title>
       <link>https://shiro-mpdm.github.io/todayilearned/post/bigquery_structured_data_processing_100_ball_drill/</link>
       <pubDate>Fri, 26 Jul 2024 04:23:38 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_structured_data_processing_100_ball_drill/</guid>
