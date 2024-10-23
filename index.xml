@@ -16,10 +16,10 @@
       <description>📍When developing on GitHub, I often switch branches, just like pruning.</description>
     </item>
     <item>
-      <title>Vim Building My Plugin</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/vim_building_my_plugin/</link>
+      <title>Vim Building Plugin</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/vim_building_plugin/</link>
       <pubDate>Wed, 11 Sep 2024 19:39:49 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/vim_building_my_plugin/</guid>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/vim_building_plugin/</guid>
       <description>✅ Once I gain a deeper understanding, what may be able to develop general-purpose automated tools.</description>
     </item>
     <item>
@@ -34,7 +34,14 @@
       <link>https://shiro-mpdm.github.io/todayilearned/post/bigquery_used_functions/</link>
       <pubDate>Thu, 29 Aug 2024 19:47:44 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_used_functions/</guid>
-      <description>🔍</description>
+      <description>🔍 When I getting from my daily work. Added as need. I keep writing various tips.</description>
+    </item>
+    <item>
+      <title>Trocco and Embluk catch up</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/trocco_and_embluk_catch_up/</link>
+      <pubDate>Wed, 21 Aug 2024 15:30:46 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/trocco_and_embluk_catch_up/</guid>
+      <description>🛤️ Summarizing Trocco and Embluk to deepen understanding.</description>
     </item>
     <item>
       <title>Docker Commands</title>
@@ -52,13 +59,13 @@
     </item>
     <item>
       <title>Bookread How to Jisui ~自炊~</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/bookread_how_to_jisui/</link>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/other/jisui_keep_book_data/</link>
       <pubDate>Fri, 16 Aug 2024 18:41:57 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/bookread_how_to_jisui/</guid>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/other/jisui_keep_book_data/</guid>
       <description>📚 Converting cut-up books into digital data. Also, an article on how to cut books and store the data.</description>
     </item>
     <item>
-      <title>MacBook Looks Like Native-applivcation</title>
+      <title>MacBook Looks like native applivcation</title>
       <link>https://shiro-mpdm.github.io/todayilearned/post/macbook_looks_like_native_applivcation/</link>
       <pubDate>Sat, 03 Aug 2024 16:04:18 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/post/macbook_looks_like_native_applivcation/</guid>
@@ -79,11 +86,11 @@
       <description>✴️ Wanna deepen my understanding by using my hands and referring to reference books.</description>
     </item>
     <item>
-      <title>Github Comment Communication</title>
+      <title>Github Comment communication</title>
       <link>https://shiro-mpdm.github.io/todayilearned/post/github_comment_communication/</link>
       <pubDate>Fri, 26 Jul 2024 12:40:18 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/post/github_comment_communication/</guid>
-      <description>📍 The importance of taking care to ensure smooth and easy-to　understand communication through documents.</description>
+      <description>📍 The importance of taking care to ensure smooth and easy to understand communication through documents.</description>
     </item>
     <item>
       <title>BigQuery structured Data Processing 100 knock</title>
@@ -93,7 +100,7 @@
       <description>🔍 I tried using SQL to learn the basics of data science.</description>
     </item>
     <item>
-      <title>Slack Writing Etiquette</title>
+      <title>Slack Writing etiquette</title>
       <link>https://shiro-mpdm.github.io/todayilearned/post/slack_writing_etiquette/</link>
       <pubDate>Tue, 23 Jul 2024 18:17:17 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/post/slack_writing_etiquette/</guid>
@@ -126,13 +133,6 @@
       <pubDate>Wed, 17 Jul 2024 23:14:44 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/post/stats_data_free_online/</guid>
       <description>📊 An article summarizing various statistical data that can be viewed and used for free.</description>
-    </item>
-    <item>
-      <title>My Second Post</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/my_second_post/</link>
-      <pubDate>Tue, 09 Jul 2024 15:23:51 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/my_second_post/</guid>
-      <description>🔍 I&amp;rsquo;m going to write about BigQuery.</description>
     </item>
     <item>
       <title>My First Post</title>
