@@ -6,8 +6,22 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Sep 2024 18:08:08 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 24 Oct 2024 10:40:32 +0900</lastBuildDate>
     <atom:link href="https://shiro-mpdm.github.io/todayilearned/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WezTerm Setup</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/wezterm_setup/</link>
+      <pubDate>Thu, 24 Oct 2024 10:40:32 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/wezterm_setup/</guid>
+      <description>💰</description>
+    </item>
+    <item>
+      <title>Google Sheets Used in Functions</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/googlesheets_used_functions/</link>
+      <pubDate>Tue, 22 Oct 2024 12:56:22 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/googlesheets_used_functions/</guid>
+      <description>📄 Make a memorandum of what you used with the most powerful free tool that anyone can use.</description>
+    </item>
     <item>
       <title>Github Branches Pruning</title>
       <link>https://shiro-mpdm.github.io/todayilearned/post/github_branches_pruning/</link>

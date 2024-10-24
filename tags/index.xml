@@ -6,8 +6,43 @@
     <description>Recent content in Tags on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Sep 2024 18:08:08 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 24 Oct 2024 10:40:32 +0900</lastBuildDate>
     <atom:link href="https://shiro-mpdm.github.io/todayilearned/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lua</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/lua/</link>
+      <pubDate>Thu, 24 Oct 2024 10:40:32 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/lua/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WezTerm</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/wezterm/</link>
+      <pubDate>Thu, 24 Oct 2024 10:40:32 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/wezterm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Connected Sheets</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/connected-sheets/</link>
+      <pubDate>Tue, 22 Oct 2024 12:56:22 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/connected-sheets/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GAS</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/gas/</link>
+      <pubDate>Tue, 22 Oct 2024 12:56:22 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/gas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Google Sheets</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/google-sheets/</link>
+      <pubDate>Tue, 22 Oct 2024 12:56:22 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/google-sheets/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Git</title>
       <link>https://shiro-mpdm.github.io/todayilearned/tags/git/</link>

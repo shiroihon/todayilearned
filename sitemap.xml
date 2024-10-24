@@ -2,11 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/lua/</loc>
+    <lastmod>2024-10-24T10:40:32+09:00</lastmod>
+  </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/</loc>
-    <lastmod>2024-10-23T13:31:19+09:00</lastmod>
+    <lastmod>2024-10-24T10:40:32+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/</loc>
+    <lastmod>2024-10-24T10:40:32+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/</loc>
-    <lastmod>2024-10-23T13:31:19+09:00</lastmod>
+    <lastmod>2024-10-24T10:40:32+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/wezterm/</loc>
+    <lastmod>2024-10-24T10:40:32+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/wezterm_setup/</loc>
+    <lastmod>2024-10-24T10:40:32+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/connected-sheets/</loc>
+    <lastmod>2024-10-22T12:56:22+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/gas/</loc>
+    <lastmod>2024-10-22T12:56:22+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/google-sheets/</loc>
+    <lastmod>2024-10-22T12:56:22+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/googlesheets_used_functions/</loc>
+    <lastmod>2024-10-22T12:56:22+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/git/</loc>
     <lastmod>2024-09-24T18:08:08+09:00</lastmod>
@@ -15,9 +39,6 @@
     <lastmod>2024-09-24T18:08:08+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/github_branches_pruning/</loc>
-    <lastmod>2024-09-24T18:08:08+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/</loc>
     <lastmod>2024-09-24T18:08:08+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/howto/</loc>
