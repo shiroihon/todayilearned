@@ -9,7 +9,7 @@
     <lastBuildDate>Fri, 26 Jul 2024 03:42:04 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/todayilearned/tags/gke/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Terraform Trying to Build the Environment</title>
+      <title>Terraform Trying to build the environment</title>
       <link>http://localhost:1313/todayilearned/post/terraform_trying_to_build_the_environment/</link>
       <pubDate>Fri, 26 Jul 2024 03:42:04 +0900</pubDate>
       <guid>http://localhost:1313/todayilearned/post/terraform_trying_to_build_the_environment/</guid>

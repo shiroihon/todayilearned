@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='http://localhost:1313/todayilearned/css/light.css' />
     <link rel="stylesheet" href='http://localhost:1313/todayilearned/css/dark.css' />
     <link rel="stylesheet" href='http://localhost:1313/todayilearned/css/syntax.css' />
-    <title>Terraform Trying to Build the Environment - Today I Learned</title>
+    <title>Terraform Trying to build the environment - Today I Learned</title>
     
     <link rel="icon" type="image/x-icon" href='../../images/github-mark.png'>
     
@@ -26,7 +26,7 @@
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Terraform Trying to Build the Environment - Today I Learned" />
+<meta name="twitter:title" content="Terraform Trying to build the environment - Today I Learned" />
 <meta name="twitter:description"
   content="✝️ I wll try setting up an environment to gain an initial understanding of IaC (Infrastructure as Code) provisioning." />
 <meta name="twitter:site" content="http://localhost:1313/todayilearned/" />
@@ -36,11 +36,11 @@
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Terraform Trying to Build the Environment - Today I Learned">
+<meta property="og:title" content="Terraform Trying to build the environment - Today I Learned">
 <meta property="og:description"
   content="✝️ I wll try setting up an environment to gain an initial understanding of IaC (Infrastructure as Code) provisioning." />
 <meta property="og:url" content="http://localhost:1313/todayilearned/post/terraform_trying_to_build_the_environment/" />
-<meta property="og:site_name" content="Terraform Trying to Build the Environment" />
+<meta property="og:site_name" content="Terraform Trying to build the environment" />
 <meta property="og:image"
   content="http://localhost:1313/todayilearned/">
 <meta property="og:image:width" content="2048">
@@ -140,7 +140,7 @@
             <h1 class="break-word f3 text-normal mb-md-0 mb-1">
                 <span class="author"><a href="http://localhost:1313/todayilearned/">shiro</a></span>
                 <span class="path-divider">/</span>
-                <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px"><a href="http://localhost:1313/todayilearned/post/terraform_trying_to_build_the_environment/">Terraform Trying to Build the Environment</a></strong>
+                <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px"><a href="http://localhost:1313/todayilearned/post/terraform_trying_to_build_the_environment/">Terraform Trying to build the environment</a></strong>
             </h1>
             <div class="note m-0">
                 Created <relative-time datetime="Fri, 26 Jul 2024 03:42:04 &#43;0900" class="no-wrap">Fri, 26 Jul 2024 03:42:04 &#43;0900</relative-time>
@@ -177,7 +177,7 @@
                         <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                     </div>
                 </details-menu>
-                1321 Words
+                1426 Words
                 <span class="path-divider">|</span>
                 1 min
             </div>
@@ -196,11 +196,11 @@
                     </svg>
                     GKE</a>
                 
-                <a class="muted-link mr-3" href="../../tags/kubernetes">
+                <a class="muted-link mr-3" href="../../tags/k8s">
                     <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                         <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
                     </svg>
-                    Kubernetes</a>
+                    k8s</a>
                 
                 <a class="muted-link mr-3" href="../../tags/docker">
                     <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
@@ -224,8 +224,33 @@
         <div class="Box-body px-5 pb-5" style="z-index: 1">
             <article class="markdown-body entry-content container-lg"><!-- raw HTML omitted -->
 <p><img src="https://img.shields.io/badge/-Terraform-844FBA.svg?logo=terraform&amp;style=flat&amp;color=F0F8FF" alt="Terraform">
-<img src="https://img.shields.io/badge/-K8s%20Engine-326CE5.svg?logo=kubernetes&amp;style=flat&amp;color=F0F8FF" alt="GKE"></p>
-<h2 id="terraform">Terraform<a class="anchor" aria-hidden="true" href="#terraform"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
+<img src="https://img.shields.io/badge/-Kubernetes%20Engine-326CE5.svg?logo=kubernetes&amp;style=flat&amp;color=F0F8FF" alt="GKE">
+<img src="https://img.shields.io/badge/-Cloud%20Build-4285F4.svg?logo=google-cloud&amp;style=flat&amp;color=F0F8FF&amp;logoColor=669DF6" alt="Cloud Build">
+<img src="https://img.shields.io/badge/-Docker-EEE.svg?logo=docker&amp;style=flat&amp;color=F0F8FF&amp;logoColor=" alt="Docker"></p>
+<h2 id="why">Why<a class="anchor" aria-hidden="true" href="#why"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
+<p><code>SSIA</code></p>
+<h2 id="what">What<a class="anchor" aria-hidden="true" href="#what"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
+
+
+<div>
+    <div class="github-card" data-github="hashicorp/terraform" data-theme="default"></div>
+    <script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+</div>
+
+
+<ul>
+<li>Terraform
+<ul>
+<li><a href="https://developer.hashicorp.com/terraform/">https://developer.hashicorp.com/terraform/</a> | <a href="https://developer.hashicorp.com/terraform/docs">doc</a></li>
+</ul>
+</li>
+<li>Provider
+<ul>
+<li>GoogleCloud | <a href="https://github.com/hashicorp/terraform-provider-google">hashicorp/terraform-provider-google</a> | <a href="https://registry.terraform.io/providers/hashicorp/google/latest/docs">doc</a></li>
+<li>AWS | <a href="https://github.com/hashicorp/terraform-provider-aws">hashicorp/terraform-provider-aws</a> | <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs">doc</a></li>
+</ul>
+</li>
+</ul>
 <p>Terraformはインフラストラクチャのプロビジョニングと管理を自動化するためのツール。
 管理を効率化し、エラーの削減と一貫性の向上に寄与します。</p>
 <ol>
@@ -334,15 +359,25 @@
 </ul>
 </li>
 </ul>
-<h2 id="hands-on">Hands On<a class="anchor" aria-hidden="true" href="#hands-on"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
+<h3 id="hands-on">Hands On<a class="anchor" aria-hidden="true" href="#hands-on"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <pre tabindex="0"><code>記事参考に自分でも手を動かしてみた。
 詳細はREFにまとめてある。
-</code></pre><h3 id="terraform-gke-k8s">Terraform ×GKE (k8s)<a class="anchor" aria-hidden="true" href="#terraform-gke-k8s"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
-<h3 id="terraform-docker-compose">Terraform ×Docker Compose<a class="anchor" aria-hidden="true" href="#terraform-docker-compose"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
-<h2 id="ref">REF.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
+</code></pre><h4 id="terraform--gke-k8s">Terraform × GKE (k8s)<a class="anchor" aria-hidden="true" href="#terraform--gke-k8s"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
 <ul>
-<li><a href="https://laboratory.kiyono-co.jp/1032/gcp/">【GKE】GKE × Terraformで基本的なk8s環境を構築する</a> KIYONO Engineer Blog</li>
-<li><a href="https://laboratory.kiyono-co.jp/547/gcp/">Docker ComposeでTerraformを使用しGoogle Cloud開発環境を構築</a> KIYONO Engineer Blog</li>
+<li>cf. <a href="https://laboratory.kiyono-co.jp/1032/gcp/">【GKE】GKE × Terraformで基本的なk8s環境を構築する</a> KIYONO Engineer Blog</li>
+</ul>
+<h4 id="terraform--docker-compose">Terraform × Docker Compose<a class="anchor" aria-hidden="true" href="#terraform--docker-compose"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<ul>
+<li>cf. <a href="https://laboratory.kiyono-co.jp/547/gcp/">Docker ComposeでTerraformを使用しGoogle Cloud開発環境を構築</a> KIYONO Engineer Blog</li>
+</ul>
+<h4 id="terraform--cloud-build">Terraform × Cloud Build<a class="anchor" aria-hidden="true" href="#terraform--cloud-build"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<ul>
+<li>cf. <a href="https://blog.g-gen.co.jp/entry/using-terraform-via-cloud-build">Cloud BuildでTerraform実行を自動化する</a> G-gen</li>
+</ul>
+<h2 id="ref">Ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
+<ul>
+<li><a href="https://qiita.com/yutaroud/items/75915228d787f7b41fed">【初学者向け】Terraformの基本</a> Qiita</li>
+<li><a href="https://www.lac.co.jp/lacwatch/service/20230329_003331.html">イチから学べるTerraform～基礎から実践を紹介するウェビナー動画を無料公開～</a> LAC WATCH</li>
 </ul>
 </article>
         </div>
