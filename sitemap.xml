@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/bigquery/</loc>
+    <lastmod>2024-10-26T00:22:05+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/bookread_bigquery_data_analyize_at_udemy/</loc>
+    <lastmod>2024-10-26T00:22:05+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/categories/bookread/</loc>
+    <lastmod>2024-10-26T00:22:05+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/categories/</loc>
+    <lastmod>2024-10-26T00:22:05+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/data-analytics/</loc>
+    <lastmod>2024-10-26T00:22:05+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/handson/</loc>
+    <lastmod>2024-10-26T00:22:05+09:00</lastmod>
+  </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/</loc>
-    <lastmod>2024-10-25T09:09:27+09:00</lastmod>
+    <lastmod>2024-10-26T00:22:05+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/</loc>
-    <lastmod>2024-10-25T16:02:22+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/lua/</loc>
-    <lastmod>2024-10-24T10:40:32+09:00</lastmod>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/sql/</loc>
+    <lastmod>2024-10-26T00:22:05+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/</loc>
+    <lastmod>2024-10-26T00:22:05+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/</loc>
+    <lastmod>2024-10-26T00:22:05+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/lua/</loc>
     <lastmod>2024-10-24T10:40:32+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/terminal/</loc>
@@ -34,6 +55,15 @@
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/googlesheets_used_functions/</loc>
     <lastmod>2024-10-22T12:56:22+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/bigquery_about_data_quality/</loc>
+    <lastmod>2024-10-16T13:49:54+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/data-reliability-engineering/</loc>
+    <lastmod>2024-10-16T13:49:54+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/dwh/</loc>
+    <lastmod>2024-10-16T13:49:54+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/git/</loc>
     <lastmod>2024-09-24T18:08:08+09:00</lastmod>
@@ -71,16 +101,7 @@
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/kubernetes/</loc>
     <lastmod>2024-09-09T12:40:59+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/bigquery/</loc>
-    <lastmod>2024-08-29T19:47:44+09:00</lastmod>
-  </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/bigquery_used_functions/</loc>
-    <lastmod>2024-08-29T19:47:44+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/data-analytics/</loc>
-    <lastmod>2024-08-29T19:47:44+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/sql/</loc>
     <lastmod>2024-08-29T19:47:44+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/elt/etl/</loc>
@@ -116,9 +137,6 @@
     <loc>https://shiro-mpdm.github.io/todayilearned/post/docker_commands/</loc>
     <lastmod>2024-08-21T00:00:34+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/handson/</loc>
-    <lastmod>2024-08-21T00:00:34+09:00</lastmod>
-  </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/ide/</loc>
     <lastmod>2024-08-17T01:02:03+09:00</lastmod>
   </url><url>
@@ -127,6 +145,9 @@
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/vim_commands/</loc>
     <lastmod>2024-08-17T01:02:03+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/bigquery_billing_how_works/</loc>
+    <lastmod>2024-08-16T20:35:07+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/other/jisui_keep_book_data/</loc>
     <lastmod>2024-08-16T18:41:57+09:00</lastmod>
@@ -158,9 +179,6 @@
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/slack/</loc>
     <lastmod>2024-07-30T12:48:55+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/data-reliability-engineering/</loc>
-    <lastmod>2024-07-30T02:30:55+09:00</lastmod>
-  </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/dbt/</loc>
     <lastmod>2024-07-30T02:30:55+09:00</lastmod>
   </url><url>
@@ -191,6 +209,9 @@
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/sourcegraph/</loc>
     <lastmod>2024-07-23T04:13:21+09:00</lastmod>
   </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/bigquery_ctes_in_data_analyisis/</loc>
+    <lastmod>2024-07-20T16:13:42+09:00</lastmod>
+  </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/github_what_are_these_licenses/</loc>
     <lastmod>2024-07-19T12:10:51+09:00</lastmod>
   </url><url>
@@ -208,7 +229,5 @@
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/readme/</loc>
     <lastmod>2024-10-25T16:02:22+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/categories/</loc>
   </url>
 </urlset>

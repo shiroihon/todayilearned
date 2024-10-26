@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bookread on Today I Learned</title>
+    <link>https://shiro-mpdm.github.io/todayilearned/categories/bookread/</link>
+    <description>Recent content in Bookread on Today I Learned</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Oct 2024 00:22:05 +0900</lastBuildDate>
+    <atom:link href="https://shiro-mpdm.github.io/todayilearned/categories/bookread/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BigQuery Data Analyize at Udemy</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/bookread_bigquery_data_analyize_at_udemy/</link>
+      <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/bookread_bigquery_data_analyize_at_udemy/</guid>
+      <description>🔍 Re-summarizeing the trajectory I learned as an introductory.</description>
+    </item>
+  </channel>
+</rss>
