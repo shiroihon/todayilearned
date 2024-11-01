@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/</loc>
+    <lastmod>2024-10-31T17:52:59+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/</loc>
+    <lastmod>2024-10-31T17:52:59+09:00</lastmod>
+  </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/bigquery/</loc>
     <lastmod>2024-10-26T00:22:05+09:00</lastmod>
   </url><url>
@@ -20,16 +26,10 @@
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/handson/</loc>
     <lastmod>2024-10-26T00:22:05+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/post/</loc>
-    <lastmod>2024-10-26T00:22:05+09:00</lastmod>
-  </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/sql/</loc>
     <lastmod>2024-10-26T00:22:05+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/</loc>
-    <lastmod>2024-10-26T00:22:05+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/</loc>
     <lastmod>2024-10-26T00:22:05+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/lua/</loc>
@@ -85,9 +85,6 @@
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/vim-script/</loc>
     <lastmod>2024-09-11T19:39:49+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/argo/</loc>
-    <lastmod>2024-09-09T12:40:59+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/argo-workflows/</loc>
     <lastmod>2024-09-09T12:40:59+09:00</lastmod>
@@ -212,7 +209,7 @@
     <loc>https://shiro-mpdm.github.io/todayilearned/post/bigquery_ctes_in_data_analyisis/</loc>
     <lastmod>2024-07-20T16:13:42+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/post/github_what_are_these_licenses/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/github_what_these_licenses/</loc>
     <lastmod>2024-07-19T12:10:51+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/github_how_to_use_issues/</loc>
@@ -228,6 +225,6 @@
     <lastmod>2024-07-07T16:37:01+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/readme/</loc>
-    <lastmod>2024-10-25T16:02:22+09:00</lastmod>
+    <lastmod>2024-10-30T01:30:04+09:00</lastmod>
   </url>
 </urlset>
