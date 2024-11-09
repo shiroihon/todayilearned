@@ -177,9 +177,9 @@
                         <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                     </div>
                 </details-menu>
-                1492 Words
+                2473 Words
                 <span class="path-divider">|</span>
-                3 min
+                5 min
             </div>
             <div class="file-actions flex-order-2 pt-0">
                 
@@ -337,14 +337,15 @@
 </li>
 </ul>
 <h4 id="gss-複数のファイル内特定シート統合">[GSS] 複数のファイル内特定シート統合<a class="anchor" aria-hidden="true" href="#gss-複数のファイル内特定シート統合"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
-<pre tabindex="0"><code> 「A」「B」「C」
-  ↓    ↓   ↓
+<pre tabindex="0"><code>「A」 「B」 「C」
+  ↓    ↓    ↓
   └--「D」--┘
 
-※「」= GSSのファイルの意（便宜的）
-※ 前提として「A~C」ファイル内部シートのフォーマットは、統一していること
-　（SQLの UNION ALL 結合方式をとりたい為）
-</code></pre><!-- raw HTML omitted -->
+※　「」= GSSのファイルの意（便宜的）
+    前提として「A~C」ファイル内部シートのフォーマットは、統一していること
+   （SQLの UNION ALL 結合方式をとりたい為）
+</code></pre><p>{ coming soon &hellip;}</p>
+<!-- raw HTML omitted -->
 <h3 id="google-apps-script-gas">Google Apps Script (=GAS)<a class="anchor" aria-hidden="true" href="#google-apps-script-gas"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <h4 id="gas-転置行列">[GAS] 転置行列<a class="anchor" aria-hidden="true" href="#gas-転置行列"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/*****
@@ -448,10 +449,10 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kd">let</span> <span class="nx">sqlStatements</span> <span class="o">=</span> <span class="nx">data</span>
 </span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">row</span> <span class="p">=&gt;</span> <span class="nx">isTableReady</span><span class="p">(</span><span class="nx">row</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">row</span> <span class="p">=&gt;</span> <span class="nx">generateTableCreateStatement</span><span class="p">(</span><span class="nx">spreadsheet</span><span class="p">,</span> <span class="nx">row</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">        <span class="c1">// SQL文を別シートに出力
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">outputSqlStatements</span><span class="p">(</span><span class="nx">sqlStatements</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="nx">Logger</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`エラーが発生しました: </span><span class="si">${</span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
@@ -470,7 +471,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">let</span> <span class="nx">tableNameColumnIndex</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span> <span class="c1">// G列（テーブル物理名）
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kd">let</span> <span class="nx">status</span> <span class="o">=</span> <span class="nx">row</span><span class="p">[</span><span class="nx">statusColumnIndex</span><span class="p">];</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">tableName</span> <span class="o">=</span> <span class="nx">row</span><span class="p">[</span><span class="nx">tableNameColumnIndex</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">status</span> <span class="o">===</span> <span class="s1">&#39;対応済&#39;</span> <span class="o">&amp;&amp;</span> <span class="nx">tableName</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
@@ -478,7 +479,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">generateTableCreateStatement</span><span class="p">(</span><span class="nx">spreadsheet</span><span class="p">,</span> <span class="nx">row</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">tableNameColumnIndex</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">tableName</span> <span class="o">=</span> <span class="nx">row</span><span class="p">[</span><span class="nx">tableNameColumnIndex</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">schemaSheet</span> <span class="o">=</span> <span class="nx">spreadsheet</span><span class="p">.</span><span class="nx">getSheetByName</span><span class="p">(</span><span class="nx">tableName</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">schemaSheet</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="sb">`テーブル </span><span class="si">${</span><span class="nx">tableName</span><span class="si">}</span><span class="sb"> に対応するシートが見つかりません。`</span><span class="p">);</span>
@@ -488,7 +489,7 @@
 </span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">columns</span> <span class="o">=</span> <span class="nx">schemaData</span>
 </span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">schemaRow</span> <span class="p">=&gt;</span> <span class="nx">schemaRow</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!==</span> <span class="s1">&#39;&#39;</span> <span class="o">&amp;&amp;</span> <span class="nx">schemaRow</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">!==</span> <span class="s1">&#39;他、共通カラム&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">schemaRow</span> <span class="p">=&gt;</span> <span class="nx">formatColumn</span><span class="p">(</span><span class="nx">schemaRow</span><span class="p">));</span>
-</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="sb">`CREATE OR REPLACE TABLE \`</span><span class="si">${</span><span class="nx">PROJECT_ID</span><span class="si">}</span><span class="sb">.</span><span class="si">${</span><span class="nx">DATASET_ID</span><span class="si">}</span><span class="sb">.</span><span class="si">${</span><span class="nx">tableName</span><span class="si">}${</span><span class="nx">TABLE_SUFFIX</span><span class="si">}</span><span class="sb">\` (\n  </span><span class="si">${</span><span class="nx">columns</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;,\n  &#39;</span><span class="p">)</span><span class="si">}</span><span class="sb">\n);`</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
@@ -519,7 +520,180 @@
 </span></span><span class="line"><span class="cl">    <span class="nx">outputSheet</span><span class="p">.</span><span class="nx">clear</span><span class="p">();</span> <span class="c1">// 既存の内容をクリア
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">outputSheet</span><span class="p">.</span><span class="nx">getRange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">sqlStatements</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span> <span class="mi">1</span><span class="p">).</span><span class="nx">setValues</span><span class="p">(</span><span class="nx">sqlStatements</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">stmt</span> <span class="p">=&gt;</span> <span class="p">[</span><span class="nx">stmt</span><span class="p">]));</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><h2 id="ref">Ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
+</span></span></code></pre></div><h4 id="gas-googleカレンダーの特定イベント時間集計">[GAS] Googleカレンダーの特定イベント時間集計<a class="anchor" aria-hidden="true" href="#gas-googleカレンダーの特定イベント時間集計"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/*****
+</span></span></span><span class="line"><span class="cl"><span class="cm"> Context: https://lean-nishikata.slack.com/archives/C0589AHPAFR/p1731033435319089
+</span></span></span><span class="line"><span class="cl"><span class="cm"> GSS: https://docs.google.com/spreadsheets/d/1NtToD_QPIuXkTwAw152rcS8c-X8MZHvfOuIFb1adhrc/edit?gid=0#gid=0
+</span></span></span><span class="line"><span class="cl"><span class="cm"> GAS: https://script.google.com/u/0/home/projects/1J6WpFnbE0PV9KOM-EqZM_SUa2wX0bOr6TBM79Eda4l2r93U-cL9Dbm02/edit
+</span></span></span><span class="line"><span class="cl"><span class="cm"> *****/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Google カレンダーとシートの設定
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">const</span> <span class="nx">calendar</span> <span class="o">=</span> <span class="nx">CalendarApp</span><span class="p">.</span><span class="nx">getDefaultCalendar</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">sheet</span> <span class="o">=</span> <span class="nx">SpreadsheetApp</span><span class="p">.</span><span class="nx">getActiveSpreadsheet</span><span class="p">().</span><span class="nx">getSheetByName</span><span class="p">(</span><span class="s1">&#39;raw&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 主関数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">aggregateCalendarEvents</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">now</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">oneWeekAgo</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">now</span><span class="p">.</span><span class="nx">getTime</span><span class="p">()</span> <span class="o">-</span> <span class="p">(</span><span class="mi">7</span> <span class="o">*</span> <span class="mi">24</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">));</span> <span class="c1">// 1週間前
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">eventTitle</span> <span class="o">=</span> <span class="s1">&#39;work&#39;</span><span class="p">;</span>  <span class="c1">// 集計対象のタイトル
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 1. イベントの取得
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">events</span> <span class="o">=</span> <span class="nx">getCalendarEvents</span><span class="p">(</span><span class="nx">oneWeekAgo</span><span class="p">,</span> <span class="nx">now</span><span class="p">,</span> <span class="nx">eventTitle</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 2. 日付ごとの集計
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">dateAggregates</span> <span class="o">=</span> <span class="nx">aggregateEventsByDate</span><span class="p">(</span><span class="nx">events</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 3. 集計結果をシートに書き込み
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">writeDataToSheet</span><span class="p">(</span><span class="nx">dateAggregates</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 1. イベントの取得（Google カレンダーAPIを有効化しておくこと）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">getCalendarEvents</span><span class="p">(</span><span class="nx">startDate</span><span class="p">,</span> <span class="nx">endDate</span><span class="p">,</span> <span class="nx">eventTitle</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">calendar</span><span class="p">.</span><span class="nx">getEvents</span><span class="p">(</span><span class="nx">startDate</span><span class="p">,</span> <span class="nx">endDate</span><span class="p">,</span> <span class="p">{</span> <span class="nx">search</span><span class="o">:</span> <span class="nx">eventTitle</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 2. 日付ごとの集計
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">aggregateEventsByDate</span><span class="p">(</span><span class="nx">events</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">dateAggregates</span> <span class="o">=</span> <span class="p">{};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">events</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">startTime</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">getStartTime</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">endTime</span> <span class="o">=</span> <span class="nx">event</span><span class="p">.</span><span class="nx">getEndTime</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">// 日付を取得
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kd">let</span> <span class="nx">date</span> <span class="o">=</span> <span class="nx">Utilities</span><span class="p">.</span><span class="nx">formatDate</span><span class="p">(</span><span class="nx">startTime</span><span class="p">,</span> <span class="nx">Session</span><span class="p">.</span><span class="nx">getScriptTimeZone</span><span class="p">(),</span> <span class="s1">&#39;yyyy-MM-dd&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">let</span> <span class="nx">durationMillis</span> <span class="o">=</span> <span class="nx">endTime</span> <span class="o">-</span> <span class="nx">startTime</span><span class="p">;</span> <span class="c1">// ミリ秒単位で差分を計算
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kd">let</span> <span class="nx">durationHours</span> <span class="o">=</span> <span class="nx">durationMillis</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span><span class="p">);</span> <span class="c1">// ミリ秒から時間に変換
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 日付ごとに合計時間を計算
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="p">(</span><span class="nx">dateAggregates</span><span class="p">[</span><span class="nx">date</span><span class="p">])</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">dateAggregates</span><span class="p">[</span><span class="nx">date</span><span class="p">]</span> <span class="o">+=</span> <span class="nx">durationHours</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">dateAggregates</span><span class="p">[</span><span class="nx">date</span><span class="p">]</span> <span class="o">=</span> <span class="nx">durationHours</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">dateAggregates</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 3. 集計結果をシートに書き込み
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">writeDataToSheet</span><span class="p">(</span><span class="nx">dateAggregates</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">[];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// 集計結果をデータ配列に変換
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">date</span> <span class="k">in</span> <span class="nx">dateAggregates</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nx">dateAggregates</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="nx">date</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">data</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="nx">date</span><span class="p">,</span> <span class="nx">dateAggregates</span><span class="p">[</span><span class="nx">date</span><span class="p">]]);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// シートに転記（既存のデータはクリア）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">sheet</span><span class="p">.</span><span class="nx">clear</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// ヘッダー
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">sheet</span><span class="p">.</span><span class="nx">appendRow</span><span class="p">([</span><span class="s1">&#39;日付&#39;</span><span class="p">,</span> <span class="s1">&#39;合計時間&#39;</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// データを転記
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">sheet</span><span class="p">.</span><span class="nx">getRange</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">data</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span> <span class="mi">2</span><span class="p">).</span><span class="nx">setValues</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Logger</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;There were no matching events.&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><ul>
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">[&#39;2024-11-01&#39;, &#39;work&#39;, &#39;2024-11-01 09:00&#39;, &#39;2024-11-01 11:00&#39;, 2.0],
+</span></span><span class="line"><span class="cl">[&#39;2024-11-01&#39;, &#39;work&#39;, &#39;2024-11-01 16:00&#39;, &#39;2024-11-01 16:30&#39;, 0.5],
+</span></span><span class="line"><span class="cl">[&#39;2024-11-02&#39;, &#39;work, &#39;2024-11-02 10:00&#39;, &#39;2024-11-02 12:00&#39;, 2.0],
+</span></span><span class="line"><span class="cl">[&#39;2024-11-03&#39;, &#39;work, &#39;2024-11-03 14:00&#39;, &#39;2024-11-03 16:30&#39;, 2.5]
+</span></span></code></pre></div></li>
+<li>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">日付</th>
+<th style="text-align:right">合計時間</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">2024-11-01</td>
+<td style="text-align:right">2.5</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-11-02</td>
+<td style="text-align:right">2.0</td>
+</tr>
+<tr>
+<td style="text-align:left">2024-11-03</td>
+<td style="text-align:right">2.5</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<details>
+  <summary>単体テスト</summary>
+  <p></p>
+  <p>モジュール化した場合、各関数が想定挙動になっているか気になるところ👀</p>
+<ol>
+<li>Mocking（モックを使ってテストを行う方法）
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/*****
+</span></span></span><span class="line"><span class="cl"><span class="cm"> getCalendarEvents() 関数をモックするクラスや関数
+</span></span></span><span class="line"><span class="cl"><span class="cm"> *****/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// カレンダーAPIをモックする関数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">mockGetCalendarEvents</span><span class="p">(</span><span class="nx">startDate</span><span class="p">,</span> <span class="nx">endDate</span><span class="p">,</span> <span class="nx">options</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">getStartTime</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="s1">&#39;2024-11-01T09:00:00&#39;</span><span class="p">);</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">getEndTime</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="s1">&#39;2024-11-01T10:00:00&#39;</span><span class="p">);</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">getStartTime</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="s1">&#39;2024-11-02T13:00:00&#39;</span><span class="p">);</span> <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">getEndTime</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="s1">&#39;2024-11-02T14:00:00&#39;</span><span class="p">);</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// テスト用に関数を置き換え
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">getCalendarEvents</span><span class="p">(</span><span class="nx">startDate</span><span class="p">,</span> <span class="nx">endDate</span><span class="p">,</span> <span class="nx">eventTitle</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">mockGetCalendarEvents</span><span class="p">(</span><span class="nx">startDate</span><span class="p">,</span> <span class="nx">endDate</span><span class="p">,</span> <span class="nx">eventTitle</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// テスト実行
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">testGetCalendarEvents</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">events</span> <span class="o">=</span> <span class="nx">getCalendarEvents</span><span class="p">(</span><span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="s1">&#39;2024-10-01&#39;</span><span class="p">),</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="s1">&#39;2024-11-01&#39;</span><span class="p">),</span> <span class="s1">&#39;work&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">events</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span>            <span class="c1">// 期待される結果: 2件のイベント
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">events</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">getStartTime</span><span class="p">());</span> <span class="c1">// 期待される結果: 2024-11-01T09:00:00
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></div><ul>
+<li>GASでは、外部サービスに依存する関数をテストする際に「モック」を使うのが一般的。</li>
+<li>モックは、外部依存性を仮想的に置き換えて、特定の戻り値を返すようにする手法。</li>
+<li>e.g. Google カレンダー API をモックするために、<code>CalendarApp.getDefaultCalendar()</code> や <code>calendar.getEvents()</code> を直接呼び出さないようにして、テスト中は仮のデータを使うことができる。</li>
+<li>i.e. <code>google-apps-script-test</code> などのサードパーティのツールを利用することも可能</li>
+</ul>
+</li>
+<li>Logger / Spreadsheet (オーソドックスな手法)
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">testGetCalendarEvents</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">startDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="s1">&#39;2024-10-01&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">endDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="s1">&#39;2024-11-01&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">eventTitle</span> <span class="o">=</span> <span class="s1">&#39;work&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">events</span> <span class="o">=</span> <span class="nx">getCalendarEvents</span><span class="p">(</span><span class="nx">startDate</span><span class="p">,</span> <span class="nx">endDate</span><span class="p">,</span> <span class="nx">eventTitle</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">events</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">event</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">Logger</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Event: &#39;</span> <span class="o">+</span> <span class="nx">event</span><span class="p">.</span><span class="nx">getStartTime</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39; to &#39;</span> <span class="o">+</span> <span class="nx">event</span><span class="p">.</span><span class="nx">getEndTime</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><ul>
+<li><code>Logger.log()</code> でテスト結果をコンソールに出力し、期待通りに動作するかを確認することができる。</li>
+</ul>
+</li>
+</ol>
+  <p></p>
+</details>
+
+<h2 id="ref">Ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 <ul>
 <li><a href="https://himenon.github.io/docs/press-release/version-ocean/">Google SpreadSheetをGitHubでバージョン管理するためのアドオンVersion Oceanをリリースしました</a></li>
 <li><a href="https://qiita.com/meatball/items/c74cc8eddd3e4e58e85f">【Googleスプレッドシート】表の空白を「上の行の値」で埋める配列関数を考える（旧）</a> Qiita</li>
