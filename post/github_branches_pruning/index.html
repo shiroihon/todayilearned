@@ -177,7 +177,7 @@
                         <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                     </div>
                 </details-menu>
-                3634 Words
+                3633 Words
                 <span class="path-divider">|</span>
                 4 min
             </div>
@@ -209,12 +209,12 @@
 <img src="https://img.shields.io/badge/-GitHub-181717.svg?logo=github&amp;style=flat&amp;color=F0F8FF&amp;logoColor=181717" alt="GitHub"></p>
 <!-- raw HTML omitted -->
 <h2 id="why">Why<a class="anchor" aria-hidden="true" href="#why"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
-<pre tabindex="0"><code>remote -[main] repository ------------------------------------------------&gt;
-             |❶/clone　                                  ↑⑤/push |
-             ↓                  ↑③/commit --↑④/commit -┘        ↓❻/pull
-local   [main] branch ----------|-----------|----------------------&gt;
-             |❷/chackout        |/add       |/add
-             └-&gt; Aさん[faeture_A] branch ----┘
+<pre tabindex="0"><code>remote -[main] repository ----------------------------------------------------&gt;
+             | ❶/clone　                                   ↑ ⑤/push |
+             ↓                  ↑ ③/commit -- ↑ ④/commit -┘         ↓ ❻/pull
+local   [main] branch ----------|-------------|----------------------&gt;
+             | ❷/chackout　　   | /add        | /add
+             └-&gt; Aさん[feature_A] branch ------┘
 </code></pre><h2 id="what">What<a class="anchor" aria-hidden="true" href="#what"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 
 
@@ -279,11 +279,35 @@ local   [main] branch ----------|-----------|----------------------&gt;
 <pre tabindex="0"><code># main/master branch から新たにブランチを切り出したい。
 
 local -[main] branch ------------------------&gt;
-            └├--&gt; Aさん[faeture_A] branch ---&gt;
+            └├--&gt; Aさん[feature_A] branch ---&gt;
              └--&gt; Bさん[feature_B] branch ---&gt;
 </code></pre><ol>
 <li>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git checkout -b feature_B
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="枝を手元に">枝を手元に<a class="anchor" aria-hidden="true" href="#枝を手元に"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<pre tabindex="0"><code># 
+
+local -[main] branch ------------------------------------------&gt;
+            └-&gt; Aさん[feature_A] branch -----------------------&gt;
+                               └-&gt; Bさん[feature_A] branch ----&gt;
+</code></pre><ol>
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 他の人のブランチの最新の変更を取得して、リモート上のブランチ名を一覧確認</span>
+</span></span><span class="line"><span class="cl">$ git fetch origin
+</span></span><span class="line"><span class="cl">$ git branch -r 
+</span></span></code></pre></div></li>
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># feature_Aブランチを自分のローカルにチェックアウト</span>
+</span></span><span class="line"><span class="cl">$ git checkout -b feature_A origin/feature_A
+</span></span><span class="line"><span class="cl">$ git branch
+</span></span></code></pre></div></li>
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 変更を加え、コミット＆プッシュ</span>
+</span></span><span class="line"><span class="cl">$ git add .
+</span></span><span class="line"><span class="cl">$ git commit -m <span class="s2">&#34;プルリクエストのための変更&#34;</span>
+</span></span><span class="line"><span class="cl">$ git push origin feature
 </span></span></code></pre></div></li>
 </ol>
 <h3 id="枝から枝を">枝から枝を<a class="anchor" aria-hidden="true" href="#枝から枝を"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
@@ -291,50 +315,53 @@ local -[main] branch ------------------------&gt;
 
 local -[main] branch ------------------------------------------&gt;
             └-&gt; Aさん[faeture_A] branch -----------------------&gt;
-                               └-&gt; Bさん[feature_B] branch ----&gt;
+                               └-&gt; Bさん[feature_B] branch -┘
 </code></pre><ol>
-<li>変更を取り込むためのフェッチ:
+<li>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 他の人のブランチの最新の変更を取得するためにリモートリポジトリからフェッチ</span>
 </span></span><span class="line"><span class="cl">$ git fetch origin &lt;その他の人のブランチ名&gt;
 </span></span></code></pre></div></li>
-<li>ローカルにブランチをチェックアウト:
+<li>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 他の人のブランチをローカルに持ってくるために、チェックアウト</span>
 </span></span><span class="line"><span class="cl">$ git checkout -b &lt;新しいブランチ名&gt; origin/&lt;その他の人のブランチ名&gt;
 </span></span></code></pre></div></li>
-<li>変更を加え、コミット＆プッシュ
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git add .
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 変更を加え、コミット＆プッシュee</span>
+</span></span><span class="line"><span class="cl">$ git add .
 </span></span><span class="line"><span class="cl">$ git commit -m <span class="s2">&#34;プルリクエストのための変更&#34;</span>
 </span></span><span class="line"><span class="cl">$ git push origin &lt;新しいブランチ名&gt;
 </span></span></code></pre></div></li>
 </ol>
-<h3 id="枝から枝をその後名前変更">枝から枝を（その後名前変更）<a class="anchor" aria-hidden="true" href="#枝から枝をその後名前変更"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<h3 id="枝から枝を名前変更">枝から枝を（名前変更）<a class="anchor" aria-hidden="true" href="#枝から枝を名前変更"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <pre tabindex="0"><code># branch名を[feature_B] → [feature_C] に変えたい
 
-local -[main] branch ------------------------------------------&gt;
-            └-&gt; Aさん[faeture_A] branch -----------------------&gt;
-                               └-&gt; Bさん[feature_C] branch ----&gt;
+local -[main] branch -------------------------------------------------&gt;
+            └-&gt; Aさん[faeture_A] branch ------------------------------&gt;
+                └-&gt; Bさん[feature_B] branch -&gt; [feature_C] branch ----&gt;
 </code></pre><ol>
-<li>現在ブランチ確認
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git branch
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 現在ブランチ確認</span>
+</span></span><span class="line"><span class="cl">$ git branch
 </span></span><span class="line"><span class="cl">* feature_B
 </span></span><span class="line"><span class="cl">  main
 </span></span></code></pre></div></li>
-<li>現在ブランチ名をリネーム
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git branch -m feature_C
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 現在ブランチ名をリネーム</span>
+</span></span><span class="line"><span class="cl">$ git branch -m feature_C
 </span></span></code></pre></div></li>
-<li>反映
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 新しいブランチ名をリモートにプッシュ</span>
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 新しいブランチ名をリモートにプッシュ反映</span>
 </span></span><span class="line"><span class="cl">$ git push origin feature_C
 </span></span></code></pre></div></li>
-<li>後片付け
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 古いブランチ名はリモートから削除</span>
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 古いブランチ名はリモートから削除（後片付け）</span>
 </span></span><span class="line"><span class="cl">$ git push origin --delete feature_B
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 他の開発者への通知</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 他の開発者への通知</span>
 </span></span><span class="line"><span class="cl">$ git fetch origin
 </span></span></code></pre></div></li>
 </ol>
 <h3 id="大きく育った枝を剪定">大きく育った枝を剪定<a class="anchor" aria-hidden="true" href="#大きく育った枝を剪定"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
-<pre tabindex="0"><code># [feature_A] の修正ファイル数が膨大になり分割切り出ししたい
+<pre tabindex="0"><code># [feature_A] の修正ファイル数が膨大になり分割して、切り出しor並び替えしたい
 
 -[main] branch -------------------------------------------&gt;
       └-&gt; Aさん[faeture_A] branch　                 | | |
@@ -343,15 +370,15 @@ local -[main] branch ------------------------------------------&gt;
                         └-&gt; [new-branch-2] branch ---|-┘
                         └-&gt; [new-branch-3] branch ---┘
                         └-&gt; [new-branch-4] branch ------×
-</code></pre><p>既に作成した大きなプルリクエスト（PR）をいくつかに分割する方法はあります。
-Gitでは、コミットを分割したり並べ替えたりして、新しいPRを作成することが可能です。
-以下の方法で、大きなPRを複数の小さなPRに分割できます。</p>
-<ol>
+</code></pre><ol>
 <li>コミット分割（※ 必要に応じて）
+<ol>
+<li>
 <ul>
-<li>コミットが1つにまとまっている場合、まずそのコミットを複数に分割。
+<li></li>
+</ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># コミットをいくつかに分割したい場合、インタラクティブリベースでコミットを分割</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># ( n は分割したいコミットの数)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># （ n は分割したいコミットの数）</span>
 </span></span><span class="line"><span class="cl">$ git rebase -i HEAD~n
 </span></span></code></pre></div></li>
 <li>分割したいコミットの行を <code>edit</code> に変更。(エディタが開き、コミット履歴が表示されます。)
@@ -359,37 +386,48 @@ Gitでは、コミットを分割したり並べ替えたりして、新しいPR
 </span></span><span class="line"><span class="cl">edit d4f8a7b Second commit
 </span></span><span class="line"><span class="cl">pick 7a7f6e3 Third commit
 </span></span></code></pre></div></li>
-<li>editにしたコミットが表示されたら、そのコミットを分割します。
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># コミットを一旦解除</span>
+<li>
+<ul>
+<li></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># editにしたコミットが表示されたら、そのコミットを分割</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># コミットを一旦解除</span>
 </span></span><span class="line"><span class="cl">$ git reset HEAD^
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git add &lt;ファイル名&gt;
 </span></span><span class="line"><span class="cl">$ git commit -m <span class="s2">&#34;細かく分けたコミット1&#34;</span>
 </span></span><span class="line"><span class="cl">$ git add &lt;別のファイル名&gt;
 </span></span><span class="line"><span class="cl">$ git commit -m <span class="s2">&#34;細かく分けたコミット2&#34;</span>
-</span></span></code></pre></div>すべてのコミットを分割した後、リベースを続行します。
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git rebase --continue
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">すべてのコミットを分割した後、リベースを続行
+</span></span><span class="line"><span class="cl">$ git rebase --continue
 </span></span></code></pre></div></li>
-</ul>
+</ol>
 </li>
-<li>ブランチ分割
+<li><strong>ブランチ</strong>分割
 <ul>
 <li>異なるPRを作成するために、複数のブランチに変更を振り分け。</li>
 <li>新しいブランチを作成
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 現在ブランチから分割する新しいブランチを作成。</span>
 </span></span><span class="line"><span class="cl">$  git checkout -b new-branch-1
-</span></span></code></pre></div></li>
+</span></span></code></pre></div><ul>
 <li>特定のコミットを含むようにブランチを操作</li>
-<li>新しいブランチに特定のコミットだけを残すために、<code>git reset</code>や<code>git cherry-pick</code>を使う。
-<ul>
+<li>新しいブランチに特定のコミットだけを残すために、<code>git reset</code>や<code>git cherry-pick</code>を使う。</li>
 <li>eg.
+<ol>
+<li>
 <ul>
-<li>新しいブランチに特定のコミットだけを残したい場合
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git reset --hard &lt;特定のコミットハッシュ&gt;
-</span></span></code></pre></div></li>
-<li>不要なコミットを削除したい場合（新しいブランチに残したくないコミットがあれば）
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git rebase -i
-</span></span></code></pre></div></li>
+<li></li>
 </ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 新しいブランチに特定のコミットだけを残したい場合</span>
+</span></span><span class="line"><span class="cl">$ git reset --hard &lt;特定のコミットハッシュ&gt;
+</span></span></code></pre></div></li>
+<li>
+<ul>
+<li></li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 不要なコミットを削除したい場合（新しいブランチに残したくないコミットがあれば）</span>
+</span></span><span class="line"><span class="cl">$ git rebase -i
+</span></span></code></pre></div></li>
+</ol>
 </li>
 </ul>
 </li>
@@ -459,7 +497,6 @@ local  -[main] branch ---------------------|------------|------&gt;
 <h3 id="空コミットの要請">空コミットの要請<a class="anchor" aria-hidden="true" href="#空コミットの要請"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git commit --allow-empty -m <span class="s2">&#34;メッセージ&#34;</span>
 </span></span></code></pre></div><ul>
-<li><code>--allow-empty</code> ファイルの変更がない場合でもコミットを許可するオプション。</li>
 <li>cf.
 <ul>
 <li><a href="https://kentarotawara.hatenablog.com/entry/2020/11/05/223639">git commit &ndash;allow-empty で空コミットを作成してPR作るといい感じ</a> HatenaBlog</li>
