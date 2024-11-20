@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Oct 2024 00:22:05 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 18 Nov 2024 13:29:33 +0900</lastBuildDate>
     <atom:link href="https://shiro-mpdm.github.io/todayilearned/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes Catchup</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/kubernetes_catchup/</link>
+      <pubDate>Mon, 18 Nov 2024 13:29:33 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/kubernetes_catchup/</guid>
+      <description>⚓️ About container orchestration tecnology.</description>
+    </item>
     <item>
       <title>BigQuery Data Analyize at Udemy</title>
       <link>https://shiro-mpdm.github.io/todayilearned/post/bookread_bigquery_data_analyize_at_udemy/</link>
@@ -140,6 +147,13 @@
       <pubDate>Fri, 26 Jul 2024 04:23:38 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_structured_data_processing_100_ball_drill/</guid>
       <description>🔍 I tried using SQL to learn the basics of data science.</description>
+    </item>
+    <item>
+      <title>GitHub One thing or another (ｱﾚｺﾚ)</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/github_one_thing_or_another/</link>
+      <pubDate>Wed, 24 Jul 2024 15:08:13 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/github_one_thing_or_another/</guid>
+      <description>📍 Various things to make your GitHub life more enjoyable.</description>
     </item>
     <item>
       <title>Slack Writing etiquette</title>

@@ -6,13 +6,20 @@
     <description>Recent content in Default on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Oct 2024 13:31:19 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 20 Nov 2024 15:36:34 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/todayilearned/tags/default/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Slack Retrive Info</title>
-      <link>http://localhost:1313/todayilearned/post/slack_retrive_info/</link>
-      <pubDate>Wed, 23 Oct 2024 13:31:19 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearned/post/slack_retrive_info/</guid>
+      <title>Career Future</title>
+      <link>http://localhost:1313/todayilearned/post/other/career_future/</link>
+      <pubDate>Wed, 20 Nov 2024 15:36:34 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearned/post/other/career_future/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Github Coplilot in Terminal</title>
+      <link>http://localhost:1313/todayilearned/post/github_coplilot_in_terminal/</link>
+      <pubDate>Mon, 18 Nov 2024 23:10:30 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearned/post/github_coplilot_in_terminal/</guid>
       <description></description>
     </item>
   </channel>
