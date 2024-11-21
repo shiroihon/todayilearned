@@ -6,8 +6,29 @@
     <description>Recent content in Tags on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Nov 2024 13:29:33 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 21 Nov 2024 12:06:08 +0900</lastBuildDate>
     <atom:link href="https://shiro-mpdm.github.io/todayilearned/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/github/</link>
+      <pubDate>Thu, 21 Nov 2024 12:06:08 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/github/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>KnowHow</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/knowhow/</link>
+      <pubDate>Thu, 21 Nov 2024 12:06:08 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/knowhow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OSS</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/oss/</link>
+      <pubDate>Thu, 21 Nov 2024 12:06:08 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/oss/</guid>
+      <description></description>
+    </item>
     <item>
       <title>CUE</title>
       <link>https://shiro-mpdm.github.io/todayilearned/tags/cue/</link>
@@ -55,6 +76,13 @@
       <link>https://shiro-mpdm.github.io/todayilearned/tags/sql/</link>
       <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/tags/sql/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Udemy</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/udemy/</link>
+      <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/udemy/</guid>
       <description></description>
     </item>
     <item>
@@ -121,13 +149,6 @@
       <description></description>
     </item>
     <item>
-      <title>GitHub</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/github/</link>
-      <pubDate>Tue, 24 Sep 2024 18:08:08 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/github/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Howto</title>
       <link>https://shiro-mpdm.github.io/todayilearned/tags/howto/</link>
       <pubDate>Wed, 11 Sep 2024 19:39:49 +0900</pubDate>
@@ -163,13 +184,6 @@
       <description></description>
     </item>
     <item>
-      <title>ELT/ETL</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/elt/etl/</link>
-      <pubDate>Wed, 21 Aug 2024 15:30:46 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/elt/etl/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Embluk</title>
       <link>https://shiro-mpdm.github.io/todayilearned/tags/embluk/</link>
       <pubDate>Wed, 21 Aug 2024 15:30:46 +0900</pubDate>
@@ -177,10 +191,10 @@
       <description></description>
     </item>
     <item>
-      <title>OSS</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/oss/</link>
+      <title>ETL/ELT</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/etl/elt/</link>
       <pubDate>Wed, 21 Aug 2024 15:30:46 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/oss/</guid>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/etl/elt/</guid>
       <description></description>
     </item>
     <item>
@@ -195,13 +209,6 @@
       <link>https://shiro-mpdm.github.io/todayilearned/tags/trocco/</link>
       <pubDate>Wed, 21 Aug 2024 15:30:46 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/tags/trocco/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>English</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/english/</link>
-      <pubDate>Wed, 21 Aug 2024 00:06:32 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/english/</guid>
       <description></description>
     </item>
     <item>
@@ -233,13 +240,6 @@
       <description></description>
     </item>
     <item>
-      <title>KnowHow</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/knowhow/</link>
-      <pubDate>Fri, 16 Aug 2024 18:41:57 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/knowhow/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Recycle</title>
       <link>https://shiro-mpdm.github.io/todayilearned/tags/recycle/</link>
       <pubDate>Fri, 16 Aug 2024 18:41:57 +0900</pubDate>
@@ -268,6 +268,13 @@
       <description></description>
     </item>
     <item>
+      <title>English</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/english/</link>
+      <pubDate>Tue, 30 Jul 2024 12:48:55 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/english/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Slack</title>
       <link>https://shiro-mpdm.github.io/todayilearned/tags/slack/</link>
       <pubDate>Tue, 30 Jul 2024 12:48:55 +0900</pubDate>
@@ -279,13 +286,6 @@
       <link>https://shiro-mpdm.github.io/todayilearned/tags/dbt/</link>
       <pubDate>Tue, 30 Jul 2024 02:30:55 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/tags/dbt/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ETL/ELT</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/etl/elt/</link>
-      <pubDate>Tue, 30 Jul 2024 02:30:55 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/etl/elt/</guid>
       <description></description>
     </item>
     <item>

@@ -6,8 +6,15 @@
     <description>Recent content in GitHub on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Sep 2024 18:08:08 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 21 Nov 2024 12:06:08 +0900</lastBuildDate>
     <atom:link href="https://shiro-mpdm.github.io/todayilearned/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub Wana be join OSS</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/github_wana_be_join_oss/</link>
+      <pubDate>Thu, 21 Nov 2024 12:06:08 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/github_wana_be_join_oss/</guid>
+      <description>📍</description>
+    </item>
     <item>
       <title>Git Branches pruning</title>
       <link>https://shiro-mpdm.github.io/todayilearned/post/github_branches_pruning/</link>
@@ -23,13 +30,6 @@
       <description>🗽 About abbreviations. They also appear in business and professional situations.</description>
     </item>
     <item>
-      <title>Github Comment communication</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/github_comment_communication/</link>
-      <pubDate>Fri, 26 Jul 2024 12:40:18 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/github_comment_communication/</guid>
-      <description>📍 The importance of taking care to ensure smooth and easy to understand communication through documents.</description>
-    </item>
-    <item>
       <title>GitHub One thing or another (ｱﾚｺﾚ)</title>
       <link>https://shiro-mpdm.github.io/todayilearned/post/github_one_thing_or_another/</link>
       <pubDate>Wed, 24 Jul 2024 15:08:13 +0900</pubDate>
@@ -42,13 +42,6 @@
       <pubDate>Tue, 23 Jul 2024 04:13:21 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/post/github_how_to_check_difference/</guid>
       <description>📍 Methods and tools to capture code fixes faster and more accurately.</description>
-    </item>
-    <item>
-      <title>GitHub What these licenses</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/github_what_these_licenses/</link>
-      <pubDate>Fri, 19 Jul 2024 12:10:51 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/github_what_these_licenses/</guid>
-      <description>📍 Here is a brief summary of these licenses that are commonly seen on GitHub.</description>
     </item>
     <item>
       <title>GitHub How to use issues</title>

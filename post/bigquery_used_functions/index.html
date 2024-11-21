@@ -177,7 +177,7 @@
                         <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                     </div>
                 </details-menu>
-                4534 Words
+                4533 Words
                 <span class="path-divider">|</span>
                 10 min
             </div>
@@ -297,9 +297,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">                        </span><span class="k">when</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">value</span><span class="p">.</span><span class="n">double_value</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="n">safe_cast</span><span class="p">(</span><span class="n">p</span><span class="p">.</span><span class="n">value</span><span class="p">.</span><span class="n">double_value</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">string</span><span class="p">)</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                        </span><span class="k">else</span><span class="w"> </span><span class="k">NULL</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="k">end</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="k">from</span><span class="w"> </span><span class="k">unnest</span><span class="p">(</span><span class="n">event_params</span><span class="p">)</span><span class="w"> </span><span class="n">p</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="k">from</span><span class="w"> </span><span class="k">unnest</span><span class="p">(</span><span class="n">event_params</span><span class="p">)</span><span class="w"> </span><span class="n">p</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="k">where</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="k">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;page_title&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">PAGE_TITLE</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">from</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">from</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">GA4_EVENTS</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">)</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
@@ -311,7 +311,7 @@
   <summary>フラット化を動的処理</summary>
   <p></p>
   <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="o">#</span><span class="n">standardSQL</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/* cf. 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/* cf.
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * GA4/Firebaseのログをフラット化する汎用クエリ
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * https://www.marketechlabo.com/ga4-firebase-log-preprocessing/
 </span></span></span><span class="line"><span class="cl"><span class="cm"> */</span><span class="w">
@@ -351,32 +351,32 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">GET_LOG_FLAT</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="p">(</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">select</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="cm">/* --下記のクエリを「KEY」の数だけ生成
-</span></span></span><span class="line"><span class="cl"><span class="cm">                 * (select 
-</span></span></span><span class="line"><span class="cl"><span class="cm">                 *     case 
-</span></span></span><span class="line"><span class="cl"><span class="cm">                 *         when p.value.string_value is not null then safe_cast(p.value.string_value as string) 
-</span></span></span><span class="line"><span class="cl"><span class="cm">                 *         when p.value.int_value is not null    then safe_cast(p.value.int_value    as string) 
-</span></span></span><span class="line"><span class="cl"><span class="cm">                 *         when p.value.double_value is not null then safe_cast(p.value.double_value as string) 
-</span></span></span><span class="line"><span class="cl"><span class="cm">                 *         else null 
-</span></span></span><span class="line"><span class="cl"><span class="cm">                 *     end 
+</span></span></span><span class="line"><span class="cl"><span class="cm">                 * (select
+</span></span></span><span class="line"><span class="cl"><span class="cm">                 *     case
+</span></span></span><span class="line"><span class="cl"><span class="cm">                 *         when p.value.string_value is not null then safe_cast(p.value.string_value as string)
+</span></span></span><span class="line"><span class="cl"><span class="cm">                 *         when p.value.int_value is not null    then safe_cast(p.value.int_value    as string)
+</span></span></span><span class="line"><span class="cl"><span class="cm">                 *         when p.value.double_value is not null then safe_cast(p.value.double_value as string)
+</span></span></span><span class="line"><span class="cl"><span class="cm">                 *         else null
+</span></span></span><span class="line"><span class="cl"><span class="cm">                 *     end
 </span></span></span><span class="line"><span class="cl"><span class="cm">                 *  from unnest(event_params) p where p.key = &#34;all_data&#34;) as all_data
 </span></span></span><span class="line"><span class="cl"><span class="cm">                 */</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">string_agg</span><span class="p">(</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="s1">&#39;(select case when p.value.string_value is not null then safe_cast(p.value.string_value as &#39;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="k">TYPE</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="k">TYPE</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="s1">&#39;) when p.value.int_value is not null then safe_cast(p.value.int_value as &#39;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="k">TYPE</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="s1">&#39;) when p.value.double_value is not null then safe_cast(p.value.double_value as &#39;</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="k">TYPE</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="k">TYPE</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="s1">&#39;) when p.value.double_value is not null then safe_cast(p.value.double_value as &#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="k">TYPE</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="s1">&#39;) else null end from unnest(event_params) p where p.key = &#34;&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="k">KEY</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="s1">&#39;&#34;) as &#39;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="k">KEY</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="c1">--※順序規定
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">                </span><span class="p">)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">from</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">from</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">TYPE_CHACK</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">GET_LOG_FLAT</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">);</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
@@ -411,32 +411,32 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">GET_LOG_FLAT</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="p">(</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">select</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="cm">/* --下記のクエリを「KEY」の数だけ生成
-</span></span></span><span class="line"><span class="cl"><span class="cm">                 * (select 
-</span></span></span><span class="line"><span class="cl"><span class="cm">                 *     case 
-</span></span></span><span class="line"><span class="cl"><span class="cm">                 *         when p.value.string_value is not null         then safe_cast(p.value.string_value         as string) 
-</span></span></span><span class="line"><span class="cl"><span class="cm">                 *         when p.value.int_value is not null            then safe_cast(p.value.int_value            as  string) 
-</span></span></span><span class="line"><span class="cl"><span class="cm">                 *         when p.value.double_value is not null         then safe_cast(p.value.double_value         as string) 
+</span></span></span><span class="line"><span class="cl"><span class="cm">                 * (select
+</span></span></span><span class="line"><span class="cl"><span class="cm">                 *     case
+</span></span></span><span class="line"><span class="cl"><span class="cm">                 *         when p.value.string_value is not null         then safe_cast(p.value.string_value         as string)
+</span></span></span><span class="line"><span class="cl"><span class="cm">                 *         when p.value.int_value is not null            then safe_cast(p.value.int_value            as string)
+</span></span></span><span class="line"><span class="cl"><span class="cm">                 *         when p.value.double_value is not null         then safe_cast(p.value.double_value         as string)
 </span></span></span><span class="line"><span class="cl"><span class="cm">                 *         when p.value.set_timestamp_micros is not null then safe_cast(p.value.set_timestamp_micros as string)
-</span></span></span><span class="line"><span class="cl"><span class="cm">                 *         else null 
-</span></span></span><span class="line"><span class="cl"><span class="cm">                 *     end 
+</span></span></span><span class="line"><span class="cl"><span class="cm">                 *         else null
+</span></span></span><span class="line"><span class="cl"><span class="cm">                 *     end
 </span></span></span><span class="line"><span class="cl"><span class="cm">                 * from unnest(user_properties) p where p.key = &#34;all_data&#34;) as all_data
 </span></span></span><span class="line"><span class="cl"><span class="cm">                 */</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">string_agg</span><span class="p">(</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="s1">&#39;(select case when p.value.string_value is not null then safe_cast(p.value.string_value as &#39;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="k">type</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="k">type</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="s1">&#39;) when p.value.int_value is not null then safe_cast(p.value.int_value as &#39;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="k">type</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="s1">&#39;) when p.value.double_value is not null then safe_cast(p.value.double_value as &#39;</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="k">type</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="k">type</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="s1">&#39;) when p.value.double_value is not null then safe_cast(p.value.double_value as &#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="k">type</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="s1">&#39;) when p.value.set_timestamp_micros is not null then safe_cast(p.value.set_timestamp_micros as &#39;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="k">type</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="k">type</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="s1">&#39;) else null end from unnest(user_properties) p where p.key = &#34;&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="k">key</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="s1">&#39;&#34;) u_&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="k">key</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="c1">--順序規定
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">                </span><span class="p">)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">from</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">from</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="n">TYPE_CHACK</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">)</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">GET_LOG_FLAT</span><span class="w">
@@ -453,7 +453,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">#</span><span class="k">output</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">execute</span><span class="w"> </span><span class="k">immediate</span><span class="w"> </span><span class="n">format</span><span class="p">(</span><span class="s2">&#34;&#34;&#34;
 </span></span></span><span class="line"><span class="cl"><span class="s2">    create or replace table `project.dataset.log_flatten` as
-</span></span></span><span class="line"><span class="cl"><span class="s2">    with 
+</span></span></span><span class="line"><span class="cl"><span class="s2">    with
 </span></span></span><span class="line"><span class="cl"><span class="s2">        t1 as (
 </span></span></span><span class="line"><span class="cl"><span class="s2">            select
 </span></span></span><span class="line"><span class="cl"><span class="s2">                user_pseudo_id
@@ -463,14 +463,13 @@
 </span></span></span><span class="line"><span class="cl"><span class="s2">                , %s
 </span></span></span><span class="line"><span class="cl"><span class="s2">                , platform
 </span></span></span><span class="line"><span class="cl"><span class="s2">                , app_info.install_source
-</span></span></span><span class="line"><span class="cl"><span class="s2">            from 
+</span></span></span><span class="line"><span class="cl"><span class="s2">            from
 </span></span></span><span class="line"><span class="cl"><span class="s2">                `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`
 </span></span></span><span class="line"><span class="cl"><span class="s2">        )
 </span></span></span><span class="line"><span class="cl"><span class="s2">        , t2 as (
-</span></span></span><span class="line"><span class="cl"><span class="s2">            select 
-</span></span></span><span class="line"><span class="cl"><span class="s2">                *
-</span></span></span><span class="line"><span class="cl"><span class="s2">                , timestamp_diff(event_timestamp, first_open_timestamp, second) as seconds_since_first_open 
-</span></span></span><span class="line"><span class="cl"><span class="s2">            from 
+</span></span></span><span class="line"><span class="cl"><span class="s2">            select
+</span></span></span><span class="line"><span class="cl"><span class="s2">                *, timestamp_diff(event_timestamp, first_open_timestamp, second) as seconds_since_first_open
+</span></span></span><span class="line"><span class="cl"><span class="s2">            from
 </span></span></span><span class="line"><span class="cl"><span class="s2">                t1
 </span></span></span><span class="line"><span class="cl"><span class="s2">        )
 </span></span></span><span class="line"><span class="cl"><span class="s2">    select * from t2
@@ -609,7 +608,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">     /* 使用モデル別にオプションを適時変更 */
 </span></span><span class="line"><span class="cl">     -- , budget_hours = 1.0              --(e.g.)時間制限
-</span></span><span class="line"><span class="cl">     -- , num_clusters=5                  --(e.g.)分割数（クラスタリング時） 
+</span></span><span class="line"><span class="cl">     -- , num_clusters=5                  --(e.g.)分割数（クラスタリング時）
 </span></span><span class="line"><span class="cl">     -- , standardize_features = true     --(e.g.)
 </span></span><span class="line"><span class="cl">) as {クエリ} -- 使用するデータセット
 </span></span><span class="line"><span class="cl">;
@@ -640,7 +639,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">         </span><span class="p">,</span><span class="w"> </span><span class="n">Total_Charge</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">Account_Length</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">avg_daily_spend</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">         </span><span class="p">,</span><span class="w"> </span><span class="n">CustServ_Calls</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">Account_Length</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">avg_daily_cases</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">         </span><span class="p">,</span><span class="w"> </span><span class="n">Churn_</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">label</span><span class="w"> </span><span class="c1">-- 推論するラベル
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">     </span><span class="k">from</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">     </span><span class="k">from</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">         </span><span class="o">`</span><span class="n">my_dataset</span><span class="p">.</span><span class="n">CSV_CUSTOMER_ACTIVITY</span><span class="o">`</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">     </span><span class="k">where</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">         </span><span class="nb">date</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">Record_Date</span><span class="w">
@@ -662,9 +661,8 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/* MODEL_EVALUATE */</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">evaluation</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="p">(</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">select</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="o">*</span><span class="w"> 
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">from</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">from</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">ml</span><span class="p">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">model</span><span class="w"> </span><span class="o">`</span><span class="n">my_dataset</span><span class="o">`</span><span class="p">.</span><span class="n">AUTO_ML_1</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="cm">/* サブクエリ（モデル作成に使用した特徴量を抽出するクエリ） */</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">select</span><span class="w">
@@ -674,7 +672,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">,</span><span class="w"> </span><span class="n">Total_Charge</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">Account_Length</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">avg_daily_spend</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">,</span><span class="w"> </span><span class="n">CustServ_Calls</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">Account_Length</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">avg_daily_cases</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">,</span><span class="w"> </span><span class="n">Churn_</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">label</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">from</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">from</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="o">`</span><span class="n">my_dataset</span><span class="p">.</span><span class="n">CSV_CUSTOMER_ACTIVITY</span><span class="o">`</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">where</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="nb">date</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">Record_Date</span><span class="w">
@@ -703,7 +701,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">,</span><span class="w"> </span><span class="n">Total_Charge</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">Account_Length</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">avg_daily_spend</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="p">,</span><span class="w"> </span><span class="n">CustServ_Calls</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">Account_Length</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">avg_daily_cases</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="c1">-- , Churn_ as label -- ∵推論時不要
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">            </span><span class="k">from</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">            </span><span class="k">from</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="o">`</span><span class="n">my_dataset</span><span class="p">.</span><span class="n">CSV_CUSTOMER_ACTIVITY</span><span class="o">`</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">where</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="nb">date</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">Record_Date</span><span class="w">
@@ -747,19 +745,19 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">fare</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">class_age</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">Survived</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">label</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">from</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">from</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="o">`</span><span class="n">Kaggle_titanic</span><span class="p">.</span><span class="n">preprocessed_data</span><span class="o">`</span><span class="w"> </span><span class="c1">--（前処理終わりのテーブル）
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">        </span><span class="k">left</span><span class="w"> </span><span class="k">join</span><span class="w">  </span><span class="o">`</span><span class="n">Kaggle_titanic</span><span class="p">.</span><span class="n">label_train</span><span class="o">`</span><span class="w"> </span><span class="k">using</span><span class="p">(</span><span class="n">PassengerId</span><span class="p">)</span><span class="w"> </span><span class="c1">-- ラベル付与
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="k">where</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="k">where</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">train_flag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;train&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/* モデル評価 */</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">ml</span><span class="p">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">model</span><span class="w"> </span><span class="o">`</span><span class="n">Kaggle_titanic</span><span class="o">`</span><span class="p">.</span><span class="n">MODEL_TAITANIC</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">select</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">select</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">Pclass</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="n">is_female</span><span class="p">,</span><span class="w"> </span><span class="n">family_size</span><span class="p">,</span><span class="w"> </span><span class="n">is_alone</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">,</span><span class="w"> </span><span class="n">embarked</span><span class="p">,</span><span class="w"> </span><span class="n">fare</span><span class="p">,</span><span class="w"> </span><span class="n">class_age</span><span class="p">,</span><span class="w"> </span><span class="n">Survived</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">label</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">from</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">from</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="o">`</span><span class="n">Kaggle_titanic</span><span class="p">.</span><span class="n">preprocessed_data</span><span class="o">`</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="k">left</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="o">`</span><span class="n">Kaggle_titanic</span><span class="p">.</span><span class="n">label_train</span><span class="o">`</span><span class="w"> </span><span class="k">using</span><span class="p">(</span><span class="n">PassengerId</span><span class="p">)</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">where</span><span class="w">  </span><span class="n">train_flag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;train&#39;</span><span class="w">
@@ -769,9 +767,9 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/* モデル推論（テストデータに対して） */</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">ml</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">model</span><span class="w"> </span><span class="o">`</span><span class="n">Kaggle_titanic</span><span class="o">`</span><span class="p">.</span><span class="n">MODEL_TAITANIC</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">select</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">select</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="n">Pclass</span><span class="p">,</span><span class="w"> </span><span class="n">title</span><span class="p">,</span><span class="w"> </span><span class="n">is_female</span><span class="p">,</span><span class="w"> </span><span class="n">family_size</span><span class="p">,</span><span class="w"> </span><span class="n">is_alone</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="p">,</span><span class="w"> </span><span class="n">embarked</span><span class="p">,</span><span class="w"> </span><span class="n">fare</span><span class="p">,</span><span class="w"> </span><span class="n">class_age</span><span class="p">,</span><span class="w"> </span><span class="n">Survived</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">label</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">from</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">from</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="o">`</span><span class="n">Kaggle_titanic</span><span class="p">.</span><span class="n">preprocessed_data</span><span class="o">`</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">where</span><span class="w"> </span><span class="n">train_flag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;test&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">)</span><span class="w">
@@ -779,17 +777,17 @@
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/* 係数算出（特徴量の重み） */</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">select</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">select</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">processed_input</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">weight</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">from</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">from</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">ml</span><span class="p">.</span><span class="n">weights</span><span class="p">(</span><span class="n">model</span><span class="w"> </span><span class="o">`</span><span class="n">Kaggle_titanic</span><span class="p">.</span><span class="n">model_titanic</span><span class="o">`</span><span class="p">)</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="k">abs</span><span class="p">(</span><span class="n">weight</span><span class="p">)</span><span class="w"> </span><span class="k">desc</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/* サブミット作成 (※ Kaggle用) */</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">select</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">select</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">PassengerID</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">,</span><span class="w"> </span><span class="n">predicted_label</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">Survived</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="k">from</span><span class="w"> </span><span class="n">ml</span><span class="p">.</span><span class="n">predict</span><span class="p">(</span><span class="n">model</span><span class="w"> </span><span class="o">`</span><span class="n">Kaggle_titanic</span><span class="o">`</span><span class="p">.</span><span class="n">model_titanic</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="w">
@@ -829,7 +827,7 @@
 <p>（before）</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">create</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="n">repalce</span><span class="w"> </span><span class="n">model</span><span class="w"> </span><span class="n">taxi</span><span class="p">.</span><span class="n">TOTAL_AMOUNT_MODEL</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">options</span><span class="w"> </span><span class="p">(</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">model_type</span><span class="o">=</span><span class="s1">&#39;linear_reg&#39;</span><span class="w">               </span><span class="c1">-- 線形回帰 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">model_type</span><span class="o">=</span><span class="s1">&#39;linear_reg&#39;</span><span class="w">               </span><span class="c1">-- 線形回帰
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="p">,</span><span class="w"> </span><span class="n">input_label_cols</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;total_amount&#39;</span><span class="p">]</span><span class="w"> </span><span class="c1">-- ラベル名
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="o">`</span><span class="n">taxi</span><span class="p">.</span><span class="n">sample_data</span><span class="o">`</span><span class="p">;</span><span class="w">
@@ -838,7 +836,7 @@
 <p>（after）</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">create</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="n">repalce</span><span class="w"> </span><span class="n">model</span><span class="w"> </span><span class="n">taxi</span><span class="p">.</span><span class="n">TOTAL_AMOUNT_MODEL</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">options</span><span class="w"> </span><span class="p">(</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">model_type</span><span class="o">=</span><span class="s1">&#39;linear_reg&#39;</span><span class="w">               </span><span class="c1">-- 線形回帰 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">model_type</span><span class="o">=</span><span class="s1">&#39;linear_reg&#39;</span><span class="w">               </span><span class="c1">-- 線形回帰
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="p">,</span><span class="w"> </span><span class="n">input_label_cols</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;total_amount&#39;</span><span class="p">]</span><span class="w"> </span><span class="c1">-- ラベル名
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="w">    </span><span class="p">,</span><span class="w"> </span><span class="n">num_trials</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">,</span><span class="w"> </span><span class="n">hparam_tuning_objectives</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;mean_squared_error&#39;</span><span class="p">]</span><span class="w"> </span><span class="c1">-- 平均二乗誤差(評価指標)
@@ -1050,7 +1048,7 @@ BigQuery オブジェクトに関する<strong>メタデータ情報を提供</s
                             
                             <li class="p-1">
                                 <div>
-                                    <a href="../../post/bigquery_structured_data_processing_100_ball_drill/">BigQuery Structured Data Processing 100</a>
+                                    <a href="../../post/bigquery_structured_data_processing_100/">BigQuery Structured Data Processing 100</a>
                                     <time datetime="2024-07-26 04:23" class="no-wrap text-small ml-1">(2024-07-26 04:23)</time>
                                 </div>
                                 <div class="text-small text-gray mb-1 mt-1">I tried using SQL to learn the basics of data science.</div>

@@ -6,8 +6,15 @@
     <description>Recent content in ETL/ELT on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Jul 2024 02:30:55 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 21 Aug 2024 15:30:46 +0900</lastBuildDate>
     <atom:link href="https://shiro-mpdm.github.io/todayilearned/tags/etl/elt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trocco and Embluk Catchup</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/trocco_and_embluk_catch_up/</link>
+      <pubDate>Wed, 21 Aug 2024 15:30:46 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/trocco_and_embluk_catch_up/</guid>
+      <description>🎢 Summarizing Trocco and Embluk to deepen understanding.</description>
+    </item>
     <item>
       <title>dbt Seeking out basic understanding</title>
       <link>https://shiro-mpdm.github.io/todayilearned/post/dbt_seeking_basic_understanding/</link>

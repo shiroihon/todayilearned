@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 26 Oct 2024 00:22:05 +0900</lastBuildDate>
     <atom:link href="https://shiro-mpdm.github.io/todayilearned/tags/handson/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>BigQuery Data Analyize at Udemy</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/bookread_bigquery_data_analyize_at_udemy/</link>
+      <title>BigQuery Data Analyize Catchup</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/bigquery_data_analyize_catchup/</link>
       <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/bookread_bigquery_data_analyize_at_udemy/</guid>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_data_analyize_catchup/</guid>
       <description>🔍 Re-summarizeing the trajectory I learned as an introductory.</description>
     </item>
     <item>
@@ -31,9 +31,9 @@
     </item>
     <item>
       <title>BigQuery Structured Data Processing 100</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/bigquery_structured_data_processing_100_ball_drill/</link>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/bigquery_structured_data_processing_100/</link>
       <pubDate>Fri, 26 Jul 2024 04:23:38 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_structured_data_processing_100_ball_drill/</guid>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_structured_data_processing_100/</guid>
       <description>🔍 I tried using SQL to learn the basics of data science.</description>
     </item>
   </channel>
