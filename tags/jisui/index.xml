@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jisui on Today I Learned</title>
-    <link>http://localhost:1313/todayilearned/tags/jisui/</link>
+    <link>https://shiro-mpdm.github.io/todayilearned/tags/jisui/</link>
     <description>Recent content in Jisui on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 16 Aug 2024 18:41:57 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/todayilearned/tags/jisui/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://shiro-mpdm.github.io/todayilearned/tags/jisui/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bookread How to Jisui ~自炊~</title>
-      <link>http://localhost:1313/todayilearned/post/other/jisui_keep_book_data/</link>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/other/jisui_keep_book_data/</link>
       <pubDate>Fri, 16 Aug 2024 18:41:57 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearned/post/other/jisui_keep_book_data/</guid>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/other/jisui_keep_book_data/</guid>
       <description>📚 Converting cut-up books into digital data. Also, an article on how to cut books and store the data.</description>
     </item>
   </channel>
