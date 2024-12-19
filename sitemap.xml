@@ -65,7 +65,7 @@
     <loc>https://shiro-mpdm.github.io/todayilearned/post/bigquery_data_analyize_catchup/</loc>
     <lastmod>2024-10-26T00:22:05+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/categories/dataanalyticsengineer/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/categories/data_analytics_engineer/</loc>
     <lastmod>2024-10-26T00:22:05+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/sql/</loc>
@@ -101,7 +101,7 @@
     <loc>https://shiro-mpdm.github.io/todayilearned/post/bigquery_about_data_quality/</loc>
     <lastmod>2024-10-16T13:49:54+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/categories/datareliabilityengineering/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/categories/data_reliability_engineer/</loc>
     <lastmod>2024-10-16T13:49:54+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/dwh/</loc>
@@ -164,7 +164,7 @@
     <loc>https://shiro-mpdm.github.io/todayilearned/post/bigquery_billing_how_works/</loc>
     <lastmod>2024-08-16T20:35:07+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/googlecloud/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/google-cloud/</loc>
     <lastmod>2024-08-16T20:35:07+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/other/jisui_keep_book_data/</loc>
@@ -198,6 +198,9 @@
     <lastmod>2024-07-30T02:30:55+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/dbt_seeking_basic_understanding/</loc>
+    <lastmod>2024-07-30T02:30:55+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/etl-/-elt/</loc>
     <lastmod>2024-07-30T02:30:55+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/python/</loc>
@@ -234,9 +237,6 @@
     <lastmod>2024-07-23T04:13:21+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/bigquery_ctes_in_data_analyisis/</loc>
-    <lastmod>2024-07-20T16:13:42+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/categories/dataanalyticsengineering/</loc>
     <lastmod>2024-07-20T16:13:42+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/github_issues_how_to_use/</loc>
