@@ -22,5 +22,12 @@
       <guid>https://shiro-mpdm.github.io/todayilearned/post/argo_workflows_catchup/</guid>
       <description>🐙 Understanding and implementing Argo projects and workflows.</description>
     </item>
+    <item>
+      <title>Terraform Trying to build the environment</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/terraform_trying_to_build_the_environment/</link>
+      <pubDate>Fri, 26 Jul 2024 03:42:04 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/terraform_trying_to_build_the_environment/</guid>
+      <description>✝️ I wll try setting up an environment to gain an initial understanding of IaC (Infrastructure as Code) provisioning.</description>
+    </item>
   </channel>
 </rss>

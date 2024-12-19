@@ -177,7 +177,7 @@
                         <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                     </div>
                 </details-menu>
-                2473 Words
+                2506 Words
                 <span class="path-divider">|</span>
                 5 min
             </div>
@@ -336,6 +336,48 @@
 </ul>
 </li>
 </ul>
+<h4 id="gss-複数行を単一行へ-flatten">[GSS] 複数行を単一行へ <code>flatten()</code><a class="anchor" aria-hidden="true" href="#gss-複数行を単一行へ-flatten"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<pre tabindex="0"><code class="language-ja" data-lang="ja"> = flatten(A1:B)
+</code></pre><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>- ds: dataset_name_item</td>
+<td>sa: <a href="mailto:aq-sq-000@item-attributes-jp-prod.iam.gserviceaccount.com">aq-sq-000@item-attributes-jp-prod.iam.gserviceaccount.com</a></td>
+</tr>
+<tr>
+<td>- ds: dataset_name_shop</td>
+<td>sa: <a href="mailto:aq-sq-000@item-attributes-jp-prod.iam.gserviceaccount.com">aq-sq-000@item-attributes-jp-prod.iam.gserviceaccount.com</a></td>
+</tr>
+</tbody>
+</table>
+<p>↓</p>
+<table>
+<thead>
+<tr>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>- ds: dataset_name_item</td>
+</tr>
+<tr>
+<td>sa: <a href="mailto:aq-sq-000@item-attributes-jp-prod.iam.gserviceaccount.com">aq-sq-000@item-attributes-jp-prod.iam.gserviceaccount.com</a></td>
+</tr>
+<tr>
+<td>- ds: dataset_name_shop</td>
+</tr>
+<tr>
+<td>sa: <a href="mailto:aq-sq-000@item-attributes-jp-prod.iam.gserviceaccount.com">aq-sq-000@item-attributes-jp-prod.iam.gserviceaccount.com</a></td>
+</tr>
+</tbody>
+</table>
 <h4 id="gss-複数のファイル内特定シート統合">[GSS] 複数のファイル内特定シート統合<a class="anchor" aria-hidden="true" href="#gss-複数のファイル内特定シート統合"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
 <pre tabindex="0"><code>「A」 「B」 「C」
   ↓    ↓    ↓
@@ -345,6 +387,7 @@
     前提として「A~C」ファイル内部シートのフォーマットは、統一していること
    （SQLの UNION ALL 結合方式をとりたい為）
 </code></pre><p>{ coming soon &hellip;}</p>
+<!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 <h3 id="google-apps-script-gas">Google Apps Script (=GAS)<a class="anchor" aria-hidden="true" href="#google-apps-script-gas"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <h4 id="gas-転置行列">[GAS] 転置行列<a class="anchor" aria-hidden="true" href="#gas-転置行列"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
@@ -522,7 +565,7 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></div><h4 id="gas-googleカレンダーの特定イベント時間集計">[GAS] Googleカレンダーの特定イベント時間集計<a class="anchor" aria-hidden="true" href="#gas-googleカレンダーの特定イベント時間集計"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/*****
-</span></span></span><span class="line"><span class="cl"><span class="cm"> Context: https://lean-nishikata.slack.com/archives/C0589AHPAFR/p1731033435319089
+</span></span></span><span class="line"><span class="cl"><span class="cm"> Context: https://products.slack.com/archives/C0589AHPAFR/p1731033435319089
 </span></span></span><span class="line"><span class="cl"><span class="cm"> GSS: https://docs.google.com/spreadsheets/d/1NtToD_QPIuXkTwAw152rcS8c-X8MZHvfOuIFb1adhrc/edit?gid=0#gid=0
 </span></span></span><span class="line"><span class="cl"><span class="cm"> GAS: https://script.google.com/u/0/home/projects/1J6WpFnbE0PV9KOM-EqZM_SUa2wX0bOr6TBM79Eda4l2r93U-cL9Dbm02/edit
 </span></span></span><span class="line"><span class="cl"><span class="cm"> *****/</span>

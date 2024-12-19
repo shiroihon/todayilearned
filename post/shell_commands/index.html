@@ -177,7 +177,7 @@
                         <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                     </div>
                 </details-menu>
-                52 Words
+                438 Words
                 <span class="path-divider">|</span>
                 1 min
             </div>
@@ -224,18 +224,99 @@
 
 
 <ul>
-<li><a href="https://www.zsh.org/">https://www.zsh.org/</a>
-<a href="https://github.com/ohmyzsh/ohmyzsh">https://github.com/ohmyzsh/ohmyzsh</a></li>
-</ul>
-<h3 id="基本">基本<a class="anchor" aria-hidden="true" href="#基本"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
-<p>Mac特有</p>
+<li><a href="https://www.zsh.org/">https://www.zsh.org/</a></li>
+<li>ZSH Documentation
 <ul>
-<li>open</li>
-<li>pbcopy</li>
-<li></li>
+<li><a href="https://zsh.sourceforge.io/Doc/">https://zsh.sourceforge.io/Doc/</a></li>
+<li><a href="https://zsh.sourceforge.io/Doc/Release/zsh_toc.html">https://zsh.sourceforge.io/Doc/Release/zsh_toc.html</a></li>
 </ul>
-<h3 id="アドバンス">アドバンス<a class="anchor" aria-hidden="true" href="#アドバンス"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
-<h2 id="ref">Ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
+</li>
+<li>Zsh Extentions
+<ul>
+<li><a href="https://github.com/ohmyzsh/ohmyzsh">https://github.com/ohmyzsh/ohmyzsh</a></li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 現在仕様Shell</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="nv">$SHELL</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="nv">$0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Zshのマニュアル</span>
+</span></span><span class="line"><span class="cl">$ man zsh
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 基本</span>
+</span></span><span class="line"><span class="cl">$ ls
+</span></span><span class="line"><span class="cl">$ wc -l        <span class="c1"># word counts: 単語数</span>
+</span></span><span class="line"><span class="cl">$ grep word    <span class="c1"># &#34;word&#34;の文字列検索</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ ls <span class="p">|</span> grep conf <span class="p">|</span> wc -l
+</span></span><span class="line"><span class="cl"><span class="m">17</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 移動</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">pwd</span>
+</span></span><span class="line"><span class="cl">~/sandbox/prodctions/dev/user
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> dev prod   <span class="c1"># 特定のディレクトリ構造であればジャンプできる</span>
+</span></span><span class="line"><span class="cl">~/sandbox/prodctions/prod/user
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Directory Hash (Zsh特有)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 移動先ルートパスをメモ書きできる</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">hash</span> -d <span class="nv">api</span><span class="o">=</span>/tmp/src/main/go/api
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> ~api <span class="o">&amp;&amp;</span> <span class="nb">pwd</span>
+</span></span><span class="line"><span class="cl">~/tmp/src/main/go/api
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 操作系</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># カーソル移動 (Emacs key風はmacOS特有)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#       ^p</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#   ^b  |  ^f</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#       ^n</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ^d :delete with Ctrl + d</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ^h :backspace with Ctrl + h</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ^a :行頭</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ^e :行末</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ^k :カーソルより後ろ（右方向）削除</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ^w :カーソルより前の単語消す</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 履歴</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">history</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 過去のgit コマンド列挙して、ナンバー実行</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">history</span> <span class="p">|</span> grep git
+</span></span><span class="line"><span class="cl">$ !<span class="o">{</span>number<span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 展開</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Brace Expansion (zsh) :{,}で総当り展開</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Glob Expansion  (zsh) :Tabで確認展開（^xu :で戻せる）</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="o">{</span>shop_a, shop_b<span class="o">}</span>.csv
+</span></span><span class="line"><span class="cl">shop_a.csv shop_b.csv
+</span></span><span class="line"><span class="cl">$ diff -u <span class="o">{</span>shop_a, shop_b<span class="o">}</span>.csv
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ cp -p httpd.conf htppdd.conf.buckup
+</span></span><span class="line"><span class="cl">$ cp -p htppd.conf<span class="o">{</span>, .buckup<span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 一気にでディレクトリが作れる</span>
+</span></span><span class="line"><span class="cl">$ mkdir -p src/<span class="o">{</span>main, test<span class="o">}</span>/script/<span class="o">{</span>api, db<span class="o">}</span>/<span class="o">{</span>user, task<span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Mac特有</span>
+</span></span><span class="line"><span class="cl">$ pbcopy
+</span></span><span class="line"><span class="cl">$ qlook  <span class="c1"># QuickLook :Finderで見ることが</span>
+</span></span><span class="line"><span class="cl">$ open   <span class="c1"># Double click</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ open https://google.com
+</span></span></code></pre></div><h2 id="ref">Ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 <ul>
 <li><a href="https://youtu.be/qdrO8kD-ZT4?si=LfJh5jlwSaJGVbZ9">【Shell入門】一生触るターミナル操作を強化しておこうぜ！</a></li>
 </ul>
@@ -255,8 +336,16 @@
                             
                             <li class="p-1">
                                 <div>
-                                    <a href="../../post/cli_aichat_used/">CLI aichat Used</a>
+                                    <a href="../../post/cli_aichat_used/">CLI AI-Chat Used</a>
                                     <time datetime="2024-10-31 17:52" class="no-wrap text-small ml-1">(2024-10-31 17:52)</time>
+                                </div>
+                                <div class="text-small text-gray mb-1 mt-1"> </div>
+                            </li>
+                            
+                            <li class="p-1">
+                                <div>
+                                    <a href="../../post/github_coplilot_in_terminal/">GitHub Copilot in Terminal</a>
+                                    <time datetime="2024-11-18 23:10" class="no-wrap text-small ml-1">(2024-11-18 23:10)</time>
                                 </div>
                                 <div class="text-small text-gray mb-1 mt-1"> </div>
                             </li>
@@ -283,14 +372,6 @@
                                     <time datetime="2024-08-21 00:00" class="no-wrap text-small ml-1">(2024-08-21 00:00)</time>
                                 </div>
                                 <div class="text-small text-gray mb-1 mt-1">I want to deepen my understanding of Docker&#39;s basic commands and mechanisms.</div>
-                            </li>
-                            
-                            <li class="p-1">
-                                <div>
-                                    <a href="../../post/vim_commands/">Vim Commands</a>
-                                    <time datetime="2024-08-17 01:02" class="no-wrap text-small ml-1">(2024-08-17 01:02)</time>
-                                </div>
-                                <div class="text-small text-gray mb-1 mt-1">A list of vim commands for the TextEditor tool, along with various tips.</div>
                             </li>
                             
                         </ul>

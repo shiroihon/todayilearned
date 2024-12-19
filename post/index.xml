@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Nov 2024 12:06:08 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 17 Dec 2024 22:39:48 +0900</lastBuildDate>
     <atom:link href="https://shiro-mpdm.github.io/todayilearned/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yaml Catchup</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/yaml_catchup/</link>
+      <pubDate>Tue, 17 Dec 2024 22:39:48 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/yaml_catchup/</guid>
+      <description>🥣</description>
+    </item>
     <item>
       <title>GitHub Wana be join OSS</title>
       <link>https://shiro-mpdm.github.io/todayilearned/post/github_oss_wana_be_join/</link>
@@ -140,6 +147,13 @@
       <pubDate>Fri, 26 Jul 2024 04:23:38 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_structured_data_processing_100/</guid>
       <description>🔍 I tried using SQL to learn the basics of data science.</description>
+    </item>
+    <item>
+      <title>Terraform Trying to build the environment</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/terraform_trying_to_build_the_environment/</link>
+      <pubDate>Fri, 26 Jul 2024 03:42:04 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/terraform_trying_to_build_the_environment/</guid>
+      <description>✝️ I wll try setting up an environment to gain an initial understanding of IaC (Infrastructure as Code) provisioning.</description>
     </item>
     <item>
       <title>GitHub This and That</title>

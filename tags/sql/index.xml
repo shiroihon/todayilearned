@@ -16,11 +16,25 @@
       <description>🔍 Re-summarizeing the trajectory I learned as an introductory.</description>
     </item>
     <item>
+      <title>BigQuery about Data Quality</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/bigquery_about_data_quality/</link>
+      <pubDate>Wed, 16 Oct 2024 13:49:54 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_about_data_quality/</guid>
+      <description>🔍 Different perspective from data analysis. About data quality.</description>
+    </item>
+    <item>
       <title>BigQuery Used in functions</title>
       <link>https://shiro-mpdm.github.io/todayilearned/post/bigquery_used_functions/</link>
       <pubDate>Thu, 29 Aug 2024 19:47:44 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_used_functions/</guid>
       <description>🔍 When I getting from my daily work. Added as need. I keep writing various tips.</description>
+    </item>
+    <item>
+      <title>dbt Seeking out basic understanding</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/dbt_seeking_basic_understanding/</link>
+      <pubDate>Tue, 30 Jul 2024 02:30:55 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/dbt_seeking_basic_understanding/</guid>
+      <description>✴️ Wanna deepen my understanding by using my hands and referring to reference books.</description>
     </item>
     <item>
       <title>BigQuery Structured Data Processing 100</title>

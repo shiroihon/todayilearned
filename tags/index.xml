@@ -6,20 +6,41 @@
     <description>Recent content in Tags on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Nov 2024 12:06:08 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 17 Dec 2024 22:39:48 +0900</lastBuildDate>
     <atom:link href="https://shiro-mpdm.github.io/todayilearned/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JSON</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/json/</link>
+      <pubDate>Tue, 17 Dec 2024 22:39:48 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/json/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TOML</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/toml/</link>
+      <pubDate>Tue, 17 Dec 2024 22:39:48 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/toml/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>XML</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/xml/</link>
+      <pubDate>Tue, 17 Dec 2024 22:39:48 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/xml/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>YAML</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/yaml/</link>
+      <pubDate>Tue, 17 Dec 2024 22:39:48 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/yaml/</guid>
+      <description></description>
+    </item>
     <item>
       <title>GitHub</title>
       <link>https://shiro-mpdm.github.io/todayilearned/tags/github/</link>
       <pubDate>Thu, 21 Nov 2024 12:06:08 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/tags/github/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>KnowHow</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/knowhow/</link>
-      <pubDate>Thu, 21 Nov 2024 12:06:08 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/knowhow/</guid>
       <description></description>
     </item>
     <item>
@@ -58,31 +79,10 @@
       <description></description>
     </item>
     <item>
-      <title>Data Analytics</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/data-analytics/</link>
-      <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/data-analytics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>HandsOn</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/handson/</link>
-      <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/handson/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>SQL</title>
       <link>https://shiro-mpdm.github.io/todayilearned/tags/sql/</link>
       <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/tags/sql/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Udemy</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/udemy/</link>
-      <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/udemy/</guid>
       <description></description>
     </item>
     <item>
@@ -135,13 +135,6 @@
       <description></description>
     </item>
     <item>
-      <title>Data Reliability Engineering</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/data-reliability-engineering/</link>
-      <pubDate>Wed, 16 Oct 2024 13:49:54 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/data-reliability-engineering/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>DWH</title>
       <link>https://shiro-mpdm.github.io/todayilearned/tags/dwh/</link>
       <pubDate>Wed, 16 Oct 2024 13:49:54 +0900</pubDate>
@@ -153,13 +146,6 @@
       <link>https://shiro-mpdm.github.io/todayilearned/tags/git/</link>
       <pubDate>Tue, 24 Sep 2024 18:08:08 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/tags/git/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Howto</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/howto/</link>
-      <pubDate>Wed, 11 Sep 2024 19:39:49 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/howto/</guid>
       <description></description>
     </item>
     <item>
@@ -233,6 +219,13 @@
       <description></description>
     </item>
     <item>
+      <title>GoogleCloud</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/googlecloud/</link>
+      <pubDate>Fri, 16 Aug 2024 20:35:07 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/googlecloud/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Jisui</title>
       <link>https://shiro-mpdm.github.io/todayilearned/tags/jisui/</link>
       <pubDate>Fri, 16 Aug 2024 18:41:57 +0900</pubDate>
@@ -244,13 +237,6 @@
       <link>https://shiro-mpdm.github.io/todayilearned/tags/recycle/</link>
       <pubDate>Fri, 16 Aug 2024 18:41:57 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/tags/recycle/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Browser</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/tags/browser/</link>
-      <pubDate>Sat, 03 Aug 2024 16:04:18 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/tags/browser/</guid>
       <description></description>
     </item>
     <item>
@@ -286,6 +272,27 @@
       <link>https://shiro-mpdm.github.io/todayilearned/tags/dbt/</link>
       <pubDate>Tue, 30 Jul 2024 02:30:55 +0900</pubDate>
       <guid>https://shiro-mpdm.github.io/todayilearned/tags/dbt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/python/</link>
+      <pubDate>Tue, 30 Jul 2024 02:30:55 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GKE</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/gke/</link>
+      <pubDate>Fri, 26 Jul 2024 03:42:04 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/gke/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Terraform</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/tags/terraform/</link>
+      <pubDate>Fri, 26 Jul 2024 03:42:04 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/tags/terraform/</guid>
       <description></description>
     </item>
     <item>

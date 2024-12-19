@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Today I Learned</title>
-    <link>http://localhost:1313/todayilearned/tags/python/</link>
+    <link>https://shiro-mpdm.github.io/todayilearned/tags/python/</link>
     <description>Recent content in Python on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Jul 2024 17:09:50 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/todayilearned/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Jul 2024 02:30:55 +0900</lastBuildDate>
+    <atom:link href="https://shiro-mpdm.github.io/todayilearned/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Law of Refined Preprocessing Programming: Polars ed.</title>
-      <link>http://localhost:1313/todayilearned/post/bookread_law_of_refined_preprocessing_programming_polars_edition/</link>
-      <pubDate>Thu, 18 Jul 2024 17:09:50 +0900</pubDate>
-      <guid>http://localhost:1313/todayilearned/post/bookread_law_of_refined_preprocessing_programming_polars_edition/</guid>
-      <description>🐻‍❄️ [改訂新版]前処理大全実践テクニックを読んでみる(Polars編)</description>
+      <title>dbt Seeking out basic understanding</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/dbt_seeking_basic_understanding/</link>
+      <pubDate>Tue, 30 Jul 2024 02:30:55 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/dbt_seeking_basic_understanding/</guid>
+      <description>✴️ Wanna deepen my understanding by using my hands and referring to reference books.</description>
     </item>
   </channel>
 </rss>
