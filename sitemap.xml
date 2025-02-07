@@ -2,7 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/cli/</loc>
+    <lastmod>2025-01-28T00:50:32+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/macos/</loc>
+    <lastmod>2025-01-28T00:50:32+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/macos_commands_memorandum/</loc>
+    <lastmod>2025-01-28T00:50:32+09:00</lastmod>
+  </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/</loc>
+    <lastmod>2025-01-28T00:50:32+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/</loc>
     <lastmod>2025-01-28T00:50:32+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/</loc>
@@ -15,9 +27,6 @@
     <lastmod>2024-12-17T22:39:48+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/json/</loc>
-    <lastmod>2024-12-17T22:39:48+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/</loc>
     <lastmod>2024-12-17T22:39:48+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/toml/</loc>
@@ -68,11 +77,11 @@
     <loc>https://shiro-mpdm.github.io/todayilearned/categories/data_analytics_engineer/</loc>
     <lastmod>2024-10-26T00:22:05+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/sql/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/categories/google/</loc>
     <lastmod>2024-10-26T00:22:05+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/cli/</loc>
-    <lastmod>2024-10-24T10:40:32+09:00</lastmod>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/sql/</loc>
+    <lastmod>2024-10-26T00:22:05+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/lua/</loc>
     <lastmod>2024-10-24T10:40:32+09:00</lastmod>
@@ -177,9 +186,6 @@
     <lastmod>2024-08-16T18:41:57+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/chrome/</loc>
-    <lastmod>2024-08-03T16:04:18+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/macos/</loc>
     <lastmod>2024-08-03T16:04:18+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/macos_looks_like_native_application/</loc>

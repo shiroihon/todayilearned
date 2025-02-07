@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google on Today I Learned</title>
+    <link>https://shiro-mpdm.github.io/todayilearned/categories/google/</link>
+    <description>Recent content in Google on Today I Learned</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Oct 2024 00:22:05 +0900</lastBuildDate>
+    <atom:link href="https://shiro-mpdm.github.io/todayilearned/categories/google/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BigQuery Data Analyize Catchup</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/bigquery_data_analyize_catchup/</link>
+      <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_data_analyize_catchup/</guid>
+      <description>🔍 Re-summarizeing the trajectory I learned as an introductory.</description>
+    </item>
+    <item>
+      <title>Google Sheets used in functions</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/googlesheets_used_functions/</link>
+      <pubDate>Tue, 22 Oct 2024 12:56:22 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/googlesheets_used_functions/</guid>
+      <description>📗 Make a memorandum of what you used with the most powerful free tool that anyone can use.</description>
+    </item>
+    <item>
+      <title>BigQuery about Data Quality</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/bigquery_about_data_quality/</link>
+      <pubDate>Wed, 16 Oct 2024 13:49:54 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_about_data_quality/</guid>
+      <description>🔍 Different perspective from data analysis. About data quality.</description>
+    </item>
+    <item>
+      <title>BigQuery Used in functions</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/bigquery_used_functions/</link>
+      <pubDate>Thu, 29 Aug 2024 19:47:44 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_used_functions/</guid>
+      <description>🔍 When I getting from my daily work. Added as need. I keep writing various tips.</description>
+    </item>
+    <item>
+      <title>BigQuery Billing how works</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/bigquery_billing_how_works/</link>
+      <pubDate>Fri, 16 Aug 2024 20:35:07 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_billing_how_works/</guid>
+      <description>🔍 Summarize billing mechanism, fee structure, and money-saving tips.</description>
+    </item>
+    <item>
+      <title>BigQuery Structured Data Processing 100</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/bigquery_structured_data_processing_100/</link>
+      <pubDate>Fri, 26 Jul 2024 04:23:38 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_structured_data_processing_100/</guid>
+      <description>🔍 I tried using SQL to learn the basics of data science.</description>
+    </item>
+    <item>
+      <title>BigQuery CTEs in Data Analyisis</title>
+      <link>https://shiro-mpdm.github.io/todayilearned/post/bigquery_ctes_in_data_analyisis/</link>
+      <pubDate>Sat, 20 Jul 2024 16:13:42 +0900</pubDate>
+      <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_ctes_in_data_analyisis/</guid>
+      <description>🔍 Things to keep in mind when analyzing data using SQL.</description>
+    </item>
+  </channel>
+</rss>
