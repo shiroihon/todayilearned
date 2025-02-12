@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/</loc>
+    <lastmod>2025-02-11T19:29:19+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/</loc>
+    <lastmod>2025-02-11T19:29:19+09:00</lastmod>
+  </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/cli/</loc>
     <lastmod>2025-01-28T00:50:32+09:00</lastmod>
   </url><url>
@@ -11,13 +17,7 @@
     <loc>https://shiro-mpdm.github.io/todayilearned/post/macos_commands_memorandum/</loc>
     <lastmod>2025-01-28T00:50:32+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/post/</loc>
-    <lastmod>2025-01-28T00:50:32+09:00</lastmod>
-  </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/</loc>
-    <lastmod>2025-01-28T00:50:32+09:00</lastmod>
-  </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/</loc>
     <lastmod>2025-01-28T00:50:32+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/categories/</loc>
