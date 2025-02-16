@@ -6,8 +6,15 @@
     <description>Recent content in AI on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Nov 2024 23:10:30 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 11 Feb 2025 19:29:19 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/todayilearned/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cursor Setup</title>
+      <link>http://localhost:1313/todayilearned/post/cursor_setup/</link>
+      <pubDate>Tue, 11 Feb 2025 19:29:19 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearned/post/cursor_setup/</guid>
+      <description>👆 AI code generative editor tool.</description>
+    </item>
     <item>
       <title>GitHub Copilot in Terminal</title>
       <link>http://localhost:1313/todayilearned/post/github_coplilot_in_terminal/</link>

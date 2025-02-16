@@ -142,7 +142,7 @@
         
         <div class="d-flex flex-column">
             <h1 class="break-word f3 text-normal mb-md-0 mb-1">
-                <span class="author"><a href="https://shiro-mpdm.github.io/todayilearned/">shiro</a></span>
+                <span class="author"><a href="https://shiro-mpdm.github.io/todayilearned/">shiroimon</a></span>
                 <span class="path-divider">/</span>
                 <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px"><a href="https://shiro-mpdm.github.io/todayilearned/post/macos_commands_memorandum/">macOS Commands Memorandum</a></strong>
             </h1>
@@ -181,9 +181,9 @@
                         <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                     </div>
                 </details-menu>
-                335 Words
+                404 Words
                 <span class="path-divider">|</span>
-                1 min
+                2 min
             </div>
             <div class="file-actions flex-order-2 pt-0">
                 
@@ -269,11 +269,31 @@
 </span></span><span class="line"><span class="cl">find . -type f -mtime -2
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># </span>
-</span></span><span class="line"><span class="cl">zip - 
+</span></span><span class="line"><span class="cl">zip -e new.zip old.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Launchpad Icons Size (e.g. 4× 4)</span>
+</span></span><span class="line"><span class="cl">defaults write com.apple.dock springboard-rows -int <span class="m">4</span>
+</span></span><span class="line"><span class="cl">defaults write com.apple.dock springboard-columns -int 4<span class="p">;</span>killall Dock
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 物理コア数</span>
+</span></span><span class="line"><span class="cl">sysctl -n hw.physicalcpu_max
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 論理コア数</span>
+</span></span><span class="line"><span class="cl">sysctl -n hw.logicalcpu_max
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ﾒﾓﾘ (byte)</span>
+</span></span><span class="line"><span class="cl">sysctl hw.memsize
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># PC userid</span>
+</span></span><span class="line"><span class="cl">id -u
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># PC groupid</span>
+</span></span><span class="line"><span class="cl">id -g
 </span></span></code></pre></div><h2 id="ref">Ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 <ul>
 <li><a href="https://zenn.dev/maman/articles/1b4d790521e64f">MACのコマンドラインをど忘れしない用のコマンド集</a> Zenn</li>
 <li><a href="https://qiita.com/wholesomestar/items/7cd17c03a6696669848f">Macターミナルでの圧縮・解凍コマンド備忘録</a> Qiita</li>
+<li><a href="https://www.webnots.com/how-to-increase-or-decrease-launchpad-icons-size-in-macos">How to Increase or Decrease Launchpad Icons Size in macOS?</a> WebNote</li>
 </ul>
 </article>
         </div>

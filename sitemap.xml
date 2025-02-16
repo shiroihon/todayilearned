@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://shiro-mpdm.github.io/todayilearned/post/</loc>
-    <lastmod>2025-02-11T19:29:19+09:00</lastmod>
+    <lastmod>2025-02-13T12:45:32+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/</loc>
-    <lastmod>2025-02-11T19:29:19+09:00</lastmod>
+    <lastmod>2025-02-13T12:45:32+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/cli/</loc>
     <lastmod>2025-01-28T00:50:32+09:00</lastmod>
@@ -176,13 +176,13 @@
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/google-cloud/</loc>
     <lastmod>2024-08-16T20:35:07+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/post/other/jisui_keep_book_data/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/categories/free_lance/</loc>
     <lastmod>2024-08-16T18:41:57+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/jisui/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/post/other/freelance_how_to_jisui/</loc>
     <lastmod>2024-08-16T18:41:57+09:00</lastmod>
   </url><url>
-    <loc>https://shiro-mpdm.github.io/todayilearned/tags/recycle/</loc>
+    <loc>https://shiro-mpdm.github.io/todayilearned/categories/know_how/</loc>
     <lastmod>2024-08-16T18:41:57+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/chrome/</loc>
@@ -216,6 +216,9 @@
     <lastmod>2024-07-26T04:23:38+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/gke/</loc>
+    <lastmod>2024-07-26T03:42:04+09:00</lastmod>
+  </url><url>
+    <loc>https://shiro-mpdm.github.io/todayilearned/tags/iac/</loc>
     <lastmod>2024-07-26T03:42:04+09:00</lastmod>
   </url><url>
     <loc>https://shiro-mpdm.github.io/todayilearned/tags/terraform/</loc>
