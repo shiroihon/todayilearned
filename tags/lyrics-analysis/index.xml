@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/todayilearned/post/other/boc/</guid>
       <description>🛰️</description>
     </item>
+    <item>
+      <title>BOC. &#39;Title&#39; lyrics analysis.</title>
+      <link>http://localhost:1313/todayilearned/post/other/boc_template/</link>
+      <pubDate>Tue, 01 Oct 2024 15:10:50 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearned/post/other/boc_template/</guid>
+      <description>🛰️</description>
+    </item>
   </channel>
 </rss>

@@ -2,60 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HandsOn on Today I Learned</title>
-    <link>https://shiro-mpdm.github.io/todayilearned/categories/handson/</link>
+    <link>http://localhost:1313/todayilearned/categories/handson/</link>
     <description>Recent content in HandsOn on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 17 Dec 2024 22:39:48 +0900</lastBuildDate>
-    <atom:link href="https://shiro-mpdm.github.io/todayilearned/categories/handson/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/todayilearned/categories/handson/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Yaml Catchup</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/yaml_catchup/</link>
+      <link>http://localhost:1313/todayilearned/post/yaml_catchup/</link>
       <pubDate>Tue, 17 Dec 2024 22:39:48 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/yaml_catchup/</guid>
+      <guid>http://localhost:1313/todayilearned/post/yaml_catchup/</guid>
       <description>🚫 Understand Yaml, the configuratio file familiar to DevOps.</description>
     </item>
     <item>
       <title>BigQuery Data Analyize Catchup</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/bigquery_data_analyize_catchup/</link>
+      <link>http://localhost:1313/todayilearned/post/bigquery_data_analyize_catchup/</link>
       <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_data_analyize_catchup/</guid>
+      <guid>http://localhost:1313/todayilearned/post/bigquery_data_analyize_catchup/</guid>
       <description>🔍 Re-summarizeing the trajectory I learned as an introductory.</description>
     </item>
     <item>
       <title>Argo Workflows Catchup</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/argo_workflows_catchup/</link>
+      <link>http://localhost:1313/todayilearned/post/argo_workflows_catchup/</link>
       <pubDate>Mon, 09 Sep 2024 12:40:59 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/argo_workflows_catchup/</guid>
+      <guid>http://localhost:1313/todayilearned/post/argo_workflows_catchup/</guid>
       <description>🐙 Understanding and implementing Argo projects and workflows.</description>
     </item>
     <item>
       <title>Docker Commands</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/docker_commands/</link>
+      <link>http://localhost:1313/todayilearned/post/docker_commands/</link>
       <pubDate>Wed, 21 Aug 2024 00:00:34 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/docker_commands/</guid>
+      <guid>http://localhost:1313/todayilearned/post/docker_commands/</guid>
       <description>🐋 Deepen my understanding of Docker&amp;rsquo;s basic commands and mechanisms.</description>
     </item>
     <item>
       <title>dbt Seeking out basic understanding</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/dbt_seeking_basic_understanding/</link>
+      <link>http://localhost:1313/todayilearned/post/dbt_seeking_basic_understanding/</link>
       <pubDate>Tue, 30 Jul 2024 02:30:55 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/dbt_seeking_basic_understanding/</guid>
+      <guid>http://localhost:1313/todayilearned/post/dbt_seeking_basic_understanding/</guid>
       <description>✴️ Wanna deepen my understanding by using my hands and referring to reference books.</description>
     </item>
     <item>
       <title>BigQuery Structured Data Processing 100</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/bigquery_structured_data_processing_100/</link>
+      <link>http://localhost:1313/todayilearned/post/bigquery_structured_data_processing_100/</link>
       <pubDate>Fri, 26 Jul 2024 04:23:38 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_structured_data_processing_100/</guid>
+      <guid>http://localhost:1313/todayilearned/post/bigquery_structured_data_processing_100/</guid>
       <description>🔍 I tried using SQL to learn the basics of data science.</description>
     </item>
     <item>
       <title>Terraform Trying to build the environment</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/terraform_trying_to_build_the_environment/</link>
+      <link>http://localhost:1313/todayilearned/post/terraform_trying_to_build_the_environment/</link>
       <pubDate>Fri, 26 Jul 2024 03:42:04 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/terraform_trying_to_build_the_environment/</guid>
+      <guid>http://localhost:1313/todayilearned/post/terraform_trying_to_build_the_environment/</guid>
       <description>✝️ I wll try setting up an environment to gain an initial understanding of IaC (Infrastructure as Code) provisioning.</description>
+    </item>
+    <item>
+      <title>Law of Refined Preprocessing Programming: Polars ed.</title>
+      <link>http://localhost:1313/todayilearned/post/bookread_law_of_refined_preprocessing_programming_polars_edition/</link>
+      <pubDate>Thu, 18 Jul 2024 17:09:50 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearned/post/bookread_law_of_refined_preprocessing_programming_polars_edition/</guid>
+      <description>🐻‍❄️ [改訂新版]前処理大全実践テクニックを読んでみる(Polars編)</description>
+    </item>
+    <item>
+      <title>Law of Refined Preprocessing Programming: SQL ed.</title>
+      <link>http://localhost:1313/todayilearned/post/bookread_law_of_refined_preprocessing_programming_sql_edition/</link>
+      <pubDate>Thu, 18 Jul 2024 17:01:23 +0900</pubDate>
+      <guid>http://localhost:1313/todayilearned/post/bookread_law_of_refined_preprocessing_programming_sql_edition/</guid>
+      <description>🔍 [改訂新版]前処理大全実践テクニックを読んでみる(SQL編)</description>
     </item>
   </channel>
 </rss>
