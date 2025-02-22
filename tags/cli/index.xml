@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CLI on Today I Learned</title>
-    <link>https://shiro-mpdm.github.io/todayilearned/tags/cli/</link>
+    <link>https://shiroimon.f5.si/tags/cli/</link>
     <description>Recent content in CLI on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Jan 2025 00:50:32 +0900</lastBuildDate>
-    <atom:link href="https://shiro-mpdm.github.io/todayilearned/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://shiroimon.f5.si/tags/cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>macOS Commands Memorandum</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/macos_commands_memorandum/</link>
+      <link>https://shiroimon.f5.si/post/macos_commands_memorandum/</link>
       <pubDate>Tue, 28 Jan 2025 00:50:32 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/macos_commands_memorandum/</guid>
+      <guid>https://shiroimon.f5.si/post/macos_commands_memorandum/</guid>
       <description>🍏 macOS useful commands and tips.</description>
     </item>
     <item>
       <title>WezTerm Setup</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/wezterm_setup/</link>
+      <link>https://shiroimon.f5.si/post/wezterm_setup/</link>
       <pubDate>Thu, 24 Oct 2024 10:40:32 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/wezterm_setup/</guid>
+      <guid>https://shiroimon.f5.si/post/wezterm_setup/</guid>
       <description>🟣 Would like to use the most powerful terminal that rumored on the street.</description>
     </item>
     <item>
       <title>Git Branches pruning</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/github_branches_pruning/</link>
+      <link>https://shiroimon.f5.si/post/github_branches_pruning/</link>
       <pubDate>Tue, 24 Sep 2024 18:08:08 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/github_branches_pruning/</guid>
+      <guid>https://shiroimon.f5.si/post/github_branches_pruning/</guid>
       <description>📍When developing on GitHub, I often switch branches, just like pruning.</description>
     </item>
     <item>
       <title>Vim Building plugin</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/vim_building_plugin/</link>
+      <link>https://shiroimon.f5.si/post/vim_building_plugin/</link>
       <pubDate>Wed, 11 Sep 2024 19:39:49 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/vim_building_plugin/</guid>
+      <guid>https://shiroimon.f5.si/post/vim_building_plugin/</guid>
       <description>✅ Once I gain a deeper understanding, what may be able to develop general-purpose automated tools.</description>
     </item>
     <item>
       <title>Docker Commands</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/docker_commands/</link>
+      <link>https://shiroimon.f5.si/post/docker_commands/</link>
       <pubDate>Wed, 21 Aug 2024 00:00:34 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/docker_commands/</guid>
+      <guid>https://shiroimon.f5.si/post/docker_commands/</guid>
       <description>🐋 Deepen my understanding of Docker&amp;rsquo;s basic commands and mechanisms.</description>
     </item>
     <item>
       <title>Vim Commands</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/vim_commands/</link>
+      <link>https://shiroimon.f5.si/post/vim_commands/</link>
       <pubDate>Sat, 17 Aug 2024 01:02:03 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/vim_commands/</guid>
+      <guid>https://shiroimon.f5.si/post/vim_commands/</guid>
       <description>✅ A list of vim commands for the TextEditor tool, along with various tips.</description>
     </item>
   </channel>

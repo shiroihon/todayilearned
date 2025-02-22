@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Google Cloud on Today I Learned</title>
-    <link>https://shiro-mpdm.github.io/todayilearned/tags/google-cloud/</link>
+    <link>https://shiroimon.f5.si/tags/google-cloud/</link>
     <description>Recent content in Google Cloud on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 16 Aug 2024 20:35:07 +0900</lastBuildDate>
-    <atom:link href="https://shiro-mpdm.github.io/todayilearned/tags/google-cloud/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://shiroimon.f5.si/tags/google-cloud/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BigQuery Billing how works</title>
-      <link>https://shiro-mpdm.github.io/todayilearned/post/bigquery_billing_how_works/</link>
+      <link>https://shiroimon.f5.si/post/bigquery_billing_how_works/</link>
       <pubDate>Fri, 16 Aug 2024 20:35:07 +0900</pubDate>
-      <guid>https://shiro-mpdm.github.io/todayilearned/post/bigquery_billing_how_works/</guid>
+      <guid>https://shiroimon.f5.si/post/bigquery_billing_how_works/</guid>
       <description>🔍 Summarize billing mechanism, fee structure, and money-saving tips.</description>
     </item>
   </channel>
