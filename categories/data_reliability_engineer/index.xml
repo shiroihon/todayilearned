@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Data_Reliability_Engineer on Today I Learned</title>
-    <link>http://localhost:1313/categories/data_reliability_engineer/</link>
+    <link>https://shiroimon.f5.si/categories/data_reliability_engineer/</link>
     <description>Recent content in Data_Reliability_Engineer on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 16 Oct 2024 13:49:54 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/data_reliability_engineer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://shiroimon.f5.si/categories/data_reliability_engineer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BigQuery about Data Quality</title>
-      <link>http://localhost:1313/post/bigquery_about_data_quality/</link>
+      <link>https://shiroimon.f5.si/post/bigquery_about_data_quality/</link>
       <pubDate>Wed, 16 Oct 2024 13:49:54 +0900</pubDate>
-      <guid>http://localhost:1313/post/bigquery_about_data_quality/</guid>
+      <guid>https://shiroimon.f5.si/post/bigquery_about_data_quality/</guid>
       <description>🔍 Different perspective from data analysis. About data quality.</description>
     </item>
     <item>
       <title>BigQuery Billing how works</title>
-      <link>http://localhost:1313/post/bigquery_billing_how_works/</link>
+      <link>https://shiroimon.f5.si/post/bigquery_billing_how_works/</link>
       <pubDate>Fri, 16 Aug 2024 20:35:07 +0900</pubDate>
-      <guid>http://localhost:1313/post/bigquery_billing_how_works/</guid>
+      <guid>https://shiroimon.f5.si/post/bigquery_billing_how_works/</guid>
       <description>🔍 Summarize billing mechanism, fee structure, and money-saving tips.</description>
     </item>
     <item>
       <title>dbt Seeking out basic understanding</title>
-      <link>http://localhost:1313/post/dbt_seeking_basic_understanding/</link>
+      <link>https://shiroimon.f5.si/post/dbt_seeking_basic_understanding/</link>
       <pubDate>Tue, 30 Jul 2024 02:30:55 +0900</pubDate>
-      <guid>http://localhost:1313/post/dbt_seeking_basic_understanding/</guid>
+      <guid>https://shiroimon.f5.si/post/dbt_seeking_basic_understanding/</guid>
       <description>✴️ Wanna deepen my understanding by using my hands and referring to reference books.</description>
     </item>
     <item>
       <title>Terraform Trying to build the environment</title>
-      <link>http://localhost:1313/post/terraform_trying_to_build_the_environment/</link>
+      <link>https://shiroimon.f5.si/post/terraform_trying_to_build_the_environment/</link>
       <pubDate>Fri, 26 Jul 2024 03:42:04 +0900</pubDate>
-      <guid>http://localhost:1313/post/terraform_trying_to_build_the_environment/</guid>
+      <guid>https://shiroimon.f5.si/post/terraform_trying_to_build_the_environment/</guid>
       <description>✝️ I wll try setting up an environment to gain an initial understanding of IaC (Infrastructure as Code) provisioning.</description>
     </item>
   </channel>
