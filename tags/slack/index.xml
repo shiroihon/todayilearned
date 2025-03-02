@@ -2,24 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Slack on Today I Learned</title>
-    <link>https://shiroimon.f5.si/tags/slack/</link>
+    <link>http://localhost:1313/tags/slack/</link>
     <description>Recent content in Slack on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 30 Jul 2024 12:48:55 +0900</lastBuildDate>
-    <atom:link href="https://shiroimon.f5.si/tags/slack/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Oct 2024 13:31:19 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/slack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Slack Retrive info.</title>
+      <link>http://localhost:1313/post/slack_retrive_info/</link>
+      <pubDate>Wed, 23 Oct 2024 13:31:19 +0900</pubDate>
+      <guid>http://localhost:1313/post/slack_retrive_info/</guid>
+      <description>💬 How to dfficiently retraive information with Slack</description>
+    </item>
     <item>
       <title>English Abbreviations</title>
-      <link>https://shiroimon.f5.si/post/english_abbreviations/</link>
+      <link>http://localhost:1313/post/english_abbreviations/</link>
       <pubDate>Tue, 30 Jul 2024 12:48:55 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/english_abbreviations/</guid>
+      <guid>http://localhost:1313/post/english_abbreviations/</guid>
       <description>🗽 About abbreviations. They also appear in business and professional situations.</description>
     </item>
     <item>
       <title>Slack Writing etiquette</title>
-      <link>https://shiroimon.f5.si/post/slack_writing_etiquette/</link>
+      <link>http://localhost:1313/post/slack_writing_etiquette/</link>
       <pubDate>Tue, 23 Jul 2024 18:17:17 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/slack_writing_etiquette/</guid>
+      <guid>http://localhost:1313/post/slack_writing_etiquette/</guid>
       <description>💬 Learn writing etiquette using Slack&amp;rsquo;s unique notation.</description>
     </item>
   </channel>

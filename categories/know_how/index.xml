@@ -1,67 +1,88 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Know_how on Today I Learned</title>
-    <link>https://shiroimon.f5.si/categories/know_how/</link>
-    <description>Recent content in Know_how on Today I Learned</description>
+    <title>Know_How on Today I Learned</title>
+    <link>http://localhost:1313/categories/know_how/</link>
+    <description>Recent content in Know_How on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Nov 2024 12:06:08 +0900</lastBuildDate>
-    <atom:link href="https://shiroimon.f5.si/categories/know_how/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Jan 2025 14:10:14 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/know_how/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>macOS Revival latest OS</title>
+      <link>http://localhost:1313/post/macos_revival_latest_os/</link>
+      <pubDate>Fri, 03 Jan 2025 14:10:14 +0900</pubDate>
+      <guid>http://localhost:1313/post/macos_revival_latest_os/</guid>
+      <description>🍏</description>
+    </item>
     <item>
       <title>GitHub Wana be join OSS</title>
-      <link>https://shiroimon.f5.si/post/github_oss_wana_be_join/</link>
+      <link>http://localhost:1313/post/github_oss_wana_be_join/</link>
       <pubDate>Thu, 21 Nov 2024 12:06:08 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/github_oss_wana_be_join/</guid>
+      <guid>http://localhost:1313/post/github_oss_wana_be_join/</guid>
       <description>📍 About etiquette and the meaning of licenses when paticipating in OSS.</description>
     </item>
     <item>
       <title>Kubernetes Catchup</title>
-      <link>https://shiroimon.f5.si/post/kubernetes_catchup/</link>
+      <link>http://localhost:1313/post/kubernetes_catchup/</link>
       <pubDate>Mon, 18 Nov 2024 13:29:33 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/kubernetes_catchup/</guid>
+      <guid>http://localhost:1313/post/kubernetes_catchup/</guid>
       <description>⚓️ About container orchestration tecnology.</description>
     </item>
     <item>
+      <title>Slack Retrive info.</title>
+      <link>http://localhost:1313/post/slack_retrive_info/</link>
+      <pubDate>Wed, 23 Oct 2024 13:31:19 +0900</pubDate>
+      <guid>http://localhost:1313/post/slack_retrive_info/</guid>
+      <description>💬 How to dfficiently retraive information with Slack</description>
+    </item>
+    <item>
+      <title>MacBook Machine performance</title>
+      <link>http://localhost:1313/post/macos_machine_performance/</link>
+      <pubDate>Tue, 27 Aug 2024 13:29:05 +0900</pubDate>
+      <guid>http://localhost:1313/post/macos_machine_performance/</guid>
+      <description>🍏</description>
+    </item>
+    <item>
       <title>How to Jisui (自炊)</title>
-      <link>https://shiroimon.f5.si/post/other/freelance_how_to_jisui/</link>
+      <link>http://localhost:1313/post/other/freelance_how_to_jisui/</link>
       <pubDate>Fri, 16 Aug 2024 18:41:57 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/other/freelance_how_to_jisui/</guid>
+      <guid>http://localhost:1313/post/other/freelance_how_to_jisui/</guid>
       <description>📚 Converting cut-up books into digital data. Also, an article on how to cut books and store the data.</description>
     </item>
     <item>
       <title>macOS Looks like native application</title>
-      <link>https://shiroimon.f5.si/post/macos_looks_like_native_application/</link>
+      <link>http://localhost:1313/post/macos_looks_like_native_application/</link>
       <pubDate>Sat, 03 Aug 2024 16:04:18 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/macos_looks_like_native_application/</guid>
+      <guid>http://localhost:1313/post/macos_looks_like_native_application/</guid>
       <description>🍏 A little trick to use it like a native laptop application.</description>
     </item>
     <item>
       <title>GitHub This and That</title>
-      <link>https://shiroimon.f5.si/post/github_this_and_that/</link>
+      <link>http://localhost:1313/post/github_this_and_that/</link>
       <pubDate>Wed, 24 Jul 2024 15:08:13 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/github_this_and_that/</guid>
+      <guid>http://localhost:1313/post/github_this_and_that/</guid>
       <description>📍 Various things to make your GitHub life more enjoyable.</description>
     </item>
     <item>
       <title>GitHub How to check difference code</title>
-      <link>https://shiroimon.f5.si/post/github_how_to_check_difference/</link>
+      <link>http://localhost:1313/post/github_how_to_check_difference/</link>
       <pubDate>Tue, 23 Jul 2024 04:13:21 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/github_how_to_check_difference/</guid>
+      <guid>http://localhost:1313/post/github_how_to_check_difference/</guid>
       <description>📍 Methods and tools to capture code fixes faster and more accurately.</description>
     </item>
     <item>
       <title>BigQuery CTEs in Data Analyisis</title>
-      <link>https://shiroimon.f5.si/post/bigquery_ctes_in_data_analyisis/</link>
+      <link>http://localhost:1313/post/bigquery_ctes_in_data_analyisis/</link>
       <pubDate>Sat, 20 Jul 2024 16:13:42 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/bigquery_ctes_in_data_analyisis/</guid>
+      <guid>http://localhost:1313/post/bigquery_ctes_in_data_analyisis/</guid>
       <description>🔍 Things to keep in mind when analyzing data using SQL.</description>
     </item>
     <item>
       <title>GitHub How to use issues</title>
-      <link>https://shiroimon.f5.si/post/github_issues_how_to_use/</link>
+      <link>http://localhost:1313/post/github_issues_how_to_use/</link>
       <pubDate>Thu, 18 Jul 2024 18:30:01 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/github_issues_how_to_use/</guid>
+      <guid>http://localhost:1313/post/github_issues_how_to_use/</guid>
       <description>📍 How to effectively use &amp;lsquo;Issues&amp;rsquo; in GitHub repository.</description>
     </item>
   </channel>

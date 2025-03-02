@@ -2,73 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Today I Learned</title>
-    <link>https://shiroimon.f5.si/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Dec 2024 22:39:48 +0900</lastBuildDate>
-    <atom:link href="https://shiroimon.f5.si/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Feb 2025 15:57:49 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hands_on</title>
-      <link>https://shiroimon.f5.si/categories/hands_on/</link>
-      <pubDate>Tue, 17 Dec 2024 22:39:48 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/categories/hands_on/</guid>
+      <title>Free_lance</title>
+      <link>http://localhost:1313/categories/free_lance/</link>
+      <pubDate>Sun, 16 Feb 2025 15:57:49 +0900</pubDate>
+      <guid>http://localhost:1313/categories/free_lance/</guid>
       <description></description>
     </item>
     <item>
-      <title>Udemy</title>
-      <link>https://shiroimon.f5.si/categories/udemy/</link>
-      <pubDate>Tue, 17 Dec 2024 22:39:48 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/categories/udemy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Know_how</title>
-      <link>https://shiroimon.f5.si/categories/know_how/</link>
-      <pubDate>Thu, 21 Nov 2024 12:06:08 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/categories/know_how/</guid>
+      <title>Free-Lance</title>
+      <link>http://localhost:1313/categories/free-lance/</link>
+      <pubDate>Sun, 16 Feb 2025 15:57:42 +0900</pubDate>
+      <guid>http://localhost:1313/categories/free-lance/</guid>
       <description></description>
     </item>
     <item>
       <title>Data_Analytics_Engineer</title>
-      <link>https://shiroimon.f5.si/categories/data_analytics_engineer/</link>
-      <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/categories/data_analytics_engineer/</guid>
+      <link>http://localhost:1313/categories/data_analytics_engineer/</link>
+      <pubDate>Thu, 13 Feb 2025 12:45:32 +0900</pubDate>
+      <guid>http://localhost:1313/categories/data_analytics_engineer/</guid>
       <description></description>
     </item>
     <item>
       <title>Google</title>
-      <link>https://shiroimon.f5.si/categories/google/</link>
-      <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/categories/google/</guid>
+      <link>http://localhost:1313/categories/google/</link>
+      <pubDate>Tue, 21 Jan 2025 16:24:43 +0900</pubDate>
+      <guid>http://localhost:1313/categories/google/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Know_How</title>
+      <link>http://localhost:1313/categories/know_how/</link>
+      <pubDate>Fri, 03 Jan 2025 14:10:14 +0900</pubDate>
+      <guid>http://localhost:1313/categories/know_how/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hands_on</title>
+      <link>http://localhost:1313/categories/hands_on/</link>
+      <pubDate>Tue, 17 Dec 2024 22:39:48 +0900</pubDate>
+      <guid>http://localhost:1313/categories/hands_on/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Udemy</title>
+      <link>http://localhost:1313/categories/udemy/</link>
+      <pubDate>Tue, 17 Dec 2024 22:39:48 +0900</pubDate>
+      <guid>http://localhost:1313/categories/udemy/</guid>
       <description></description>
     </item>
     <item>
       <title>Data_Reliability_Engineer</title>
-      <link>https://shiroimon.f5.si/categories/data_reliability_engineer/</link>
+      <link>http://localhost:1313/categories/data_reliability_engineer/</link>
       <pubDate>Wed, 16 Oct 2024 13:49:54 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/categories/data_reliability_engineer/</guid>
+      <guid>http://localhost:1313/categories/data_reliability_engineer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BUMP of CHICKEN</title>
+      <link>http://localhost:1313/categories/bump-of-chicken/</link>
+      <pubDate>Tue, 01 Oct 2024 15:10:50 +0900</pubDate>
+      <guid>http://localhost:1313/categories/bump-of-chicken/</guid>
       <description></description>
     </item>
     <item>
       <title>DAG</title>
-      <link>https://shiroimon.f5.si/categories/dag/</link>
+      <link>http://localhost:1313/categories/dag/</link>
       <pubDate>Mon, 09 Sep 2024 12:40:59 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/categories/dag/</guid>
+      <guid>http://localhost:1313/categories/dag/</guid>
       <description></description>
     </item>
     <item>
       <title>ETL/ELT</title>
-      <link>https://shiroimon.f5.si/categories/etl/elt/</link>
+      <link>http://localhost:1313/categories/etl/elt/</link>
       <pubDate>Mon, 09 Sep 2024 12:40:59 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/categories/etl/elt/</guid>
+      <guid>http://localhost:1313/categories/etl/elt/</guid>
       <description></description>
     </item>
     <item>
-      <title>Free_lance</title>
-      <link>https://shiroimon.f5.si/categories/free_lance/</link>
-      <pubDate>Fri, 16 Aug 2024 18:41:57 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/categories/free_lance/</guid>
+      <title>KnowHow</title>
+      <link>http://localhost:1313/categories/knowhow/</link>
+      <pubDate>Fri, 26 Jul 2024 02:31:25 +0900</pubDate>
+      <guid>http://localhost:1313/categories/knowhow/</guid>
       <description></description>
     </item>
   </channel>

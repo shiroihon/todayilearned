@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Free_lance on Today I Learned</title>
-    <link>https://shiroimon.f5.si/categories/free_lance/</link>
+    <link>http://localhost:1313/categories/free_lance/</link>
     <description>Recent content in Free_lance on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Aug 2024 18:41:57 +0900</lastBuildDate>
-    <atom:link href="https://shiroimon.f5.si/categories/free_lance/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Feb 2025 15:57:49 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/free_lance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Freelance Agent Selection</title>
+      <link>http://localhost:1313/post/other/freelance_agent_selection/</link>
+      <pubDate>Sun, 16 Feb 2025 15:57:49 +0900</pubDate>
+      <guid>http://localhost:1313/post/other/freelance_agent_selection/</guid>
+      <description>🤝</description>
+    </item>
     <item>
       <title>How to Jisui (自炊)</title>
-      <link>https://shiroimon.f5.si/post/other/freelance_how_to_jisui/</link>
+      <link>http://localhost:1313/post/other/freelance_how_to_jisui/</link>
       <pubDate>Fri, 16 Aug 2024 18:41:57 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/other/freelance_how_to_jisui/</guid>
+      <guid>http://localhost:1313/post/other/freelance_how_to_jisui/</guid>
       <description>📚 Converting cut-up books into digital data. Also, an article on how to cut books and store the data.</description>
     </item>
   </channel>
