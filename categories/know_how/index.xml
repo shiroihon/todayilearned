@@ -52,9 +52,9 @@
     </item>
     <item>
       <title>BigQuery CTEs in Data Analyisis</title>
-      <link>https://shiroimon.f5.si/post/bigquery_ctes_in_data_analyisis/</link>
+      <link>https://shiroimon.f5.si/post/bigquery_data_analysis_on_cte/</link>
       <pubDate>Sat, 20 Jul 2024 16:13:42 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/bigquery_ctes_in_data_analyisis/</guid>
+      <guid>https://shiroimon.f5.si/post/bigquery_data_analysis_on_cte/</guid>
       <description>🔍 Things to keep in mind when analyzing data using SQL.</description>
     </item>
     <item>

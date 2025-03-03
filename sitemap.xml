@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://shiroimon.f5.si/post/</loc>
-    <lastmod>2025-02-25T13:45:58+09:00</lastmod>
+    <lastmod>2025-03-03T22:23:20+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.f5.si/</loc>
-    <lastmod>2025-02-25T13:45:58+09:00</lastmod>
+    <lastmod>2025-03-03T22:23:20+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.f5.si/tags/cli/</loc>
     <lastmod>2025-01-28T00:50:32+09:00</lastmod>
@@ -239,7 +239,7 @@
     <loc>https://shiroimon.f5.si/tags/sourcegraph/</loc>
     <lastmod>2024-07-23T04:13:21+09:00</lastmod>
   </url><url>
-    <loc>https://shiroimon.f5.si/post/bigquery_ctes_in_data_analyisis/</loc>
+    <loc>https://shiroimon.f5.si/post/bigquery_data_analysis_on_cte/</loc>
     <lastmod>2024-07-20T16:13:42+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.f5.si/post/github_issues_how_to_use/</loc>
