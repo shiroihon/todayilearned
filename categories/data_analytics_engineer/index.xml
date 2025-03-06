@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data_Analytics_Engineer on Today I Learned</title>
+    <title>Data_analytics_engineer on Today I Learned</title>
     <link>https://shiroimon.f5.si/categories/data_analytics_engineer/</link>
-    <description>Recent content in Data_Analytics_Engineer on Today I Learned</description>
+    <description>Recent content in Data_analytics_engineer on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 26 Oct 2024 00:22:05 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/categories/data_analytics_engineer/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>BigQuery Data Analyize Catchup</title>
+      <title>BigQuery Data analyize catchup</title>
       <link>https://shiroimon.f5.si/post/bigquery_data_analyize_catchup/</link>
       <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_data_analyize_catchup/</guid>
@@ -23,14 +23,14 @@
       <description>🔍 When I getting from my daily work. Added as need. I keep writing various tips.</description>
     </item>
     <item>
-      <title>BigQuery Structured Data Processing 100</title>
+      <title>BigQuery Structured data processing 100&#39;s</title>
       <link>https://shiroimon.f5.si/post/bigquery_structured_data_processing_100/</link>
       <pubDate>Fri, 26 Jul 2024 04:23:38 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_structured_data_processing_100/</guid>
       <description>🔍 Tried using SQL to learn the basics of data science.</description>
     </item>
     <item>
-      <title>BigQuery CTEs in Data Analyisis</title>
+      <title>BigQuery CTEs in data analyisis</title>
       <link>https://shiroimon.f5.si/post/bigquery_data_analysis_on_cte/</link>
       <pubDate>Sat, 20 Jul 2024 16:13:42 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_data_analysis_on_cte/</guid>

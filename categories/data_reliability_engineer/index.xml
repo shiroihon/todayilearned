@@ -16,11 +16,25 @@
       <description>🔍 It&amp;rsquo;s not good to know about data governance.</description>
     </item>
     <item>
-      <title>BigQuery about Data Quality</title>
+      <title>Kubernetes Catchup</title>
+      <link>https://shiroimon.f5.si/post/kubernetes_catchup/</link>
+      <pubDate>Mon, 18 Nov 2024 13:29:33 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/kubernetes_catchup/</guid>
+      <description>⚓️ About container orchestration tecnology.</description>
+    </item>
+    <item>
+      <title>BigQuery About data quality</title>
       <link>https://shiroimon.f5.si/post/bigquery_about_data_quality/</link>
       <pubDate>Wed, 16 Oct 2024 13:49:54 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_about_data_quality/</guid>
       <description>🔍 Different perspective from data analysis. About data quality.</description>
+    </item>
+    <item>
+      <title>Trocco and Embluk Catchup</title>
+      <link>https://shiroimon.f5.si/post/trocco_and_embluk_catch_up/</link>
+      <pubDate>Wed, 21 Aug 2024 15:30:46 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/trocco_and_embluk_catch_up/</guid>
+      <description>🎢 Summarizing Trocco and Embluk to deepen understanding.</description>
     </item>
     <item>
       <title>BigQuery Billing how works</title>
