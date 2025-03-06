@@ -6,8 +6,22 @@
     <description>Recent content in Tags on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jan 2025 00:50:32 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 06 Mar 2025 17:39:31 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BigQuery</title>
+      <link>https://shiroimon.f5.si/tags/bigquery/</link>
+      <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/tags/bigquery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Google Cloud</title>
+      <link>https://shiroimon.f5.si/tags/google-cloud/</link>
+      <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/tags/google-cloud/</guid>
+      <description></description>
+    </item>
     <item>
       <title>CLI</title>
       <link>https://shiroimon.f5.si/tags/cli/</link>
@@ -83,13 +97,6 @@
       <link>https://shiroimon.f5.si/tags/kubernetes/</link>
       <pubDate>Mon, 18 Nov 2024 13:29:33 +0900</pubDate>
       <guid>https://shiroimon.f5.si/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>BigQuery</title>
-      <link>https://shiroimon.f5.si/tags/bigquery/</link>
-      <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/tags/bigquery/</guid>
       <description></description>
     </item>
     <item>
@@ -209,13 +216,6 @@
       <link>https://shiroimon.f5.si/tags/texteditor/</link>
       <pubDate>Sat, 17 Aug 2024 01:02:03 +0900</pubDate>
       <guid>https://shiroimon.f5.si/tags/texteditor/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Google Cloud</title>
-      <link>https://shiroimon.f5.si/tags/google-cloud/</link>
-      <pubDate>Fri, 16 Aug 2024 20:35:07 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/tags/google-cloud/</guid>
       <description></description>
     </item>
     <item>
