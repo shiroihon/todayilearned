@@ -181,7 +181,7 @@
                         <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                     </div>
                 </details-menu>
-                1411 Words
+                1567 Words
                 <span class="path-divider">|</span>
                 2 min
             </div>
@@ -233,21 +233,22 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">from</span><span class="w"> </span><span class="o">`</span><span class="n">your</span><span class="o">-</span><span class="n">project</span><span class="p">.</span><span class="n">your</span><span class="o">-</span><span class="n">dataset</span><span class="p">.</span><span class="n">INFORMATION_SCHEMA</span><span class="p">.</span><span class="n">COLUMNS</span><span class="o">`</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">where</span><span class="w"> </span><span class="k">table_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;your_table&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">;</span><span class="w">
-</span></span></span></code></pre></div><p>テーブル関連の階層:</p>
+</span></span></span></code></pre></div><p>▼ テーブル関連の階層：</p>
 <ul>
 <li><code>TABLES</code>: 基本的なテーブル情報</li>
 <li><code>COLUMNS</code>: TABLESの各テーブルに紐づくカラム情報</li>
 <li><code>VIEWS:</code> TABLESの特殊なタイプ（ビュー）の詳細情報</li>
 <li><code>TABLE_STORAGE</code>: テーブルの物理的なストレージ情報</li>
 </ul>
-<p>ジョブ関連の階層:</p>
+<p>▼ ジョブ関連の階層：</p>
 <ul>
 <li><code>JOBS</code>: データセットレベルのジョブ情報</li>
+<li><code>JOBS_BY_USER</code>: プロジェクトレベルの詳細なジョブ情報</li>
 <li><code>JOBS_BY_PROJECT</code>: プロジェクトレベルの詳細なジョブ情報</li>
 <li><code>JOBS_BY_ORGANIZATION</code>: 組織レベルの最も包括的なジョブ情報</li>
 </ul>
 <details>
-  <summary>階層別ベン図</summary>
+  <summary>階層別ベン図：</summary>
   <p></p>
   <pre tabindex="0"><code>[INFORMATION_SCHEMA Ecosystem]
 ┌─────────────────────────────────────────────────────────────┐
@@ -269,15 +270,16 @@
 │  └────────────┘                └───────────────┘            │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
-│ * JOBS ⊂  JOBS_BY_PROJECT ⊂  JOBS_BY_ORGANIZATION           │
+│ - JOBS ⊂  JOBS_BY_*                                         │
+│   JOBS_BY_USER ⊂  JOBS_BY_PROJECT ⊂  JOBS_BY_ORGANIZATION   │
 │                                                             │
-│    [JOBS]                                                   │
-│    ┌────────────────┐                                       │
-│    │- job_id        │                                       │
-│    │- statement_type│                                       │
-│    │- start_time    │                                       │
-│    └────────────────┘                                       │
-│                                                             │
+│    [JOBS]                     [JOBS_BY_USER]                │
+│    ┌────────────────┐         ┌────────────────┐            │
+│    │- job_id        │         │- user_email    │            │
+│    │- statement_type│         │- job_id        │            │
+│    │- start_time    │         │- total_bytes   │            │
+│    └────────────────┘         │- state         │            │
+│                               └────────────────┘            │
 │    [JOBS_BY_PROJECT]                                        │
 │    ┌─────────────────────┐                                  │
 │    │ - project_id        │┐                                 │
@@ -308,9 +310,10 @@
 <table>
 <thead>
 <tr>
-<th>レベル</th>
+<th>level</th>
 <th>INFORMATION_SCHEMA</th>
 <th>i.e.</th>
+<th>roles/permission</th>
 </tr>
 </thead>
 <tbody>
@@ -318,24 +321,35 @@
 <td>データセットレベル</td>
 <td><code>TABLES</code>, <code>COLUMNS</code>, <code>VIEWS</code>, <code>TABLE_STORAGE</code>, <code>JOBS</code></td>
 <td></td>
+<td></td>
+</tr>
+<tr>
+<td>個人レベル</td>
+<td><code>JOBS_BY_USER</code></td>
+<td><strong>単一プロジェクト内で実行ユーザーの</strong>ジョブ情報のみ（180日間データ保持）</td>
+<td><code>bigquery.jobs.list</code></td>
 </tr>
 <tr>
 <td>プロジェクトレベル</td>
 <td><code>JOBS_BY_PROJECT</code></td>
-<td><strong>単一プロジェクト内の</strong>ジョブ情報のみ（180日間データ保持）</td>
+<td><strong>単一プロジェクト内の全ての</strong>ジョブ情報のみ（180日間データ保持）</td>
+<td><code>bigquery.jobs.listALL</code></td>
 </tr>
 <tr>
 <td>組織レベル</td>
 <td><code>JOBS_BY_ORGANIZATION</code></td>
 <td><strong>組織全体の</strong>ジョブ情報（複数プロジェクトを含む）（180日間データ保持）</td>
+<td><code>bigquery.jobs.listALL</code></td>
 </tr>
 </tbody>
 </table>
+<ul>
+<li>rore/ :<a href="https://cloud.google.com/iam/docs/understanding-roles#bigquery.resourceViewer">roles/bigquery.resourceViewer</a></li>
+</ul>
   <p></p>
 </details>
 
-<ul>
-<li>cf.
+<p>▼ cf.</p>
 <ul>
 <li>公式ドキュメント（基本情報）
 <ul>
@@ -347,7 +361,9 @@
 <ul>
 <li><a href="https://cloud.google.com/bigquery/docs/information-schema-jobs">INFORMATION_SCHEMA.JOBS</a></li>
 <li><a href="https://cloud.google.com/bigquery/docs/information-schema-jobs-by-project">INFORMATION_SCHEMA.JOBS_BY_PROJECT</a></li>
-<li><a href="https://cloud.google.com/bigquery/docs/information-schema-jobs-by-organization">INFORMATION_SCHEMA.JOBS_BY_ORGANIZATION</a></li>
+<li><a href="https://cloud.google.com/bigquery/docs/information-schema-jobs-by-organization">INFORMATION_SCHEMA.JOBS_BY_ORGANIZATION</a>
+<!-- raw HTML omitted -->
+</li>
 </ul>
 </li>
 <li>テーブル・カラム関連
@@ -377,10 +393,8 @@
 </ul>
 </li>
 </ul>
-</li>
-</ul>
 <h3 id="勘所">勘所<a class="anchor" aria-hidden="true" href="#勘所"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
-<p>使用ケース:</p>
+<p>▼ 使用ケース：</p>
 <ul>
 <li>JOBS_BY_PROJECT:
 <ul>
@@ -393,15 +407,14 @@
 <li>組織全体の使用状況の分析</li>
 <li>クロスプロジェクトの監査</li>
 <li>リソース使用の最適化</li>
-<li>コスト分析
-データ保持期間:
-両者とも同じ（約180日間）</li>
+<li>コスト分析</li>
 </ul>
 </li>
 </ul>
-<h2 id="ref">Ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
+<p>▼ cf.</p>
 <ul>
-<li><a href=""></a></li>
+<li><a href="https://www.yasuhisay.info/about">BigQuery MLでスロット使用量が急増しているプロジェクトやユーザーを異常検知する</a></li>
+<li><a href="https://qiita.com/na0/items/479307cc75b932c2731f">INFORMATION_SCHEMA.JOBS_BY_* で BigQuery ジョブ警察🚨</a> Qiita</li>
 </ul>
 </article>
         </div>
