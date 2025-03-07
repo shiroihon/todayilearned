@@ -14,6 +14,7 @@ let contributions;
   let year = 0;
   for (const item of contributions) {
     item.publishDate = decodeURI(item.publishDate).replace(' ', 'T');
+    item.lastmodifyDate = decodeURI(item.lastmodifyDate).replace(' ', 'T');
     item.date = new Date(item.publishDate);
     if (item.date.getFullYear() > year) {
       year = item.date.getFullYear();
@@ -76,14 +77,16 @@ function monthly(year, month, posts) {
   );
   let liHtml = '';
   for (const post of monthPosts) {
+    const lastmodifyDate = new Date(post.lastmodifyDate);
     liHtml += `<li class="ml-0 py-1 d-flex">
     <div
-      class="col-8 css-truncate css-truncate-target lh-condensed width-fit flex-auto min-width-0">
+      class="col-10 css-truncate css-truncate-target lh-condensed width-fit flex-auto min-width-0">
       <a href="${post.link}">${post.title}</a>
     </div>
-    <time  title="This post was made on ${months[post.date.getMonth()]} ${post.date.getDate()}"
-      class="col-2 text-right f6 text-gray-light pt-1">
+    <time  title="This post was made on ${months[post.date.getMonth()]} ${post.date.getDate()}, last modified on ${months[lastmodifyDate.getMonth()]} ${lastmodifyDate.getDate()}"
+      class="col-2 text-right f6 text-gray-light pt-1" style="white-space: nowrap;">
       ${months[post.date.getMonth()]} ${post.date.getDate()}
+      ${post.date.getTime() !== lastmodifyDate.getTime() ? ` (updated: ${months[lastmodifyDate.getMonth()]} ${lastmodifyDate.getDate()})` : ''}
     </time>
   </li>`;
   }
@@ -165,14 +168,26 @@ function graph(year, posts, startDate, endDate) {
 
   let html = ``;
   const count = {};
+  const updateCount = {};
   for (const post of posts) {
+    // 投稿日のカウント
     const date = `${post.date.getFullYear()}-${(post.date.getMonth() + 1).toString().padStart(2, '0')}-${post.date.getDate().toString().padStart(2, '0')}`;
     if (count[date] === undefined) {
       count[date] = 1;
     } else {
       count[date]++;
     }
+
+    // 更新日のカウント
+    const lastmodifyDate = new Date(post.lastmodifyDate);
+    const updateDate = `${lastmodifyDate.getFullYear()}-${(lastmodifyDate.getMonth() + 1).toString().padStart(2, '0')}-${lastmodifyDate.getDate().toString().padStart(2, '0')}`;
+    if (updateCount[updateDate] === undefined) {
+      updateCount[updateDate] = 1;
+    } else {
+      updateCount[updateDate]++;
+    }
   }
+
   const monthPos = [];
   let startMonth = -1;
   const weekday = startDate.getDay();
@@ -194,12 +209,14 @@ function graph(year, posts, startDate, endDate) {
         }
       }
 
-      let c;
-      if (count[dataDate] === undefined) {
-        c = 0;
-      } else {
-        c = count[dataDate];
+      let c = 0;
+      if (count[dataDate] !== undefined) {
+        c += count[dataDate];
       }
+      if (updateCount[dataDate] !== undefined) {
+        c += updateCount[dataDate];
+      }
+
       let color;
       switch (c) {
         case 0:
@@ -217,8 +234,18 @@ function graph(year, posts, startDate, endDate) {
         default:
           color = "var(--color-calendar-graph-day-L4-bg)";
       }
+
+      let tooltipText = '';
+      if (count[dataDate] !== undefined) {
+        tooltipText += `${count[dataDate]} post${count[dataDate] > 1 ? 's' : ''}`;
+      }
+      if (updateCount[dataDate] !== undefined) {
+        if (tooltipText) tooltipText += ' and ';
+        tooltipText += `${updateCount[dataDate]} update${updateCount[dataDate] > 1 ? 's' : ''}`;
+      }
+
       html += `<rect class="day" width="11" height="11" x="${16 - i}" y="${j * 15}"
-      fill="${color}" onmouseover="svgTip(this, ${c}, '${dataDate}')" onmouseleave="hideTip()"></rect>`;
+      fill="${color}" onmouseover="svgTip(this, '${tooltipText || 'No activity'}', '${dataDate}')" onmouseleave="hideTip()"></rect>`;
     }
     html += '</g>';
   }
@@ -261,11 +288,7 @@ function svgTip(elem, count, dateStr) {
   const rect = getCoords(elem);
   const date = new Date(dateStr);
   const dateFmt = `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
-  if (count) {
-    svgElem.innerHTML = `<strong>${count} posts</strong> on ${dateFmt}`;
-  } else {
-    svgElem.innerHTML = `<strong>No posts</strong> on ${dateFmt}`;
-  }
+  svgElem.innerHTML = `<strong>${count}</strong> on ${dateFmt}`;
   svgElem.style.display = 'block';
   const tipRect = svgElem.getBoundingClientRect();
   svgElem.style.top = `${rect.top - 50}px`;
