@@ -78,6 +78,7 @@ function monthly(year, month, posts) {
   let liHtml = '';
   for (const post of monthPosts) {
     const lastmodifyDate = new Date(post.lastmodifyDate);
+    
     liHtml += `<li class="ml-0 py-1 d-flex">
     <div
       class="col-10 css-truncate css-truncate-target lh-condensed width-fit flex-auto min-width-0">
