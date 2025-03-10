@@ -6,13 +6,20 @@
     <description>Recent content in Tags on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Mar 2025 23:47:29 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 10 Mar 2025 15:08:17 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BigQuery</title>
       <link>https://shiroimon.f5.si/tags/bigquery/</link>
       <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
       <guid>https://shiroimon.f5.si/tags/bigquery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Google</title>
+      <link>https://shiroimon.f5.si/tags/google/</link>
+      <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/tags/google/</guid>
       <description></description>
     </item>
     <item>
@@ -121,6 +128,20 @@
       <description></description>
     </item>
     <item>
+      <title>Data Mart</title>
+      <link>https://shiroimon.f5.si/tags/data-mart/</link>
+      <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/tags/data-mart/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DWH</title>
+      <link>https://shiroimon.f5.si/tags/dwh/</link>
+      <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/tags/dwh/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>SQL</title>
       <link>https://shiroimon.f5.si/tags/sql/</link>
       <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
@@ -156,10 +177,10 @@
       <description></description>
     </item>
     <item>
-      <title>GAS</title>
-      <link>https://shiroimon.f5.si/tags/gas/</link>
+      <title>Goofle Apps Script</title>
+      <link>https://shiroimon.f5.si/tags/goofle-apps-script/</link>
       <pubDate>Tue, 22 Oct 2024 12:56:22 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/tags/gas/</guid>
+      <guid>https://shiroimon.f5.si/tags/goofle-apps-script/</guid>
       <description></description>
     </item>
     <item>
@@ -167,13 +188,6 @@
       <link>https://shiroimon.f5.si/tags/google-sheets/</link>
       <pubDate>Tue, 22 Oct 2024 12:56:22 +0900</pubDate>
       <guid>https://shiroimon.f5.si/tags/google-sheets/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DWH</title>
-      <link>https://shiroimon.f5.si/tags/dwh/</link>
-      <pubDate>Wed, 16 Oct 2024 13:49:54 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/tags/dwh/</guid>
       <description></description>
     </item>
     <item>
@@ -223,6 +237,13 @@
       <link>https://shiroimon.f5.si/tags/argo-workflows/</link>
       <pubDate>Mon, 09 Sep 2024 12:40:59 +0900</pubDate>
       <guid>https://shiroimon.f5.si/tags/argo-workflows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Googel</title>
+      <link>https://shiroimon.f5.si/tags/googel/</link>
+      <pubDate>Thu, 29 Aug 2024 19:47:44 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/tags/googel/</guid>
       <description></description>
     </item>
     <item>

@@ -6,7 +6,7 @@
     <description>Recent content in Google Cloud on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Mar 2025 23:47:29 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 10 Mar 2025 14:52:54 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/tags/google-cloud/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BigQuery About INFORMATION_SCHEMA</title>
@@ -14,6 +14,13 @@
       <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_about_information_schema/</guid>
       <description>🔍 It&amp;rsquo;s not good to know about data governance.</description>
+    </item>
+    <item>
+      <title>GoogleCloud Certifications</title>
+      <link>https://shiroimon.f5.si/post/google_cloud_certification/</link>
+      <pubDate>Tue, 21 Jan 2025 16:24:43 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/google_cloud_certification/</guid>
+      <description>☁️</description>
     </item>
     <item>
       <title>BigQuery Billing how works</title>

@@ -6,34 +6,27 @@
     <description>Recent content in Categories on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Mar 2025 23:47:29 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 10 Mar 2025 15:08:17 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Data_Reliability_Engineer</title>
-      <link>https://shiroimon.f5.si/categories/data_reliability_engineer/</link>
+      <title>Data Reliability Engineer</title>
+      <link>https://shiroimon.f5.si/categories/data-reliability-engineer/</link>
       <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/categories/data_reliability_engineer/</guid>
+      <guid>https://shiroimon.f5.si/categories/data-reliability-engineer/</guid>
       <description></description>
     </item>
     <item>
-      <title>Google</title>
-      <link>https://shiroimon.f5.si/categories/google/</link>
-      <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/categories/google/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Data_analytics_engineer</title>
-      <link>https://shiroimon.f5.si/categories/data_analytics_engineer/</link>
+      <title>Data Analytics Engineer</title>
+      <link>https://shiroimon.f5.si/categories/data-analytics-engineer/</link>
       <pubDate>Thu, 13 Feb 2025 12:45:32 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/categories/data_analytics_engineer/</guid>
+      <guid>https://shiroimon.f5.si/categories/data-analytics-engineer/</guid>
       <description></description>
     </item>
     <item>
-      <title>Hands_on</title>
-      <link>https://shiroimon.f5.si/categories/hands_on/</link>
+      <title>Hands-On</title>
+      <link>https://shiroimon.f5.si/categories/hands-on/</link>
       <pubDate>Tue, 17 Dec 2024 22:39:48 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/categories/hands_on/</guid>
+      <guid>https://shiroimon.f5.si/categories/hands-on/</guid>
       <description></description>
     </item>
     <item>
@@ -44,10 +37,10 @@
       <description></description>
     </item>
     <item>
-      <title>Know_how</title>
-      <link>https://shiroimon.f5.si/categories/know_how/</link>
+      <title>Know-How</title>
+      <link>https://shiroimon.f5.si/categories/know-how/</link>
       <pubDate>Thu, 21 Nov 2024 12:06:08 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/categories/know_how/</guid>
+      <guid>https://shiroimon.f5.si/categories/know-how/</guid>
       <description></description>
     </item>
     <item>
@@ -69,6 +62,20 @@
       <link>https://shiroimon.f5.si/categories/free_lance/</link>
       <pubDate>Fri, 16 Aug 2024 18:41:57 +0900</pubDate>
       <guid>https://shiroimon.f5.si/categories/free_lance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Know_how</title>
+      <link>https://shiroimon.f5.si/categories/know_how/</link>
+      <pubDate>Fri, 16 Aug 2024 18:41:57 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/categories/know_how/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kknow-How</title>
+      <link>https://shiroimon.f5.si/categories/kknow-how/</link>
+      <pubDate>Sat, 03 Aug 2024 16:04:18 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/categories/kknow-how/</guid>
       <description></description>
     </item>
   </channel>

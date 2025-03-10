@@ -6,8 +6,15 @@
     <description>Recent content in DWH on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Mar 2025 16:32:08 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 10 Mar 2025 15:07:37 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/tags/dwh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BigQuery Data analyize catchup</title>
+      <link>https://shiroimon.f5.si/post/bigquery_data_analyize_catchup/</link>
+      <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/bigquery_data_analyize_catchup/</guid>
+      <description>🔍 Re-summarizeing the trajectory I learned as an introductory.</description>
+    </item>
     <item>
       <title>BigQuery About data quality</title>
       <link>https://shiroimon.f5.si/post/bigquery_about_data_quality/</link>

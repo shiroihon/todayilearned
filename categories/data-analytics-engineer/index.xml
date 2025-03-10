@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Analytics Engineer on Today I Learned</title>
+    <link>https://shiroimon.f5.si/categories/data-analytics-engineer/</link>
+    <description>Recent content in Data Analytics Engineer on Today I Learned</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Mar 2025 15:07:37 +0900</lastBuildDate>
+    <atom:link href="https://shiroimon.f5.si/categories/data-analytics-engineer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python Basicly data-handling [Numpy]</title>
+      <link>https://shiroimon.f5.si/post/python_basicly_datahandling_at_numpy/</link>
+      <pubDate>Thu, 13 Feb 2025 12:45:32 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/python_basicly_datahandling_at_numpy/</guid>
+      <description>🔷</description>
+    </item>
+    <item>
+      <title>Python Basicly data-handling [Pandas]</title>
+      <link>https://shiroimon.f5.si/post/python_basicly_datahandling_at_pandas/</link>
+      <pubDate>Thu, 13 Feb 2025 12:45:32 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/python_basicly_datahandling_at_pandas/</guid>
+      <description>🐼</description>
+    </item>
+    <item>
+      <title>BigQuery Data analyize catchup</title>
+      <link>https://shiroimon.f5.si/post/bigquery_data_analyize_catchup/</link>
+      <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/bigquery_data_analyize_catchup/</guid>
+      <description>🔍 Re-summarizeing the trajectory I learned as an introductory.</description>
+    </item>
+    <item>
+      <title>BigQuery Used in functions</title>
+      <link>https://shiroimon.f5.si/post/bigquery_used_functions/</link>
+      <pubDate>Thu, 29 Aug 2024 19:47:44 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/bigquery_used_functions/</guid>
+      <description>🔍 When I getting from my daily work. Added as need. I keep writing various tips.</description>
+    </item>
+    <item>
+      <title>BigQuery Structured data processing 100&#39;s</title>
+      <link>https://shiroimon.f5.si/post/bigquery_structured_data_processing_100/</link>
+      <pubDate>Fri, 26 Jul 2024 04:23:38 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/bigquery_structured_data_processing_100/</guid>
+      <description>🔍 Tried using SQL to learn the basics of data science.</description>
+    </item>
+    <item>
+      <title>BigQuery CTEs in data analyisis</title>
+      <link>https://shiroimon.f5.si/post/bigquery_data_analysis_on_cte/</link>
+      <pubDate>Sat, 20 Jul 2024 16:13:42 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/bigquery_data_analysis_on_cte/</guid>
+      <description>🔍 Things to keep in mind when analyzing data using SQL.</description>
+    </item>
+    <item>
+      <title>Static free data at online</title>
+      <link>https://shiroimon.f5.si/post/stats_free_data_at_onlinei/</link>
+      <pubDate>Wed, 17 Jul 2024 23:14:44 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/stats_free_data_at_onlinei/</guid>
+      <description>📊 An article summarizing various statistical data that can be viewed and used for free.</description>
+    </item>
+  </channel>
+</rss>
