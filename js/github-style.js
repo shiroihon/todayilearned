@@ -76,6 +76,7 @@ function monthly(year, month, posts) {
     post.date.getFullYear().toString() === year && post.date.getMonth() === month
   );
   let liHtml = '';
+  const isOverviewPage = window.location.pathname === '/' || window.location.pathname === '/index.html';
   for (const post of monthPosts) {
     const lastmodifyDate = new Date(post.lastmodifyDate);
 
@@ -87,7 +88,7 @@ function monthly(year, month, posts) {
     <time  title="This post was made on ${months[post.date.getMonth()]} ${post.date.getDate()}, last modified on ${months[lastmodifyDate.getMonth()]} ${lastmodifyDate.getDate()}"
       class="col-2 text-right f6 text-gray-light pt-1" style="white-space: nowrap;">
       ${months[post.date.getMonth()]} ${post.date.getDate()}
-      ${post.date.getTime() !== lastmodifyDate.getTime() ? ` (updated: ${months[lastmodifyDate.getMonth()]} ${lastmodifyDate.getDate()})` : ''}
+      ${!isOverviewPage && post.date.getTime() !== lastmodifyDate.getTime() ? ` (updated: ${months[lastmodifyDate.getMonth()]} ${lastmodifyDate.getDate()})` : ''}
     </time>
   </li>`;
   }
