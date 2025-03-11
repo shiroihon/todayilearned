@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IaC on Today I Learned</title>
-    <link>http://localhost:1313/tags/iac/</link>
+    <link>https://shiroimon.f5.si/tags/iac/</link>
     <description>Recent content in IaC on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 10 Mar 2025 23:54:14 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/iac/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://shiroimon.f5.si/tags/iac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Terraform Trying to build the environment</title>
-      <link>http://localhost:1313/post/terraform_trying_to_build_the_environment/</link>
+      <link>https://shiroimon.f5.si/post/terraform_trying_to_build_the_environment/</link>
       <pubDate>Fri, 26 Jul 2024 03:42:04 +0900</pubDate>
-      <guid>http://localhost:1313/post/terraform_trying_to_build_the_environment/</guid>
+      <guid>https://shiroimon.f5.si/post/terraform_trying_to_build_the_environment/</guid>
       <description>✝️ I wll try setting up an environment to gain an initial understanding of IaC (Infrastructure as Code) provisioning.</description>
     </item>
   </channel>

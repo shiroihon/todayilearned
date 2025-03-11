@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BigQuery on Today I Learned</title>
-    <link>http://localhost:1313/tags/bigquery/</link>
+    <link>https://shiroimon.f5.si/tags/bigquery/</link>
     <description>Recent content in BigQuery on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 10 Mar 2025 23:54:14 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/bigquery/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://shiroimon.f5.si/tags/bigquery/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BigQuery About INFORMATION_SCHEMA</title>
-      <link>http://localhost:1313/post/bigquery_about_information_schema/</link>
+      <link>https://shiroimon.f5.si/post/bigquery_about_information_schema/</link>
       <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
-      <guid>http://localhost:1313/post/bigquery_about_information_schema/</guid>
+      <guid>https://shiroimon.f5.si/post/bigquery_about_information_schema/</guid>
       <description>🔍 It&amp;rsquo;s not good to know about data governance.</description>
     </item>
     <item>
       <title>BigQuery Data analyize catchup</title>
-      <link>http://localhost:1313/post/bigquery_data_analyize_catchup/</link>
+      <link>https://shiroimon.f5.si/post/bigquery_data_analyize_catchup/</link>
       <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
-      <guid>http://localhost:1313/post/bigquery_data_analyize_catchup/</guid>
+      <guid>https://shiroimon.f5.si/post/bigquery_data_analyize_catchup/</guid>
       <description>🔍 Re-summarizeing the trajectory I learned as an introductory.</description>
     </item>
     <item>
       <title>BigQuery About data quality</title>
-      <link>http://localhost:1313/post/bigquery_about_data_quality/</link>
+      <link>https://shiroimon.f5.si/post/bigquery_about_data_quality/</link>
       <pubDate>Wed, 16 Oct 2024 13:49:54 +0900</pubDate>
-      <guid>http://localhost:1313/post/bigquery_about_data_quality/</guid>
+      <guid>https://shiroimon.f5.si/post/bigquery_about_data_quality/</guid>
       <description>🔍 Different perspective from data analysis. About data quality.</description>
     </item>
     <item>
       <title>BigQuery Used in functions</title>
-      <link>http://localhost:1313/post/bigquery_used_functions/</link>
+      <link>https://shiroimon.f5.si/post/bigquery_used_functions/</link>
       <pubDate>Thu, 29 Aug 2024 19:47:44 +0900</pubDate>
-      <guid>http://localhost:1313/post/bigquery_used_functions/</guid>
+      <guid>https://shiroimon.f5.si/post/bigquery_used_functions/</guid>
       <description>🔍 When I getting from my daily work. Added as need. I keep writing various tips.</description>
     </item>
     <item>
       <title>BigQuery Billing how works</title>
-      <link>http://localhost:1313/post/bigquery_billing_how_works/</link>
+      <link>https://shiroimon.f5.si/post/bigquery_billing_how_works/</link>
       <pubDate>Fri, 16 Aug 2024 20:35:07 +0900</pubDate>
-      <guid>http://localhost:1313/post/bigquery_billing_how_works/</guid>
+      <guid>https://shiroimon.f5.si/post/bigquery_billing_how_works/</guid>
       <description>🔍 Summarize billing mechanism, fee structure, and money-saving tips.</description>
     </item>
     <item>
       <title>BigQuery Structured data processing 100&#39;s</title>
-      <link>http://localhost:1313/post/bigquery_structured_data_processing_100/</link>
+      <link>https://shiroimon.f5.si/post/bigquery_structured_data_processing_100/</link>
       <pubDate>Fri, 26 Jul 2024 04:23:38 +0900</pubDate>
-      <guid>http://localhost:1313/post/bigquery_structured_data_processing_100/</guid>
+      <guid>https://shiroimon.f5.si/post/bigquery_structured_data_processing_100/</guid>
       <description>🔍 Tried using SQL to learn the basics of data science.</description>
     </item>
     <item>
       <title>BigQuery CTEs in data analyisis</title>
-      <link>http://localhost:1313/post/bigquery_data_analysis_on_cte/</link>
+      <link>https://shiroimon.f5.si/post/bigquery_data_analysis_on_cte/</link>
       <pubDate>Sat, 20 Jul 2024 16:13:42 +0900</pubDate>
-      <guid>http://localhost:1313/post/bigquery_data_analysis_on_cte/</guid>
+      <guid>https://shiroimon.f5.si/post/bigquery_data_analysis_on_cte/</guid>
       <description>🔍 Things to keep in mind when analyzing data using SQL.</description>
     </item>
   </channel>

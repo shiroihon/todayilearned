@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OS on Today I Learned</title>
-    <link>http://localhost:1313/tags/os/</link>
+    <link>https://shiroimon.f5.si/tags/os/</link>
     <description>Recent content in OS on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Mar 2025 16:32:08 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/os/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://shiroimon.f5.si/tags/os/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unix</title>
-      <link>http://localhost:1313/post/macos_unix_is_ancestor/</link>
+      <link>https://shiroimon.f5.si/post/macos_unix_is_ancestor/</link>
       <pubDate>Mon, 30 Sep 2024 23:28:04 +0900</pubDate>
-      <guid>http://localhost:1313/post/macos_unix_is_ancestor/</guid>
+      <guid>https://shiroimon.f5.si/post/macos_unix_is_ancestor/</guid>
       <description>🩶 About the legacy of inventions from a previous era that heavily influenced macOS.</description>
     </item>
   </channel>
