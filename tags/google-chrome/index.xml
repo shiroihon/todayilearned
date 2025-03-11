@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Google Chrome on Today I Learned</title>
-    <link>http://localhost:1313/tags/google-chrome/</link>
+    <link>https://shiroimon.f5.si/tags/google-chrome/</link>
     <description>Recent content in Google Chrome on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Mar 2025 14:51:43 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/google-chrome/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Mar 2025 16:44:03 +0900</lastBuildDate>
+    <atom:link href="https://shiroimon.f5.si/tags/google-chrome/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Google Chrome extensions</title>
-      <link>http://localhost:1313/post/google_chrome_extensions/</link>
+      <title>[Google Chrome] This &amp; That</title>
+      <link>https://shiroimon.f5.si/post/google_chrome_this_and_that/</link>
       <pubDate>Tue, 25 Feb 2025 13:45:58 +0900</pubDate>
-      <guid>http://localhost:1313/post/google_chrome_extensions/</guid>
-      <description>🟡</description>
+      <guid>https://shiroimon.f5.si/post/google_chrome_this_and_that/</guid>
+      <description>⚪️</description>
     </item>
   </channel>
 </rss>

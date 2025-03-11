@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Mar 2025 15:08:17 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 11 Mar 2025 16:53:18 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BigQuery About INFORMATION_SCHEMA</title>
@@ -14,6 +14,13 @@
       <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_about_information_schema/</guid>
       <description>🔍 It&amp;rsquo;s not good to know about data governance.</description>
+    </item>
+    <item>
+      <title>[Google Chrome] This &amp; That</title>
+      <link>https://shiroimon.f5.si/post/google_chrome_this_and_that/</link>
+      <pubDate>Tue, 25 Feb 2025 13:45:58 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/google_chrome_this_and_that/</guid>
+      <description>⚪️</description>
     </item>
     <item>
       <title>Python Basicly data-handling [Numpy]</title>
@@ -37,14 +44,21 @@
       <description>🍏 macOS useful commands and tips.</description>
     </item>
     <item>
-      <title>GoogleCloud Certifications</title>
+      <title>[Google Cloud] Tools memorandum</title>
       <link>https://shiroimon.f5.si/post/google_cloud_certification/</link>
       <pubDate>Tue, 21 Jan 2025 16:24:43 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/google_cloud_certification/</guid>
       <description>☁️</description>
     </item>
     <item>
-      <title>Yaml Catchup</title>
+      <title>GoogleCloud Certifications</title>
+      <link>https://shiroimon.f5.si/post/google_cloud_tools_memorandum/</link>
+      <pubDate>Tue, 21 Jan 2025 16:24:43 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/google_cloud_tools_memorandum/</guid>
+      <description>☁️</description>
+    </item>
+    <item>
+      <title>[YAML] Catchup</title>
       <link>https://shiroimon.f5.si/post/yaml_catchup/</link>
       <pubDate>Tue, 17 Dec 2024 22:39:48 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/yaml_catchup/</guid>
@@ -198,7 +212,7 @@
       <description>✝️ I wll try setting up an environment to gain an initial understanding of IaC (Infrastructure as Code) provisioning.</description>
     </item>
     <item>
-      <title>GitHub This and That</title>
+      <title>[GitHub] This &amp; That</title>
       <link>https://shiroimon.f5.si/post/github_this_and_that/</link>
       <pubDate>Wed, 24 Jul 2024 15:08:13 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/github_this_and_that/</guid>

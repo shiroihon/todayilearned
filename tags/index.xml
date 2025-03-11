@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Mar 2025 15:08:17 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 11 Mar 2025 16:53:18 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BigQuery</title>
@@ -27,6 +27,27 @@
       <link>https://shiroimon.f5.si/tags/google-cloud/</link>
       <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
       <guid>https://shiroimon.f5.si/tags/google-cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chrome Canary</title>
+      <link>https://shiroimon.f5.si/tags/chrome-canary/</link>
+      <pubDate>Tue, 25 Feb 2025 13:45:58 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/tags/chrome-canary/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chromium</title>
+      <link>https://shiroimon.f5.si/tags/chromium/</link>
+      <pubDate>Tue, 25 Feb 2025 13:45:58 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/tags/chromium/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Google Chrome</title>
+      <link>https://shiroimon.f5.si/tags/google-chrome/</link>
+      <pubDate>Tue, 25 Feb 2025 13:45:58 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/tags/google-chrome/</guid>
       <description></description>
     </item>
     <item>
