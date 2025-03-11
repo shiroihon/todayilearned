@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Embluk on Today I Learned</title>
-    <link>https://shiroimon.f5.si/tags/embluk/</link>
+    <link>http://localhost:1313/tags/embluk/</link>
     <description>Recent content in Embluk on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 10 Mar 2025 23:54:14 +0900</lastBuildDate>
-    <atom:link href="https://shiroimon.f5.si/tags/embluk/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/embluk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Trocco and Embluk Catchup</title>
-      <link>https://shiroimon.f5.si/post/trocco_and_embluk_catch_up/</link>
+      <link>http://localhost:1313/post/trocco_and_embluk_catch_up/</link>
       <pubDate>Wed, 21 Aug 2024 15:30:46 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/trocco_and_embluk_catch_up/</guid>
+      <guid>http://localhost:1313/post/trocco_and_embluk_catch_up/</guid>
       <description>🎢 Summarizing Trocco and Embluk to deepen understanding.</description>
     </item>
   </channel>

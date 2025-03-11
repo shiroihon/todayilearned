@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vim on Today I Learned</title>
-    <link>https://shiroimon.f5.si/tags/vim/</link>
+    <link>http://localhost:1313/tags/vim/</link>
     <description>Recent content in Vim on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Mar 2025 16:32:08 +0900</lastBuildDate>
-    <atom:link href="https://shiroimon.f5.si/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vim Building plugin</title>
-      <link>https://shiroimon.f5.si/post/vim_building_plugin/</link>
+      <link>http://localhost:1313/post/vim_building_plugin/</link>
       <pubDate>Wed, 11 Sep 2024 19:39:49 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/vim_building_plugin/</guid>
+      <guid>http://localhost:1313/post/vim_building_plugin/</guid>
       <description>✅ Once I gain a deeper understanding, what may be able to develop general-purpose automated tools.</description>
     </item>
     <item>
       <title>Vim Commands</title>
-      <link>https://shiroimon.f5.si/post/vim_commands/</link>
+      <link>http://localhost:1313/post/vim_commands/</link>
       <pubDate>Sat, 17 Aug 2024 01:02:03 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/vim_commands/</guid>
+      <guid>http://localhost:1313/post/vim_commands/</guid>
       <description>✅ A list of vim commands for the TextEditor tool, along with various tips.</description>
     </item>
   </channel>

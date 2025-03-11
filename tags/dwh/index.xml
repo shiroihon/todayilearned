@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>DWH on Today I Learned</title>
-    <link>https://shiroimon.f5.si/tags/dwh/</link>
+    <link>http://localhost:1313/tags/dwh/</link>
     <description>Recent content in DWH on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 10 Mar 2025 23:54:14 +0900</lastBuildDate>
-    <atom:link href="https://shiroimon.f5.si/tags/dwh/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/dwh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BigQuery Data analyize catchup</title>
-      <link>https://shiroimon.f5.si/post/bigquery_data_analyize_catchup/</link>
+      <link>http://localhost:1313/post/bigquery_data_analyize_catchup/</link>
       <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/bigquery_data_analyize_catchup/</guid>
+      <guid>http://localhost:1313/post/bigquery_data_analyize_catchup/</guid>
       <description>🔍 Re-summarizeing the trajectory I learned as an introductory.</description>
     </item>
     <item>
       <title>BigQuery About data quality</title>
-      <link>https://shiroimon.f5.si/post/bigquery_about_data_quality/</link>
+      <link>http://localhost:1313/post/bigquery_about_data_quality/</link>
       <pubDate>Wed, 16 Oct 2024 13:49:54 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/bigquery_about_data_quality/</guid>
+      <guid>http://localhost:1313/post/bigquery_about_data_quality/</guid>
       <description>🔍 Different perspective from data analysis. About data quality.</description>
     </item>
   </channel>
