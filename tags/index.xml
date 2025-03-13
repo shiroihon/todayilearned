@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Mar 2025 02:21:49 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 13 Mar 2025 14:51:30 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BigQuery</title>
@@ -114,6 +114,20 @@
       <description></description>
     </item>
     <item>
+      <title>Shell</title>
+      <link>https://shiroimon.f5.si/tags/shell/</link>
+      <pubDate>Tue, 26 Nov 2024 15:23:00 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/tags/shell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zsh</title>
+      <link>https://shiroimon.f5.si/tags/zsh/</link>
+      <pubDate>Tue, 26 Nov 2024 15:23:00 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/tags/zsh/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>GitHub</title>
       <link>https://shiroimon.f5.si/tags/github/</link>
       <pubDate>Thu, 21 Nov 2024 12:06:08 +0900</pubDate>
@@ -198,10 +212,10 @@
       <description></description>
     </item>
     <item>
-      <title>Goofle Apps Script</title>
-      <link>https://shiroimon.f5.si/tags/goofle-apps-script/</link>
+      <title>Google Apps Script</title>
+      <link>https://shiroimon.f5.si/tags/google-apps-script/</link>
       <pubDate>Tue, 22 Oct 2024 12:56:22 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/tags/goofle-apps-script/</guid>
+      <guid>https://shiroimon.f5.si/tags/google-apps-script/</guid>
       <description></description>
     </item>
     <item>
@@ -261,10 +275,17 @@
       <description></description>
     </item>
     <item>
-      <title>Googel</title>
-      <link>https://shiroimon.f5.si/tags/googel/</link>
-      <pubDate>Thu, 29 Aug 2024 19:47:44 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/tags/googel/</guid>
+      <title>DAG</title>
+      <link>https://shiroimon.f5.si/tags/dag/</link>
+      <pubDate>Mon, 09 Sep 2024 12:40:59 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/tags/dag/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ETL/ELT</title>
+      <link>https://shiroimon.f5.si/tags/etl/elt/</link>
+      <pubDate>Mon, 09 Sep 2024 12:40:59 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/tags/etl/elt/</guid>
       <description></description>
     </item>
     <item>

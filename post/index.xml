@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Mar 2025 02:21:49 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 13 Mar 2025 14:51:30 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BigQuery About INFORMATION_SCHEMA</title>
@@ -37,14 +37,14 @@
       <description>🐼</description>
     </item>
     <item>
-      <title>macOS Commands Memorandum</title>
+      <title>[macOS] Commands memorandum</title>
       <link>https://shiroimon.f5.si/post/macos_commands_memorandum/</link>
       <pubDate>Tue, 28 Jan 2025 00:50:32 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/macos_commands_memorandum/</guid>
       <description>🍏 macOS useful commands and tips.</description>
     </item>
     <item>
-      <title>GoogleCloud Certifications</title>
+      <title>[Google Cloud] Tools memorandum</title>
       <link>https://shiroimon.f5.si/post/google_cloud_tools_memorandum/</link>
       <pubDate>Tue, 21 Jan 2025 16:24:43 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/google_cloud_tools_memorandum/</guid>
@@ -56,6 +56,13 @@
       <pubDate>Tue, 17 Dec 2024 22:39:48 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/yaml_catchup/</guid>
       <description>🚫 Understand Yaml, the configuratio file familiar to DevOps.</description>
+    </item>
+    <item>
+      <title>[Zsh] Commands memorandum</title>
+      <link>https://shiroimon.f5.si/post/shell_commands_memorandum/</link>
+      <pubDate>Tue, 26 Nov 2024 15:23:00 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/shell_commands_memorandum/</guid>
+      <description>🐚</description>
     </item>
     <item>
       <title>GitHub Wana be join OSS</title>
@@ -142,14 +149,14 @@
       <description>🎢 Summarizing Trocco and Embluk to deepen understanding.</description>
     </item>
     <item>
-      <title>Docker Commands</title>
+      <title>[Docker] Commands memorandum</title>
       <link>https://shiroimon.f5.si/post/docker_commands_memorandum/</link>
       <pubDate>Wed, 21 Aug 2024 00:00:34 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/docker_commands_memorandum/</guid>
       <description>🐋 Deepen my understanding of Docker&amp;rsquo;s basic commands and mechanisms.</description>
     </item>
     <item>
-      <title>Vim Commands</title>
+      <title>[Vim] Commands memorandum</title>
       <link>https://shiroimon.f5.si/post/vim_commands_memorandum/</link>
       <pubDate>Sat, 17 Aug 2024 01:02:03 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/vim_commands_memorandum/</guid>

@@ -6,7 +6,7 @@
     <description>Recent content in Docker on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Mar 2025 23:54:14 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 13 Mar 2025 14:48:48 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes Catchup</title>
@@ -16,7 +16,7 @@
       <description>⚓️ About container orchestration tecnology.</description>
     </item>
     <item>
-      <title>Docker Commands</title>
+      <title>[Docker] Commands memorandum</title>
       <link>https://shiroimon.f5.si/post/docker_commands_memorandum/</link>
       <pubDate>Wed, 21 Aug 2024 00:00:34 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/docker_commands_memorandum/</guid>

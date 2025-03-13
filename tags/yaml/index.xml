@@ -6,7 +6,7 @@
     <description>Recent content in YAML on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Mar 2025 00:01:35 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 13 Mar 2025 14:48:48 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/tags/yaml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[YAML] Catchup</title>
@@ -30,7 +30,7 @@
       <description>🐙 Understanding and implementing Argo projects and workflows.</description>
     </item>
     <item>
-      <title>Docker Commands</title>
+      <title>[Docker] Commands memorandum</title>
       <link>https://shiroimon.f5.si/post/docker_commands_memorandum/</link>
       <pubDate>Wed, 21 Aug 2024 00:00:34 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/docker_commands_memorandum/</guid>

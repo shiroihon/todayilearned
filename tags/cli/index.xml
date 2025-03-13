@@ -6,14 +6,21 @@
     <description>Recent content in CLI on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Mar 2025 23:54:14 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 13 Mar 2025 14:51:30 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/tags/cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>macOS Commands Memorandum</title>
+      <title>[macOS] Commands memorandum</title>
       <link>https://shiroimon.f5.si/post/macos_commands_memorandum/</link>
       <pubDate>Tue, 28 Jan 2025 00:50:32 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/macos_commands_memorandum/</guid>
       <description>🍏 macOS useful commands and tips.</description>
+    </item>
+    <item>
+      <title>[Zsh] Commands memorandum</title>
+      <link>https://shiroimon.f5.si/post/shell_commands_memorandum/</link>
+      <pubDate>Tue, 26 Nov 2024 15:23:00 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/shell_commands_memorandum/</guid>
+      <description>🐚</description>
     </item>
     <item>
       <title>WezTerm Setup</title>
@@ -37,14 +44,14 @@
       <description>✅ Once I gain a deeper understanding, what may be able to develop general-purpose automated tools.</description>
     </item>
     <item>
-      <title>Docker Commands</title>
+      <title>[Docker] Commands memorandum</title>
       <link>https://shiroimon.f5.si/post/docker_commands_memorandum/</link>
       <pubDate>Wed, 21 Aug 2024 00:00:34 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/docker_commands_memorandum/</guid>
       <description>🐋 Deepen my understanding of Docker&amp;rsquo;s basic commands and mechanisms.</description>
     </item>
     <item>
-      <title>Vim Commands</title>
+      <title>[Vim] Commands memorandum</title>
       <link>https://shiroimon.f5.si/post/vim_commands_memorandum/</link>
       <pubDate>Sat, 17 Aug 2024 01:02:03 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/vim_commands_memorandum/</guid>
