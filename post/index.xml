@@ -6,10 +6,17 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Mar 2025 14:51:30 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 14 Mar 2025 18:19:38 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>BigQuery About INFORMATION_SCHEMA</title>
+      <title>[BigQuery] About Machine Learning</title>
+      <link>https://shiroimon.f5.si/post/bigquery_about_machine_learning/</link>
+      <pubDate>Fri, 14 Mar 2025 17:31:44 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/bigquery_about_machine_learning/</guid>
+      <description>🔍 Completed within DWH, allowing modeling and analysis through queries</description>
+    </item>
+    <item>
+      <title>[BigQuery] About INFORMATION_SCHEMA</title>
       <link>https://shiroimon.f5.si/post/bigquery_about_information_schema/</link>
       <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_about_information_schema/</guid>
@@ -79,7 +86,7 @@
       <description>⚓️ About container orchestration tecnology.</description>
     </item>
     <item>
-      <title>BigQuery Data analyize catchup</title>
+      <title>[BigQuery] Data analyize catchup</title>
       <link>https://shiroimon.f5.si/post/bigquery_data_analyize_catchup/</link>
       <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_data_analyize_catchup/</guid>
@@ -100,7 +107,7 @@
       <description>📗 Make a memorandum of what you used with the most powerful free tool that anyone can use.</description>
     </item>
     <item>
-      <title>BigQuery About data quality</title>
+      <title>[BigQuery] About data quality</title>
       <link>https://shiroimon.f5.si/post/bigquery_about_data_quality/</link>
       <pubDate>Wed, 16 Oct 2024 13:49:54 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_about_data_quality/</guid>
@@ -163,7 +170,7 @@
       <description>✅ A list of vim commands for the TextEditor tool, along with various tips.</description>
     </item>
     <item>
-      <title>BigQuery Billing how works</title>
+      <title>[BigQuery] Billing how works</title>
       <link>https://shiroimon.f5.si/post/bigquery_billing_how_works/</link>
       <pubDate>Fri, 16 Aug 2024 20:35:07 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_billing_how_works/</guid>
@@ -198,7 +205,7 @@
       <description>✴️ Wanna deepen my understanding by using my hands and referring to reference books.</description>
     </item>
     <item>
-      <title>BigQuery Structured data processing 100&#39;s</title>
+      <title>[BigQuery] Structured data processing 100&#39;s</title>
       <link>https://shiroimon.f5.si/post/bigquery_structured_data_processing_100/</link>
       <pubDate>Fri, 26 Jul 2024 04:23:38 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_structured_data_processing_100/</guid>
@@ -233,7 +240,7 @@
       <description>📍 Methods and tools to capture code fixes faster and more accurately.</description>
     </item>
     <item>
-      <title>BigQuery CTEs in data analyisis</title>
+      <title>[BigQuery] CTEs in data analyisis</title>
       <link>https://shiroimon.f5.si/post/bigquery_data_analysis_on_cte/</link>
       <pubDate>Sat, 20 Jul 2024 16:13:42 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_data_analysis_on_cte/</guid>

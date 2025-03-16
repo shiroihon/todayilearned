@@ -6,10 +6,10 @@
     <description>Recent content in Data Reliability Engineer on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Mar 2025 00:03:45 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 14 Mar 2025 18:19:38 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/categories/data-reliability-engineer/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>BigQuery About INFORMATION_SCHEMA</title>
+      <title>[BigQuery] About INFORMATION_SCHEMA</title>
       <link>https://shiroimon.f5.si/post/bigquery_about_information_schema/</link>
       <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_about_information_schema/</guid>
@@ -23,7 +23,7 @@
       <description>⚓️ About container orchestration tecnology.</description>
     </item>
     <item>
-      <title>BigQuery About data quality</title>
+      <title>[BigQuery] About data quality</title>
       <link>https://shiroimon.f5.si/post/bigquery_about_data_quality/</link>
       <pubDate>Wed, 16 Oct 2024 13:49:54 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_about_data_quality/</guid>
@@ -37,7 +37,7 @@
       <description>🎢 Summarizing Trocco and Embluk to deepen understanding.</description>
     </item>
     <item>
-      <title>BigQuery Billing how works</title>
+      <title>[BigQuery] Billing how works</title>
       <link>https://shiroimon.f5.si/post/bigquery_billing_how_works/</link>
       <pubDate>Fri, 16 Aug 2024 20:35:07 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_billing_how_works/</guid>

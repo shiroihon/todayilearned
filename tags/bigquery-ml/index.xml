@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BigQuery ML on Today I Learned</title>
+    <link>https://shiroimon.f5.si/tags/bigquery-ml/</link>
+    <description>Recent content in BigQuery ML on Today I Learned</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Mar 2025 18:19:14 +0900</lastBuildDate>
+    <atom:link href="https://shiroimon.f5.si/tags/bigquery-ml/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[BigQuery] About Machine Learning</title>
+      <link>https://shiroimon.f5.si/post/bigquery_about_machine_learning/</link>
+      <pubDate>Fri, 14 Mar 2025 17:31:44 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/bigquery_about_machine_learning/</guid>
+      <description>🔍 Completed within DWH, allowing modeling and analysis through queries</description>
+    </item>
+  </channel>
+</rss>

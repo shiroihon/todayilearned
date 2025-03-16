@@ -6,7 +6,7 @@
     <description>Recent content in Udemy on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Mar 2025 00:01:35 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 14 Mar 2025 18:18:48 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/categories/udemy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[YAML] Catchup</title>
@@ -23,7 +23,7 @@
       <description>⚓️ About container orchestration tecnology.</description>
     </item>
     <item>
-      <title>BigQuery Data analyize catchup</title>
+      <title>[BigQuery] Data analyize catchup</title>
       <link>https://shiroimon.f5.si/post/bigquery_data_analyize_catchup/</link>
       <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_data_analyize_catchup/</guid>

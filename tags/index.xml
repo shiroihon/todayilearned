@@ -6,19 +6,33 @@
     <description>Recent content in Tags on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Mar 2025 14:51:30 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 14 Mar 2025 18:19:38 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI</title>
+      <link>https://shiroimon.f5.si/tags/ai/</link>
+      <pubDate>Fri, 14 Mar 2025 17:31:44 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/tags/ai/</guid>
+      <description></description>
+    </item>
     <item>
       <title>BigQuery</title>
       <link>https://shiroimon.f5.si/tags/bigquery/</link>
-      <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
+      <pubDate>Fri, 14 Mar 2025 17:31:44 +0900</pubDate>
       <guid>https://shiroimon.f5.si/tags/bigquery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BigQuery ML</title>
+      <link>https://shiroimon.f5.si/tags/bigquery-ml/</link>
+      <pubDate>Fri, 14 Mar 2025 17:31:44 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/tags/bigquery-ml/</guid>
       <description></description>
     </item>
     <item>
       <title>Google</title>
       <link>https://shiroimon.f5.si/tags/google/</link>
-      <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
+      <pubDate>Fri, 14 Mar 2025 17:31:44 +0900</pubDate>
       <guid>https://shiroimon.f5.si/tags/google/</guid>
       <description></description>
     </item>
