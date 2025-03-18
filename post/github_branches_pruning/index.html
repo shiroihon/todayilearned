@@ -10,7 +10,7 @@
     <link rel="stylesheet" href='https://shiroimon.f5.si/css/light.css' />
     <link rel="stylesheet" href='https://shiroimon.f5.si/css/dark.css' />
     <link rel="stylesheet" href='https://shiroimon.f5.si/css/syntax.css' />
-    <title>Git Branches pruning - Today I Learned</title>
+    <title>[Git] Branches pruning - Today I Learned</title>
     
     <link rel="icon" type="image/x-icon" href='../../images/github-mark.png'>
     
@@ -29,7 +29,7 @@
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Git Branches pruning - Today I Learned" />
+<meta name="twitter:title" content="[Git] Branches pruning - Today I Learned" />
 <meta name="twitter:description"
   content="📍When developing on GitHub, I often switch branches, just like pruning." />
 <meta name="twitter:site" content="https://shiroimon.f5.si/" />
@@ -39,11 +39,11 @@
 
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Git Branches pruning - Today I Learned">
+<meta property="og:title" content="[Git] Branches pruning - Today I Learned">
 <meta property="og:description"
   content="📍When developing on GitHub, I often switch branches, just like pruning." />
 <meta property="og:url" content="https://shiroimon.f5.si/post/github_branches_pruning/" />
-<meta property="og:site_name" content="Git Branches pruning" />
+<meta property="og:site_name" content="[Git] Branches pruning" />
 <meta property="og:image"
   content="https://shiroimon.f5.si/">
 <meta property="og:image:width" content="2048">
@@ -147,14 +147,14 @@
             <h1 class="break-word f3 text-normal mb-md-0 mb-1">
                 <span class="author"><a href="https://shiroimon.f5.si/">shiroimon</a></span>
                 <span class="path-divider">/</span>
-                <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px"><a href="https://shiroimon.f5.si/post/github_branches_pruning/">Git Branches pruning</a></strong>
+                <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px"><a href="https://shiroimon.f5.si/post/github_branches_pruning/">[Git] Branches pruning</a></strong>
             </h1>
             
             <div class="note m-0">
                 Created <relative-time datetime="Tue, 24 Sep 2024 18:08:08 &#43;0900" class="no-wrap">Tue, 24 Sep 2024 18:08:08 &#43;0900</relative-time>
                 
                 <span class="path-divider">|</span>
-                Modified <relative-time datetime="Mon, 10 Mar 2025 14:50:38 &#43;0900" class="no-wrap">Mon, 10 Mar 2025 14:50:38 &#43;0900</relative-time>
+                Modified <relative-time datetime="Mon, 17 Mar 2025 19:01:36 &#43;0900" class="no-wrap">Mon, 17 Mar 2025 19:01:36 &#43;0900</relative-time>
                 
             </div>
         </div>
@@ -187,7 +187,7 @@
                     <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                 </div>
             </details-menu>
-            4264 Words
+            4731 Words
             <span class="path-divider">|</span>
             6 min
             </div>
@@ -274,7 +274,7 @@ local   [main] branch ----------|------------- |----------------------&gt;
 <thead>
 <tr>
 <th style="text-align:left">ワークフロー名</th>
-<th style="text-align:left">ブランチ名（種）</th>
+<th style="text-align:left">種類別ブランチ名</th>
 <th style="text-align:left">対応規模</th>
 </tr>
 </thead>
@@ -316,7 +316,7 @@ local   [main] branch ----------|------------- |----------------------&gt;
 </ul>
 </li>
 </ul>
-<h3 id="手元に幹を">手元に幹を<a class="anchor" aria-hidden="true" href="#手元に幹を"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<h3 id="手元に幹を植え込み">手元に幹を（植え込み🪴）<a class="anchor" aria-hidden="true" href="#手元に幹を植え込み"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <pre tabindex="0"><code>remote repository -[main] -------&gt;
                    | /fork   | /clone
                    ↓         |
@@ -333,7 +333,7 @@ local  repository  [main] -------&gt;
 </ul>
 </li>
 </ul>
-<h3 id="幹から枝を">幹から枝を<a class="anchor" aria-hidden="true" href="#幹から枝を"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<h3 id="幹から枝を生やす">幹から枝を生やす<a class="anchor" aria-hidden="true" href="#幹から枝を生やす"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <pre tabindex="0"><code># main/master branch から新たにブランチを切り出したい。
 
 local -[main] branch ------------------------&gt;
@@ -344,12 +344,15 @@ local -[main] branch ------------------------&gt;
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ git checkout -b feature_B
 </span></span></code></pre></div></li>
 </ol>
-<h3 id="枝を手元に">枝を手元に<a class="anchor" aria-hidden="true" href="#枝を手元に"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<h3 id="他の人の枝を手元にも">他の人の枝を手元にも<a class="anchor" aria-hidden="true" href="#他の人の枝を手元にも"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <pre tabindex="0"><code># 
-
-local -[main] branch ------------------------------------------&gt;
-            └-&gt; Aさん[feature_A] branch -----------------------&gt;
-                               └-&gt; Bさん[feature_A] branch ----&gt;
+remote    -[main]-------------------------✨---------------------&gt;
+                                          |   |Aさんの[feature_A] branch
+[A] local -[main] branch -----------------|-&gt; |
+          └-&gt; Aさん[feature_A] branch -----┘   |
+                                              |
+[B] local -[main] branch ---------------------|------------------&gt;
+                                              └-&gt; Bさん[feature_A] branch
 </code></pre><ol>
 <li>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 他の人のブランチの最新の変更を取得して、リモート上のブランチ名を一覧確認</span>
@@ -369,7 +372,7 @@ local -[main] branch ------------------------------------------&gt;
 </span></span></code></pre></div></li>
 </ol>
 <h3 id="枝から枝を">枝から枝を<a class="anchor" aria-hidden="true" href="#枝から枝を"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
-<pre tabindex="0"><code># main/master branch に merge されていない 他の方の branch に対してプルリクエストを作成したい。
+<pre tabindex="0"><code># main/master branch に merge されていない 他の人の branch に対してプルリクエストを作成したい。
 
 local -[main] branch ------------------------------------------&gt;
             └-&gt; Aさん[faeture_A] branch -----------------------&gt;
@@ -759,25 +762,38 @@ local  -[main] branch ---------------------|------------|------&gt;
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 適用してStashは削除</span>
 </span></span><span class="line"><span class="cl">$ git stash pop
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 特定消し </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 特定消し</span>
 </span></span><span class="line"><span class="cl">$ git stash drop stash@<span class="o">{</span>0<span class="o">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 全消し</span>
 </span></span><span class="line"><span class="cl">$ git stash clear
 </span></span></code></pre></div></li>
 </ol>
-<h2 id="幹に枝を反映">幹に枝を反映<a class="anchor" aria-hidden="true" href="#幹に枝を反映"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
-<p>GithubのWebからのマージ</p>
-<ul>
+<h3 id="幹に枝を反映の仕方">幹に枝を反映の仕方<a class="anchor" aria-hidden="true" href="#幹に枝を反映の仕方"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<p>GitHubのWebからのマージ方法</p>
+<ol>
 <li>Create a merge commit</li>
 <li>Rebase and merge</li>
 <li>Squash and merge</li>
-<li>cf.
-<ul>
-<li><a href="https://qiita.com/ko-he-8/items/94e872f2154829c868df">GithubでのWeb上からのマージの仕方3種とその使いどころ</a> Qiita</li>
+</ol>
+<p>cf. <a href="https://qiita.com/ko-he-8/items/94e872f2154829c868df">GithubでのWeb上からのマージの仕方3種とその使いどころ</a> Qiita</p>
+<h3 id="幹と枝の差分だけ抽出">幹と枝の差分だけ抽出<a class="anchor" aria-hidden="true" href="#幹と枝の差分だけ抽出"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<pre tabindex="0"><code></code></pre><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 差分のあるファイルのみをtar.gz形式で圧縮したファイルを作成</span>
+</span></span><span class="line"><span class="cl">$ git diff <span class="o">{</span>add/your_branch_name<span class="o">}</span> --name-only <span class="p">|</span> xargs tar czf diff.tar.gz
+</span></span></code></pre></div><ul>
+<li><code>git diff {add/your_branch_name} --name-only</code> 現在のブランチと {add/your_branch_name} ブランチの差分があるファイル名のみを表示</li>
+<li><code>| xargs tar czf diff.tar.gz</code> 表示されたファイル名を引数として受け取り、それらのファイルを diff.tar.gz という名前のtarアーカイブに圧縮</li>
 </ul>
-</li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># {add/your_branch_name} ブランチから、origin/staging との差分があるファイル（追加・コピー・修正・リネームされたもの）のみをZIPファイルにアーカイブ</span>
+</span></span><span class="line"><span class="cl">$ git archive <span class="o">{</span>add/your_branch_name<span class="o">}</span> <span class="sb">`</span>git diff --name-only origin/staging add/shops_referral_sheet --diff-filter<span class="o">=</span>ACMR<span class="sb">`</span> -o archive.zip
+</span></span></code></pre></div><ul>
+<li><code>git diff --name-only origin/staging {add/your_branch_name} --diff-filter=ACMR:</code></li>
+<li><code>origin/staging</code> と <code>{add/your_branch_name}</code> ブランチの差分を表示</li>
+<li><code>--diff-filter=ACMR</code> は、追加(A)、コピー(C)、修正(M)、リネーム(R) されたファイルのみを対象とする</li>
+<li><code>git archive</code> 指定されたブランチ（{add/your_branch_name}）から、差分のあるファイルを抽出</li>
+<li><code>-o archive.zip</code> 結果を archive.zip という名前のZIPファイルに出力</li>
 </ul>
+<h3 id="heading"><a class="anchor" aria-hidden="true" href="#heading"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <h2 id="ref">Ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 <ul>
 <li><a href="https://ja.wikipedia.org/wiki/Git">Git</a> Wikipedia</li>
@@ -834,7 +850,7 @@ local  -[main] branch ---------------------|------------|------&gt;
                     
                     <li class="p-1">
                         <div>
-                            <a href="../../post/english_abbreviations/">English Abbreviations</a>
+                            <a href="../../post/english_abbreviations/">[English] Abbreviations</a>
                             <time datetime="2024-07-30 12:48" class="no-wrap text-small ml-1">(2024-07-30 12:48)</time>
                         </div>
                         <div class="text-small text-gray mb-1 mt-1">About abbreviations. They also appear in business and professional situations.</div>

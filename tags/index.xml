@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Mar 2025 18:19:38 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 19 Mar 2025 00:21:31 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
@@ -41,6 +41,13 @@
       <link>https://shiroimon.f5.si/tags/google-cloud/</link>
       <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
       <guid>https://shiroimon.f5.si/tags/google-cloud/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQL</title>
+      <link>https://shiroimon.f5.si/tags/sql/</link>
+      <pubDate>Mon, 03 Mar 2025 22:23:20 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/tags/sql/</guid>
       <description></description>
     </item>
     <item>
@@ -191,13 +198,6 @@
       <description></description>
     </item>
     <item>
-      <title>SQL</title>
-      <link>https://shiroimon.f5.si/tags/sql/</link>
-      <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/tags/sql/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Lua</title>
       <link>https://shiroimon.f5.si/tags/lua/</link>
       <pubDate>Thu, 24 Oct 2024 10:40:32 +0900</pubDate>
@@ -244,13 +244,6 @@
       <link>https://shiroimon.f5.si/tags/linux/</link>
       <pubDate>Mon, 30 Sep 2024 23:28:04 +0900</pubDate>
       <guid>https://shiroimon.f5.si/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>OS</title>
-      <link>https://shiroimon.f5.si/tags/os/</link>
-      <pubDate>Mon, 30 Sep 2024 23:28:04 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/tags/os/</guid>
       <description></description>
     </item>
     <item>
@@ -405,13 +398,6 @@
       <link>https://shiroimon.f5.si/tags/sourcegraph/</link>
       <pubDate>Tue, 23 Jul 2024 04:13:21 +0900</pubDate>
       <guid>https://shiroimon.f5.si/tags/sourcegraph/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Statistic</title>
-      <link>https://shiroimon.f5.si/tags/statistic/</link>
-      <pubDate>Wed, 17 Jul 2024 23:14:44 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/tags/statistic/</guid>
       <description></description>
     </item>
   </channel>

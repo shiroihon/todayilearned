@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Mar 2025 19:36:23 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 19 Mar 2025 00:21:31 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[BigQuery] About Machine Learning</title>
@@ -21,6 +21,13 @@
       <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_about_information_schema/</guid>
       <description>🔍 It&amp;rsquo;s not good to know about data governance.</description>
+    </item>
+    <item>
+      <title>[BigQuery] Data analysis on preparation</title>
+      <link>https://shiroimon.f5.si/post/bigquery_data_analysis_on_preparation/</link>
+      <pubDate>Mon, 03 Mar 2025 22:23:20 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/bigquery_data_analysis_on_preparation/</guid>
+      <description>🔍 I would like to prepare for data analysis using GoogleSQL inside BigQuery</description>
     </item>
     <item>
       <title>[Google Chrome] This &amp; That</title>
@@ -114,14 +121,14 @@
       <description>🔍 Different perspective from data analysis. About data quality.</description>
     </item>
     <item>
-      <title>Unix</title>
+      <title>[macOS] UNIX is ancestor</title>
       <link>https://shiroimon.f5.si/post/macos_unix_is_ancestor/</link>
       <pubDate>Mon, 30 Sep 2024 23:28:04 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/macos_unix_is_ancestor/</guid>
       <description>🩶 About the legacy of inventions from a previous era that heavily influenced macOS.</description>
     </item>
     <item>
-      <title>Git Branches pruning</title>
+      <title>[Git] Branches pruning</title>
       <link>https://shiroimon.f5.si/post/github_branches_pruning/</link>
       <pubDate>Tue, 24 Sep 2024 18:08:08 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/github_branches_pruning/</guid>
@@ -177,7 +184,7 @@
       <description>🔍 Summarize billing mechanism, fee structure, and money-saving tips.</description>
     </item>
     <item>
-      <title>[Freelance] How to Jisui (自炊)</title>
+      <title>[Freelance] How to Jisui &lt;自炊&gt;</title>
       <link>https://shiroimon.f5.si/post/other/freelance_how_to_jisui/</link>
       <pubDate>Fri, 16 Aug 2024 18:41:57 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/other/freelance_how_to_jisui/</guid>
@@ -191,7 +198,7 @@
       <description>🍏 A little trick to use it like a native laptop application.</description>
     </item>
     <item>
-      <title>English Abbreviations</title>
+      <title>[English] Abbreviations</title>
       <link>https://shiroimon.f5.si/post/english_abbreviations/</link>
       <pubDate>Tue, 30 Jul 2024 12:48:55 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/english_abbreviations/</guid>
@@ -252,13 +259,6 @@
       <pubDate>Thu, 18 Jul 2024 18:30:01 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/github_issues_how_to_use/</guid>
       <description>📍 How to effectively use &amp;lsquo;Issues&amp;rsquo; in GitHub repository.</description>
-    </item>
-    <item>
-      <title>Static free data at online</title>
-      <link>https://shiroimon.f5.si/post/stats_free_data_at_onlinei/</link>
-      <pubDate>Wed, 17 Jul 2024 23:14:44 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/stats_free_data_at_onlinei/</guid>
-      <description>📊 An article summarizing various statistical data that can be viewed and used for free.</description>
     </item>
     <item>
       <title>My First Post</title>
