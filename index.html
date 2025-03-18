@@ -959,8 +959,8 @@
   "lastmodifyDate": "2025-03-19%2000:07:35",
   "gitInfo": {
     "lastCommit": {
-      "date": "2025-03-16%2019:15:32",
-      "hash": "7b2c2e690644088dbdde872a38a7c14228e4494b"
+      "date": "2025-03-19%2000:25:40",
+      "hash": "944c82954bf8ac09ced38ce110d4127ef1eb2d6c"
     }
   }
 },
@@ -972,8 +972,8 @@
   "lastmodifyDate": "2025-03-19%2000:17:27",
   "gitInfo": {
     "lastCommit": {
-      "date": "2025-03-11%2016:56:29",
-      "hash": "cd26508d4e0e6e2044c4b08d4c7782162c782c13"
+      "date": "2025-03-19%2000:25:40",
+      "hash": "944c82954bf8ac09ced38ce110d4127ef1eb2d6c"
     }
   }
 },
@@ -1024,8 +1024,8 @@
   "lastmodifyDate": "2025-03-19%2000:17:55",
   "gitInfo": {
     "lastCommit": {
-      "date": "2025-03-16%2019:15:32",
-      "hash": "7b2c2e690644088dbdde872a38a7c14228e4494b"
+      "date": "2025-03-19%2000:25:40",
+      "hash": "944c82954bf8ac09ced38ce110d4127ef1eb2d6c"
     }
   }
 },
@@ -1141,8 +1141,8 @@
   "lastmodifyDate": "2025-03-19%2000:21:31",
   "gitInfo": {
     "lastCommit": {
-      "date": "2025-03-07%2016:37:27",
-      "hash": "54c4f9cca445236741ff11a7596c6401d689937d"
+      "date": "2025-03-19%2000:25:40",
+      "hash": "944c82954bf8ac09ced38ce110d4127ef1eb2d6c"
     }
   }
 },
@@ -1154,8 +1154,8 @@
   "lastmodifyDate": "2025-03-17%2019:01:36",
   "gitInfo": {
     "lastCommit": {
-      "date": "2025-03-07%2016:37:27",
-      "hash": "54c4f9cca445236741ff11a7596c6401d689937d"
+      "date": "2025-03-19%2000:25:40",
+      "hash": "944c82954bf8ac09ced38ce110d4127ef1eb2d6c"
     }
   }
 },
@@ -1258,8 +1258,8 @@
   "lastmodifyDate": "2025-03-19%2000:04:20",
   "gitInfo": {
     "lastCommit": {
-      "date": "2025-03-17%2002:54:03",
-      "hash": "384f04f49ae2b685ca167dd3e799c226b88a5823"
+      "date": "2025-03-19%2000:25:40",
+      "hash": "944c82954bf8ac09ced38ce110d4127ef1eb2d6c"
     }
   }
 },
@@ -1284,8 +1284,8 @@
   "lastmodifyDate": "2025-03-17%2012:12:46",
   "gitInfo": {
     "lastCommit": {
-      "date": "2025-03-07%2016:37:27",
-      "hash": "54c4f9cca445236741ff11a7596c6401d689937d"
+      "date": "2025-03-19%2000:25:40",
+      "hash": "944c82954bf8ac09ced38ce110d4127ef1eb2d6c"
     }
   }
 },
@@ -1310,8 +1310,8 @@
   "lastmodifyDate": "2025-03-19%2000:16:14",
   "gitInfo": {
     "lastCommit": {
-      "date": "2025-03-16%2019:15:32",
-      "hash": "7b2c2e690644088dbdde872a38a7c14228e4494b"
+      "date": "2025-03-19%2000:25:40",
+      "hash": "944c82954bf8ac09ced38ce110d4127ef1eb2d6c"
     }
   }
 },
@@ -1407,8 +1407,17 @@
   }
 }
 ]'>
+    <div class="activity-listing contribution-activity">
         
-        <div class="js-yearly-contributions">
+        <div class="d-none d-lg-block">
+            <div class="js-profile-timeline-year-list bg-white float-right col-2 pl-5 is-placeholder" style="visibility: hidden; display: none; height: 210px;"></div>
+            <div class="js-profile-timeline-year-list bg-white js-sticky float-right col-2 pl-5" style="top: 74px; position: static;">
+                <ul class="filter-list small" id="year-list"></ul>
+            </div>
+        </div>
+
+        
+        <div class="js-yearly-contributions float-left col-12 col-lg-10">
         <div class="position-relative">
             
             <h2 class="f4 text-normal mb-2" id="posts-count"></h2>
@@ -1417,8 +1426,18 @@
             <div class="border py-2 graph-before-activity-overview">
                 
                 <div class="js-calendar-graph mx-md-2 mx-3 d-flex flex-column flex-items-end flex-xl-items-center overflow-hidden pt-1 is-graph-loading graph-canvas calendar-graph height-full text-center">
-                    <svg width="828" height="128" class="js-calendar-graph-svg">
+                    <svg class="js-calendar-graph-svg d-none d-lg-block"
+                            width="100%"
+                            height="128"
+                            viewBox="0 0 828 128"
+                            preserveAspectRatio="xMidYMid meet">
                         <g transform="translate(10, 20)" id="graph-svg"></g>
+                    </svg>
+                    <svg class="js-calendar-graph-svg d-lg-none"
+                            width="828"
+                            height="128"
+                            viewBox="0 0 828 128">
+                        <g transform="translate(10, 20)" id="graph-svg-mobile"></g>
                     </svg>
                 </div>
 
@@ -1442,20 +1461,19 @@
         </div>
 
         
-        <div class="activity-listing contribution-activity">
-            
-            <div class="d-none d-lg-block">
-                <div class="js-profile-timeline-year-list bg-white float-right col-2 pl-5 is-placeholder" style="visibility: hidden; display: none; height: 210px;">
-                </div>
-                <div class="js-profile-timeline-year-list bg-white js-sticky float-right col-2 pl-5" style="top: 74px; position: static;">
-                    <ul class="filter-list small" id="year-list"></ul>
-                </div>
-            </div>
+        <div class="contribution-activity-listing float-left col-12 col-lg-10">
+            <h2 class="f4 text-normal mt-4 mb-3">
+                Post activity
+            </h2>
+            <div id="posts-activity">
+                
+                <div id="recent-posts"></div>
 
-            
-            <h2 class="f4 text-normal mt-4 mb-3">Post activity</h2>
-            <div id="posts-activity"></div>
+                
+                <div id="older-posts" style="display: none;"></div>
+            </div>
         </div>
+    </div>
     </div>
 
 </div>

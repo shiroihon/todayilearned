@@ -51,13 +51,9 @@ function switchYear(year) {
     }
   }
   posts.sort((a, b) => { return b - a });
-  document.querySelector('#posts-activity').innerHTML = '';
-  for (const time of ms) {
-    const node = document.createElement('div');
-    const array = time.split("-");
-    node.innerHTML = monthly(array[0], Number(array[1]), posts);
-    document.querySelector('#posts-activity').appendChild(node);
-  }
+  
+  // 記事の表示を新しい関数に置き換え
+  displayPosts(posts);
 
   graph(year, posts, startDate, endDate);
 
@@ -93,22 +89,22 @@ function monthly(year, month, posts) {
   </li>`;
   }
   return `
-  <div class="contribution-activity-listing float-left col-12 col-lg-10">
-    <div class="width-full pb-4">
+  <div class="contribution-activity-listing float-left col-12 col-lg-10" style="width: 100%;">
+    <div class="width-full pb-4" style="width: 100%;">
       <h3 class="h6 pr-2 py-1 border-bottom mb-3" style="height: 14px;">
         <span class="color-bg-canvas pl-2 pr-3">${monthsFull[month]} <span
             class="text-gray">${monthPosts.length > 0 ? monthPosts[0].date.getFullYear() : year}</span></span>
       </h3>
 
-      <div class="TimelineItem ">
-        <div class="TimelineItem-badge ">
+      <div class="TimelineItem">
+        <div class="TimelineItem-badge">
           <svg class="octicon octicon-repo-push" viewBox="0 0 16 16" version="1.1" width="16" height="16">
             <path fill-rule="evenodd"
               d="M1 2.5A2.5 2.5 0 013.5 0h8.75a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V1.5h-8a1 1 0 00-1 1v6.708A2.492 2.492 0 013.5 9h3.25a.75.75 0 010 1.5H3.5a1 1 0 100 2h5.75a.75.75 0 010 1.5H3.5A2.5 2.5 0 011 11.5v-9zm13.23 7.79a.75.75 0 001.06-1.06l-2.505-2.505a.75.75 0 00-1.06 0L9.22 9.229a.75.75 0 001.06 1.061l1.225-1.224v6.184a.75.75 0 001.5 0V9.066l1.224 1.224z">
             </path>
           </svg>
         </div>
-        <div class="TimelineItem-body ">
+        <div class="TimelineItem-body">
           <details class="Details-element details-reset" open>
             <summary role="button" class="btn-link f4 muted-link no-underline lh-condensed width-full">
               <span class="color-text-primary ws-normal text-left">
@@ -193,6 +189,7 @@ function graph(year, posts, startDate, endDate) {
   const monthPos = [];
   let startMonth = -1;
   const weekday = startDate.getDay();
+
   for (let i = 0; i < 53; i++) {
     html += `<g transform="translate(${i * 16}, 0)">`;
     for (let j = 0; j < 7; j++) {
@@ -259,23 +256,21 @@ function graph(year, posts, startDate, endDate) {
     if (month === -1) {
       continue;
     }
-    html += `<text x="${15 * month + 16}" y="-9"
-    class="month">${months[(i + startDate.getMonth()) % 12]}</text>`;
+    html += `<text x="${15 * month + 16}" y="-9" class="month" style="font-size: 14px;">${months[(i + startDate.getMonth()) % 12]}</text>`;
   }
   html += `
-<text text-anchor="start" class="wday" dx="-10" dy="8"
-style="display: none;">Sun</text>
-<text text-anchor="start" class="wday" dx="-10" dy="25">Mon</text>
-<text text-anchor="start" class="wday" dx="-10" dy="32"
-style="display: none;">Tue</text>
-<text text-anchor="start" class="wday" dx="-10" dy="56">Wed</text>
-<text text-anchor="start" class="wday" dx="-10" dy="57"
-style="display: none;">Thu</text>
-<text text-anchor="start" class="wday" dx="-10" dy="85">Fri</text>
-<text text-anchor="start" class="wday" dx="-10" dy="81"
-style="display: none;">Sat</text>
-`;
+  <text text-anchor="start" class="wday" dx="-10" dy="8" style="display: none; font-size: 14px;">Sun</text>
+  <text text-anchor="start" class="wday" dx="-10" dy="25" style="font-size: 14px;">Mon</text>
+  <text text-anchor="start" class="wday" dx="-10" dy="32" style="display: none; font-size: 14px;">Tue</text>
+  <text text-anchor="start" class="wday" dx="-10" dy="56" style="font-size: 14px;">Wed</text>
+  <text text-anchor="start" class="wday" dx="-10" dy="57" style="display: none; font-size: 14px;">Thu</text>
+  <text text-anchor="start" class="wday" dx="-10" dy="85" style="font-size: 14px;">Fri</text>
+  <text text-anchor="start" class="wday" dx="-10" dy="81" style="display: none; font-size: 14px;">Sat</text>
+  `;
+
+  // デスクトップとモバイルの両方のSVGに同じ内容を設定
   document.querySelector('#graph-svg').innerHTML = html;
+  document.querySelector('#graph-svg-mobile').innerHTML = html;
 }
 
 let svgElem = document.createElement('div');
@@ -351,4 +346,94 @@ function setRelativeTime() {
     elem.innerHTML = relativeTime(dateStr);
     elem.setAttribute('title', new Date(dateStr).toLocaleString());
   });
+}
+
+// 記事を表示する関数
+function displayPosts(posts) {
+    const recentPostsContainer = document.getElementById('recent-posts');
+    const olderPostsContainer = document.getElementById('older-posts');
+    const postsActivityContainer = document.getElementById('posts-activity');
+    
+    if (!recentPostsContainer || !olderPostsContainer || !postsActivityContainer) return;
+    
+    // コンテナをクリア
+    recentPostsContainer.innerHTML = '';
+    olderPostsContainer.innerHTML = '';
+    
+    // 現在の年を取得
+    const currentYear = new Date().getFullYear();
+    
+    // 記事を最新のものと古いものに分ける
+    const recentPosts = posts.filter(post => {
+        const postDate = new Date(post.date);
+        return postDate.getFullYear() === currentYear;
+    });
+    
+    const olderPosts = posts.filter(post => {
+        const postDate = new Date(post.date);
+        return postDate.getFullYear() < currentYear;
+    });
+    
+    // 最新の記事を表示
+    if (recentPosts.length > 0) {
+        const ms = [];
+        for (const post of recentPosts) {
+            const time = post.date.getFullYear().toString() + "-" + post.date.getMonth().toString();
+            if (!ms.includes(time)) {
+                ms.push(time);
+            }
+        }
+        
+        for (const time of ms) {
+            const array = time.split("-");
+            const node = document.createElement('div');
+            node.innerHTML = monthly(array[0], Number(array[1]), recentPosts);
+            recentPostsContainer.appendChild(node);
+        }
+    }
+    
+    // 古い記事がある場合、Show moreボタンを表示
+    if (olderPosts.length > 0) {
+        // 古い記事のリストを作成（初期状態では非表示）
+        const ms = [];
+        for (const post of olderPosts) {
+            const time = post.date.getFullYear().toString() + "-" + post.date.getMonth().toString();
+            if (!ms.includes(time)) {
+                ms.push(time);
+            }
+        }
+        
+        for (const time of ms) {
+            const array = time.split("-");
+            const node = document.createElement('div');
+            node.innerHTML = monthly(array[0], Number(array[1]), olderPosts);
+            olderPostsContainer.appendChild(node);
+        }
+        
+        // Show moreボタンを追加
+        const showMoreButton = document.createElement('div');
+        showMoreButton.className = 'width-full pb-4';
+        showMoreButton.style.cssText = 'clear: both;';
+        showMoreButton.innerHTML = `
+            <div class="mt-3 d-flex flex-justify-center">
+                <button class="btn btn-sm btn-outline BtnGroup-item" id="show-more-activity">
+                    Show more activity
+                </button>
+            </div>
+        `;
+        
+        // ボタンをposts-activity内に追加
+        postsActivityContainer.appendChild(showMoreButton);
+        
+        // Show moreボタンのクリックイベント
+        document.getElementById('show-more-activity').addEventListener('click', () => {
+            if (olderPostsContainer.style.display === 'none') {
+                olderPostsContainer.style.display = 'block';
+                showMoreButton.querySelector('button').textContent = 'Show less activity';
+            } else {
+                olderPostsContainer.style.display = 'none';
+                showMoreButton.querySelector('button').textContent = 'Show more activity';
+            }
+        });
+    }
 }
