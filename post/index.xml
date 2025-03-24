@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Mar 2025 17:22:51 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 24 Mar 2025 15:07:30 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[BigQuery] About Machine Learning</title>
@@ -233,11 +233,11 @@
       <description>📍 Various things to make your GitHub life more enjoyable.</description>
     </item>
     <item>
-      <title>Slack Writing etiquette</title>
+      <title>[Slack] Writing etiquette</title>
       <link>https://shiroimon.f5.si/post/slack_writing_etiquette/</link>
       <pubDate>Tue, 23 Jul 2024 18:17:17 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/slack_writing_etiquette/</guid>
-      <description>💬 Learn writing etiquette using Slack&amp;rsquo;s unique notation.</description>
+      <description>🔔 Learn writing etiquette using Slack&amp;rsquo;s unique notation.</description>
     </item>
     <item>
       <title>GitHub How to check difference code</title>
