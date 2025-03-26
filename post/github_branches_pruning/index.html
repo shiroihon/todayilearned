@@ -154,7 +154,7 @@
                 Created <relative-time datetime="Tue, 24 Sep 2024 18:08:08 &#43;0900" class="no-wrap">Tue, 24 Sep 2024 18:08:08 &#43;0900</relative-time>
                 
                 <span class="path-divider">|</span>
-                Modified <relative-time datetime="Mon, 17 Mar 2025 19:01:36 &#43;0900" class="no-wrap">Mon, 17 Mar 2025 19:01:36 &#43;0900</relative-time>
+                Modified <relative-time datetime="Wed, 26 Mar 2025 15:02:56 &#43;0900" class="no-wrap">Wed, 26 Mar 2025 15:02:56 &#43;0900</relative-time>
                 
             </div>
         </div>
@@ -187,7 +187,7 @@
                     <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                 </div>
             </details-menu>
-            4731 Words
+            4805 Words
             <span class="path-divider">|</span>
             6 min
             </div>
@@ -687,6 +687,18 @@ local  -[main] branch ---------------------|------------|------&gt;
 </li>
 </ul>
 <h3 id="やっぱり要らないコミット">やっぱり要らない（コミット）<a class="anchor" aria-hidden="true" href="#やっぱり要らないコミット"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 事前確認</span>
+</span></span><span class="line"><span class="cl">$ git log --oneline <span class="p">|</span> head -n <span class="m">5</span> <span class="p">|</span> cat
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 直前のコミットを消す</span>
+</span></span><span class="line"><span class="cl">$ git reset --soft HEAD~1
+</span></span></code></pre></div><pre><code>- 
+  ```sh
+  # git add してｽﾃｰｼﾞﾝｸﾞに上げてしまったものを取り下げたい時
+  $ git status | cat
+  $ git reset HEAD
+  ```
+</code></pre>
 <ul>
 <li>cf.
 <ul>
