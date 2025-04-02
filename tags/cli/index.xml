@@ -6,7 +6,7 @@
     <description>Recent content in CLI on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Mar 2025 22:53:11 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 02 Apr 2025 16:47:30 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/tags/cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[macOS] Commands memorandum</title>
@@ -23,7 +23,7 @@
       <description>🐚</description>
     </item>
     <item>
-      <title>WezTerm Setup</title>
+      <title>[WezTerm] Setup</title>
       <link>https://shiroimon.f5.si/post/wezterm_setup/</link>
       <pubDate>Thu, 24 Oct 2024 10:40:32 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/wezterm_setup/</guid>
@@ -37,7 +37,7 @@
       <description>📍When developing on GitHub, I often switch branches, just like pruning.</description>
     </item>
     <item>
-      <title>Vim Building plugin</title>
+      <title>[Vim] Building plugin</title>
       <link>https://shiroimon.f5.si/post/vim_building_plugin/</link>
       <pubDate>Wed, 11 Sep 2024 19:39:49 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/vim_building_plugin/</guid>

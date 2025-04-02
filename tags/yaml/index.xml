@@ -6,7 +6,7 @@
     <description>Recent content in YAML on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Mar 2025 01:22:43 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 02 Apr 2025 16:51:38 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/tags/yaml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[YAML] Catchup</title>
@@ -16,7 +16,7 @@
       <description>🚫 Understand Yaml, the configuratio file familiar to DevOps.</description>
     </item>
     <item>
-      <title>Kubernetes Catchup</title>
+      <title>[Kubernetes] Catchup</title>
       <link>https://shiroimon.f5.si/post/kubernetes_catchup/</link>
       <pubDate>Mon, 18 Nov 2024 13:29:33 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/kubernetes_catchup/</guid>
@@ -37,7 +37,7 @@
       <description>🐋 Deepen my understanding of Docker&amp;rsquo;s basic commands and mechanisms.</description>
     </item>
     <item>
-      <title>dbt Seeking out basic understanding</title>
+      <title>[dbt] Seeking out basic understanding</title>
       <link>https://shiroimon.f5.si/post/dbt_seeking_basic_understanding/</link>
       <pubDate>Tue, 30 Jul 2024 02:30:55 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/dbt_seeking_basic_understanding/</guid>

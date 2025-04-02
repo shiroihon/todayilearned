@@ -6,7 +6,7 @@
     <description>Recent content in Know-How on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Mar 2025 22:53:11 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 02 Apr 2025 16:50:43 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/categories/know-how/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[BigQuery] Data analysis on preparation</title>
@@ -16,14 +16,14 @@
       <description>🔍 I would like to prepare for data analysis using GoogleSQL inside BigQuery</description>
     </item>
     <item>
-      <title>GitHub Wana be join OSS</title>
+      <title>[GitHub] Wana be join OSS</title>
       <link>https://shiroimon.f5.si/post/github_oss_wana_be_join/</link>
       <pubDate>Thu, 21 Nov 2024 12:06:08 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/github_oss_wana_be_join/</guid>
       <description>📍 About etiquette and the meaning of licenses when paticipating in OSS.</description>
     </item>
     <item>
-      <title>Kubernetes Catchup</title>
+      <title>[Kubernetes] Catchup</title>
       <link>https://shiroimon.f5.si/post/kubernetes_catchup/</link>
       <pubDate>Mon, 18 Nov 2024 13:29:33 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/kubernetes_catchup/</guid>
@@ -51,7 +51,7 @@
       <description>📍 Various things to make your GitHub life more enjoyable.</description>
     </item>
     <item>
-      <title>GitHub How to check difference code</title>
+      <title>[GitHub] How to check difference code</title>
       <link>https://shiroimon.f5.si/post/github_how_to_check_difference/</link>
       <pubDate>Tue, 23 Jul 2024 04:13:21 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/github_how_to_check_difference/</guid>
@@ -65,7 +65,7 @@
       <description>🔍 Things to keep in mind when analyzing data using SQL.</description>
     </item>
     <item>
-      <title>GitHub How to use issues</title>
+      <title>[GitHub] How to use issues</title>
       <link>https://shiroimon.f5.si/post/github_issues_how_to_use/</link>
       <pubDate>Thu, 18 Jul 2024 18:30:01 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/github_issues_how_to_use/</guid>

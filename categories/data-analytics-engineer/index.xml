@@ -6,7 +6,7 @@
     <description>Recent content in Data Analytics Engineer on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Mar 2025 22:10:18 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 02 Apr 2025 16:51:55 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/categories/data-analytics-engineer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[BigQuery] About Machine Learning</title>
@@ -44,7 +44,7 @@
       <description>🔍 Re-summarizeing the trajectory I learned as an introductory.</description>
     </item>
     <item>
-      <title>BigQuery Used in functions</title>
+      <title>[BigQuery] Used in functions</title>
       <link>https://shiroimon.f5.si/post/bigquery_used_functions/</link>
       <pubDate>Thu, 29 Aug 2024 19:47:44 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_used_functions/</guid>

@@ -21,7 +21,7 @@
 
     
     <meta name="description"
-  content="🔍 It&amp;rsquo;s not good to know about data governance." />
+  content="🔍 It&rsquo;s not good to know about data governance." />
 <meta name="keywords"
   content='blog, google analytics' />
 <meta name="robots" content="noodp" />
@@ -31,7 +31,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="[BigQuery] About INFORMATION_SCHEMA - Today I Learned" />
 <meta name="twitter:description"
-  content="🔍 It&amp;rsquo;s not good to know about data governance." />
+  content="🔍 It&rsquo;s not good to know about data governance." />
 <meta name="twitter:site" content="https://shiroimon.f5.si/" />
 <meta name="twitter:creator" content="shiro" />
 <meta name="twitter:image"
@@ -41,7 +41,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:title" content="[BigQuery] About INFORMATION_SCHEMA - Today I Learned">
 <meta property="og:description"
-  content="🔍 It&amp;rsquo;s not good to know about data governance." />
+  content="🔍 It&rsquo;s not good to know about data governance." />
 <meta property="og:url" content="https://shiroimon.f5.si/post/bigquery_about_information_schema/" />
 <meta property="og:site_name" content="[BigQuery] About INFORMATION_SCHEMA" />
 <meta property="og:image"
@@ -145,7 +145,7 @@
         <div class="d-flex flex-column">
             
             <h1 class="break-word f3 text-normal mb-md-0 mb-1">
-                <span class="author"><a href="https://shiroimon.f5.si/">shiroimon</a></span>
+                <span class="author"><a href="https://shiroimon.f5.si/"></a></span>
                 <span class="path-divider">/</span>
                 <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px"><a href="https://shiroimon.f5.si/post/bigquery_about_information_schema/">[BigQuery] About INFORMATION_SCHEMA</a></strong>
             </h1>
@@ -154,7 +154,7 @@
                 Created <relative-time datetime="Thu, 06 Mar 2025 17:39:31 &#43;0900" class="no-wrap">Thu, 06 Mar 2025 17:39:31 &#43;0900</relative-time>
                 
                 <span class="path-divider">|</span>
-                Modified <relative-time datetime="Wed, 26 Mar 2025 22:10:18 &#43;0900" class="no-wrap">Wed, 26 Mar 2025 22:10:18 &#43;0900</relative-time>
+                Modified <relative-time datetime="Wed, 02 Apr 2025 13:46:18 &#43;0900" class="no-wrap">Wed, 02 Apr 2025 13:46:18 &#43;0900</relative-time>
                 
             </div>
         </div>
@@ -240,9 +240,9 @@
 
         
         <div class="Box-body px-5 pb-5" style="z-index: 1">
-            <article class="markdown-body entry-content container-lg"><!-- raw HTML omitted -->
+            <article class="markdown-body entry-content container-lg"><!-- Icon Badge -->
 <p><img src="https://img.shields.io/badge/-BigQuery-669DF6.svg?logo=googlebigquery&amp;style=flat&amp;color=F0F8FF" alt="BigQuery"> <img src="https://img.shields.io/badge/-Google%20Cloud-4285F4.svg?logo=googlecloud&amp;style=flat&amp;color=F0F8FF" alt="Google Cloud"></p>
-<!-- raw HTML omitted -->
+<!-- Image -->
 <p><img src="https://cdn-ssl-devio-img.classmethod.jp/wp-content/uploads/2020/09/gcp-eyecatch-bigquery_1200x630.png" alt="BigQuery"></p>
 <h2 id="why">Why<a class="anchor" aria-hidden="true" href="#why"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 <p><code>SSIA</code></p>
@@ -340,40 +340,40 @@
 └─────────────────────────────────────────────────────────────┘
 </code></pre><p>スコープの違い:</p>
 <table>
-<thead>
-<tr>
-<th>level</th>
-<th>INFORMATION_SCHEMA</th>
-<th>i.e.</th>
-<th>roles/permission</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>データセットレベル</td>
-<td><code>TABLES</code>, <code>COLUMNS</code>, <code>VIEWS</code>, <code>TABLE_STORAGE</code>, <code>JOBS</code></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>個人レベル</td>
-<td><code>JOBS_BY_USER</code></td>
-<td><strong>単一プロジェクト内で実行ユーザーの</strong>ジョブ情報のみ（180日間データ保持）</td>
-<td><code>bigquery.jobs.list</code></td>
-</tr>
-<tr>
-<td>プロジェクトレベル</td>
-<td><code>JOBS_BY_PROJECT</code></td>
-<td><strong>単一プロジェクト内の全ての</strong>ジョブ情報のみ（180日間データ保持）</td>
-<td><code>bigquery.jobs.listALL</code></td>
-</tr>
-<tr>
-<td>組織レベル</td>
-<td><code>JOBS_BY_ORGANIZATION</code></td>
-<td><strong>組織全体の</strong>ジョブ情報（複数プロジェクトを含む）（180日間データ保持）</td>
-<td><code>bigquery.jobs.listALL</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>level</th>
+          <th>INFORMATION_SCHEMA</th>
+          <th>i.e.</th>
+          <th>roles/permission</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>データセットレベル</td>
+          <td><code>TABLES</code>, <code>COLUMNS</code>, <code>VIEWS</code>, <code>TABLE_STORAGE</code>, <code>JOBS</code></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>個人レベル</td>
+          <td><code>JOBS_BY_USER</code></td>
+          <td><strong>単一プロジェクト内で実行ユーザーの</strong>ジョブ情報のみ（180日間データ保持）</td>
+          <td><code>bigquery.jobs.list</code></td>
+      </tr>
+      <tr>
+          <td>プロジェクトレベル</td>
+          <td><code>JOBS_BY_PROJECT</code></td>
+          <td><strong>単一プロジェクト内の全ての</strong>ジョブ情報のみ（180日間データ保持）</td>
+          <td><code>bigquery.jobs.listALL</code></td>
+      </tr>
+      <tr>
+          <td>組織レベル</td>
+          <td><code>JOBS_BY_ORGANIZATION</code></td>
+          <td><strong>組織全体の</strong>ジョブ情報（複数プロジェクトを含む）（180日間データ保持）</td>
+          <td><code>bigquery.jobs.listALL</code></td>
+      </tr>
+  </tbody>
 </table>
 <ul>
 <li>rore/ :<a href="https://cloud.google.com/iam/docs/understanding-roles#bigquery.resourceViewer">roles/bigquery.resourceViewer</a></li>
@@ -394,7 +394,7 @@
 <li><a href="https://cloud.google.com/bigquery/docs/information-schema-jobs">INFORMATION_SCHEMA.JOBS</a></li>
 <li><a href="https://cloud.google.com/bigquery/docs/information-schema-jobs-by-project">INFORMATION_SCHEMA.JOBS_BY_PROJECT</a></li>
 <li><a href="https://cloud.google.com/bigquery/docs/information-schema-jobs-by-organization">INFORMATION_SCHEMA.JOBS_BY_ORGANIZATION</a>
-<!-- raw HTML omitted -->
+  <!-- https://cloud.google.com/bigquery/docs/information-schema-jobs-by-organization?hl=ja -->
 </li>
 </ul>
 </li>
@@ -538,8 +538,8 @@
     clientID: 'Ov23li4bh2st9tQoquIu',
     clientSecret: 'a7f9702fcb30947b9359d89046ada17fadbca6b9',
     repo: 'todayilearned',
-    owner: 'shiroimon',
-    admin: ['shiroimon'],
+    owner: 'bnx-hirukawa',
+    admin: ['bnx-hirukawa'],
     id: eval("location.pathname"), 
     distractionFreeMode: false 
   });

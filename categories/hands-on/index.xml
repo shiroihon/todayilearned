@@ -6,7 +6,7 @@
     <description>Recent content in Hands-On on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Mar 2025 01:22:43 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 02 Apr 2025 16:51:38 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/categories/hands-on/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[YAML] Catchup</title>
@@ -37,7 +37,7 @@
       <description>🐋 Deepen my understanding of Docker&amp;rsquo;s basic commands and mechanisms.</description>
     </item>
     <item>
-      <title>dbt Seeking out basic understanding</title>
+      <title>[dbt] Seeking out basic understanding</title>
       <link>https://shiroimon.f5.si/post/dbt_seeking_basic_understanding/</link>
       <pubDate>Tue, 30 Jul 2024 02:30:55 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/dbt_seeking_basic_understanding/</guid>
@@ -51,7 +51,7 @@
       <description>🔍 Tried using SQL to learn the basics of data science.</description>
     </item>
     <item>
-      <title>Terraform Trying to build the environment</title>
+      <title>[Terraform] Trying to build the environment</title>
       <link>https://shiroimon.f5.si/post/terraform_trying_to_build_the_environment/</link>
       <pubDate>Fri, 26 Jul 2024 03:42:04 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/terraform_trying_to_build_the_environment/</guid>

@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Mar 2025 01:22:43 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 02 Apr 2025 16:51:55 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[BigQuery] About Machine Learning</title>
@@ -79,14 +79,14 @@
       <description>🐚</description>
     </item>
     <item>
-      <title>GitHub Wana be join OSS</title>
+      <title>[GitHub] Wana be join OSS</title>
       <link>https://shiroimon.f5.si/post/github_oss_wana_be_join/</link>
       <pubDate>Thu, 21 Nov 2024 12:06:08 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/github_oss_wana_be_join/</guid>
       <description>📍 About etiquette and the meaning of licenses when paticipating in OSS.</description>
     </item>
     <item>
-      <title>Kubernetes Catchup</title>
+      <title>[Kubernetes] Catchup</title>
       <link>https://shiroimon.f5.si/post/kubernetes_catchup/</link>
       <pubDate>Mon, 18 Nov 2024 13:29:33 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/kubernetes_catchup/</guid>
@@ -100,14 +100,14 @@
       <description>🔍 Re-summarizeing the trajectory I learned as an introductory.</description>
     </item>
     <item>
-      <title>WezTerm Setup</title>
+      <title>[WezTerm] Setup</title>
       <link>https://shiroimon.f5.si/post/wezterm_setup/</link>
       <pubDate>Thu, 24 Oct 2024 10:40:32 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/wezterm_setup/</guid>
       <description>🟣 Would like to use the most powerful terminal that rumored on the street.</description>
     </item>
     <item>
-      <title>Google Sheets used in functions</title>
+      <title>[Google Sheets] Used in functions</title>
       <link>https://shiroimon.f5.si/post/google_sheets_used_functions/</link>
       <pubDate>Tue, 22 Oct 2024 12:56:22 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/google_sheets_used_functions/</guid>
@@ -135,7 +135,7 @@
       <description>📍When developing on GitHub, I often switch branches, just like pruning.</description>
     </item>
     <item>
-      <title>Vim Building plugin</title>
+      <title>[Vim] Building plugin</title>
       <link>https://shiroimon.f5.si/post/vim_building_plugin/</link>
       <pubDate>Wed, 11 Sep 2024 19:39:49 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/vim_building_plugin/</guid>
@@ -149,14 +149,14 @@
       <description>🐙 Understanding and implementing Argo projects and workflows.</description>
     </item>
     <item>
-      <title>BigQuery Used in functions</title>
+      <title>[BigQuery] Used in functions</title>
       <link>https://shiroimon.f5.si/post/bigquery_used_functions/</link>
       <pubDate>Thu, 29 Aug 2024 19:47:44 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/bigquery_used_functions/</guid>
       <description>🔍 When I getting from my daily work. Added as need. I keep writing various tips.</description>
     </item>
     <item>
-      <title>Trocco and Embluk Catchup</title>
+      <title>[Trocco][Embluk] Catchup</title>
       <link>https://shiroimon.f5.si/post/trocco_and_embluk_catchup/</link>
       <pubDate>Wed, 21 Aug 2024 15:30:46 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/trocco_and_embluk_catchup/</guid>
@@ -205,7 +205,7 @@
       <description>🗽 About abbreviations. They also appear in business and professional situations.</description>
     </item>
     <item>
-      <title>dbt Seeking out basic understanding</title>
+      <title>[dbt] Seeking out basic understanding</title>
       <link>https://shiroimon.f5.si/post/dbt_seeking_basic_understanding/</link>
       <pubDate>Tue, 30 Jul 2024 02:30:55 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/dbt_seeking_basic_understanding/</guid>
@@ -219,7 +219,7 @@
       <description>🔍 Tried using SQL to learn the basics of data science.</description>
     </item>
     <item>
-      <title>Terraform Trying to build the environment</title>
+      <title>[Terraform] Trying to build the environment</title>
       <link>https://shiroimon.f5.si/post/terraform_trying_to_build_the_environment/</link>
       <pubDate>Fri, 26 Jul 2024 03:42:04 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/terraform_trying_to_build_the_environment/</guid>
@@ -240,7 +240,7 @@
       <description>🔔 Learn writing etiquette using Slack&amp;rsquo;s unique notation.</description>
     </item>
     <item>
-      <title>GitHub How to check difference code</title>
+      <title>[GitHub] How to check difference code</title>
       <link>https://shiroimon.f5.si/post/github_how_to_check_difference/</link>
       <pubDate>Tue, 23 Jul 2024 04:13:21 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/github_how_to_check_difference/</guid>
@@ -254,7 +254,7 @@
       <description>🔍 Things to keep in mind when analyzing data using SQL.</description>
     </item>
     <item>
-      <title>GitHub How to use issues</title>
+      <title>[GitHub] How to use issues</title>
       <link>https://shiroimon.f5.si/post/github_issues_how_to_use/</link>
       <pubDate>Thu, 18 Jul 2024 18:30:01 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/github_issues_how_to_use/</guid>
