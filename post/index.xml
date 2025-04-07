@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Apr 2025 16:51:55 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 07 Apr 2025 15:57:24 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[BigQuery] About Various Data Transfer</title>
+      <link>https://shiroimon.f5.si/post/bigquery_about_various_data_transfer/</link>
+      <pubDate>Thu, 03 Apr 2025 11:11:44 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/bigquery_about_various_data_transfer/</guid>
+      <description>🔍 Find out various data transfer methods starting from BigQuery.</description>
+    </item>
     <item>
       <title>[BigQuery] About Machine Learning</title>
       <link>https://shiroimon.f5.si/post/bigquery_about_machine_learning/</link>
@@ -94,9 +101,9 @@
     </item>
     <item>
       <title>[BigQuery] Data analyize catchup</title>
-      <link>https://shiroimon.f5.si/post/bigquery_data_analyize_catchup/</link>
+      <link>https://shiroimon.f5.si/post/bigquery_data_analyisis_catchup/</link>
       <pubDate>Sat, 26 Oct 2024 00:22:05 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/bigquery_data_analyize_catchup/</guid>
+      <guid>https://shiroimon.f5.si/post/bigquery_data_analyisis_catchup/</guid>
       <description>🔍 Re-summarizeing the trajectory I learned as an introductory.</description>
     </item>
     <item>
