@@ -154,7 +154,7 @@
                 Created <relative-time datetime="Thu, 03 Apr 2025 11:11:44 &#43;0900" class="no-wrap">Thu, 03 Apr 2025 11:11:44 &#43;0900</relative-time>
                 
                 <span class="path-divider">|</span>
-                Modified <relative-time datetime="Mon, 07 Apr 2025 15:57:24 &#43;0900" class="no-wrap">Mon, 07 Apr 2025 15:57:24 &#43;0900</relative-time>
+                Modified <relative-time datetime="Tue, 08 Apr 2025 10:07:36 &#43;0900" class="no-wrap">Tue, 08 Apr 2025 10:07:36 &#43;0900</relative-time>
                 
             </div>
         </div>
@@ -187,7 +187,7 @@
                     <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                 </div>
             </details-menu>
-            1964 Words
+            1991 Words
             <span class="path-divider">|</span>
             2 min
             </div>
@@ -434,12 +434,13 @@ JavaScript    = SQLX ファイルの中にブロック記述-&gt; 再利用可�
           <td>Google のドキュメントが充実</td>
           <td>日本語含むコミュニティが小さい</td>
           <td>豊富なチュートリアル、ブログ、動画（日本語リソースも増加中）</td>
-          <td>初心者にはややとっつきにくい場合がある</td>
+          <td>初心者にはややとっつきにくい</td>
       </tr>
   </tbody>
 </table>
-<h4 id="how-to-write-config-on-sqlx">How to write config on SQLX<a class="anchor" aria-hidden="true" href="#how-to-write-config-on-sqlx"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">config</span> <span class="p">{</span>
+<h4 id="how-to-write-sqlx">How to write SQLX<a class="anchor" aria-hidden="true" href="#how-to-write-sqlx"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/* cofig part */</span>
+</span></span><span class="line"><span class="cl"><span class="nx">config</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">type</span><span class="o">:</span> <span class="s2">&#34;incremental&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">name</span><span class="o">:</span> <span class="s2">&#34;service_log_install&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">tags</span><span class="o">:</span> <span class="p">[</span><span class="s2">&#34;service&#34;</span><span class="p">,</span> <span class="s2">&#34;log&#34;</span><span class="p">,</span> <span class="s2">&#34;sercice_log&#34;</span><span class="p">,</span> <span class="s2">&#34;daily&#34;</span><span class="p">],</span>
@@ -510,7 +511,18 @@ JavaScript    = SQLX ファイルの中にブロック記述-&gt; 再利用可�
       </tr>
   </tbody>
 </table>
-<p>cf.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/* js part */</span>
+</span></span><span class="line"><span class="cl"><span class="nx">js</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">project</span> <span class="o">=</span> <span class="s2">&#34;your_company_project&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">dataset</span> <span class="o">=</span> <span class="s2">&#34;example_user_analysis&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">table</span> <span class="o">=</span> <span class="s2">&#34;sample_admin_salse&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">select</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl"><span class="nx">from</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">$</span><span class="p">{</span><span class="nx">project</span><span class="p">}.</span><span class="nx">$</span><span class="p">{</span><span class="nx">dataset</span><span class="p">}.</span><span class="nx">sample_admin_access</span> <span class="nx">a</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">left</span> <span class="nx">join</span>  <span class="nx">$</span><span class="p">{</span><span class="nx">project</span><span class="p">}.</span><span class="nx">$</span><span class="p">{</span><span class="nx">dataset</span><span class="p">}.</span><span class="nx">$</span><span class="p">{</span><span class="nx">table</span><span class="p">}</span> <span class="nx">b</span> <span class="nx">using</span><span class="p">(</span><span class="nx">date</span><span class="p">,</span> <span class="nx">user_id</span><span class="p">)</span>
+</span></span></code></pre></div><p>cf.</p>
 <ul>
 <li><a href="https://zenn.dev/google_cloud_jp/articles/dc3bf03da6a0f3">BigQuery 向けデータパイプラインサービス「Dataform」の基本的な使い方</a> Zenn</li>
 <li><a href="https://blog.g-gen.co.jp/entry/dataform-explained">Dataformを徹底解説</a> Ggen</li>
@@ -535,7 +547,7 @@ JavaScript    = SQLX ファイルの中にブロック記述-&gt; 再利用可�
                     
                     <li class="p-1">
                         <div>
-                            <a href="../../post/bigquery_data_analyisis_catchup/">[BigQuery] Data analyize catchup</a>
+                            <a href="../../post/bigquery_data_analysis_catchup/">[BigQuery] Data analyize catchup</a>
                             <time datetime="2024-10-26 00:22" class="no-wrap text-small ml-1">(2024-10-26 00:22)</time>
                         </div>
                         <div class="text-small text-gray mb-1 mt-1">Re-summarizeing the trajectory I learned as an introductory.</div>
