@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Apr 2025 10:07:36 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 16 Apr 2025 16:32:39 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[BigQuery] About Various Data Transfer</title>
@@ -70,6 +70,13 @@
       <pubDate>Tue, 21 Jan 2025 16:24:43 +0900</pubDate>
       <guid>https://shiroimon.f5.si/post/google_cloud_tools_memorandum/</guid>
       <description>☁️</description>
+    </item>
+    <item>
+      <title>[Vim] CSV Control</title>
+      <link>https://shiroimon.f5.si/post/vim_csv_control/</link>
+      <pubDate>Thu, 26 Dec 2024 21:27:07 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/vim_csv_control/</guid>
+      <description>✅ God&amp;rsquo;s tool that lets you edit CSVs like Excel in Vim.</description>
     </item>
     <item>
       <title>[YAML] Catchup</title>
