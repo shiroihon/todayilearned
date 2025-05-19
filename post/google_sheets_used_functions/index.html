@@ -154,7 +154,7 @@
                 Created <relative-time datetime="Tue, 22 Oct 2024 12:56:22 &#43;0900" class="no-wrap">Tue, 22 Oct 2024 12:56:22 &#43;0900</relative-time>
                 
                 <span class="path-divider">|</span>
-                Modified <relative-time datetime="Wed, 02 Apr 2025 16:50:05 &#43;0900" class="no-wrap">Wed, 02 Apr 2025 16:50:05 &#43;0900</relative-time>
+                Modified <relative-time datetime="Mon, 19 May 2025 15:40:57 &#43;0900" class="no-wrap">Mon, 19 May 2025 15:40:57 &#43;0900</relative-time>
                 
             </div>
         </div>
@@ -187,7 +187,7 @@
                     <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                 </div>
             </details-menu>
-            2704 Words
+            2870 Words
             <span class="path-divider">|</span>
             5 min
             </div>
@@ -196,17 +196,6 @@
             <div class="file-actions flex-order-2 pt-0">
                 
                 <div class="d-none d-md-flex">
-                    
-                    
-                    
-                    <a class="muted-link mr-3" href="../../tags/google">
-                        <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                            <path fill-rule="evenodd"
-                                d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-                            </path>
-                        </svg>
-                        Google
-                    </a>
                     
                     
                     
@@ -270,14 +259,17 @@
 <li><a href="https://github.com/topics/google-sheets">https://github.com/topics/google-sheets</a> | <a href="https://developers.google.com/sheets">doc</a></li>
 <li><a href="https://github.com/topics/google-apps-script">https://github.com/topics/google-apps-script</a> | <a href="https://developers.google.com/apps-script/">doc</a></li>
 </ul>
-<h3 id="-google-spread-sheets-以下gss">|| Google Spread Sheets (以下：GSS)<a class="anchor" aria-hidden="true" href="#-google-spread-sheets-以下gss"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <!-------------------------------------------
+
  以下、Googl Spread Sheets について
+
  -------------------------------------------->
-<h4 id="-gss-一括翻訳-googletranslate">| [GSS] 一括翻訳 <code>googletranslate()</code><a class="anchor" aria-hidden="true" href="#-gss-一括翻訳-googletranslate"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="err">★</span> <span class="o">=</span><span class="nx">arrayformula</span><span class="p">(</span><span class="nx">trim</span><span class="p">(</span><span class="nx">transpose</span><span class="p">(</span><span class="nx">split</span><span class="p">(</span><span class="nx">googletranslate</span><span class="p">(</span><span class="nx">textjoin</span><span class="p">(</span><span class="s2">&#34;. &#34;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">$B$2</span><span class="o">:</span><span class="nx">$B$1000</span><span class="p">),</span> <span class="s2">&#34;en&#34;</span><span class="p">,</span> <span class="s2">&#34;ja&#34;</span><span class="p">),</span> <span class="s2">&#34;。 &#34;</span><span class="p">,</span> <span class="kc">true</span><span class="p">))))</span>
+<h3 id="google-spread-sheets-以下gss">Google Spread Sheets (以下：GSS)<a class="anchor" aria-hidden="true" href="#google-spread-sheets-以下gss"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<h4 id="gss-一括翻訳-googletranslate">[GSS] 一括翻訳 <code>googletranslate()</code><a class="anchor" aria-hidden="true" href="#gss-一括翻訳-googletranslate"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="o">=</span><span class="nx">arrayformula</span><span class="p">(</span><span class="nx">trim</span><span class="p">(</span><span class="nx">transpose</span><span class="p">(</span><span class="nx">split</span><span class="p">(</span><span class="nx">googletranslate</span><span class="p">(</span><span class="nx">textjoin</span><span class="p">(</span><span class="s2">&#34;. &#34;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">$B$2</span><span class="o">:</span><span class="nx">$B$1000</span><span class="p">),</span> <span class="s2">&#34;en&#34;</span><span class="p">,</span> <span class="s2">&#34;ja&#34;</span><span class="p">),</span> <span class="s2">&#34;。 &#34;</span><span class="p">,</span> <span class="kc">true</span><span class="p">))))</span>
 </span></span></code></pre></div><ul>
 <li>
+<p><a href="https://docs.google.com/spreadsheets/d/1liCNawmvpNCsNzUhLcOTnwgTpIwH6l_fUx23bbA_uBI/edit?gid=0#gid=0">ref</a></p>
 <table>
   <thead>
       <tr>
@@ -290,7 +282,7 @@
       <tr>
           <td style="text-align: left">1</td>
           <td style="text-align: left">excess permissions</td>
-          <td style="text-align: left"><code>★</code></td>
+          <td style="text-align: left"><code>f()</code></td>
       </tr>
       <tr>
           <td style="text-align: left">2</td>
@@ -305,11 +297,13 @@
   </tbody>
 </table>
 </li>
-<li><a href="https://docs.google.com/spreadsheets/d/1liCNawmvpNCsNzUhLcOTnwgTpIwH6l_fUx23bbA_uBI/edit?gid=0#gid=0">ref</a></li>
-<li>cf. <a href="https://webapps.stackexchange.com/questions/129762/how-can-i-use-arrayformula-or-something-similar-with-googletranslate">How can I use ARRAYFORMULA (or something similar) with GOOGLETRANSLATE?</a> StackExchange</li>
+<li>
+<p>cf. <a href="https://webapps.stackexchange.com/questions/129762/how-can-i-use-arrayformula-or-something-similar-with-googletranslate">How can I use ARRAYFORMULA (or something similar) with GOOGLETRANSLATE?</a> StackExchange</p>
+</li>
 </ul>
-<h4 id="-gss-他シートから取得-filter">| [GSS] 他シートから取得 <code>filter()</code><a class="anchor" aria-hidden="true" href="#-gss-他シートから取得-filter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="err">★</span> <span class="o">=</span><span class="nx">iferror</span><span class="p">(</span><span class="nx">filter</span><span class="p">(</span><span class="s1">&#39;ログ用Create文(サーバー)&#39;</span><span class="o">!</span><span class="nx">$A</span><span class="o">:</span><span class="nx">$A</span><span class="p">,</span> <span class="nx">regexextract</span><span class="p">(</span><span class="s1">&#39;ログ用Create文(サーバー)&#39;</span><span class="o">!</span><span class="nx">$A</span><span class="o">:</span><span class="nx">$A</span><span class="p">,</span> <span class="s2">&#34;CREATE OR REPLACE TABLE\s+`[^`]+\.([^`]+)`&#34;</span><span class="p">)</span> <span class="o">=</span> <span class="nx">$A1</span><span class="p">),</span> <span class="s2">&#34;&#34;</span><span class="p">)</span>
+<h4 id="gss-他シートから取得-filter">[GSS] 他シートから取得 <code>filter()</code><a class="anchor" aria-hidden="true" href="#gss-他シートから取得-filter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<p><code>Vlookup()</code>のようにKeyを用いて、他シートのValueを取得したい。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="o">=</span><span class="nx">iferror</span><span class="p">(</span><span class="nx">filter</span><span class="p">(</span><span class="s1">&#39;ログ用Create文(サーバー)&#39;</span><span class="o">!</span><span class="nx">$A</span><span class="o">:</span><span class="nx">$A</span><span class="p">,</span> <span class="nx">regexextract</span><span class="p">(</span><span class="s1">&#39;ログ用Create文(サーバー)&#39;</span><span class="o">!</span><span class="nx">$A</span><span class="o">:</span><span class="nx">$A</span><span class="p">,</span> <span class="s2">&#34;CREATE OR REPLACE TABLE\s+`[^`]+\.([^`]+)`&#34;</span><span class="p">)</span> <span class="o">=</span> <span class="nx">$A1</span><span class="p">),</span> <span class="s2">&#34;&#34;</span><span class="p">)</span>
 </span></span></code></pre></div><ul>
 <li>[管理表]シート
 <table>
@@ -322,7 +316,7 @@
   <tbody>
       <tr>
           <td style="text-align: left">login</td>
-          <td style="text-align: center"><code>★</code></td>
+          <td style="text-align: center"><code>f()</code></td>
       </tr>
       <tr>
           <td style="text-align: left">registration</td>
@@ -352,26 +346,37 @@
 </table>
 </li>
 </ul>
-<h4 id="-gss-複数の文字置換-lamda">| [GSS] 複数の文字置換 <code>lamda()</code><a class="anchor" aria-hidden="true" href="#-gss-複数の文字置換-lamda"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="c1">// 多重ネストを回避したい
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">=</span><span class="nx">substitute</span><span class="p">(</span><span class="nx">substitute</span><span class="p">(</span><span class="nx">A1</span><span class="p">,</span> <span class="s2">&#34;m&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">),</span> <span class="s2">&#34; &#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="err">↓</span>
-</span></span><span class="line"><span class="cl"><span class="o">=</span><span class="nx">reduce</span><span class="p">(</span><span class="nx">A1</span><span class="p">,</span> <span class="p">{</span><span class="s2">&#34;m&#34;</span><span class="p">,</span> <span class="s2">&#34; &#34;</span><span class="p">},</span> <span class="nx">lambda</span><span class="p">(</span><span class="nx">acc</span><span class="p">,</span> <span class="nx">old</span><span class="p">,</span> <span class="nx">substitute</span><span class="p">(</span><span class="nx">acc</span><span class="p">,</span> <span class="nx">old</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)))</span>
-</span></span></code></pre></div><table>
+<h4 id="gss-複数対象の文字置換">[GSS] 複数対象の文字置換<a class="anchor" aria-hidden="true" href="#gss-複数対象の文字置換"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<p>カラムの表記揺れを直している時、不要文字列を除外したい時に使える。
+例えば、</p>
+<table>
   <thead>
       <tr>
+          <th>old</th>
           <th></th>
-          <th></th>
+          <th>acc</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td>mo ji</td>
+          <td>-&gt;</td>
+          <td>oji</td>
+      </tr>
+      <tr>
+          <td>o mji</td>
+          <td>-&gt;</td>
           <td>oji</td>
       </tr>
   </tbody>
 </table>
-<ul>
+<p>1列目、1~2行いずれも「m」「space」を除外したい。
+<code>substituto()</code> や <code>replace()</code> を連続使用すると割とゴチャにゴチャになる&hellip;
+そこで、</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="o">=</span><span class="nx">substitute</span><span class="p">(</span><span class="nx">substitute</span><span class="p">(</span><span class="nx">A1</span><span class="p">,</span> <span class="s2">&#34;m&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">),</span> <span class="s2">&#34; &#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="err">#</span> <span class="err">↓</span>
+</span></span><span class="line"><span class="cl"><span class="o">=</span><span class="nx">reduce</span><span class="p">(</span><span class="nx">A1</span><span class="p">,</span> <span class="p">{</span><span class="s2">&#34;m&#34;</span><span class="p">,</span> <span class="s2">&#34; &#34;</span><span class="p">},</span> <span class="nx">lambda</span><span class="p">(</span><span class="nx">acc</span><span class="p">,</span> <span class="nx">old</span><span class="p">,</span> <span class="nx">substitute</span><span class="p">(</span><span class="nx">acc</span><span class="p">,</span> <span class="nx">old</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">)))</span>
+</span></span></code></pre></div><ul>
 <li>cf.
 <ul>
 <li><a href="https://xlsm.hatenablog.com/entry/2024/01/03/232659">SUBSTITUTEをネストせずに複数置換するには</a></li>
@@ -379,9 +384,9 @@
 </ul>
 </li>
 </ul>
-<h4 id="-gss-複数行を単一行へ-flatten">| [GSS] 複数行を単一行へ <code>flatten()</code><a class="anchor" aria-hidden="true" href="#-gss-複数行を単一行へ-flatten"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
-<pre tabindex="0"><code class="language-ja" data-lang="ja"> = flatten(A1:B)
-</code></pre><table>
+<h4 id="gss-複数行を単一行へ-flatten">[GSS] 複数行を単一行へ <code>flatten()</code><a class="anchor" aria-hidden="true" href="#gss-複数行を単一行へ-flatten"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"> <span class="o">=</span><span class="nx">flatten</span><span class="p">(</span><span class="nx">A1</span><span class="o">:</span><span class="nx">B</span><span class="p">)</span>
+</span></span></code></pre></div><table>
   <thead>
       <tr>
           <th></th>
@@ -421,15 +426,68 @@
       </tr>
   </tbody>
 </table>
-<h4 id="-wipgss-複数のファイル内特定シート統合">| [WIP][GSS] 複数のファイル内特定シート統合<a class="anchor" aria-hidden="true" href="#-wipgss-複数のファイル内特定シート統合"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<h4 id="gss-歯抜けの連番">[GSS] 歯抜けの連番<a class="anchor" aria-hidden="true" href="#gss-歯抜けの連番"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="o">=</span><span class="nx">arrayformula</span><span class="p">(</span><span class="k">if</span><span class="p">(</span><span class="nx">B2</span><span class="o">:</span><span class="nx">B</span><span class="o">=</span><span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="nx">scan</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">B2</span><span class="o">:</span><span class="nx">B</span><span class="p">,</span> <span class="nx">lambda</span><span class="p">(</span><span class="nx">acc</span><span class="p">,</span> <span class="nx">val</span><span class="p">,</span> <span class="k">if</span><span class="p">(</span><span class="nx">val</span><span class="o">&lt;&gt;</span><span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="nx">acc</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nx">acc</span><span class="p">)))))</span>
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th><code>#</code></th>
+          <th>Labels</th>
+          <th>Data source</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>AM_Daily_KPI</td>
+          <td>KPI_ItemName_1.csv</td>
+      </tr>
+      <tr>
+          <td>_</td>
+          <td></td>
+          <td>KPI_ItemName_2.csv</td>
+      </tr>
+      <tr>
+          <td>_</td>
+          <td></td>
+          <td>KPI_ItemName_3.csv</td>
+      </tr>
+      <tr>
+          <td>_</td>
+          <td></td>
+          <td>crn_d.crn_basic_kpi</td>
+      </tr>
+      <tr>
+          <td>_</td>
+          <td></td>
+          <td>crn_d.m_game_series_titles</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>AM_Monthly_KPI</td>
+          <td>KPI_ItemName_1.csv</td>
+      </tr>
+      <tr>
+          <td>_</td>
+          <td></td>
+          <td>KPI_ItemName_4.csv</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>AM_Yearly_KPI</td>
+          <td>&hellip;</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="wipgss-複数のファイル内特定シート統合">[WIP][GSS] 複数のファイル内特定シート統合<a class="anchor" aria-hidden="true" href="#wipgss-複数のファイル内特定シート統合"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
 <pre tabindex="0"><code>「A」 「B」 「C」
   ↓    ↓    ↓
   └--「D」--┘
 
 ※　「」= GSSのファイルの意（便宜的）
     前提として「A~C」ファイル内部シートのフォーマットは、統一していること
-   （SQLの UNION ALL 結合方式をとりたい為）
-</code></pre><h4 id="-wipgss-テーブル化like-excel-like-pandas-df">| [WIP][GSS] テーブル化（like Excel, like Pandas df）<a class="anchor" aria-hidden="true" href="#-wipgss-テーブル化like-excel-like-pandas-df"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+   （SQLの UNION ALL 縦型結合方式をとりたい為）
+</code></pre><h4 id="wipgss-テーブル化like-excel-like-pandas-df">[WIP][GSS] テーブル化（like Excel, like Pandas df）<a class="anchor" aria-hidden="true" href="#wipgss-テーブル化like-excel-like-pandas-df"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
 <ul>
 <li>cf.
 <ul>
@@ -439,11 +497,13 @@
 </ul>
 </li>
 </ul>
-<h3 id="google-apps-script-以下gas">Google Apps Script (以下：GAS)<a class="anchor" aria-hidden="true" href="#google-apps-script-以下gas"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <!-------------------------------------------
+
  以下、GoogleAppsScript について
+
  -------------------------------------------->
-<h4 id="-gas-転置行列">| [GAS] 転置行列<a class="anchor" aria-hidden="true" href="#-gas-転置行列"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<h3 id="google-apps-script-以下gas">Google Apps Script (以下：GAS)<a class="anchor" aria-hidden="true" href="#google-apps-script-以下gas"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<h4 id="gas-転置行列">[GAS] 転置行列<a class="anchor" aria-hidden="true" href="#gas-転置行列"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/*****
 </span></span></span><span class="line"><span class="cl"><span class="cm">  cf. https://docs.google.com/spreadsheets/d/1fQl5PQPaGcX4z9VP6gGkRHcBOku5Bn9_XfBpIzMPwXE/edit?gid=1244521797#gid=1244521797
 </span></span></span><span class="line"><span class="cl"><span class="cm"> *****/</span>
@@ -805,57 +865,6 @@
     </div>
         
         
-        
-        <div class="Box mt-3 position-relative">
-        <div class="Box-body px-5 pb-5">
-            <article class="markdown-body entry-content container-lg">
-                <h2>See Also</h2>
-                <ul class="mt-2">
-                    
-                    <li class="p-1">
-                        <div>
-                            <a href="../../post/bigquery_about_data_quality/">[BigQuery] About data quality</a>
-                            <time datetime="2024-10-16 13:49" class="no-wrap text-small ml-1">(2024-10-16 13:49)</time>
-                        </div>
-                        <div class="text-small text-gray mb-1 mt-1">Different perspective from data analysis. About data quality.</div>
-                    </li>
-                    
-                    <li class="p-1">
-                        <div>
-                            <a href="../../post/bigquery_used_functions/">[BigQuery] Used in functions</a>
-                            <time datetime="2024-08-29 19:47" class="no-wrap text-small ml-1">(2024-08-29 19:47)</time>
-                        </div>
-                        <div class="text-small text-gray mb-1 mt-1">When I getting from my daily work. Added as need. I keep writing various tips.</div>
-                    </li>
-                    
-                    <li class="p-1">
-                        <div>
-                            <a href="../../post/bigquery_billing_how_works/">[BigQuery] Billing how works</a>
-                            <time datetime="2024-08-16 20:35" class="no-wrap text-small ml-1">(2024-08-16 20:35)</time>
-                        </div>
-                        <div class="text-small text-gray mb-1 mt-1">Summarize billing mechanism, fee structure, and money-saving tips.</div>
-                    </li>
-                    
-                    <li class="p-1">
-                        <div>
-                            <a href="../../post/bigquery_structured_data_processing_100/">[BigQuery] Structured data processing 100&#39;s</a>
-                            <time datetime="2024-07-26 04:23" class="no-wrap text-small ml-1">(2024-07-26 04:23)</time>
-                        </div>
-                        <div class="text-small text-gray mb-1 mt-1">Tried using SQL to learn the basics of data science.</div>
-                    </li>
-                    
-                    <li class="p-1">
-                        <div>
-                            <a href="../../post/bigquery_data_analysis_on_cte/">[BigQuery] CTEs in data analyisis</a>
-                            <time datetime="2024-07-20 16:13" class="no-wrap text-small ml-1">(2024-07-20 16:13)</time>
-                        </div>
-                        <div class="text-small text-gray mb-1 mt-1">Things to keep in mind when analyzing data using SQL.</div>
-                    </li>
-                    
-                </ul>
-            </article>
-        </div>
-        </div>
         
     </div>
     </div>

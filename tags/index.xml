@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 May 2025 15:04:57 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 19 May 2025 15:41:16 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BigQuery</title>
@@ -41,13 +41,6 @@
       <link>https://shiroimon.f5.si/tags/etl/elt/</link>
       <pubDate>Thu, 03 Apr 2025 11:11:44 +0900</pubDate>
       <guid>https://shiroimon.f5.si/tags/etl/elt/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Google</title>
-      <link>https://shiroimon.f5.si/tags/google/</link>
-      <pubDate>Thu, 03 Apr 2025 11:11:44 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/tags/google/</guid>
       <description></description>
     </item>
     <item>
@@ -93,10 +86,10 @@
       <description></description>
     </item>
     <item>
-      <title>BigQuery ML</title>
-      <link>https://shiroimon.f5.si/tags/bigquery-ml/</link>
+      <title>BQML</title>
+      <link>https://shiroimon.f5.si/tags/bqml/</link>
       <pubDate>Fri, 14 Mar 2025 17:31:44 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/tags/bigquery-ml/</guid>
+      <guid>https://shiroimon.f5.si/tags/bqml/</guid>
       <description></description>
     </item>
     <item>
