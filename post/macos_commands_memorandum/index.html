@@ -154,7 +154,7 @@
                 Created <relative-time datetime="Tue, 28 Jan 2025 00:50:32 &#43;0900" class="no-wrap">Tue, 28 Jan 2025 00:50:32 &#43;0900</relative-time>
                 
                 <span class="path-divider">|</span>
-                Modified <relative-time datetime="Wed, 02 Apr 2025 13:46:19 &#43;0900" class="no-wrap">Wed, 02 Apr 2025 13:46:19 &#43;0900</relative-time>
+                Modified <relative-time datetime="Mon, 26 May 2025 11:46:21 &#43;0900" class="no-wrap">Mon, 26 May 2025 11:46:21 &#43;0900</relative-time>
                 
             </div>
         </div>
@@ -187,7 +187,7 @@
                     <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                 </div>
             </details-menu>
-            412 Words
+            555 Words
             <span class="path-divider">|</span>
             2 min
             </div>
@@ -313,7 +313,19 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># PC groupid</span>
 </span></span><span class="line"><span class="cl">id -g
-</span></span></code></pre></div><h2 id="ref">Ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># [1] SSID一覧</span>
+</span></span><span class="line"><span class="cl">networksetup -listpreferredwirelessnetworks en0
+</span></span><span class="line"><span class="cl"><span class="c1"># より詳細を取得</span>
+</span></span><span class="line"><span class="cl">networksetup -listallhardwareports
+</span></span><span class="line"><span class="cl"><span class="c1"># [2] パスワード確認</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># （mySSID を任意の SSID に置き換える-&gt; UserName と password が求められる)</span>
+</span></span><span class="line"><span class="cl">security find-generic-password -wa <span class="o">{</span>mySSID<span class="o">}</span>
+</span></span></code></pre></div><p>cf.</p>
+<ul>
+<li><a href="https://qiita.com/shinyamizuno1008/items/42ea7b6a4b9976b08ffc">過去に接続したことがあるWi-Fiのパスワードをターミナルで表示させる。</a> Qiita</li>
+<li><a href="https://japan.cnet.com/article/35197065/#:~:text=Mac%E3%81%A7Wi-Fi%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%E3%82%92%E8%A6%8B%E3%81%A4%E3%81%91%E3%82%8B%E6%96%B9%E6%B3%95">「Mac」や「Windows」PCでWi-Fiのパスワードを表示するには</a> CNETJapan</li>
+</ul>
+<h2 id="ref">Ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 <ul>
 <li><a href="https://zenn.dev/maman/articles/1b4d790521e64f">MACのコマンドラインをど忘れしない用のコマンド集</a> Zenn</li>
 <li><a href="https://qiita.com/wholesomestar/items/7cd17c03a6696669848f">Macターミナルでの圧縮・解凍コマンド備忘録</a> Qiita</li>
