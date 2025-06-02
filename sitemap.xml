@@ -2,11 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://shiroimon.f5.si/post/tableau_this_and_that/</loc>
+    <lastmod>2025-06-02T19:05:25+09:00</lastmod>
+  </url><url>
+    <loc>https://shiroimon.f5.si/tags/bi/</loc>
+    <lastmod>2025-06-02T19:05:25+09:00</lastmod>
+  </url><url>
     <loc>https://shiroimon.f5.si/post/</loc>
-    <lastmod>2025-05-28T14:21:39+09:00</lastmod>
+    <lastmod>2025-06-02T19:05:25+09:00</lastmod>
+  </url><url>
+    <loc>https://shiroimon.f5.si/tags/tableau/</loc>
+    <lastmod>2025-06-02T19:05:25+09:00</lastmod>
+  </url><url>
+    <loc>https://shiroimon.f5.si/tags/</loc>
+    <lastmod>2025-06-02T19:05:25+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.f5.si/</loc>
-    <lastmod>2025-05-28T14:21:39+09:00</lastmod>
+    <lastmod>2025-06-02T19:05:25+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.f5.si/post/bigquery_about_various_data_transfer/</loc>
     <lastmod>2025-05-19T15:36:45+09:00</lastmod>
@@ -41,13 +53,7 @@
     <loc>https://shiroimon.f5.si/tags/sqlx/</loc>
     <lastmod>2025-05-19T15:36:45+09:00</lastmod>
   </url><url>
-    <loc>https://shiroimon.f5.si/tags/</loc>
-    <lastmod>2025-05-28T14:21:39+09:00</lastmod>
-  </url><url>
     <loc>https://shiroimon.f5.si/post/looker_studio_this_and_that/</loc>
-    <lastmod>2025-05-19T15:41:16+09:00</lastmod>
-  </url><url>
-    <loc>https://shiroimon.f5.si/tags/bi/</loc>
     <lastmod>2025-05-19T15:41:16+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.f5.si/tags/looker/</loc>

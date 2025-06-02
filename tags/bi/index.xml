@@ -6,8 +6,15 @@
     <description>Recent content in BI on Today I Learned</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 May 2025 15:41:16 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 02 Jun 2025 19:05:25 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.f5.si/tags/bi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Tableau] This and That</title>
+      <link>https://shiroimon.f5.si/post/tableau_this_and_that/</link>
+      <pubDate>Mon, 02 Jun 2025 14:46:08 +0900</pubDate>
+      <guid>https://shiroimon.f5.si/post/tableau_this_and_that/</guid>
+      <description>✨A little while ago, I&amp;rsquo;ll be writing about my studies as an introduction to Tableau</description>
+    </item>
     <item>
       <title>[Looker Studio] This and That</title>
       <link>https://shiroimon.f5.si/post/looker_studio_this_and_that/</link>
