@@ -154,7 +154,7 @@
                 Created <relative-time datetime="Thu, 20 Feb 2025 18:49:06 &#43;0900" class="no-wrap">Thu, 20 Feb 2025 18:49:06 &#43;0900</relative-time>
                 
                 <span class="path-divider">|</span>
-                Modified <relative-time datetime="Tue, 10 Jun 2025 13:50:44 &#43;0900" class="no-wrap">Tue, 10 Jun 2025 13:50:44 &#43;0900</relative-time>
+                Modified <relative-time datetime="Wed, 11 Jun 2025 13:25:15 &#43;0900" class="no-wrap">Wed, 11 Jun 2025 13:25:15 &#43;0900</relative-time>
                 
             </div>
         </div>
@@ -187,7 +187,7 @@
                     <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                 </div>
             </details-menu>
-            931 Words
+            948 Words
             <span class="path-divider">|</span>
             1 min
             </div>
@@ -245,18 +245,18 @@
 </span></span><span class="line"><span class="cl">  <span class="na">user</span>                        = <span class="nb">var</span><span class="p">.</span><span class="nx">vsphere_user</span><span class="c1"> #vsphereのユーザー名
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="na">password</span>                    = <span class="nb">var</span><span class="p">.</span><span class="nx">vsphere_password</span><span class="c1"> #vsphereのパスワード
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="na">vsphere_server</span>              = <span class="nb">var</span><span class="p">.</span><span class="nx">vcenter_server</span><span class="c1"> #vCenterのFQDN/IPアドレス
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="na">allow_unverified_ssl</span>        = <span class="kc">true</span><span class="c1"> #SSL証明書の検証無効
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="na">allow_unverified_ssl</span>        = <span class="kc">true</span><span class="c1">  #SSL証明書の検証無効
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="err">省略</span><span class="p">]</span><span class="c1">
 </span></span></span><span class="line"><span class="cl"><span class="c1">#Resource
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kr">resource</span> <span class="s2">&#34;vsphere_virtual_machine&#34;</span> <span class="s2">&#34;vm&#34;</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="na">count</span>                       = <span class="nb">var</span><span class="p">.</span><span class="nx">prov_vm_num</span><span class="c1"> #仮想マシンの数
+</span></span><span class="line"><span class="cl">  <span class="na">count</span>                       = <span class="nb">var</span><span class="p">.</span><span class="nx">prov_vm_num</span><span class="c1">  #仮想マシンの数
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="na">name</span>                        = <span class="s2">&#34;</span><span class="si">${</span><span class="nb">var</span><span class="p">.</span><span class="nx">prov_vmname_prefix</span><span class="si">}${</span><span class="nb">format</span><span class="p">(</span><span class="s2">&#34;%03d&#34;</span><span class="p">,</span><span class="nb">count</span><span class="p">.</span><span class="nx">index</span><span class="o">+</span><span class="m">1</span><span class="p">)</span><span class="si">}</span><span class="s2">&#34;</span><span class="c1">
 </span></span></span><span class="line"><span class="cl"><span class="c1">                                #仮想マシンの名前”接頭語”+”001”
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">[</span><span class="err">省略</span><span class="p">]</span><span class="c1">
 </span></span></span><span class="line"><span class="cl"><span class="c1">#Resource for VM Specs
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="na">num_cpus</span>                    = <span class="nb">var</span><span class="p">.</span><span class="nx">prov_cpu_num</span><span class="c1"> #仮想マシンのCPUの数
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="na">memory</span>                      = <span class="nb">var</span><span class="p">.</span><span class="nx">prov_mem_num</span><span class="c1"> #仮想マシンのメモリのMB
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="na">num_cpus</span>                    = <span class="nb">var</span><span class="p">.</span><span class="nx">prov_cpu_num</span><span class="c1">  #仮想マシンのCPUの数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="na">memory</span>                      = <span class="nb">var</span><span class="p">.</span><span class="nx">prov_mem_num</span><span class="c1">  #仮想マシンのメモリのMB
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">※変数の定義は別途必要</span>
 </span></span></code></pre></div><ul>
 <li>※ Terraformでは、拡張子.tf のファイル(テキストデータ)に、リソースの定義を記述</li>
@@ -265,9 +265,9 @@
 </li>
 </ul>
 </li>
-<li>Terraformプロバイダを設定(init)</li>
-<li>定義ファイルに基づいて、各製品のＡＰＩに対応したコードを自動生成(plan)</li>
-<li>コード適用(apply)</li>
+<li>Terraformプロバイダを設定(<code>$terraform init</code>)</li>
+<li>定義ファイルに基づいて、各製品のＡＰＩに対応したコードを自動生成(<code>$terraform plan</code>)</li>
+<li>コード適用(<code>$terraform apply</code>)</li>
 </ol>
 <h3 id="余談-様々なiac">[余談] 様々なIaC<a class="anchor" aria-hidden="true" href="#余談-様々なiac"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <table>

@@ -154,7 +154,7 @@
                 Created <relative-time datetime="Tue, 26 Nov 2024 15:23:00 &#43;0900" class="no-wrap">Tue, 26 Nov 2024 15:23:00 &#43;0900</relative-time>
                 
                 <span class="path-divider">|</span>
-                Modified <relative-time datetime="Wed, 02 Apr 2025 13:46:19 &#43;0900" class="no-wrap">Wed, 02 Apr 2025 13:46:19 &#43;0900</relative-time>
+                Modified <relative-time datetime="Fri, 13 Jun 2025 11:19:38 &#43;0900" class="no-wrap">Fri, 13 Jun 2025 11:19:38 &#43;0900</relative-time>
                 
             </div>
         </div>
@@ -187,9 +187,9 @@
                     <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                 </div>
             </details-menu>
-            438 Words
+            584 Words
             <span class="path-divider">|</span>
-            1 min
+            2 min
             </div>
 
             
@@ -276,16 +276,20 @@
 </span></span><span class="line"><span class="cl">$ man zsh
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 基本</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
 </span></span><span class="line"><span class="cl">$ ls
-</span></span><span class="line"><span class="cl">$ wc -l        <span class="c1"># word counts: 単語数</span>
 </span></span><span class="line"><span class="cl">$ grep word    <span class="c1"># &#34;word&#34;の文字列検索</span>
+</span></span><span class="line"><span class="cl">$ wc -l        <span class="c1"># word counts: 単語数</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">$ ls <span class="p">|</span> grep conf <span class="p">|</span> wc -l
 </span></span><span class="line"><span class="cl"><span class="m">17</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 移動</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
 </span></span><span class="line"><span class="cl">$ <span class="nb">cd</span>
 </span></span><span class="line"><span class="cl">$ <span class="nb">pwd</span>
 </span></span><span class="line"><span class="cl">~/sandbox/prodctions/dev/user
@@ -299,52 +303,80 @@
 </span></span><span class="line"><span class="cl">~/tmp/src/main/go/api
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 操作系</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># カーソル移動 (Emacs key風はmacOS特有)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># カーソル移動 (Emacs key風は macOS 特有)</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#       ^p</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#   ^b  |  ^f</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#       ^n</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># ^d :delete with Ctrl + d</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># ^h :backspace with Ctrl + h</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># ^a :行頭</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># ^e :行末</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># ^k :カーソルより後ろ（右方向）削除</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># ^w :カーソルより前の単語消す</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#   ^d :delete    with Ctrl + d</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#   ^h :backspace with Ctrl + h</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#   ^a :行頭</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#   ^e :行末</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#   ^k :カーソルより後ろ（右方向）削除</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#   ^w :カーソルより前（左方向）の単語消す</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 履歴</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
 </span></span><span class="line"><span class="cl">$ <span class="nb">history</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 過去のgit コマンド列挙して、ナンバー実行</span>
 </span></span><span class="line"><span class="cl">$ <span class="nb">history</span> <span class="p">|</span> grep git
 </span></span><span class="line"><span class="cl">$ !<span class="o">{</span>number<span class="o">}</span>
 </span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 展開</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># - Brace Expansion (zsh) :{,}で総当り展開</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># - Glob Expansion  (zsh) :Tabで確認展開（^xu :で戻せる）</span>
-</span></span><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="o">{</span>shop_a, shop_b<span class="o">}</span>.csv
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Brace Expansion (zsh特有) :{,}で総当り展開</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># - Glob  Expansion (zsh特集) :Tabで確認展開（^xu :で戻せる）</span>
+</span></span><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="o">{</span>shop_a,shop_b<span class="o">}</span>.csv
 </span></span><span class="line"><span class="cl">shop_a.csv shop_b.csv
-</span></span><span class="line"><span class="cl">$ diff -u <span class="o">{</span>shop_a, shop_b<span class="o">}</span>.csv
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ diff -u <span class="o">{</span>shop_a,shop_b<span class="o">}</span>.csv
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">$ cp -p httpd.conf htppdd.conf.buckup
 </span></span><span class="line"><span class="cl">$ cp -p htppd.conf<span class="o">{</span>, .buckup<span class="o">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 一気にでディレクトリが作れる</span>
-</span></span><span class="line"><span class="cl">$ mkdir -p src/<span class="o">{</span>main, test<span class="o">}</span>/script/<span class="o">{</span>api, db<span class="o">}</span>/<span class="o">{</span>user, task<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 一気にで構造化ディレクトリが作れる</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># src/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#     └main/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#         └script/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#             └api/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#                 └user/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#                 └task/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#             └db/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#                 └user/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#                 └task/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#     └test/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#         └script/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#             └api/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#                 └user/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#                 └task/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#             └db/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#                 └user/</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#                 └task/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ mkdir -p src/<span class="o">{</span>main,test<span class="o">}</span>/script/<span class="o">{</span>api,db<span class="o">}</span>/<span class="o">{</span>user,task<span class="o">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># Mac特有</span>
-</span></span><span class="line"><span class="cl">$ pbcopy
-</span></span><span class="line"><span class="cl">$ qlook  <span class="c1"># QuickLook :Finderで見ることが</span>
-</span></span><span class="line"><span class="cl">$ open   <span class="c1"># Double click</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
 </span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ pbcopy
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># QuickLook :Finderで見ることが</span>
+</span></span><span class="line"><span class="cl">$ qlook
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Double click</span>
+</span></span><span class="line"><span class="cl">$ open
 </span></span><span class="line"><span class="cl">$ open https://google.com
 </span></span></code></pre></div><h2 id="ref">Ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 <ul>
