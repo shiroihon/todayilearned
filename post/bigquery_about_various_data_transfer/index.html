@@ -154,7 +154,7 @@
                 Created <relative-time datetime="Thu, 03 Apr 2025 11:11:44 &#43;0900" class="no-wrap">Thu, 03 Apr 2025 11:11:44 &#43;0900</relative-time>
                 
                 <span class="path-divider">|</span>
-                Modified <relative-time datetime="Mon, 19 May 2025 15:36:45 &#43;0900" class="no-wrap">Mon, 19 May 2025 15:36:45 &#43;0900</relative-time>
+                Modified <relative-time datetime="Fri, 13 Jun 2025 17:28:50 &#43;0900" class="no-wrap">Fri, 13 Jun 2025 17:28:50 &#43;0900</relative-time>
                 
             </div>
         </div>
@@ -187,7 +187,7 @@
                     <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                 </div>
             </details-menu>
-            2876 Words
+            2940 Words
             <span class="path-divider">|</span>
             4 min
             </div>
@@ -290,30 +290,36 @@
 <img src="https://img.shields.io/badge/-Dataform-669DF6.svg?logo=googledataform&amp;style=flat&amp;color=F0F8FF" alt="Dataform">
 <img src="https://img.shields.io/badge/-Cloud%20Composer-669DF6.svg?logo=googlecloudcomposer&amp;style=flat&amp;color=F0F8FF" alt="Composer"></p>
 <!-- Image -->
-<p><img src="https://cdn-ssl-devio-img.classmethod.jp/wp-content/uploads/2020/09/gcp-eyecatch-bigquery_1200x630.png" alt="BigQuery"></p>
+<!-- ![BigQuery](https://cdn-ssl-devio-img.classmethod.jp/wp-content/uploads/2020/09/gcp-eyecatch-bigquery_1200x630.png) -->
 <h2 id="why">Why<a class="anchor" aria-hidden="true" href="#why"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">                            DataLake                        DWH                         DataMart
-</span></span><span class="line"><span class="cl">[DataSource] -&gt; [Trocco] -&gt; [CloudStorage] -&gt; [Dataflow] -&gt; [BigQuery] -&gt; [Dataform] -&gt; [BigQuery]
-</span></span><span class="line"><span class="cl"> - CloudLogging
-</span></span><span class="line"><span class="cl"> - GA4
-</span></span><span class="line"><span class="cl"> - ...etc.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl"># --------------------
+</span></span><span class="line"><span class="cl"># ETL/ELT pipeline
+</span></span><span class="line"><span class="cl"># --------------------
+</span></span><span class="line"><span class="cl">orchestration
+</span></span><span class="line"><span class="cl"> (Cloud Composer)
+</span></span><span class="line"><span class="cl"> (kestra)
+</span></span><span class="line"><span class="cl">                                  DataLake               DWH                   DataMart
+</span></span><span class="line"><span class="cl">[DataSource] -&gt; [Trocco] -------&gt; [GCS] -&gt; [Dataflow] -&gt; [BQ] -&gt; [Dataform] -&gt; [BQ]
+</span></span><span class="line"><span class="cl"> └CloudLogging  [Dataproc(Spark)]
+</span></span><span class="line"><span class="cl"> └GA4           [Embluk]
+</span></span><span class="line"><span class="cl"> └...etc.
 </span></span></code></pre></div><h2 id="what">What<a class="anchor" aria-hidden="true" href="#what"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 <h3 id="cloud-composer-でのデータ転送">[Cloud Composer] でのデータ転送<a class="anchor" aria-hidden="true" href="#cloud-composer-でのデータ転送"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
-<h4 id="cf">cf.<a class="anchor" aria-hidden="true" href="#cf"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<h4 id="ref">ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
 <ul>
 <li><a href="https://cloud.google.com/composer/docs/data-analytics-googlecloud?hl=ja#data_analytics_dag">データ分析 DAG</a> Google Cloud</li>
 </ul>
 <h3 id="dataflow-でのデータ転送">[Dataflow] でのデータ転送<a class="anchor" aria-hidden="true" href="#dataflow-でのデータ転送"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">Data Lake                       DWH
-</span></span><span class="line"><span class="cl">[CloudStorage] -&gt; [Dataflow] -&gt; [BigQuery]
-</span></span></code></pre></div><h4 id="cf-1">cf.<a class="anchor" aria-hidden="true" href="#cf-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">Data Lake              DWH
+</span></span><span class="line"><span class="cl">[GCS] -&gt; [Dataflow] -&gt; [BQ]
+</span></span></code></pre></div><h4 id="ref-1">ref.<a class="anchor" aria-hidden="true" href="#ref-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
 <ul>
 <li><a href="https://zenn.dev/pharmax/articles/932d7095313387">分析用ログをCloud Storageにアップロードして、Dataflow経由でBigQueryへ格納する</a> Zenn</li>
 <li><a href="https://zenn.dev/pharmax/articles/f60e0d857f2be2">[GCP入門] Cloud LoggingのログをCloud Storageへ転送する</a> Zenn</li>
 </ul>
 <h3 id="dataform-でのデータ転送">[Dataform] でのデータ転送<a class="anchor" aria-hidden="true" href="#dataform-でのデータ転送"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">DWH                         DataMart
-</span></span><span class="line"><span class="cl">[BigQuery] -&gt; [Dataform] -&gt; [BigQuery]
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">DWH                   DataMart
+</span></span><span class="line"><span class="cl">[BQ] -&gt; [Dataform] -&gt; [BQ]
 </span></span></code></pre></div><ul>
 <li>
 <p><a href="https://cloud.google.com/dataform/docs/overview?hl=ja">Dataform の概要</a></p>
@@ -371,7 +377,8 @@ SQLX          = オープンソースの、SQL の拡張言語
 JavaScript    = SQLX ファイルの中にブロック記述-&gt; 再利用可能な関数を定義可能
 </code></pre></li>
 </ul>
-<h4 id="how-to-write-sqlx">How to write SQLX<a class="anchor" aria-hidden="true" href="#how-to-write-sqlx"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<h4 id="sqlx">SQLX<a class="anchor" aria-hidden="true" href="#sqlx"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<h5 id="json-part">JSON part<a class="anchor" aria-hidden="true" href="#json-part"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/* JSON: config part */</span>
 </span></span><span class="line"><span class="cl"><span class="nx">config</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">type</span><span class="o">:</span> <span class="s2">&#34;incremental&#34;</span><span class="p">,</span>
@@ -403,7 +410,11 @@ JavaScript    = SQLX ファイルの中にブロック記述-&gt; 再利用可�
 </span></span><span class="line"><span class="cl">    <span class="nx">uniqueKey</span><span class="o">:</span> <span class="p">[</span><span class="s2">&#34;user_id&#34;</span><span class="p">,</span> <span class="s2">&#34;region&#34;</span><span class="p">,</span> <span class="s2">&#34;installed_at_jst&#34;</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></div><table>
+</span></span></code></pre></div><details>
+  <summary>key/value 詳細</summary>
+  <p></p>
+  <blockquote>
+<table>
   <thead>
       <tr>
           <th style="text-align: left">key</th>
@@ -455,7 +466,12 @@ JavaScript    = SQLX ファイルの中にブロック記述-&gt; 再利用可�
 </table>
 <ul>
 <li>cf. <a href="https://cloud.google.com/dataform/docs/reference/dataform-core-reference#itableconfig">ITableConfig</a> Google Cloud</li>
-</ul>
+</ul></blockquote>
+
+  <p></p>
+</details>
+
+<h5 id="javascript-part">JavaScript part<a class="anchor" aria-hidden="true" href="#javascript-part"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/* javascript part */</span>
 </span></span><span class="line"><span class="cl"><span class="nx">js</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">project</span> <span class="o">=</span> <span class="s2">&#34;your_company_project&#34;</span>
@@ -476,13 +492,20 @@ JavaScript    = SQLX ファイルの中にブロック記述-&gt; 再利用可�
 </span></span></code></pre></div><p>Google BigQuery Dataform はデフォルトで依存関係に基づいて <strong>自動的</strong> に実行順序が決定される<br>
 しかし、残念ながら明示的に順次実行を制御することは直接的な方法ではできない&hellip;<br>
 そこで、間接的な方法をまとめていく<br>
-DataformはDAG（有向非巡回グラフ）で実行順序を管理するため、循環依存があるとエラーになる</p>
-<p>タグ/カスタムロジックの利用</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- config { tags: [&#34;phase1&#34;] } (Maste)
+※　DataformはDAG(有向非巡回グラフ)で実行順序を管理するため、循環依存があるとエラーになる</p>
+<ol>
+<li>間接方法：タグ/カスタムロジック利用
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="err">コンフィグ内のタグを上手く利用</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- config { tags: [&#34;phase1&#34;] } (Master)
 </span></span></span><span class="line"><span class="cl"><span class="c1">-- config { tags: [&#34;phase2&#34;], dependencies: [&#34;phase1&#34;] } (A)
 </span></span></span><span class="line"><span class="cl"><span class="c1">-- config { tags: [&#34;phase3&#34;], dependencies: [&#34;phase2&#34;] } (C)
 </span></span></span><span class="line"><span class="cl"><span class="c1">-- config { tags: [&#34;phase4&#34;], dependencies: [&#34;phase3&#34;] } (B)
-</span></span></span></code></pre></div><h4 id="dataform-cli">DataForm CLI<a class="anchor" aria-hidden="true" href="#dataform-cli"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+</span></span></span></code></pre></div></li>
+<li>間接方法：CLI利用]
+<a href="#dag">後述</a></li>
+</ol>
+<h4 id="dataform-cli">DataForm CLI<a class="anchor" aria-hidden="true" href="#dataform-cli"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
 <ul>
 <li>準備
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># setup NodeJS</span>
@@ -525,7 +548,7 @@ DataformはDAG（有向非巡回グラフ）で実行順序を管理するため
 <li>cf. <a href="https://cloud.google.com/dataform/docs/reference/dataform-cli-reference?hl=ja">Dataform CLI のリファレンス</a> Google Cloud</li>
 </ul>
 </li>
-<li>DAG
+<li><a id="#dag">DAG</a>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># CLI を用いて実行順序を手動実行</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># Master-&gt;A-&gt;C-&gt;B</span>
@@ -559,9 +582,11 @@ DataformはDAG（有向非巡回グラフ）で実行順序を管理するため
 <li><a href="https://dev.hq-hq.co.jp/articles/using-dataform-cli">Dataform CLI で CUI から BigQuery のクエリを管理する</a> HQ</li>
 <li><a href="https://book.st-hakky.com/data-platform/dataform-intro/">Google Cloud のデータ変換サービス DataForm 入門</a> Hakky Handbook</li>
 </ul>
-<h4 id="vs-dbt">VS dbt<a class="anchor" aria-hidden="true" href="#vs-dbt"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
-<p>ETLの主に「T層」に特化したサービス。最近流行りの「dbt」とのメリデメを簡単にまとめる</p>
-<table>
+<h4 id="vsdbt">vs「dbt」<a class="anchor" aria-hidden="true" href="#vsdbt"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<details>
+  <summary>ETLの「T層」に特化したサービス!最近流行りの「dbt」とのメリデメ</summary>
+  <p></p>
+  <table>
   <thead>
       <tr>
           <th>\</th>
@@ -623,7 +648,7 @@ DataformはDAG（有向非巡回グラフ）で実行順序を管理するため
       </tr>
   </tbody>
 </table>
-<h4 id="cf-2">cf.<a class="anchor" aria-hidden="true" href="#cf-2"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<h4 id="ref">ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
 <ul>
 <li><a href="https://book.st-hakky.com/data-platform/dataform-about-sqlx/">DataForm で変換ワークフローを定義する SQLX を徹底解説</a> Hakky Handbook</li>
 <li><a href="https://zenn.dev/google_cloud_jp/articles/dc3bf03da6a0f3">BigQuery 向けデータパイプラインサービス「Dataform」の基本的な使い方</a> Zenn</li>
@@ -634,8 +659,12 @@ DataformはDAG（有向非巡回グラフ）で実行順序を管理するため
 <li><a href="https://dev.classmethod.jp/articles/try-dataform-connect-third-party-git-repository/">DataformのサードパーティーGitリポジトリ接続機能を試してみた</a> DevelopersIO</li>
 <li><a href="https://qiita.com/shuntaro_tamura/items/5a92c517a7d95d655505">非エンジニアのためのJSON入門</a> Qiita</li>
 </ul>
+
+  <p></p>
+</details>
+
 <h3 id="dataproc">[DataProc]<a class="anchor" aria-hidden="true" href="#dataproc"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
-<h4 id="cf-3">cf.<a class="anchor" aria-hidden="true" href="#cf-3"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<h4 id="ref-2">ref.<a class="anchor" aria-hidden="true" href="#ref-2"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
 </article>
         </div>
         </div>
