@@ -154,7 +154,7 @@
                 Created <relative-time datetime="Thu, 03 Apr 2025 11:11:44 &#43;0900" class="no-wrap">Thu, 03 Apr 2025 11:11:44 &#43;0900</relative-time>
                 
                 <span class="path-divider">|</span>
-                Modified <relative-time datetime="Fri, 11 Jul 2025 14:13:55 &#43;0900" class="no-wrap">Fri, 11 Jul 2025 14:13:55 &#43;0900</relative-time>
+                Modified <relative-time datetime="Sat, 12 Jul 2025 00:28:12 &#43;0900" class="no-wrap">Sat, 12 Jul 2025 00:28:12 &#43;0900</relative-time>
                 
             </div>
         </div>
@@ -187,7 +187,7 @@
                     <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                 </div>
             </details-menu>
-            2998 Words
+            3498 Words
             <span class="path-divider">|</span>
             4 min
             </div>
@@ -254,13 +254,13 @@
                     
                     
                     
-                    <a class="muted-link mr-3" href="../../tags/data-lake">
+                    <a class="muted-link mr-3" href="../../tags/datalake">
                         <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
                             <path fill-rule="evenodd"
                                 d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
                             </path>
                         </svg>
-                        Data Lake
+                        DataLake
                     </a>
                     
                     
@@ -286,29 +286,61 @@
         <div class="Box-body px-5 pb-5" style="z-index: 1">
             <article class="markdown-body entry-content container-lg"><!-- Icon Badge -->
 <p><img src="https://img.shields.io/badge/-BigQuery-669DF6.svg?logo=googlebigquery&amp;style=flat&amp;color=F0F8FF" alt="BigQuery">
+<img src="https://img.shields.io/badge/-Cloud%20Composer-669DF6.svg?logo=googlecloudcomposer&amp;style=flat&amp;color=F0F8FF" alt="Composer">
 <img src="https://img.shields.io/badge/-Dataflow-669DF6.svg?logo=googledataflow&amp;style=flat&amp;color=F0F8FF" alt="Dataflow">
 <img src="https://img.shields.io/badge/-Dataform-669DF6.svg?logo=googledataform&amp;style=flat&amp;color=F0F8FF" alt="Dataform">
-<img src="https://img.shields.io/badge/-Cloud%20Composer-669DF6.svg?logo=googlecloudcomposer&amp;style=flat&amp;color=F0F8FF" alt="Composer"></p>
+<img src="https://img.shields.io/badge/-Dataproc-669DF6.svg?logo=googledataproc&amp;style=flat&amp;color=F0F8FF" alt="Dataproc"></p>
 <!-- Image -->
 <!-- ![BigQuery](https://cdn-ssl-devio-img.classmethod.jp/wp-content/uploads/2020/09/gcp-eyecatch-bigquery_1200x630.png) -->
 <h2 id="why">Why<a class="anchor" aria-hidden="true" href="#why"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl"># --------------------
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl"># ---------------------------------------------------------------------------------------
 </span></span><span class="line"><span class="cl"># ETL/ELT pipeline
-</span></span><span class="line"><span class="cl"># --------------------
-</span></span><span class="line"><span class="cl">Orchestration
+</span></span><span class="line"><span class="cl"># ---------------------------------------------------------------------------------------
+</span></span><span class="line"><span class="cl"> Orchestration
 </span></span><span class="line"><span class="cl"> [Cloud Composer(Airflow)]
 </span></span><span class="line"><span class="cl"> [kestra]
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">DataSource                        DataLake               DWH                   DataMart
-</span></span><span class="line"><span class="cl">[DataSource] ---*---------------&gt; [GCS] ---*-----------&gt; [BQ] ---*-----------&gt; [BQ]
-</span></span><span class="line"><span class="cl"> └API           [Trocco]                   [Dataflow]            [Dataform]
-</span></span><span class="line"><span class="cl"> └CloudLogging  [Dataproc(Spark)]
-</span></span><span class="line"><span class="cl"> └GA4           [Embluk]
+</span></span><span class="line"><span class="cl"> DataSource                        DataLake               DWH                   DataMart
+</span></span><span class="line"><span class="cl"> [DataSource] ---*---------------&gt; [GCS] ---*-----------&gt; [BQ] ---*-----------&gt; [BQ]
+</span></span><span class="line"><span class="cl"> └API            [Trocco]                   [Dataflow]            [Dataform]
+</span></span><span class="line"><span class="cl"> └CloudLogging   [Dataproc(Spark)]
+</span></span><span class="line"><span class="cl"> └GA4            [Embluk]
 </span></span><span class="line"><span class="cl"> └...etc.
 </span></span></code></pre></div><h2 id="what">What<a class="anchor" aria-hidden="true" href="#what"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 <h3 id="cloud-composerairflow-でのデータ転送">[Cloud Composer(Airflow)] でのデータ転送<a class="anchor" aria-hidden="true" href="#cloud-composerairflow-でのデータ転送"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># Cloud Composer (Airflow) でのCloud Runオペレーター使用例</span>
-</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">airflow</span> <span class="kn">import</span> <span class="n">models</span>
+<blockquote>
+<p>[!NOTE]</p>
+<pre tabindex="0"><code>DWH（BigQuery）への定期的なデータロードができて、
+「データ処理の自動化・スケジューリング・監視」 をコードベースで管理できるのが特徴！
+</code></pre><ul>
+<li>ワークフローの自動化
+<ul>
+<li>-&gt; <code>e.g</code> 「毎日深夜にBigQueryからデータを抽出 → 変換 → 別のテーブルにロード」といった処理を自動化</li>
+</ul>
+</li>
+<li>タスク依存関係の管理
+<ul>
+<li>-&gt; 「Aの次にB実行」などをコードで記述でき、失敗やリトライも自動処理可能</li>
+</ul>
+</li>
+<li>マネージドサービスとしての利点
+<ul>
+<li>-&gt; Airflow のインフラ（Webサーバー、スケジューラ、ワーカーなど）を Google Cloud が自動で構築・管理</li>
+</ul>
+</li>
+<li>Google Cloud とのネイティブ連携
+<ul>
+<li>-&gt; BigQuery、Dataflow、Cloud Storage、Pub/Sub など GCP サービスと簡単に連携可能</li>
+</ul>
+</li>
+<li>監視とロギング
+<ul>
+<li>-&gt; 実行ログやタスクの状態は Cloud Logging / Monitoring と連携 され、可視化やアラート設定が容易</li>
+</ul>
+</li>
+</ul></blockquote>
+<p>Cloud Composer (Airflow) でのCloud Runオペレーター使用例</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py:dag_sample.py" data-lang="py:dag_sample.py"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">airflow</span> <span class="kn">import</span> <span class="n">models</span>
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">airflow.providers.google.cloud.operators.cloud_run</span> <span class="kn">import</span> <span class="n">CloudRunExecuteJobOperator</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="n">models</span><span class="o">.</span><span class="n">DAG</span><span class="p">(</span>
@@ -335,7 +367,15 @@
 </span></span><span class="line"><span class="cl">    <span class="n">process_data</span> <span class="o">&gt;&gt;</span> <span class="n">send_report</span>
 </span></span></code></pre></div><p>Ref.</p>
 <ul>
-<li><a href="https://cloud.google.com/composer/docs/data-analytics-googlecloud?hl=ja#data_analytics_dag">データ分析 DAG</a> Google Cloud</li>
+<li><a href="https://cloud.google.com/composer/docs/concepts/overview?hl=ja">Cloud Composer の概要</a> Googel Cloud
+<ul>
+<li><a href="https://cloud.google.com/composer/docs/data-analytics-googlecloud?hl=ja#data_analytics_dag">Google Cloud でデータ分析 DAG を実行する</a></li>
+<li><a href="https://cloud.google.com/composer/docs/how-to/accessing/airflow-cli?hl=ja">Airflow コマンドライン インターフェースにアクセスする</a></li>
+<li>src: <a href="https://airflow.apache.org/docs/apache-airflow/stable/_modules/airflow/models/xcom.html">Source code for airflow.models.xcom</a> Apache Airflow</li>
+</ul>
+</li>
+<li><a href="https://buildersbox.corp-sansan.com/entry/2022/08/18/110000">【R&amp;D DevOps通信】Cloud ComposerのDAGでデータ基盤の転送パイプラインを監視</a> Sansan</li>
+<li><a href="https://techblog.zozo.com/entry/composer-migration">Cloud Composerにデータマート集計基盤を移行しました</a> zozo</li>
 </ul>
 <h3 id="dataflow-でのデータ転送">[Dataflow] でのデータ転送<a class="anchor" aria-hidden="true" href="#dataflow-でのデータ転送"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">DataLake               DWH
@@ -352,7 +392,7 @@
 </span></span><span class="line"><span class="cl">        [Dataform]
 </span></span></code></pre></div><ul>
 <li>
-<p><a href="https://cloud.google.com/dataform/docs/overview?hl=ja">Dataform の概要</a></p>
+<p>Dataform の概要</p>
 <blockquote>
 <p>SQL を使用して BigQuery でスケーラブルなデータ変換パイプラインを開発、運用します。</p>
 <pre tabindex="0"><code>☑️ BigQuery で、キュレートされた最新の信頼できる文書化されたテーブルを開発する
@@ -360,10 +400,18 @@
 ☑️ SQL を使用して BigQuery でスケーラブルなデータ パイプラインを構築する
 ☑️ GitHub および GitLab と統合する
 ☑️ インフラストラクチャの管理を必要とせずにテーブルを最新の状態に保つ
-</code></pre><p><a href="https://cloud.google.com/dataform?hl=ja">Dataform</a> Google Cloud</p></blockquote>
-<ul>
-<li>2020年8月 に Google Cloud に買収され、Google Cloud コンソールにも統合。<a href="https://cloud.google.com/blog/ja/products/data-analytics/welcoming-dataform-to-bigquery?hl=ja">ref</a></li>
-<li><details>
+</code></pre><ul>
+<li>
+<p>&ldquo;<a href="https://cloud.google.com/dataform?hl=ja">Dataform</a>&rdquo; Google Cloud</p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/dataform/docs/overview?hl=ja">Dataform の概要</a> Google Cloud</p>
+</li>
+<li>
+<p>2020年8月 に Google Cloud に買収され、Google Cloud コンソールにも統合。<a href="https://cloud.google.com/blog/ja/products/data-analytics/welcoming-dataform-to-bigquery?hl=ja">ref</a></p>
+</li>
+<li>
+<details>
   <summary>Overview Pipline</summary>
   <p></p>
   <p><img src="https://storage.googleapis.com/zenn-user-upload/4435acee1448-20231220.png" alt="img"></p>
@@ -372,8 +420,10 @@
 </ul>
   <p></p>
 </details>
+
 </li>
-<li><details>
+<li>
+<details>
   <summary>Overview SQLX</summary>
   <p></p>
   <p><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/g/ggen-sugimura/20230509/20230509163008.png" alt="img"></p>
@@ -382,8 +432,9 @@
 </ul>
   <p></p>
 </details>
+
 </li>
-</ul>
+</ul></blockquote>
 </li>
 <li>
 <p><a href="https://cloud.google.com/dataform/docs/dataform-core?hl=ja">Dataform コアの概要</a>
@@ -407,8 +458,8 @@ SQLX          = オープンソースの、SQL の拡張言語
 JavaScript    = SQLX ファイルの中にブロック記述-&gt; 再利用可能な関数を定義可能
 </code></pre></li>
 </ul>
-<h4 id="sqlx">SQLX<a class="anchor" aria-hidden="true" href="#sqlx"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
-<p>JSON part</p>
+<p>SQLX
+JSON part</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/* JSON: config part */</span>
 </span></span><span class="line"><span class="cl"><span class="nx">config</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="nx">type</span><span class="o">:</span> <span class="s2">&#34;incremental&#34;</span><span class="p">,</span>
@@ -678,7 +729,7 @@ JavaScript    = SQLX ファイルの中にブロック記述-&gt; 再利用可�
       </tr>
   </tbody>
 </table>
-<h4 id="ref">ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<p>Ref.</p>
 <ul>
 <li><a href="https://book.st-hakky.com/data-platform/dataform-about-sqlx/">DataForm で変換ワークフローを定義する SQLX を徹底解説</a> Hakky Handbook</li>
 <li><a href="https://zenn.dev/google_cloud_jp/articles/dc3bf03da6a0f3">BigQuery 向けデータパイプラインサービス「Dataform」の基本的な使い方</a> Zenn</li>
@@ -689,12 +740,15 @@ JavaScript    = SQLX ファイルの中にブロック記述-&gt; 再利用可�
 <li><a href="https://dev.classmethod.jp/articles/try-dataform-connect-third-party-git-repository/">DataformのサードパーティーGitリポジトリ接続機能を試してみた</a> DevelopersIO</li>
 <li><a href="https://qiita.com/shuntaro_tamura/items/5a92c517a7d95d655505">非エンジニアのためのJSON入門</a> Qiita</li>
 </ul>
-
   <p></p>
 </details>
 
 <h3 id="dataprocspark">[DataProc(Spark)]<a class="anchor" aria-hidden="true" href="#dataprocspark"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <p>Ref.</p>
+<ul>
+<li><a href="https://numb86-tech.hatenablog.com/entry/2025/01/30/181809">Dataproc クラスタで PySpark ジョブを実行して学ぶサービスアカウントの初歩</a></li>
+<li><a href=""></a></li>
+</ul>
 </article>
         </div>
         </div>
