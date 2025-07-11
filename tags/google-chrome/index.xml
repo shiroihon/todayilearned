@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Google Chrome on Today I Learned</title>
-    <link>https://shiroimon.f5.si/tags/google-chrome/</link>
-    <description>Recent content in Google Chrome on Today I Learned</description>
+    <title>Google Chrome on Today I Learned | KitHub</title>
+    <link>https://kithub.f5.si/tags/google-chrome/</link>
+    <description>Recent content in Google Chrome on Today I Learned | KitHub</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 04 Jul 2025 16:55:20 +0900</lastBuildDate>
-    <atom:link href="https://shiroimon.f5.si/tags/google-chrome/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kithub.f5.si/tags/google-chrome/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Google Chrome] This &amp; That</title>
-      <link>https://shiroimon.f5.si/post/google_chrome_this_and_that/</link>
+      <link>https://kithub.f5.si/post/google_chrome_this_and_that/</link>
       <pubDate>Tue, 25 Feb 2025 13:45:58 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/google_chrome_this_and_that/</guid>
+      <guid>https://kithub.f5.si/post/google_chrome_this_and_that/</guid>
       <description>⚪️</description>
     </item>
   </channel>

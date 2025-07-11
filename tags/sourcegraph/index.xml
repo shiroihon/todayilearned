@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SourceGraph on Today I Learned</title>
-    <link>https://shiroimon.f5.si/tags/sourcegraph/</link>
-    <description>Recent content in SourceGraph on Today I Learned</description>
+    <title>SourceGraph on Today I Learned | KitHub</title>
+    <link>https://kithub.f5.si/tags/sourcegraph/</link>
+    <description>Recent content in SourceGraph on Today I Learned | KitHub</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 04 Jul 2025 16:55:20 +0900</lastBuildDate>
-    <atom:link href="https://shiroimon.f5.si/tags/sourcegraph/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kithub.f5.si/tags/sourcegraph/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[GitHub] How to check difference code</title>
-      <link>https://shiroimon.f5.si/post/github_how_to_check_difference/</link>
+      <link>https://kithub.f5.si/post/github_how_to_check_difference/</link>
       <pubDate>Tue, 23 Jul 2024 04:13:21 +0900</pubDate>
-      <guid>https://shiroimon.f5.si/post/github_how_to_check_difference/</guid>
+      <guid>https://kithub.f5.si/post/github_how_to_check_difference/</guid>
       <description>📍 Methods and tools to capture code fixes faster and more accurately.</description>
     </item>
   </channel>
