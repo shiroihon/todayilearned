@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://kithub.f5.si/post/</loc>
-    <lastmod>2025-07-16T23:35:05+09:00</lastmod>
+    <lastmod>2025-07-19T19:04:21+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/</loc>
-    <lastmod>2025-07-17T11:14:50+09:00</lastmod>
+    <lastmod>2025-07-19T19:04:21+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/post/tableau_this_and_that/</loc>
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
@@ -18,40 +18,40 @@
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/tags/</loc>
-    <lastmod>2025-07-12T00:28:12+09:00</lastmod>
+    <lastmod>2025-07-19T19:04:21+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/post/bigquery_about_various_data_transfer/</loc>
-    <lastmod>2025-07-12T00:28:12+09:00</lastmod>
+    <lastmod>2025-07-18T16:02:47+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/tags/bigquery/</loc>
-    <lastmod>2025-07-12T00:28:12+09:00</lastmod>
+    <lastmod>2025-07-18T16:02:47+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/categories/</loc>
-    <lastmod>2025-07-12T00:28:12+09:00</lastmod>
+    <lastmod>2025-07-19T19:04:21+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/categories/data-analytics-engineer/</loc>
-    <lastmod>2025-07-12T00:28:12+09:00</lastmod>
+    <lastmod>2025-07-18T16:02:47+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/tags/datalake/</loc>
-    <lastmod>2025-07-12T00:28:12+09:00</lastmod>
+    <lastmod>2025-07-18T16:02:47+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/tags/dbt/</loc>
-    <lastmod>2025-07-12T00:28:12+09:00</lastmod>
+    <lastmod>2025-07-18T16:02:47+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/tags/dwh/</loc>
-    <lastmod>2025-07-12T00:28:12+09:00</lastmod>
+    <lastmod>2025-07-18T16:02:47+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/tags/etl/elt/</loc>
-    <lastmod>2025-07-12T00:28:12+09:00</lastmod>
+    <lastmod>2025-07-18T16:02:47+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/categories/google/</loc>
-    <lastmod>2025-07-12T00:28:12+09:00</lastmod>
+    <lastmod>2025-07-18T16:02:47+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/tags/sql/</loc>
-    <lastmod>2025-07-12T00:28:12+09:00</lastmod>
+    <lastmod>2025-07-18T16:02:47+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/tags/sqlx/</loc>
-    <lastmod>2025-07-12T00:28:12+09:00</lastmod>
+    <lastmod>2025-07-18T16:02:47+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/post/looker_studio_this_and_that/</loc>
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
@@ -84,7 +84,7 @@
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/categories/know-how/</loc>
-    <lastmod>2025-07-04T16:55:20+09:00</lastmod>
+    <lastmod>2025-07-19T19:04:21+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/post/google_chrome_this_and_that/</loc>
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
@@ -126,7 +126,7 @@
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/tags/cli/</loc>
-    <lastmod>2025-07-04T16:55:20+09:00</lastmod>
+    <lastmod>2025-07-18T21:40:06+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/tags/macos/</loc>
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
@@ -150,7 +150,7 @@
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/categories/hands-on/</loc>
-    <lastmod>2025-07-04T16:55:20+09:00</lastmod>
+    <lastmod>2025-07-18T21:40:06+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/tags/json/</loc>
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
@@ -165,7 +165,7 @@
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/tags/yaml/</loc>
-    <lastmod>2025-07-04T16:55:20+09:00</lastmod>
+    <lastmod>2025-07-18T21:40:06+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/post/shell_commands_memorandum/</loc>
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
@@ -192,7 +192,7 @@
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/tags/docker/</loc>
-    <lastmod>2025-07-04T16:55:20+09:00</lastmod>
+    <lastmod>2025-07-18T21:40:06+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/tags/kubernetes/</loc>
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
@@ -279,7 +279,7 @@
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/post/docker_commands_memorandum/</loc>
-    <lastmod>2025-07-04T16:55:20+09:00</lastmod>
+    <lastmod>2025-07-18T21:40:06+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/post/vim_commands_memorandum/</loc>
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
@@ -294,16 +294,16 @@
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/post/other/freelance_how_to_jisui/</loc>
-    <lastmod>2025-07-04T16:55:20+09:00</lastmod>
+    <lastmod>2025-07-19T19:04:21+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/categories/free-lance/</loc>
-    <lastmod>2025-07-04T16:55:20+09:00</lastmod>
+    <lastmod>2025-07-19T19:04:21+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/tags/notebooklm/</loc>
-    <lastmod>2025-07-04T16:55:20+09:00</lastmod>
+    <lastmod>2025-07-19T19:04:21+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/tags/pdf/</loc>
-    <lastmod>2025-07-04T16:55:20+09:00</lastmod>
+    <lastmod>2025-07-19T19:04:21+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/post/macos_looks_like_native_application/</loc>
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
@@ -354,9 +354,6 @@
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/post/github_issues_how_to_use/</loc>
-    <lastmod>2025-07-04T16:55:20+09:00</lastmod>
-  </url><url>
-    <loc>https://kithub.f5.si/post/my_first_post/</loc>
     <lastmod>2025-07-04T16:55:20+09:00</lastmod>
   </url><url>
     <loc>https://kithub.f5.si/readme/</loc>

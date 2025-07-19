@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Today I Learned | KitHub</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Jul 2025 00:28:12 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 19 Jul 2025 19:04:21 +0900</lastBuildDate>
     <atom:link href="https://kithub.f5.si/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Tableau] This and That</title>
@@ -294,13 +294,6 @@
       <pubDate>Thu, 18 Jul 2024 18:30:01 +0900</pubDate>
       <guid>https://kithub.f5.si/post/github_issues_how_to_use/</guid>
       <description>📍 How to effectively use &amp;lsquo;Issues&amp;rsquo; in GitHub repository.</description>
-    </item>
-    <item>
-      <title>My First Post</title>
-      <link>https://kithub.f5.si/post/my_first_post/</link>
-      <pubDate>Sun, 07 Jul 2024 16:37:01 +0900</pubDate>
-      <guid>https://kithub.f5.si/post/my_first_post/</guid>
-      <description>A brief summary of the article.</description>
     </item>
   </channel>
 </rss>

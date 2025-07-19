@@ -154,7 +154,7 @@
                 Created <relative-time datetime="Thu, 03 Apr 2025 11:11:44 &#43;0900" class="no-wrap">Thu, 03 Apr 2025 11:11:44 &#43;0900</relative-time>
                 
                 <span class="path-divider">|</span>
-                Modified <relative-time datetime="Sat, 12 Jul 2025 00:28:12 &#43;0900" class="no-wrap">Sat, 12 Jul 2025 00:28:12 &#43;0900</relative-time>
+                Modified <relative-time datetime="Fri, 18 Jul 2025 16:02:47 &#43;0900" class="no-wrap">Fri, 18 Jul 2025 16:02:47 &#43;0900</relative-time>
                 
             </div>
         </div>
@@ -187,9 +187,9 @@
                     <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                 </div>
             </details-menu>
-            3498 Words
+            4033 Words
             <span class="path-divider">|</span>
-            4 min
+            5 min
             </div>
 
             
@@ -285,11 +285,12 @@
         
         <div class="Box-body px-5 pb-5" style="z-index: 1">
             <article class="markdown-body entry-content container-lg"><!-- Icon Badge -->
-<p><img src="https://img.shields.io/badge/-BigQuery-669DF6.svg?logo=googlebigquery&amp;style=flat&amp;color=F0F8FF" alt="BigQuery">
-<img src="https://img.shields.io/badge/-Cloud%20Composer-669DF6.svg?logo=googlecloudcomposer&amp;style=flat&amp;color=F0F8FF" alt="Composer">
+<p><img src="https://img.shields.io/badge/-Cloud%20Composer-669DF6.svg?logo=googlecloudcomposer&amp;style=flat&amp;color=F0F8FF" alt="Composer"><!-- ![Functions](https://img.shields.io/badge/-Cloud%20Functions-669DF6.svg?logo=googlecloudfunctions&style=flat&color=F0F8FF) --><!-- ![Run](https://img.shields.io/badge/-Cloud%20Run-669DF6.svg?logo=googlecloudrun&style=flat&color=F0F8FF) -->
 <img src="https://img.shields.io/badge/-Dataflow-669DF6.svg?logo=googledataflow&amp;style=flat&amp;color=F0F8FF" alt="Dataflow">
-<img src="https://img.shields.io/badge/-Dataform-669DF6.svg?logo=googledataform&amp;style=flat&amp;color=F0F8FF" alt="Dataform">
-<img src="https://img.shields.io/badge/-Dataproc-669DF6.svg?logo=googledataproc&amp;style=flat&amp;color=F0F8FF" alt="Dataproc"></p>
+<img src="https://img.shields.io/badge/-Dataproc-669DF6.svg?logo=googledataproc&amp;style=flat&amp;color=F0F8FF" alt="Dataproc">
+<img src="https://img.shields.io/badge/-Cloud%20Spanner-669DF6.svg?logo=googlecloudspanner&amp;style=flat&amp;color=F0F8FF" alt="Spanner">
+<img src="https://img.shields.io/badge/-Cloud%20Storage-669DF6.svg?logo=googlecloudstorage&amp;style=flat&amp;color=F0F8FF" alt="Storage">
+<img src="https://img.shields.io/badge/-BigQuery-669DF6.svg?logo=googlebigquery&amp;style=flat&amp;color=F0F8FF" alt="BigQuery"> <!-- ![Dataform](https://img.shields.io/badge/-Dataform-669DF6.svg?logo=googledataform&style=flat&color=F0F8FF) --></p>
 <!-- Image -->
 <!-- ![BigQuery](https://cdn-ssl-devio-img.classmethod.jp/wp-content/uploads/2020/09/gcp-eyecatch-bigquery_1200x630.png) -->
 <h2 id="why">Why<a class="anchor" aria-hidden="true" href="#why"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
@@ -298,15 +299,113 @@
 </span></span><span class="line"><span class="cl"># ---------------------------------------------------------------------------------------
 </span></span><span class="line"><span class="cl"> Orchestration
 </span></span><span class="line"><span class="cl"> [Cloud Composer(Airflow)]
-</span></span><span class="line"><span class="cl"> [kestra]
+</span></span><span class="line"><span class="cl"> [Kestra]
+</span></span><span class="line"><span class="cl"> [Argo Workflows(Kubernetesネイティブなワークフローエンジン)]
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"> DataSource                        DataLake               DWH                   DataMart
-</span></span><span class="line"><span class="cl"> [DataSource] ---*---------------&gt; [GCS] ---*-----------&gt; [BQ] ---*-----------&gt; [BQ]
-</span></span><span class="line"><span class="cl"> └API            [Trocco]                   [Dataflow]            [Dataform]
-</span></span><span class="line"><span class="cl"> └CloudLogging   [Dataproc(Spark)]
-</span></span><span class="line"><span class="cl"> └GA4            [Embluk]
-</span></span><span class="line"><span class="cl"> └...etc.
-</span></span></code></pre></div><h2 id="what">What<a class="anchor" aria-hidden="true" href="#what"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
+</span></span><span class="line"><span class="cl"> DataSource                        DataLake                 DWH                   DataMart
+</span></span><span class="line"><span class="cl"> [DataSource] ---*---------------&gt; [GCS] ---*-------------&gt; [BQ] ---*-----------&gt; [BQ]
+</span></span><span class="line"><span class="cl"> └(API)          [Trocco(Embluk)]           [Dataflow]              [Dataform]
+</span></span><span class="line"><span class="cl"> └(CloudLogging) [DataProc(Spark)]          [Argo Workflows]        [dbt]
+</span></span><span class="line"><span class="cl"> └(GA4)          [Cloud Functions]          └バッチをKubernetes上の場合
+</span></span><span class="line"><span class="cl"> └...etc.        [Cloud Run                 ]
+</span></span></code></pre></div><ul>
+<li><details>
+  <summary>(大規模)データ分析パイプライン:</summary>
+  <p></p>
+  <p>パイプライン構成とフロー：</p>
+<ol>
+<li><code>Cloud Scheduler</code> で日次トリガー</li>
+<li><code>Cloud Composer</code> がワークフロー開始</li>
+<li><code>Cloud Run</code> で前処理（データ検証、分割）</li>
+<li><code>Dataproc</code> でSparkジョブ実行（メイン処理）</li>
+<li><code>Cloud Functions</code> で処理完了通知</li>
+<li><code>BigQuery</code> に結果ロード</li>
+</ol>
+<p>この構成は各サービスの強みを活かしながら、</p>
+<ul>
+<li>コスト効率の良いパイプラインを構築</li>
+<li>Dataprocは一時クラスタを使用することで、大規模処理が必要な時だけリソースを消費するように設計</li>
+</ul>
+<p>コスト比較の目安：</p>
+<table>
+  <thead>
+      <tr>
+          <th>サービス</th>
+          <th>コスト特性</th>
+          <th>適したワークロード</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Cloud Functions</td>
+          <td>実行時間とメモリ使用量に比例</td>
+          <td>軽量で頻度の高いイベント処理</td>
+      </tr>
+      <tr>
+          <td>Cloud Run</td>
+          <td>リクエスト数とCPU使用時間</td>
+          <td>中規模HTTPサービス/バッチ</td>
+      </tr>
+      <tr>
+          <td>Dataproc</td>
+          <td>クラスタ規模と実行時間</td>
+          <td>大規模データ(TB～PB級)処理バッチ</td>
+      </tr>
+      <tr>
+          <td>Cloud Composer</td>
+          <td>固定費+環境規模</td>
+          <td>ワークフローオーケストレーション</td>
+      </tr>
+  </tbody>
+</table>
+<p>Composer + Cloud Run + Dataproc：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1"># Cloud ComposerでのDataprocオペレーター使用例</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">airflow.providers.google.cloud.operators.dataproc</span> <span class="kn">import</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DataprocCreateClusterOperator</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DataprocSubmitJobOperator</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DataprocDeleteClusterOperator</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="n">models</span><span class="o">.</span><span class="n">DAG</span><span class="p">(</span><span class="s1">&#39;data_pipeline&#39;</span><span class="p">,</span> <span class="n">schedule_interval</span><span class="o">=</span><span class="s1">&#39;@daily&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">dag</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">create_cluster</span> <span class="o">=</span> <span class="n">DataprocCreateClusterOperator</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">task_id</span><span class="o">=</span><span class="s2">&#34;create_cluster&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">project_id</span><span class="o">=</span><span class="s2">&#34;your-project&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cluster_name</span><span class="o">=</span><span class="s2">&#34;ephemeral-spark-cluster&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">region</span><span class="o">=</span><span class="s2">&#34;us-central1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cluster_config</span><span class="o">=</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;master_config&#34;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&#34;num_instances&#34;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&#34;machine_type_uri&#34;</span><span class="p">:</span> <span class="s2">&#34;n1-standard-4&#34;</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;worker_config&#34;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&#34;num_instances&#34;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&#34;machine_type_uri&#34;</span><span class="p">:</span> <span class="s2">&#34;n1-standard-4&#34;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># 重いデータ処理はDataprocに委譲</span>
+</span></span><span class="line"><span class="cl">    <span class="n">spark_job</span> <span class="o">=</span> <span class="n">DataprocSubmitJobOperator</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">task_id</span><span class="o">=</span><span class="s2">&#34;run_spark_job&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">job</span><span class="o">=</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;reference&#34;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&#34;project_id&#34;</span><span class="p">:</span> <span class="s2">&#34;your-project&#34;</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;placement&#34;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&#34;cluster_name&#34;</span><span class="p">:</span> <span class="s2">&#34;ephemeral-spark-cluster&#34;</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;spark_job&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;jar_file_uris&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;gs://your-bucket/your-spark-job.jar&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;main_class&#34;</span><span class="p">:</span> <span class="s2">&#34;com.example.Main&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">delete_cluster</span> <span class="o">=</span> <span class="n">DataprocDeleteClusterOperator</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">task_id</span><span class="o">=</span><span class="s2">&#34;delete_cluster&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">project_id</span><span class="o">=</span><span class="s2">&#34;your-project&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cluster_name</span><span class="o">=</span><span class="s2">&#34;ephemeral-spark-cluster&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">region</span><span class="o">=</span><span class="s2">&#34;us-central1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">trigger_rule</span><span class="o">=</span><span class="s2">&#34;all_done&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">create_cluster</span> <span class="o">&gt;&gt;</span> <span class="n">spark_job</span> <span class="o">&gt;&gt;</span> <span class="n">delete_cluster</span>
+</span></span></code></pre></div>
+  <p></p>
+</details>
+</li>
+</ul>
+<h2 id="what">What<a class="anchor" aria-hidden="true" href="#what"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 <h3 id="cloud-composerairflow-でのデータ転送">[Cloud Composer(Airflow)] でのデータ転送<a class="anchor" aria-hidden="true" href="#cloud-composerairflow-でのデータ転送"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <blockquote>
 <p>[!NOTE]</p>
