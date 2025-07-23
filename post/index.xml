@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Today I Learned | KitHub</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Jul 2025 19:04:21 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 24 Jul 2025 01:09:46 +0900</lastBuildDate>
     <atom:link href="https://kithub.f5.si/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Tableau] This and That</title>
@@ -28,6 +28,13 @@
       <pubDate>Mon, 24 Mar 2025 11:10:12 +0900</pubDate>
       <guid>https://kithub.f5.si/post/looker_studio_this_and_that/</guid>
       <description>🫧 How to use Google&amp;rsquo;s SaaS about BI.</description>
+    </item>
+    <item>
+      <title>[Beatbox] Catchup</title>
+      <link>https://kithub.f5.si/post/other/beatbox_catchup/</link>
+      <pubDate>Sun, 16 Mar 2025 19:17:36 +0900</pubDate>
+      <guid>https://kithub.f5.si/post/other/beatbox_catchup/</guid>
+      <description>🎙️I think it&amp;rsquo;s cool to use the respiratory organs and mouth to make beats.</description>
     </item>
     <item>
       <title>[BigQuery] About Machine Learning</title>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hobby on Today I Learned | KitHub</title>
+    <link>https://kithub.f5.si/categories/hobby/</link>
+    <description>Recent content in Hobby on Today I Learned | KitHub</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 24 Jul 2025 00:54:48 +0900</lastBuildDate>
+    <atom:link href="https://kithub.f5.si/categories/hobby/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Beatbox] Catchup</title>
+      <link>https://kithub.f5.si/post/other/beatbox_catchup/</link>
+      <pubDate>Sun, 16 Mar 2025 19:17:36 +0900</pubDate>
+      <guid>https://kithub.f5.si/post/other/beatbox_catchup/</guid>
+      <description>🎙️I think it&amp;rsquo;s cool to use the respiratory organs and mouth to make beats.</description>
+    </item>
+  </channel>
+</rss>
