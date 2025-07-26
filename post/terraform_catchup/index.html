@@ -154,7 +154,7 @@
                 Created <relative-time datetime="Thu, 20 Feb 2025 18:49:06 &#43;0900" class="no-wrap">Thu, 20 Feb 2025 18:49:06 &#43;0900</relative-time>
                 
                 <span class="path-divider">|</span>
-                Modified <relative-time datetime="Mon, 07 Jul 2025 13:51:42 &#43;0900" class="no-wrap">Mon, 07 Jul 2025 13:51:42 &#43;0900</relative-time>
+                Modified <relative-time datetime="Sat, 26 Jul 2025 17:50:58 &#43;0900" class="no-wrap">Sat, 26 Jul 2025 17:50:58 &#43;0900</relative-time>
                 
             </div>
         </div>
@@ -187,7 +187,7 @@
                     <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                 </div>
             </details-menu>
-            1157 Words
+            1337 Words
             <span class="path-divider">|</span>
             1 min
             </div>
@@ -302,6 +302,19 @@ cf. <a href="https://developer.hashicorp.com/terraform/tutorials/docker-get-star
 <li>定義ファイルに基づいて、各製品のＡＰＩに対応したコードを自動生成(<code>$terraform plan</code>)</li>
 <li>コード適用(<code>$terraform apply</code>)</li>
 </ol>
+<h3 id="terraform-プロジェクト構成">Terraform プロジェクト構成<a class="anchor" aria-hidden="true" href="#terraform-プロジェクト構成"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">analysis-infra/
+</span></span><span class="line"><span class="cl">├── main.tf           # 主要リソースの定義（コアインフラ）
+</span></span><span class="line"><span class="cl">├── variables.tf      # 入力変数の定義
+</span></span><span class="line"><span class="cl">├── outputs.tf        # 出力値の定義（他のプロジェクトやモジュールで参照可能）
+</span></span><span class="line"><span class="cl">├── providers.tf      # プロバイダー設定（GCP, バージョン制約など）
+</span></span><span class="line"><span class="cl">├── backend.tf        # ステートファイルの保存先（GCS など）
+</span></span><span class="line"><span class="cl">├── terraform.tfvars  # 変数の実際の値（秘匿情報は別管理）
+</span></span><span class="line"><span class="cl">└── modules/          # 再利用可能なコンポーネント
+</span></span><span class="line"><span class="cl">    ├── bigquery/
+</span></span><span class="line"><span class="cl">    ├── cloudrun/
+</span></span><span class="line"><span class="cl">    └── scheduler/
+</span></span></code></pre></div><hr>
 <h3 id="余談">(余談)<a class="anchor" aria-hidden="true" href="#余談"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <ul>
 <li>
