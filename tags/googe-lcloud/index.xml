@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Googe LCloud on Today I Learned | KitHub</title>
+    <link>http://localhost:1313/tags/googe-lcloud/</link>
+    <description>Recent content in Googe LCloud on Today I Learned | KitHub</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Sep 2025 01:29:47 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/googe-lcloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[BigQuery] CLI</title>
+      <link>http://localhost:1313/post/bigquery_cli/</link>
+      <pubDate>Mon, 01 Sep 2025 21:43:34 +0900</pubDate>
+      <guid>http://localhost:1313/post/bigquery_cli/</guid>
+      <description>🔍</description>
+    </item>
+  </channel>
+</rss>

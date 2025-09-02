@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Today I Learned | KitHub</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Sep 2025 23:11:10 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 03 Sep 2025 01:32:52 +0900</lastBuildDate>
     <atom:link href="https://kithub.f5.si/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BigQuery</title>
@@ -20,6 +20,13 @@
       <link>https://kithub.f5.si/tags/cli/</link>
       <pubDate>Mon, 01 Sep 2025 21:43:34 +0900</pubDate>
       <guid>https://kithub.f5.si/tags/cli/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Google Cloud</title>
+      <link>https://kithub.f5.si/tags/google-cloud/</link>
+      <pubDate>Mon, 01 Sep 2025 21:43:34 +0900</pubDate>
+      <guid>https://kithub.f5.si/tags/google-cloud/</guid>
       <description></description>
     </item>
     <item>
@@ -72,13 +79,6 @@
       <description></description>
     </item>
     <item>
-      <title>SQLX</title>
-      <link>https://kithub.f5.si/tags/sqlx/</link>
-      <pubDate>Thu, 03 Apr 2025 11:11:44 +0900</pubDate>
-      <guid>https://kithub.f5.si/tags/sqlx/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Looker</title>
       <link>https://kithub.f5.si/tags/looker/</link>
       <pubDate>Mon, 24 Mar 2025 11:10:12 +0900</pubDate>
@@ -104,13 +104,6 @@
       <link>https://kithub.f5.si/tags/bqml/</link>
       <pubDate>Fri, 14 Mar 2025 17:31:44 +0900</pubDate>
       <guid>https://kithub.f5.si/tags/bqml/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Google Cloud</title>
-      <link>https://kithub.f5.si/tags/google-cloud/</link>
-      <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
-      <guid>https://kithub.f5.si/tags/google-cloud/</guid>
       <description></description>
     </item>
     <item>

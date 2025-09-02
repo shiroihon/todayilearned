@@ -17,11 +17,11 @@
     <meta name="theme-color" content="#1e2327">
 
     
-    
+    <script type="text/javascript" src="https://kithub.f5.si/js/gist-dark-mode.js"></script>
 
     
     <meta name="description"
-  content="🔍" />
+  content="🔍 Memos using CLI operations for each job type." />
 <meta name="keywords"
   content='blog, google analytics' />
 <meta name="robots" content="noodp" />
@@ -31,7 +31,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="[BigQuery] CLI - Today I Learned | KitHub" />
 <meta name="twitter:description"
-  content="🔍" />
+  content="🔍 Memos using CLI operations for each job type." />
 <meta name="twitter:site" content="https://kithub.f5.si/" />
 <meta name="twitter:creator" content="shiro" />
 <meta name="twitter:image"
@@ -41,7 +41,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:title" content="[BigQuery] CLI - Today I Learned | KitHub">
 <meta property="og:description"
-  content="🔍" />
+  content="🔍 Memos using CLI operations for each job type." />
 <meta property="og:url" content="https://kithub.f5.si/post/bigquery_cli/" />
 <meta property="og:site_name" content="[BigQuery] CLI" />
 <meta property="og:image"
@@ -154,7 +154,7 @@
                 Created <relative-time datetime="Mon, 01 Sep 2025 21:43:34 &#43;0900" class="no-wrap">Mon, 01 Sep 2025 21:43:34 &#43;0900</relative-time>
                 
                 <span class="path-divider">|</span>
-                Modified <relative-time datetime="Tue, 02 Sep 2025 23:11:10 &#43;0900" class="no-wrap">Tue, 02 Sep 2025 23:11:10 &#43;0900</relative-time>
+                Modified <relative-time datetime="Wed, 03 Sep 2025 01:32:52 &#43;0900" class="no-wrap">Wed, 03 Sep 2025 01:32:52 &#43;0900</relative-time>
                 
             </div>
         </div>
@@ -187,9 +187,9 @@
                     <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                 </div>
             </details-menu>
-            1173 Words
+            1825 Words
             <span class="path-divider">|</span>
-            3 min
+            4 min
             </div>
 
             
@@ -217,6 +217,17 @@
                             </path>
                         </svg>
                         CLI
+                    </a>
+                    
+                    
+                    
+                    <a class="muted-link mr-3" href="../../tags/google-cloud">
+                        <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
+                            </path>
+                        </svg>
+                        Google Cloud
                     </a>
                     
                     
@@ -279,8 +290,20 @@
 <li>cf. <a href="https://qiita.com/ShuA/items/f610cf1ee620b578fba8#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%A7%E8%A6%8B%E3%82%8B">BigQueryで他のユーザの実行クエリを見る</a> Qiita</li>
 </ul>
 <h3 id="dataengineer編">DataEngineer編<a class="anchor" aria-hidden="true" href="#dataengineer編"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 既存テーブルと同スキーマで新規テーブル作成したい（本番テーブルを元に開発用テーブル作成）</span>
-</span></span><span class="line"><span class="cl">bq query --nouse_legacy_sql <span class="s2">&#34;
+<p>データエンジニアが主に使用するbqコマンド：</p>
+<ul>
+<li><code>CREATE/REPLACE</code>: テーブル全体の再作成</li>
+<li><code>LOAD --append</code>: データの追加投入</li>
+<li><code>COPY/CLONE</code>: テーブルの複製</li>
+<li><code>SELECT</code>: データの参照と集計</li>
+</ul>
+<pre tabindex="0"><code>（ほとんど使わない）: UPDATE/DELETE
+
+∵ データエンジニアは「CRUDよりも再作成」「更新よりも追加」「ポイント操作よりもバッチ処理」という哲学で設計することが多く、
+　このアプローチが「データの真実性」「再現性」「スケーラビリティ」を担保するため
+  「データは不変（immutable）である」という考え方が、現代のデータエンジニアリングの基本原則になっている
+</code></pre><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 既存テーブルと同スキーマで新規テーブル作成したい（本番テーブルを元に開発用テーブル作成）</span>
+</span></span><span class="line"><span class="cl">% bq query --nouse_legacy_sql <span class="s2">&#34;
 </span></span></span><span class="line"><span class="cl"><span class="s2">  CREATE TABLE my-project:dataset_dev.sales_partitioned
 </span></span></span><span class="line"><span class="cl"><span class="s2">  LIKE my-project:dataset.sales_partitioned
 </span></span></span><span class="line"><span class="cl"><span class="s2">&#34;</span>
@@ -288,7 +311,7 @@
 <li>※ <code>--nouse_legacy_sql</code> フラグが必要!（StandardSQLでないと「LIKE 句」使えない）</li>
 <li>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># スキーマのバックアップ</span>
-</span></span><span class="line"><span class="cl">bq query --nouse_legacy_sql <span class="s2">&#34;
+</span></span><span class="line"><span class="cl">% bq query --nouse_legacy_sql <span class="s2">&#34;
 </span></span></span><span class="line"><span class="cl"><span class="s2">  CREATE TABLE my-project:backup.sales_20251224
 </span></span></span><span class="line"><span class="cl"><span class="s2">  LIKE my-project:dataset.sales
 </span></span></span><span class="line"><span class="cl"><span class="s2">&#34;</span>
@@ -299,12 +322,28 @@
 </span></span><span class="line"><span class="cl"><span class="nv">TABLES</span><span class="o">=(</span><span class="s2">&#34;sales&#34;</span> <span class="s2">&#34;users&#34;</span> <span class="s2">&#34;products&#34;</span> <span class="s2">&#34;events&#34;</span><span class="o">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">for</span> table in <span class="s2">&#34;</span><span class="si">${</span><span class="nv">TABLES</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">;</span> <span class="k">do</span>
-</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="s2">&#34;Creating test table: </span><span class="nv">$table</span><span class="s2">&#34;</span>
-</span></span><span class="line"><span class="cl">  bq query --nouse_legacy_sql <span class="s2">&#34;
-</span></span></span><span class="line"><span class="cl"><span class="s2">    CREATE TABLE my-project:test_dataset.</span><span class="si">${</span><span class="nv">table</span><span class="si">}</span><span class="s2">
-</span></span></span><span class="line"><span class="cl"><span class="s2">    LIKE my-project:prod_dataset.</span><span class="si">${</span><span class="nv">table</span><span class="si">}</span><span class="s2">
-</span></span></span><span class="line"><span class="cl"><span class="s2">  &#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Creating test table: </span><span class="nv">$table</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">bq query --nouse_legacy_sql <span class="s2">&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">  CREATE TABLE my-project:test_dataset.</span><span class="si">${</span><span class="nv">table</span><span class="si">}</span><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">  LIKE my-project:prod_dataset.</span><span class="si">${</span><span class="nv">table</span><span class="si">}</span><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span></code></pre></div></li>
+<li>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># --------------------</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># テーブルメンテナンス</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># --------------------</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># テーブルのコピー（バックアップ）</span>
+</span></span><span class="line"><span class="cl">% bq cp my-project:dataset.production_table my-project:backup.table_<span class="k">$(</span>date +%Y%m%d<span class="k">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 古いテーブルの削除</span>
+</span></span><span class="line"><span class="cl">% bq rm -t -f my-project:backup.table_20231201
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># スキーマのみコピー（開発用）</span>
+</span></span><span class="line"><span class="cl">% bq query --nouse_legacy_sql <span class="s2">&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">  CREATE TABLE my-project:dev.test_table
+</span></span></span><span class="line"><span class="cl"><span class="s2">  LIKE my-project:prod.production_table
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;</span>
 </span></span></code></pre></div></li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># パーティションやクラスタリングもコピーしたい場合</span>
@@ -394,7 +433,60 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># プロジェクトごとの使用量</span>
 </span></span><span class="line"><span class="cl">bq ls --project_id<span class="o">=</span>my-project --format<span class="o">=</span>json
-</span></span></code></pre></div><h3 id="dataanalyist編">DataAnalyist編<a class="anchor" aria-hidden="true" href="#dataanalyist編"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+</span></span></code></pre></div><h4 id="crud操作の比較">CRUD操作の比較<a class="anchor" aria-hidden="true" href="#crud操作の比較"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<p>💻 ソフトウェアエンジニア（SE）</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- 頻繁にCRUD操作を行う
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;山田太郎&#39;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">UPDATE</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;山田花子&#39;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><p>📊 データエンジニア</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- 基本的にバッチ処理（追加のみ）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">load_time</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="k">CURRENT_TIMESTAMP</span><span class="p">()</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="n">staging_users</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- 更新はあまり行わない（イミュータブルな設計）
+</span></span></span></code></pre></div><p>🎯 データエンジニアが使う操作</p>
+<ol>
+<li>Bulk Insert</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># GCSからの一括ロード</span>
+</span></span><span class="line"><span class="cl">bq load --source_format<span class="o">=</span>CSV <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  my-project:dataset.sales <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  gs://my-bucket/sales/*.csv <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>  schema.json
+</span></span></code></pre></div><ol start="2">
+<li>Merge（UPSERT）</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- 条件付きマージ（稀だが使う場合あり）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">MERGE</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">target_table</span><span class="w"> </span><span class="n">T</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">USING</span><span class="w"> </span><span class="n">source_table</span><span class="w"> </span><span class="n">S</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">ON</span><span class="w"> </span><span class="n">T</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">S</span><span class="p">.</span><span class="n">id</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHEN</span><span class="w"> </span><span class="n">MATCHED</span><span class="w"> </span><span class="k">THEN</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="k">UPDATE</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">T</span><span class="p">.</span><span class="n">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">S</span><span class="p">.</span><span class="n">value</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHEN</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="n">MATCHED</span><span class="w"> </span><span class="k">THEN</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="k">INSERT</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="n">S</span><span class="p">.</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">S</span><span class="p">.</span><span class="n">value</span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div><ol start="3">
+<li>テーブルスワップ</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># アトミックなテーブル入れ替え</span>
+</span></span><span class="line"><span class="cl">bq query <span class="s2">&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">CREATE OR REPLACE TABLE my-project:dataset.users_new LIKE my-project:dataset.users_old
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">bq cp my-project:dataset.users_new my-project:dataset.production_users
+</span></span></code></pre></div><ol start="4">
+<li>パーティションの入れ替え</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- 特定パーティションのみ更新
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">partitioned_table</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">DELETE</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">partition_date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">partitioned_table</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">PARTITION</span><span class="w"> </span><span class="p">(</span><span class="n">partition_date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;2024-01-01&#39;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">new_data</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><h3 id="dataanalyist編">DataAnalyist編<a class="anchor" aria-hidden="true" href="#dataanalyist編"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># --------------------</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># アドホック分析の高速化</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># --------------------</span>
@@ -482,14 +574,6 @@
                     
                     <li class="p-1">
                         <div>
-                            <a href="../../post/bigquery_about_machine_learning/">[BigQuery] Machine Learning</a>
-                            <time datetime="2025-03-14 17:31" class="no-wrap text-small ml-1">(2025-03-14 17:31)</time>
-                        </div>
-                        <div class="text-small text-gray mb-1 mt-1">Completed within DWH, allowing modeling and analysis through queries</div>
-                    </li>
-                    
-                    <li class="p-1">
-                        <div>
                             <a href="../../post/bigquery_about_information_schema/">[BigQuery] INFORMATION_SCHEMA</a>
                             <time datetime="2025-03-06 17:39" class="no-wrap text-small ml-1">(2025-03-06 17:39)</time>
                         </div>
@@ -498,18 +582,26 @@
                     
                     <li class="p-1">
                         <div>
-                            <a href="../../post/bigquery_data_analysis_on_preparation/">[BigQuery] Data analysis on preparation</a>
-                            <time datetime="2025-03-03 22:23" class="no-wrap text-small ml-1">(2025-03-03 22:23)</time>
+                            <a href="../../post/bigquery_billing_how_works/">[BigQuery] Billing</a>
+                            <time datetime="2024-08-16 20:35" class="no-wrap text-small ml-1">(2024-08-16 20:35)</time>
                         </div>
-                        <div class="text-small text-gray mb-1 mt-1">I would like to prepare for data analysis using GoogleSQL inside BigQuery</div>
+                        <div class="text-small text-gray mb-1 mt-1">Summarize billing mechanism, fee structure, and money-saving tips.</div>
                     </li>
                     
                     <li class="p-1">
                         <div>
-                            <a href="../../post/macos_commands_memorandum/">[macOS] Commands memorandum</a>
-                            <time datetime="2025-01-28 00:50" class="no-wrap text-small ml-1">(2025-01-28 00:50)</time>
+                            <a href="../../post/bigquery_about_machine_learning/">[BigQuery] Machine Learning</a>
+                            <time datetime="2025-03-14 17:31" class="no-wrap text-small ml-1">(2025-03-14 17:31)</time>
                         </div>
-                        <div class="text-small text-gray mb-1 mt-1">macOS useful commands and tips.</div>
+                        <div class="text-small text-gray mb-1 mt-1">Completed within DWH, allowing modeling and analysis through queries</div>
+                    </li>
+                    
+                    <li class="p-1">
+                        <div>
+                            <a href="../../post/bigquery_data_analysis_on_preparation/">[BigQuery] Data analysis on preparation</a>
+                            <time datetime="2025-03-03 22:23" class="no-wrap text-small ml-1">(2025-03-03 22:23)</time>
+                        </div>
+                        <div class="text-small text-gray mb-1 mt-1">I would like to prepare for data analysis using GoogleSQL inside BigQuery</div>
                     </li>
                     
                 </ul>
