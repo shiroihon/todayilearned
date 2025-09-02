@@ -6,10 +6,10 @@
     <description>Recent content in Data Reliability Engineer on Today I Learned | KitHub</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Jul 2025 17:50:58 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 01 Sep 2025 21:46:42 +0900</lastBuildDate>
     <atom:link href="https://kithub.f5.si/categories/data-reliability-engineer/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>[BigQuery] About INFORMATION_SCHEMA</title>
+      <title>[BigQuery] INFORMATION_SCHEMA</title>
       <link>https://kithub.f5.si/post/bigquery_about_information_schema/</link>
       <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
       <guid>https://kithub.f5.si/post/bigquery_about_information_schema/</guid>
@@ -30,7 +30,7 @@
       <description>⚓️ About container orchestration tecnology.</description>
     </item>
     <item>
-      <title>[BigQuery] About data quality</title>
+      <title>[BigQuery] Data Quality</title>
       <link>https://kithub.f5.si/post/bigquery_about_data_quality/</link>
       <pubDate>Wed, 16 Oct 2024 13:49:54 +0900</pubDate>
       <guid>https://kithub.f5.si/post/bigquery_about_data_quality/</guid>
@@ -44,7 +44,7 @@
       <description>🎢 Summarizing Trocco and Embluk to deepen understanding.</description>
     </item>
     <item>
-      <title>[BigQuery] Billing how works</title>
+      <title>[BigQuery] Billing</title>
       <link>https://kithub.f5.si/post/bigquery_billing_how_works/</link>
       <pubDate>Fri, 16 Aug 2024 20:35:07 +0900</pubDate>
       <guid>https://kithub.f5.si/post/bigquery_billing_how_works/</guid>

@@ -154,7 +154,7 @@
                 Created <relative-time datetime="Thu, 29 Aug 2024 19:47:44 &#43;0900" class="no-wrap">Thu, 29 Aug 2024 19:47:44 &#43;0900</relative-time>
                 
                 <span class="path-divider">|</span>
-                Modified <relative-time datetime="Fri, 04 Jul 2025 16:55:20 &#43;0900" class="no-wrap">Fri, 04 Jul 2025 16:55:20 &#43;0900</relative-time>
+                Modified <relative-time datetime="Wed, 06 Aug 2025 20:13:10 &#43;0900" class="no-wrap">Wed, 06 Aug 2025 20:13:10 &#43;0900</relative-time>
                 
             </div>
         </div>
@@ -187,9 +187,9 @@
                     <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                 </div>
             </details-menu>
-            2874 Words
+            3642 Words
             <span class="path-divider">|</span>
-            7 min
+            8 min
             </div>
 
             
@@ -234,88 +234,136 @@
 <!-- Image -->
 <p><img src="https://cdn-ssl-devio-img.classmethod.jp/wp-content/uploads/2020/09/gcp-eyecatch-bigquery_1200x630.png" alt="BigQuery"></p>
 <h2 id="why">Why<a class="anchor" aria-hidden="true" href="#why"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
-<p>分析関係でお仕事をしていたり、最近では営業担当や、マーケティング担当の方々も容易にBigQueryで用いるのが<code>DQL</code>。
-他にも様々な区分のなコマンドが存在している。</p>
-<p>コマンド区分の理解と、用いてきた関数等を覚書していきたい。</p>
+<p>分析関係でお仕事をしていたり、最近では営業担当や、<br>
+マーケティング担当の方々も容易に <code>BigQuery</code> で用いるのが <code>DQL</code>。<br>
+他にも様々な区分のなコマンドが存在している。<br>
+コマンド区分の理解と、用いてきた関数等を覚書していきたい。</p>
 <h2 id="what">What<a class="anchor" aria-hidden="true" href="#what"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
-<h3 id="-sql-commands-classification">|| SQL Commands Classification<a class="anchor" aria-hidden="true" href="#-sql-commands-classification"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
-<p><details>
-  <summary>DDL: Data Define Language</summary>
-  <p></p>
-  <ul>
-<li>CREAT</li>
-<li>ALTER</li>
-<li>DROP</li>
-<li>RENAME</li>
-<li>TRUNCATE</li>
+<p>階層別関係図:</p>
+<pre tabindex="0"><code>SQL文 (Statements)         : 完全な命令単位で、セミコロンで終了
+├─ 句 (Clauses)            : 文を構成するもの各部分
+│  ├─ 式 (Expressions)     : 直を生成する構成要素
+│  │  ├─ 述語 (Predicates) : 真偽値を返す特殊な式
+│  │  └─ 関数              :
+│  └─ 修飾子 (Modifiers)   : 文や式の動作を変更
+└─ 識別子 (Identifiers)    : データベースオブジェクトを識別する名前
+</code></pre><h3 id="-文statements">|| 文（Statements）<a class="anchor" aria-hidden="true" href="#-文statements"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<p>SQL（Structured Query Language）のステートメントとは、データベースに対して実行する命令文や問い合わせ文のこと。</p>
+<ul>
+<li>データベースの作成、データの操作、問い合わせ、管理など様々な操作を行う</li>
+<li>各ステートメントはセミコロン(;)で終了</li>
+<li>大文字小文字を区別しない（ただし、データの値は区別される場合がある）</li>
+<li>予約語（<code>SELECT</code>, <code>FROM</code>, <code>WHERE</code> &hellip;etc.）は特別な意味を持つ</li>
 </ul>
-
-  <p></p>
-</details>
-
-<details>
-  <summary>DML: Data Manipulation Language</summary>
-  <p></p>
-  <ul>
-<li>INSERT</li>
-<li>UPDATE</li>
-<li>DEFELR</li>
-<li>MERGE</li>
-</ul>
-
-  <p></p>
-</details>
-
-<details>
-  <summary>DCL: Data Control Language</summary>
-  <p></p>
-  <ul>
-<li>GRANT</li>
-<li>REVOKE</li>
-</ul>
-
-  <p></p>
-</details>
-
-<details>
-  <summary>DQL: Data Query Language</summary>
-  <p></p>
-  <ul>
-<li>SELECT</li>
-</ul>
-
-  <p></p>
-</details>
-</p>
-<h3 id="-sql-types">|| SQL Types<a class="anchor" aria-hidden="true" href="#-sql-types"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<h4 id="-分類">| 分類<a class="anchor" aria-hidden="true" href="#-分類"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<p>▼ データ定義言語 (DDL - Data Definition Language)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- CREATE: データベース、テーブル、ビューなどのオブジェクトを作成
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">employees</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="nb">INT</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">name</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">department</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- ALTER: 既存のデータベースオブジェクトの構造を変更
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">employees</span><span class="w"> </span><span class="k">ADD</span><span class="w"> </span><span class="k">COLUMN</span><span class="w"> </span><span class="n">salary</span><span class="w"> </span><span class="nb">DECIMAL</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- DROP: データベースオブジェクトを削除
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">DROP</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">employees</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- RENAME:
+</span></span></span><span class="line"><span class="cl"><span class="c1">-- TRUNCATE:
+</span></span></span></code></pre></div><p>▼ データ操作言語 (DML - Data Manipulation Language)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- SELECT: データを検索
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">department</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Sales&#39;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- INSERT: 新しいデータを追加
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">employees</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">department</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;山田太郎&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;営業部&#39;</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- UPDATE: 既存のデータを更新
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">UPDATE</span><span class="w"> </span><span class="n">employees</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">department</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;マーケティング&#39;</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- DELETE: データを削除
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">employees</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- MERGE:
+</span></span></span></code></pre></div><p>▼ データ制御言語 (DCL - Data Control Language)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- GRANT: ユーザーに権限を付与
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">GRANT</span><span class="w"> </span><span class="k">SELECT</span><span class="p">,</span><span class="w"> </span><span class="k">INSERT</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">employees</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="n">user1</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- REVOKE: ユーザーから権限を剥奪
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">REVOKE</span><span class="w"> </span><span class="k">INSERT</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">employees</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">user1</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><p>▼ トランザクション制御 (TCL - Transaction Control Language)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="c1">-- COMMIT: トランザクションを確定
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">COMMIT</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">-- ROLLBACK: トランザクションを取消
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">ROLLBACK</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></div><h3 id="-句clauses">|| 句（Clauses）<a class="anchor" aria-hidden="true" href="#-句clauses"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <table>
   <thead>
       <tr>
-          <th>Type</th>
-          <th>SQL</th>
-          <th></th>
+          <th>句</th>
+          <th>説明</th>
+          <th>使用例</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>文</td>
-          <td></td>
-          <td></td>
+          <td>SELECT</td>
+          <td>取得する列を指定</td>
+          <td><code>SELECT column1, column2</code></td>
       </tr>
       <tr>
-          <td>句</td>
-          <td><code>SELECT</code>, <code>FROM</code>, <code>WHERE</code>,</td>
-          <td></td>
+          <td>FROM</td>
+          <td>データソースを指定</td>
+          <td><code>FROM table_name</code></td>
       </tr>
       <tr>
-          <td>式</td>
-          <td><code>CASE</code>,</td>
-          <td></td>
+          <td>WHERE</td>
+          <td>行のフィルタ条件</td>
+          <td><code>WHERE age &gt; 20</code></td>
+      </tr>
+      <tr>
+          <td>GROUP BY</td>
+          <td>グループ化</td>
+          <td><code>GROUP BY department</code></td>
+      </tr>
+      <tr>
+          <td>HAVING</td>
+          <td>グループ化後のフィルタ</td>
+          <td><code>HAVING COUNT(*) &gt; 5</code></td>
+      </tr>
+      <tr>
+          <td>ORDER BY</td>
+          <td>ソート順指定</td>
+          <td><code>ORDER BY name ASC</code></td>
+      </tr>
+      <tr>
+          <td>LIMIT/OFFSET</td>
+          <td>結果の制限</td>
+          <td><code>LIMIT 10 OFFSET 5</code></td>
+      </tr>
+      <tr>
+          <td>JOIN</td>
+          <td>テーブル結合</td>
+          <td><code>JOIN departments ON dept_id</code></td>
+      </tr>
+      <tr>
+          <td>UNION</td>
+          <td>結果の結合</td>
+          <td><code>SELECT ... UNION SELECT ...</code></td>
+      </tr>
+      <tr>
+          <td>WITH (CTE)</td>
+          <td>共通テーブル式</td>
+          <td><code>WITH temp AS (SELECT ...);</code></td>
       </tr>
   </tbody>
 </table>
-<h3 id="-used-functions">|| Used Functions<a class="anchor" aria-hidden="true" href="#-used-functions"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
-<h4 id="-小技-テーブルフラット化">| [小技] テーブルフラット化<a class="anchor" aria-hidden="true" href="#-小技-テーブルフラット化"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<h3 id="-式expressions">|| 式（Expressions）<a class="anchor" aria-hidden="true" href="#-式expressions"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<h4 id="-関数functions">| 関数（Functions）<a class="anchor" aria-hidden="true" href="#-関数functions"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<h5 id="小技-テーブルフラット化">[小技] テーブルフラット化<a class="anchor" aria-hidden="true" href="#小技-テーブルフラット化"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="o">#</span><span class="n">standardSQL</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="cm">/* cf.
 </span></span></span><span class="line"><span class="cl"><span class="cm"> * GA4/Firebaseのログをフラット化する汎用クエリ
@@ -527,7 +575,7 @@
 </details>
 </li>
 </ul>
-<h4 id="-小技-擬似中間テーブル">|| [小技] 擬似中間テーブル<a class="anchor" aria-hidden="true" href="#-小技-擬似中間テーブル"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<h5 id="小技-擬似中間テーブル">[小技] 擬似中間テーブル<a class="anchor" aria-hidden="true" href="#小技-擬似中間テーブル"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h5>
 <pre tabindex="0"><code>⚠︎ 使用頻度が多いなら、dbt で中間テーブルにする方が懸命。一時的な使用を目的とする。
 </code></pre><ul>
 <li>
@@ -563,7 +611,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="-dql-sha256">|| [DQL] SHA256()<a class="anchor" aria-hidden="true" href="#-dql-sha256"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<h5 id="sha256">SHA256()<a class="anchor" aria-hidden="true" href="#sha256"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="w"> </span><span class="cm">/*
 </span></span></span><span class="line"><span class="cl"><span class="cm">  hashed_email
 </span></span></span><span class="line"><span class="cl"><span class="cm">   - SHA256(trim)
@@ -582,7 +630,7 @@
 </span></span></span></code></pre></div><ul>
 <li>cf.<a href="https://stackoverflow.com/questions/48152330/bigquery-sha256-function">BigQuery SHA256 function</a> stack overflow</li>
 </ul>
-<h4 id="-dql-export-data-options">|| [DQL] export data options()<a class="anchor" aria-hidden="true" href="#-dql-export-data-options"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<h5 id="export-data-options">export data options()<a class="anchor" aria-hidden="true" href="#export-data-options"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h5>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="n">export</span><span class="w"> </span><span class="k">data</span><span class="w"> </span><span class="k">options</span><span class="w"> </span><span class="p">(</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="n">uri</span><span class="o">=</span><span class="s1">&#39;gs://エクスポート先のバケット名/csv/sql_*.csv.gz&#39;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">,</span><span class="w"> </span><span class="n">format</span><span class="o">=</span><span class="s1">&#39;CSV&#39;</span><span class="w">
@@ -601,7 +649,7 @@
 </span></span></span></code></pre></div><ul>
 <li>cf. <a href="https://dev.classmethod.jp/articles/export_data_to_cloudstorage_bucket_bigquery_export/">BigQueryのエクスポート機能で、Cloud Storageのバケットにテーブルのデータをエクスポートしてみた</a> DevelopersIO</li>
 </ul>
-<h4 id="-bq-scripting">|| BQ Scripting<a class="anchor" aria-hidden="true" href="#-bq-scripting"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<h5 id="bigquery-scripting">BigQuery Scripting<a class="anchor" aria-hidden="true" href="#bigquery-scripting"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h5>
 <ul>
 <li>変数宣言
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="o">#</span><span class="w"> </span><span class="n">config</span><span class="w">
@@ -637,7 +685,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="-bq-cli">|| BQ CLI<a class="anchor" aria-hidden="true" href="#-bq-cli"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<h5 id="bq-cli">BQ CLI<a class="anchor" aria-hidden="true" href="#bq-cli"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h5>
 <ul>
 <li>cf.
 <ul>
@@ -646,7 +694,7 @@
 </ul>
 </li>
 </ul>
-<h4 id="-bq-information_schema">|| BQ INFORMATION_SCHEMA<a class="anchor" aria-hidden="true" href="#-bq-information_schema"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<h5 id="information_schema">INFORMATION_SCHEMA<a class="anchor" aria-hidden="true" href="#information_schema"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h5>
 <p>BigQuery <code>INFORMATION_SCHEMA</code> ビューは、
 BigQuery オブジェクトに関する<strong>メタデータ情報を提供</strong>する<strong>システム定義の読み取り専用</strong>ビュー<a href="https://cloud.google.com/bigquery/docs/information-schema-intro?hl=ja">ref</a></p>
 <ul>
@@ -765,7 +813,7 @@ BigQuery オブジェクトに関する<strong>メタデータ情報を提供</s
 </ul>
 </li>
 </ul>
-<h4 id="-bq-query-parameter">|| BQ Query parameter<a class="anchor" aria-hidden="true" href="#-bq-query-parameter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<h5 id="queryparameter">QueryParameter<a class="anchor" aria-hidden="true" href="#queryparameter"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h5>
 <ul>
 <li>
 <p>CLI</p>
@@ -802,7 +850,7 @@ BigQuery オブジェクトに関する<strong>メタデータ情報を提供</s
 </ul>
 </li>
 </ul>
-<h4 id="-bq-with-recursive">|| BQ with recursive<a class="anchor" aria-hidden="true" href="#-bq-with-recursive"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<h5 id="with-recursive">with recursive<a class="anchor" aria-hidden="true" href="#with-recursive"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h5>
 <pre tabindex="0"><code></code></pre><p>数世代まとめて再起的に！</p>
 </article>
         </div>
@@ -836,7 +884,7 @@ BigQuery オブジェクトに関する<strong>メタデータ情報を提供</s
                     
                     <li class="p-1">
                         <div>
-                            <a href="../../post/bigquery_billing_how_works/">[BigQuery] Billing how works</a>
+                            <a href="../../post/bigquery_billing_how_works/">[BigQuery] Billing</a>
                             <time datetime="2024-08-16 20:35" class="no-wrap text-small ml-1">(2024-08-16 20:35)</time>
                         </div>
                         <div class="text-small text-gray mb-1 mt-1">Summarize billing mechanism, fee structure, and money-saving tips.</div>

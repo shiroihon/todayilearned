@@ -6,8 +6,22 @@
     <description>Recent content in Tags on Today I Learned | KitHub</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Jul 2025 20:10:36 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 02 Sep 2025 01:28:02 +0900</lastBuildDate>
     <atom:link href="https://kithub.f5.si/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BigQuery</title>
+      <link>https://kithub.f5.si/tags/bigquery/</link>
+      <pubDate>Mon, 01 Sep 2025 21:43:34 +0900</pubDate>
+      <guid>https://kithub.f5.si/tags/bigquery/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CLI</title>
+      <link>https://kithub.f5.si/tags/cli/</link>
+      <pubDate>Mon, 01 Sep 2025 21:43:34 +0900</pubDate>
+      <guid>https://kithub.f5.si/tags/cli/</guid>
+      <description></description>
+    </item>
     <item>
       <title>BI</title>
       <link>https://kithub.f5.si/tags/bi/</link>
@@ -20,13 +34,6 @@
       <link>https://kithub.f5.si/tags/tableau/</link>
       <pubDate>Mon, 02 Jun 2025 14:46:08 +0900</pubDate>
       <guid>https://kithub.f5.si/tags/tableau/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>BigQuery</title>
-      <link>https://kithub.f5.si/tags/bigquery/</link>
-      <pubDate>Thu, 03 Apr 2025 11:11:44 +0900</pubDate>
-      <guid>https://kithub.f5.si/tags/bigquery/</guid>
       <description></description>
     </item>
     <item>
@@ -160,13 +167,6 @@
       <link>https://kithub.f5.si/tags/python/</link>
       <pubDate>Thu, 13 Feb 2025 12:45:32 +0900</pubDate>
       <guid>https://kithub.f5.si/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>CLI</title>
-      <link>https://kithub.f5.si/tags/cli/</link>
-      <pubDate>Tue, 28 Jan 2025 00:50:32 +0900</pubDate>
-      <guid>https://kithub.f5.si/tags/cli/</guid>
       <description></description>
     </item>
     <item>
