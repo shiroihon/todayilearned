@@ -6,15 +6,8 @@
     <description>Recent content in Data Analytics Engineer on Today I Learned | KitHub</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Sep 2025 21:05:22 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 07 Sep 2025 03:14:16 +0900</lastBuildDate>
     <atom:link href="https://kithub.f5.si/categories/data-analytics-engineer/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>[BigQuery] (Various) Data Transfer</title>
-      <link>https://kithub.f5.si/post/bigquery_about_various_data_transfer/</link>
-      <pubDate>Thu, 03 Apr 2025 11:11:44 +0900</pubDate>
-      <guid>https://kithub.f5.si/post/bigquery_about_various_data_transfer/</guid>
-      <description>🔍 Find out various data transfer methods starting from BigQuery.</description>
-    </item>
     <item>
       <title>[BigQuery] Machine Learning</title>
       <link>https://kithub.f5.si/post/bigquery_about_machine_learning/</link>

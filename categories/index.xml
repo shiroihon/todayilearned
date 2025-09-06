@@ -6,7 +6,7 @@
     <description>Recent content in Categories on Today I Learned | KitHub</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Sep 2025 21:05:22 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 07 Sep 2025 03:23:20 +0900</lastBuildDate>
     <atom:link href="https://kithub.f5.si/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google</title>
@@ -16,10 +16,24 @@
       <description></description>
     </item>
     <item>
-      <title>Data Analytics Engineer</title>
-      <link>https://kithub.f5.si/categories/data-analytics-engineer/</link>
+      <title>Infrastructure</title>
+      <link>https://kithub.f5.si/categories/infrastructure/</link>
+      <pubDate>Mon, 01 Sep 2025 21:43:34 +0900</pubDate>
+      <guid>https://kithub.f5.si/categories/infrastructure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BI</title>
+      <link>https://kithub.f5.si/categories/bi/</link>
+      <pubDate>Mon, 02 Jun 2025 14:46:08 +0900</pubDate>
+      <guid>https://kithub.f5.si/categories/bi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Reliability Engineer</title>
+      <link>https://kithub.f5.si/categories/data-reliability-engineer/</link>
       <pubDate>Thu, 03 Apr 2025 11:11:44 +0900</pubDate>
-      <guid>https://kithub.f5.si/categories/data-analytics-engineer/</guid>
+      <guid>https://kithub.f5.si/categories/data-reliability-engineer/</guid>
       <description></description>
     </item>
     <item>
@@ -30,10 +44,17 @@
       <description></description>
     </item>
     <item>
-      <title>Data Reliability Engineer</title>
-      <link>https://kithub.f5.si/categories/data-reliability-engineer/</link>
-      <pubDate>Thu, 06 Mar 2025 17:39:31 +0900</pubDate>
-      <guid>https://kithub.f5.si/categories/data-reliability-engineer/</guid>
+      <title>AI</title>
+      <link>https://kithub.f5.si/categories/ai/</link>
+      <pubDate>Fri, 14 Mar 2025 17:31:44 +0900</pubDate>
+      <guid>https://kithub.f5.si/categories/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Analytics Engineer</title>
+      <link>https://kithub.f5.si/categories/data-analytics-engineer/</link>
+      <pubDate>Fri, 14 Mar 2025 17:31:44 +0900</pubDate>
+      <guid>https://kithub.f5.si/categories/data-analytics-engineer/</guid>
       <description></description>
     </item>
     <item>
@@ -41,13 +62,6 @@
       <link>https://kithub.f5.si/categories/know-how/</link>
       <pubDate>Mon, 03 Mar 2025 22:23:20 +0900</pubDate>
       <guid>https://kithub.f5.si/categories/know-how/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Certifications</title>
-      <link>https://kithub.f5.si/categories/certifications/</link>
-      <pubDate>Tue, 21 Jan 2025 16:24:43 +0900</pubDate>
-      <guid>https://kithub.f5.si/categories/certifications/</guid>
       <description></description>
     </item>
     <item>
@@ -72,10 +86,10 @@
       <description></description>
     </item>
     <item>
-      <title>Free-Lance</title>
-      <link>https://kithub.f5.si/categories/free-lance/</link>
+      <title>Freelance</title>
+      <link>https://kithub.f5.si/categories/freelance/</link>
       <pubDate>Fri, 16 Aug 2024 18:41:57 +0900</pubDate>
-      <guid>https://kithub.f5.si/categories/free-lance/</guid>
+      <guid>https://kithub.f5.si/categories/freelance/</guid>
       <description></description>
     </item>
   </channel>
