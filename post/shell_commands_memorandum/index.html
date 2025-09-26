@@ -21,7 +21,7 @@
 
     
     <meta name="description"
-  content="🐚" />
+  content="🐚 A black world appears when you open the terminal." />
 <meta name="keywords"
   content='blog, google analytics' />
 <meta name="robots" content="noodp" />
@@ -31,7 +31,7 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="[Zsh] Commands memorandum - Today I Learned | KitHub" />
 <meta name="twitter:description"
-  content="🐚" />
+  content="🐚 A black world appears when you open the terminal." />
 <meta name="twitter:site" content="https://kithub.f5.si/" />
 <meta name="twitter:creator" content="shiro" />
 <meta name="twitter:image"
@@ -41,7 +41,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:title" content="[Zsh] Commands memorandum - Today I Learned | KitHub">
 <meta property="og:description"
-  content="🐚" />
+  content="🐚 A black world appears when you open the terminal." />
 <meta property="og:url" content="https://kithub.f5.si/post/shell_commands_memorandum/" />
 <meta property="og:site_name" content="[Zsh] Commands memorandum" />
 <meta property="og:image"
@@ -154,7 +154,7 @@
                 Created <relative-time datetime="Tue, 26 Nov 2024 15:23:00 &#43;0900" class="no-wrap">Tue, 26 Nov 2024 15:23:00 &#43;0900</relative-time>
                 
                 <span class="path-divider">|</span>
-                Modified <relative-time datetime="Fri, 04 Jul 2025 16:55:20 &#43;0900" class="no-wrap">Fri, 04 Jul 2025 16:55:20 &#43;0900</relative-time>
+                Modified <relative-time datetime="Tue, 23 Sep 2025 15:46:41 &#43;0900" class="no-wrap">Tue, 23 Sep 2025 15:46:41 &#43;0900</relative-time>
                 
             </div>
         </div>
@@ -187,7 +187,7 @@
                     <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                 </div>
             </details-menu>
-            584 Words
+            645 Words
             <span class="path-divider">|</span>
             2 min
             </div>
@@ -254,7 +254,11 @@
 
 
 <ul>
+<li>ZSH Organization
+<ul>
 <li><a href="https://www.zsh.org/">https://www.zsh.org/</a></li>
+</ul>
+</li>
 <li>ZSH Documentation
 <ul>
 <li><a href="https://zsh.sourceforge.io/Doc/">https://zsh.sourceforge.io/Doc/</a></li>
@@ -268,45 +272,44 @@
 </li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 現在仕様Shell</span>
-</span></span><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="nv">$SHELL</span>
-</span></span><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="nv">$0</span>
-</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">% <span class="nb">echo</span> <span class="nv">$SHELL</span>
+</span></span><span class="line"><span class="cl">% <span class="nb">echo</span> <span class="nv">$0</span>
+</span></span><span class="line"><span class="cl">/bin/zsh
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Zshのマニュアル</span>
-</span></span><span class="line"><span class="cl">$ man zsh
+</span></span><span class="line"><span class="cl">% man zsh
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 基本</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
-</span></span><span class="line"><span class="cl">$ ls
-</span></span><span class="line"><span class="cl">$ grep word    <span class="c1"># &#34;word&#34;の文字列検索</span>
-</span></span><span class="line"><span class="cl">$ wc -l        <span class="c1"># word counts: 単語数</span>
+</span></span><span class="line"><span class="cl">% ls
+</span></span><span class="line"><span class="cl">% grep word    <span class="c1"># &#34;word&#34;の文字列検索</span>
+</span></span><span class="line"><span class="cl">% wc -l        <span class="c1"># =word counts: 単語数</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">$ ls <span class="p">|</span> grep conf <span class="p">|</span> wc -l
+</span></span><span class="line"><span class="cl">% ls <span class="p">|</span> grep conf <span class="p">|</span> wc -l
 </span></span><span class="line"><span class="cl"><span class="m">17</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 移動</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
-</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span>
-</span></span><span class="line"><span class="cl">$ <span class="nb">pwd</span>
+</span></span><span class="line"><span class="cl">% <span class="nb">cd</span>
+</span></span><span class="line"><span class="cl">% <span class="nb">pwd</span>
 </span></span><span class="line"><span class="cl">~/sandbox/prodctions/dev/user
-</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> dev prod   <span class="c1"># 特定のディレクトリ構造であればジャンプできる</span>
+</span></span><span class="line"><span class="cl">% <span class="nb">cd</span> dev prod   <span class="c1"># 特定のディレクトリ構造であればジャンプできる</span>
 </span></span><span class="line"><span class="cl">~/sandbox/prodctions/prod/user
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Directory Hash (Zsh特有)</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 移動先ルートパスをメモ書きできる</span>
-</span></span><span class="line"><span class="cl">$ <span class="nb">hash</span> -d <span class="nv">api</span><span class="o">=</span>/tmp/src/main/go/api
-</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> ~api <span class="o">&amp;&amp;</span> <span class="nb">pwd</span>
+</span></span><span class="line"><span class="cl">% <span class="nb">hash</span> -d <span class="nv">api</span><span class="o">=</span>/tmp/src/main/go/api
+</span></span><span class="line"><span class="cl">% <span class="nb">cd</span> ~api <span class="o">&amp;&amp;</span> <span class="nb">pwd</span>
 </span></span><span class="line"><span class="cl">~/tmp/src/main/go/api
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------------------------------------</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 操作系</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
-</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------------------------------------</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># カーソル移動 (Emacs key風は macOS 特有)</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#       ^p</span>
@@ -321,30 +324,33 @@
 </span></span><span class="line"><span class="cl"><span class="c1">#   ^w :カーソルより前（左方向）の単語消す</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------------------------------------</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 履歴</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
-</span></span><span class="line"><span class="cl">$ <span class="nb">history</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------------------------------------</span>
+</span></span><span class="line"><span class="cl">% <span class="nb">history</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 過去のgit コマンド列挙して、ナンバー実行</span>
-</span></span><span class="line"><span class="cl">$ <span class="nb">history</span> <span class="p">|</span> grep git
-</span></span><span class="line"><span class="cl">$ !<span class="o">{</span>number<span class="o">}</span>
+</span></span><span class="line"><span class="cl">% <span class="nb">history</span> <span class="p">|</span> grep git
+</span></span><span class="line"><span class="cl">% !<span class="o">{</span>number<span class="o">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------------------------------------</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 展開</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------------------------------------</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># - Brace Expansion (zsh特有) :{,}で総当り展開</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># - Glob  Expansion (zsh特集) :Tabで確認展開（^xu :で戻せる）</span>
-</span></span><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="o">{</span>shop_a,shop_b<span class="o">}</span>.csv
+</span></span><span class="line"><span class="cl">% <span class="nb">echo</span> <span class="o">{</span>shop_a,shop_b<span class="o">}</span>.csv
 </span></span><span class="line"><span class="cl">shop_a.csv shop_b.csv
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">$ diff -u <span class="o">{</span>shop_a,shop_b<span class="o">}</span>.csv
+</span></span><span class="line"><span class="cl">% diff -u <span class="o">{</span>shop_a,shop_b<span class="o">}</span>.csv
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">$ cp -p httpd.conf htppdd.conf.buckup
-</span></span><span class="line"><span class="cl">$ cp -p htppd.conf<span class="o">{</span>, .buckup<span class="o">}</span>
+</span></span><span class="line"><span class="cl">% cp -p httpd.conf htppdd.conf.buckup
+</span></span><span class="line"><span class="cl">% cp -p htppd.conf<span class="o">{</span>,.buckup<span class="o">}</span>
 </span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------------------------------------</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 一気にで構造化ディレクトリが作れる</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ----------------------------------------</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># src/</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#     └main/</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#         └script/</span>
@@ -362,24 +368,31 @@
 </span></span><span class="line"><span class="cl"><span class="c1">#             └db/</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#                 └user/</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#                 └task/</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">$ mkdir -p src/<span class="o">{</span>main,test<span class="o">}</span>/script/<span class="o">{</span>api,db<span class="o">}</span>/<span class="o">{</span>user,task<span class="o">}</span>
+</span></span><span class="line"><span class="cl">% mkdir -p src/<span class="o">{</span>main,test<span class="o">}</span>/script/<span class="o">{</span>api,db<span class="o">}</span>/<span class="o">{</span>user,task<span class="o">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># Mac特有</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># ----------</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">$ pbcopy
+</span></span><span class="line"><span class="cl">% pbcopy
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># QuickLook :Finderで見ることが</span>
-</span></span><span class="line"><span class="cl">$ qlook
+</span></span><span class="line"><span class="cl">% qlook
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Double click</span>
-</span></span><span class="line"><span class="cl">$ open
-</span></span><span class="line"><span class="cl">$ open https://google.com
+</span></span><span class="line"><span class="cl">% open
+</span></span><span class="line"><span class="cl">% open https://google.com
+</span></span></code></pre></div><h3 id="起動時間計測">起動時間計測<a class="anchor" aria-hidden="true" href="#起動時間計測"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 起動時間を計測</span>
+</span></span><span class="line"><span class="cl">% <span class="nb">time</span> zsh -i -c <span class="nb">exit</span>
+</span></span><span class="line"><span class="cl">zsh -i -c <span class="nb">exit</span>  0.49s user 0.44s system 74% cpu 1.251 total
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 詳細なプロファイル情報を取得</span>
+</span></span><span class="line"><span class="cl">% zsh -xv 2&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">|</span> tee /tmp/zsh_startup.log
 </span></span></code></pre></div><h2 id="ref">Ref.<a class="anchor" aria-hidden="true" href="#ref"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h2>
 <ul>
+<li><a href="https://github.com/topics/shell">https://github.com/topics/shell</a></li>
 <li><a href="https://youtu.be/qdrO8kD-ZT4?si=LfJh5jlwSaJGVbZ9">【Shell入門】一生触るターミナル操作を強化しておこうぜ！</a></li>
 </ul>
 </article>
