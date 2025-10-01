@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IDE on Today I Learned | KitHub</title>
-    <link>https://shiroimon.kithub.f5.si/tags/ide/</link>
+    <link>http://localhost:1313/tags/ide/</link>
     <description>Recent content in IDE on Today I Learned | KitHub</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Sep 2025 18:57:13 +0900</lastBuildDate>
-    <atom:link href="https://shiroimon.kithub.f5.si/tags/ide/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Oct 2025 00:30:36 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[AI] AI-agent code build used too CLI</title>
+      <link>http://localhost:1313/post/ai_agent_code_build/</link>
+      <pubDate>Thu, 31 Oct 2024 17:52:59 +0900</pubDate>
+      <guid>http://localhost:1313/post/ai_agent_code_build/</guid>
+      <description>🐚 AI code generative editor tool.</description>
+    </item>
     <item>
       <title>[Vim] Commands memorandum</title>
-      <link>https://shiroimon.kithub.f5.si/post/vim_commands_memorandum/</link>
+      <link>http://localhost:1313/post/vim_commands_memorandum/</link>
       <pubDate>Sat, 17 Aug 2024 01:02:03 +0900</pubDate>
-      <guid>https://shiroimon.kithub.f5.si/post/vim_commands_memorandum/</guid>
+      <guid>http://localhost:1313/post/vim_commands_memorandum/</guid>
       <description>✅ A list of vim commands for the TextEditor tool, along with various tips.</description>
     </item>
   </channel>
