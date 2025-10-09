@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://shiroimon.kithub.f5.si/post/</loc>
-    <lastmod>2025-10-04T02:03:37+09:00</lastmod>
+    <lastmod>2025-10-10T01:04:45+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/</loc>
-    <lastmod>2025-10-04T02:03:37+09:00</lastmod>
+    <lastmod>2025-10-10T01:04:45+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/post/bigquery_cli/</loc>
     <lastmod>2025-10-02T00:30:36+09:00</lastmod>
@@ -15,7 +15,7 @@
     <lastmod>2025-10-02T00:30:36+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/categories/</loc>
-    <lastmod>2025-10-04T02:03:37+09:00</lastmod>
+    <lastmod>2025-10-10T01:04:45+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/tags/cli/</loc>
     <lastmod>2025-10-02T00:30:36+09:00</lastmod>
@@ -27,10 +27,10 @@
     <lastmod>2025-10-02T00:30:36+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/categories/infrastructure/</loc>
-    <lastmod>2025-10-04T02:03:37+09:00</lastmod>
+    <lastmod>2025-10-10T01:04:45+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/tags/</loc>
-    <lastmod>2025-10-04T02:03:37+09:00</lastmod>
+    <lastmod>2025-10-10T01:04:45+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/post/tableau_this_and_that/</loc>
     <lastmod>2025-10-02T00:30:36+09:00</lastmod>
@@ -45,7 +45,7 @@
     <lastmod>2025-10-02T00:30:36+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/categories/data-reliability-engineer/</loc>
-    <lastmod>2025-10-04T02:03:37+09:00</lastmod>
+    <lastmod>2025-10-10T01:04:45+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/tags/datalake/</loc>
     <lastmod>2025-10-02T00:30:36+09:00</lastmod>
@@ -96,7 +96,7 @@
     <lastmod>2025-10-02T00:30:36+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/categories/know-how/</loc>
-    <lastmod>2025-10-02T00:30:36+09:00</lastmod>
+    <lastmod>2025-10-06T13:03:00+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/post/google_chrome_this_and_that/</loc>
     <lastmod>2025-10-02T00:30:36+09:00</lastmod>
@@ -111,13 +111,13 @@
     <lastmod>2025-10-02T00:30:36+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/post/terraform_catchup/</loc>
-    <lastmod>2025-10-02T00:30:36+09:00</lastmod>
+    <lastmod>2025-10-10T01:04:45+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/tags/iac/</loc>
-    <lastmod>2025-10-02T00:30:36+09:00</lastmod>
+    <lastmod>2025-10-10T01:04:45+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/tags/terraform/</loc>
-    <lastmod>2025-10-02T00:30:36+09:00</lastmod>
+    <lastmod>2025-10-10T01:04:45+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/post/python_basicly_datahandling_at_numpy/</loc>
     <lastmod>2025-10-02T00:30:36+09:00</lastmod>
@@ -138,7 +138,7 @@
     <lastmod>2025-10-02T00:30:36+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/tags/macos/</loc>
-    <lastmod>2025-10-02T00:30:36+09:00</lastmod>
+    <lastmod>2025-10-06T13:03:00+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/post/google_cloud_tools_memorandum/</loc>
     <lastmod>2025-10-02T00:30:36+09:00</lastmod>
@@ -312,10 +312,10 @@
     <lastmod>2025-10-02T00:30:36+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/post/macos_looks_like_native_application/</loc>
-    <lastmod>2025-10-02T00:30:36+09:00</lastmod>
+    <lastmod>2025-10-06T13:03:00+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/tags/chrome/</loc>
-    <lastmod>2025-10-02T00:30:36+09:00</lastmod>
+    <lastmod>2025-10-06T13:03:00+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/post/english_abbreviations/</loc>
     <lastmod>2025-10-02T00:30:36+09:00</lastmod>
@@ -363,6 +363,6 @@
     <lastmod>2025-10-02T00:30:36+09:00</lastmod>
   </url><url>
     <loc>https://shiroimon.kithub.f5.si/readme/</loc>
-    <lastmod>2025-10-02T00:30:36+09:00</lastmod>
+    <lastmod>2025-10-09T01:22:13+09:00</lastmod>
   </url>
 </urlset>
