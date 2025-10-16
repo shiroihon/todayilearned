@@ -6,8 +6,15 @@
     <description>Recent content in AI on Today I Learned | KitHub</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Oct 2025 00:30:36 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 16 Oct 2025 22:30:48 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.kithub.f5.si/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[CodexCLI] Catchup</title>
+      <link>https://shiroimon.kithub.f5.si/post/codexcli_catchup/</link>
+      <pubDate>Fri, 10 Oct 2025 16:13:19 +0900</pubDate>
+      <guid>https://shiroimon.kithub.f5.si/post/codexcli_catchup/</guid>
+      <description>🧠 The rise of CloudCode from OpenAI has finally come out.</description>
+    </item>
     <item>
       <title>[BigQuery] Machine Learning</title>
       <link>https://shiroimon.kithub.f5.si/post/bigquery_about_machine_learning/</link>

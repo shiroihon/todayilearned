@@ -6,8 +6,22 @@
     <description>Recent content in Tags on Today I Learned | KitHub</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Oct 2025 01:04:45 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 16 Oct 2025 22:30:48 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.kithub.f5.si/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Codex</title>
+      <link>https://shiroimon.kithub.f5.si/tags/codex/</link>
+      <pubDate>Fri, 10 Oct 2025 16:13:19 +0900</pubDate>
+      <guid>https://shiroimon.kithub.f5.si/tags/codex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenAI</title>
+      <link>https://shiroimon.kithub.f5.si/tags/openai/</link>
+      <pubDate>Fri, 10 Oct 2025 16:13:19 +0900</pubDate>
+      <guid>https://shiroimon.kithub.f5.si/tags/openai/</guid>
+      <description></description>
+    </item>
     <item>
       <title>BigQuery</title>
       <link>https://shiroimon.kithub.f5.si/tags/bigquery/</link>
