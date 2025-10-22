@@ -154,7 +154,7 @@
                 Created <relative-time datetime="Tue, 24 Sep 2024 18:08:08 &#43;0900" class="no-wrap">Tue, 24 Sep 2024 18:08:08 &#43;0900</relative-time>
                 
                 <span class="path-divider">|</span>
-                Modified <relative-time datetime="Mon, 20 Oct 2025 23:19:44 &#43;0900" class="no-wrap">Mon, 20 Oct 2025 23:19:44 &#43;0900</relative-time>
+                Modified <relative-time datetime="Wed, 22 Oct 2025 21:28:51 &#43;0900" class="no-wrap">Wed, 22 Oct 2025 21:28:51 &#43;0900</relative-time>
                 
             </div>
         </div>
@@ -187,7 +187,7 @@
                     <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                 </div>
             </details-menu>
-            4857 Words
+            5096 Words
             <span class="path-divider">|</span>
             7 min
             </div>
@@ -581,7 +581,38 @@ local  -[main] branch ---------------------|------------|------&gt;
 <li>GPG（GNU Privacy Guard）は、デジタル署名や暗号化を行うためのツール。</li>
 <li>GitのGPGを使用することで、コミットやタグが本当に信頼できるものであることを確認することができる。</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Homebrewで下準備</span>
+<p>推奨セット（macOS）
+0) 事前：インストール（Homebrew 派）</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">brew install gnupg pinentry-mac
+</span></span></code></pre></div><ol>
+<li>Git 署名の基本設定</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 署名鍵（できれば40桁のフルフィンガープリント）</span>
+</span></span><span class="line"><span class="cl">git config --global user.signingkey YOUR_GPG_KEY_FPR
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 常にコミット/タグを署名</span>
+</span></span><span class="line"><span class="cl">git config --global commit.gpgsign <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">git config --global tag.gpgSign <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># gpg の場所を明示（Homebrew の標準パス）</span>
+</span></span><span class="line"><span class="cl">git config --global gpg.program /opt/homebrew/bin/gpg
+</span></span></code></pre></div><ol start="2">
+<li>gpg-agent のキャッシュを「1日」に</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">mkdir -p ~/.gnupg
+</span></span><span class="line"><span class="cl">cat &gt; ~/.gnupg/gpg-agent.conf <span class="s">&lt;&lt;&#39;EOF&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s">pinentry-program /opt/homebrew/bin/pinentry-mac
+</span></span></span><span class="line"><span class="cl"><span class="s">default-cache-ttl 86400
+</span></span></span><span class="line"><span class="cl"><span class="s">max-cache-ttl 86400
+</span></span></span><span class="line"><span class="cl"><span class="s">EOF</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 反映</span>
+</span></span><span class="line"><span class="cl">gpgconf --kill gpg-agent
+</span></span><span class="line"><span class="cl">gpgconf --launch gpg-agent
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 確認</span>
+</span></span><span class="line"><span class="cl">git show --show-signature
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Homebrewで下準備</span>
 </span></span><span class="line"><span class="cl">$ brew install gnupg pinentry-mac
 </span></span><span class="line"><span class="cl"><span class="c1"># GPGキーペアの生成</span>
 </span></span><span class="line"><span class="cl">$ gpg --full-generate-key
@@ -597,20 +628,30 @@ local  -[main] branch ---------------------|------------|------&gt;
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># Gitの設定</span>
-</span></span><span class="line"><span class="cl">$ git config --global user.signingkey YOUR_GPG_KEY_ID
-</span></span><span class="line"><span class="cl"><span class="c1"># コミットに署名する設定</span>
-</span></span><span class="line"><span class="cl">$ git config --global commit.gpgsign <span class="nb">true</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># GPGエージェントの起動</span>
-</span></span><span class="line"><span class="cl">$ gpg-agent --daemon
-</span></span><span class="line"><span class="cl"><span class="c1"># GPG設定の更新</span>
-</span></span><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="s2">&#34;use-agent&#34;</span> &gt;&gt; ~/.gnupg/gpg.conf
-</span></span><span class="line"><span class="cl"><span class="c1"># エージェントのキャッシュタイム(８時間)の設定</span>
-</span></span><span class="line"><span class="cl">$ <span class="nb">echo</span> <span class="s2">&#34;default-cache-ttl 28800&#34;</span> &gt;&gt; ~/.gnupg/gpg-agent.conf
-</span></span><span class="line"><span class="cl"><span class="c1"># SSHエージェントにGPGキーを追加</span>
-</span></span><span class="line"><span class="cl">$ ssh-add -L <span class="p">|</span> gpg --import
-</span></span><span class="line"><span class="cl"><span class="c1"># commitに署名されているか確認</span>
-</span></span><span class="line"><span class="cl">$ git show --show-signature
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># 1) 署名に使う鍵を設定（なるべくフルフィンガープリント推奨）</span>
+</span></span><span class="line"><span class="cl">git config --global user.signingkey YOUR_GPG_KEY_FPR
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 2) コミット（とタグ）を常に署名</span>
+</span></span><span class="line"><span class="cl">git config --global commit.gpgsign <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">git config --global tag.gpgSign <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 3) 必要なら gpg コマンドを指定（環境により gpg / gpg2）</span>
+</span></span><span class="line"><span class="cl">git config --global gpg.program gpg
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 4) gpg-agent のキャッシュを「1日（= 86400秒）」に設定</span>
+</span></span><span class="line"><span class="cl">mkdir -p ~/.gnupg
+</span></span><span class="line"><span class="cl"><span class="nb">printf</span> <span class="s2">&#34;default-cache-ttl 86400\nmax-cache-ttl 86400\n&#34;</span> &gt;&gt; ~/.gnupg/gpg-agent.conf
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 5) gpg-agent を再起動して設定反映</span>
+</span></span><span class="line"><span class="cl">gpgconf --kill gpg-agent
+</span></span><span class="line"><span class="cl">gpgconf --launch gpg-agent
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 6) 署名が付いているか確認（直近のコミットを見る）</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 出力の中に default-cache-ttl が 86400 などに設定されていれば OK</span>
+</span></span><span class="line"><span class="cl">git show --show-signature
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 署名付きテスト</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;hello&#34;</span> <span class="p">|</span> gpg --clearsign
 </span></span></code></pre></div><ul>
 <li>cf.
 <ul>
