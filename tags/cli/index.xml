@@ -6,7 +6,7 @@
     <description>Recent content in CLI on Today I Learned | KitHub</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Nov 2025 19:18:15 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 11 Nov 2025 15:19:52 +0900</lastBuildDate>
     <atom:link href="https://shiroimon.kithub.f5.si/tags/cli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[BigQuery] CLI</title>
@@ -55,7 +55,7 @@
       <link>https://shiroimon.kithub.f5.si/post/docker_commands_memorandum/</link>
       <pubDate>Wed, 21 Aug 2024 00:00:34 +0900</pubDate>
       <guid>https://shiroimon.kithub.f5.si/post/docker_commands_memorandum/</guid>
-      <description>🐋 Deepen my understanding of Docker&amp;rsquo;s basic commands and mechanisms.</description>
+      <description>🐳 Deepen my understanding of Docker&amp;rsquo;s basic commands and mechanisms.</description>
     </item>
     <item>
       <title>[Vim] Commands memorandum</title>

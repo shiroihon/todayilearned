@@ -21,7 +21,7 @@
 
     
     <meta name="description"
-  content="🐋 Deepen my understanding of Docker&rsquo;s basic commands and mechanisms." />
+  content="🐳 Deepen my understanding of Docker&rsquo;s basic commands and mechanisms." />
 <meta name="keywords"
   content='blog' />
 <meta name="robots" content="noodp" />
@@ -31,9 +31,9 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="[Docker] Commands memorandum - Today I Learned | KitHub" />
 <meta name="twitter:description"
-  content="🐋 Deepen my understanding of Docker&rsquo;s basic commands and mechanisms." />
+  content="🐳 Deepen my understanding of Docker&rsquo;s basic commands and mechanisms." />
 <meta name="twitter:site" content="https://shiroimon.kithub.f5.si/" />
-<meta name="twitter:creator" content="shiro" />
+<meta name="twitter:creator" content="shiroimon" />
 <meta name="twitter:image"
   content="https://shiroimon.kithub.f5.si/">
 
@@ -41,7 +41,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:title" content="[Docker] Commands memorandum - Today I Learned | KitHub">
 <meta property="og:description"
-  content="🐋 Deepen my understanding of Docker&rsquo;s basic commands and mechanisms." />
+  content="🐳 Deepen my understanding of Docker&rsquo;s basic commands and mechanisms." />
 <meta property="og:url" content="https://shiroimon.kithub.f5.si/post/docker_commands_memorandum/" />
 <meta property="og:site_name" content="[Docker] Commands memorandum" />
 <meta property="og:image"
@@ -154,7 +154,7 @@
                 Created <relative-time datetime="Wed, 21 Aug 2024 00:00:34 &#43;0900" class="no-wrap">Wed, 21 Aug 2024 00:00:34 &#43;0900</relative-time>
                 
                 <span class="path-divider">|</span>
-                Modified <relative-time datetime="Thu, 02 Oct 2025 00:30:36 &#43;0900" class="no-wrap">Thu, 02 Oct 2025 00:30:36 &#43;0900</relative-time>
+                Modified <relative-time datetime="Tue, 11 Nov 2025 15:19:52 &#43;0900" class="no-wrap">Tue, 11 Nov 2025 15:19:52 &#43;0900</relative-time>
                 
             </div>
         </div>
@@ -187,7 +187,7 @@
                     <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list"></div>
                 </div>
             </details-menu>
-            2308 Words
+            2124 Words
             <span class="path-divider">|</span>
             4 min
             </div>
@@ -257,14 +257,13 @@
 <li><a href="https://www.docker.com/">Docker</a></li>
 <li><a href="https://hub.docker.com/">Docker Hub</a></li>
 <li><a href="https://docs.docker.com/desktop/setup/install/mac-install/">Docker Desktop on Mac</a></li>
-<li>Setup
+</ul>
+<h3 id="docker-セットアップ">Docker セットアップ<a class="anchor" aria-hidden="true" href="#docker-セットアップ"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <ul>
 <li><code>$ brew install docker</code> インストール cf.<a href="https://formulae.brew.sh/formula/docker">brew</a></li>
 <li><code>$ docker --version</code> バージョン確認</li>
 <li><code>$ docker login</code> ログイン</li>
 <li><code>$ docker logout</code> ログアウト</li>
-</ul>
-</li>
 </ul>
 <h3 id="docker-コマンド一覧">Docker コマンド一覧<a class="anchor" aria-hidden="true" href="#docker-コマンド一覧"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h3>
 <ul>
@@ -370,117 +369,74 @@ docker/
   └ work/              &lt;-「ds_python」と紐づいている
                           (eg.「test.ipnb」Jupyterlabなどで分析する場所）
 </code></pre><h4 id="分析環境構築">分析環境構築<a class="anchor" aria-hidden="true" href="#分析環境構築"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
-<ul>
-<li>構築（ローカル）
-<ol>
-<li>ディレクトリ作成 &amp; 移動
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ mkdir docker <span class="o">&amp;&amp;</span> <span class="nb">cd</span> docker
-</span></span></code></pre></div></li>
-<li>Dockerイメージ作成してコンテナ起動
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ docker build .
-</span></span><span class="line"><span class="cl">$ docker run -p 8888:8888 -v ~/docker/ds_python:work --name my_lab <span class="o">{</span>image<span class="o">}</span>
-</span></span></code></pre></div></li>
-</ol>
-</li>
-</ul>
-<!-- -->
-<ul>
-<li>構築（クラウド: AWS）
-<ol>
-<li>SSHでクラウドに接続（セキュアにログイン）
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ ssh -i hoge.pem ubuntu@ec2-00-100-200-300.ap-northeast-1.compute.amazonaws.com
-</span></span></code></pre></div><ul>
-<li>nb.</li>
-<li>予めAWSに（EC2サーバー）インスタンスを作成して、そこにログインしておく。</li>
-<li><code>hoge.pem</code> AWSのアクセス認証鍵で名前は任意。（鍵のあるディレクトリで実行）</li>
-<li><code>ec2-{~}.compute.amazonaws.com</code> PublicDNSは都度取得。</li>
-</ul>
-</li>
-<li>クラウド上に<a href="">DockerCE</a>（<code>ComunicatEdition</code>）をインストール
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>$ sudo apt-get update
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># ディレクトリ作成 &amp; 移動</span>
+</span></span><span class="line"><span class="cl">$ mkdir docker <span class="o">&amp;&amp;</span> <span class="nb">cd</span> docker
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Dockerイメージ作成してコンテナ起動</span>
+</span></span><span class="line"><span class="cl">$ docker build .
+</span></span><span class="line"><span class="cl">$ docker run <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -p 8888:8888 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    -v ~/docker/ds_python:work <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span>    --name my_lab <span class="o">{</span>image<span class="o">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># SSHでクラウドに接続（セキュアにログイン）</span>
+</span></span><span class="line"><span class="cl">$ ssh -i hoge.pem ubuntu@ec2-00-100-200-300.ap-northeast-1.compute.amazonaws.com
+</span></span></code></pre></div><pre><code>    - nb.
+    - 予めAWSに（EC2サーバー）インスタンスを作成して、そこにログインしておく。
+    - `hoge.pem` AWSのアクセス認証鍵で名前は任意。（鍵のあるディレクトリで実行）
+    - `ec2-{~}.compute.amazonaws.com` PublicDNSは都度取得。
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># クラウド上にDockerCE（=ComunicatEdition）をインストール</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>$ sudo apt-get update
 </span></span><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>$ sudo apt-get install docker.io
 </span></span><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>$ docker --version
-</span></span><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>$ sudo gpasswd -a ubuntu docker  <span class="c1">#sudo無しでdockerコマンド使用する為</span>
-</span></span></code></pre></div><ul>
-<li>nb. <a href="">DockerEE</a>（<code>EnterprizeEdition</code>）はガチの奴だから今回はCE</li>
-</ul>
-</li>
-<li>Dockerimageをクラウドに送る
-<pre tabindex="0"><code>※　ネットワークに繋がる状況下か否かでケース分している
-</code></pre><ul>
-<li><details>
-  <summary>[case.1] クラウドがネットワークに繋がれるなら</summary>
-  <p></p>
-  <ul>
-<li>SFTPでローカルからクラウドへファイル転送（セキュアに）</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ sftp -i hoge.pem ubuntu@ec2-00-100-200-300.ap-northeast-1.compute.amazonaws.com
+</span></span><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>$ sudo gpasswd -a ubuntu docker  <span class="c1"># sudo無しでdockerコマンド使用する為</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Dockerimageをクラウドに送る</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># [case.1] クラウドがネットワークに繋がれる</span>
+</span></span><span class="line"><span class="cl">$ sftp -i hoge.pem ubuntu@ec2-00-100-200-300.ap-northeast-1.compute.amazonaws.com
 </span></span><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>$ put ~/docker/dsenv_build/Dockerfile home/ubuntu
-</span></span></code></pre></div><ul>
-<li>buildcontextを作成して、ファイル移動</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ ssh -i hoge.pem ubuntu@ec2-00-100-200-300.ap-northeast-1.compute.amazonaws.com
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># buildcontextを作成して、ファイル移動</span>
+</span></span><span class="line"><span class="cl">$ ssh -i hoge.pem ubuntu@ec2-00-100-200-300.ap-northeast-1.compute.amazonaws.com
 </span></span><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>$ mkdir dsenv_build
 </span></span><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>$ mv Dockerfile dsenv_build
-</span></span></code></pre></div><ul>
-<li>dockerイメージ作成</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>$ <span class="nb">cd</span> dsenv_build
+</span></span><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>$ <span class="nb">cd</span> dsenv_build
 </span></span><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>~/dsenv_build$ docker build .
-</span></span></code></pre></div><ul>
-<li>dockerコンテナ、JupyterLab起動。</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>~dsenv_build$ docker run -v ~:/work -p 8888:8888 <span class="o">{</span>imageID<span class="o">}</span>
-</span></span></code></pre></div><p><code>@ec2-00-100-200-300.ap-northeast-1.compute.amazonaws.com:8888</code> にブラウザーからアクセスする。</p>
-  <p></p>
-</details>
-</li>
-<li><details>
-  <summary>[case.2] クラウドがネットワークに繋がれないなら</summary>
-  <p></p>
-  <ul>
-<li>ローカルでDockerimageをtarで圧縮</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ docker build .
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># dockerコンテナ、JupyterLab起動。</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>~dsenv_build$ docker run -v ~:/work -p 8888:8888 <span class="o">{</span>imageID<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ブラウザーからアクセスする。</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># `@ec2-00-100-200-300.ap-northeast-1.compute.amazonaws.com:8888`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># [case.2] クラウドがネットワークに繋がれない</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ローカルでDockerimageをtarで圧縮</span>
+</span></span><span class="line"><span class="cl">$ docker build .
+</span></span><span class="line"><span class="cl"><span class="c1"># $ docker build --platform linux/amd64. # nb. MacのM1チップ使用時は</span>
 </span></span><span class="line"><span class="cl">$ docker save <span class="o">{</span>imageID<span class="o">}</span> &gt; myimage.tar
-</span></span></code></pre></div><p>nb. MacのM1チップ使用時は <code>$ docker build --platform linux/amd64.</code></p>
-<ul>
-<li>SFTPでローカルからクラウドへファイル転送（セキュアに）</li>
-</ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">$ sftp -i hoge.pem ubuntu@ec2-00-100-200-300.ap-northeast-1.compute.amazonaws.com
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">$ sftp -i hoge.pem ubuntu@ec2-00-100-200-300.ap-northeast-1.compute.amazonaws.com
 </span></span><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>$ put ~/docker/myimage.tar home/ubuntu
-</span></span><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>$ docker load &lt; myimage.tar <span class="c1">#tarファイルを解凍</span>
-</span></span></code></pre></div><p>nb. <code>$ docker load</code> で解凍され、同時にイメージが作られる。</p>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>$ docker load &lt; myimage.tar <span class="c1"># tarファイルを解凍</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>$ docker run -it <span class="o">{</span>imageID<span class="o">}</span> bash
+</span></span></code></pre></div><h4 id="dockerfile-作成">Dockerfile 作成<a class="anchor" aria-hidden="true" href="#dockerfile-作成"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
+<pre tabindex="0"><code class="language-sh:Dockerfile" data-lang="sh:Dockerfile">FROM ubuntu:latest
+RUN apt-get update &amp;&amp; apt-get install -y \
+    sudo \
+    wget \
+    vim
 
-  <p></p>
-</details>
-</li>
-</ul>
-</li>
-<li>クラウド上でDockerコンテナ起動
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="o">(</span>aws<span class="o">)</span>$ docker run -it <span class="o">{</span>imageID<span class="o">}</span> bash
-</span></span></code></pre></div></li>
-</ol>
-</li>
-</ul>
-<h4 id="dockerfile作成">Dockerfile作成<a class="anchor" aria-hidden="true" href="#dockerfile作成"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a> </h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh:Dockerfile.sh" data-lang="sh:Dockerfile.sh"><span class="line"><span class="cl">FROM ubuntu:latest
-</span></span><span class="line"><span class="cl">RUN apt-get update <span class="o">&amp;&amp;</span> apt-get install -y <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    sudo <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    wget <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    vim
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">WORKDIR /opt
-</span></span><span class="line"><span class="cl">RUN wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh <span class="o">&amp;&amp;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    sh Anaconda3-2019.10-Linux-x86_64.sh -b -p /opt/anaconda3 <span class="o">&amp;&amp;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>    rm -f Anaconda3-2019.10-Linux-x86_64.sh
-</span></span><span class="line"><span class="cl">ENV PATH /opt/anaconda3/bin:<span class="nv">$PATH</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">WORKDIR /
-</span></span><span class="line"><span class="cl">RUN pip install --upgrade pip
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">CMD <span class="o">[</span><span class="s2">&#34;jupyter&#34;</span>, <span class="s2">&#34;lab&#34;</span>, <span class="s2">&#34;--ip=0.0.0.0&#34;</span>, <span class="s2">&#34;--allow-root&#34;</span>, <span class="s2">&#34;--LabApp.token=&#39;&#39;&#34;</span><span class="o">]</span>
-</span></span></code></pre></div><ul>
+WORKDIR /opt
+RUN wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh &amp;&amp; \
+    sh Anaconda3-2019.10-Linux-x86_64.sh -b -p /opt/anaconda3 &amp;&amp; \
+    rm -f Anaconda3-2019.10-Linux-x86_64.sh
+ENV PATH /opt/anaconda3/bin:$PATH
+
+WORKDIR /
+RUN pip install --upgrade pip
+
+CMD [&#34;jupyter&#34;, &#34;lab&#34;, &#34;--ip=0.0.0.0&#34;, &#34;--allow-root&#34;, &#34;--LabApp.token=&#39;&#39;&#34;]
+</code></pre><ul>
 <li>nb.
 <ul>
 <li><code>$ jupyter lab</code> で起動</li>
