@@ -251,6 +251,38 @@
 
 
 
+
+
+<script src="https://unpkg.com/mermaid@11/dist/mermaid.min.js" crossorigin="anonymous"></script>
+<script>
+
+
+(function () {
+    function transformMermaidCodeBlocks() {
+        var codeBlocks = document.querySelectorAll('pre > code.language-mermaid, code.language-mermaid');
+        codeBlocks.forEach(function (code) {
+            var pre = code.parentElement && code.parentElement.tagName.toLowerCase() === 'pre' ? code.parentElement : code;
+            var container = document.createElement('div');
+            container.className = 'mermaid';
+            container.textContent = code.textContent;
+            pre.replaceWith(container);
+        });
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', transformMermaidCodeBlocks);
+    } else {
+        transformMermaidCodeBlocks();
+    }
+    
+    if (window.mermaid) {
+        window.mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+    }
+})();
+</script>
+
+
+
+
   
 <div id="gitalk-container" class="gitalk-container"></div>
 <link rel="stylesheet" href='http://localhost:1313/css/gitalk.css'>
